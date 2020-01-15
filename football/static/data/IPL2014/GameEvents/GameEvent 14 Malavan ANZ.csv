@@ -1,0 +1,51 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,14,Malavan ANZ,Game Half1 Start,00:00:00,,,,
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Ahmad,Ahi,Defender
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Aziz,Maeboudi,Defender
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Ezzaotollah,Pourghaz,Defender
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Mohamad Hossain,Kanaani,Defender
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Alireza,Ramezani,Forward
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Seyed Jalal,Rafkhaei,Forward
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Iman,Sadeghi,Goalkeeper
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Maziar,Zare,Midfield
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Mohsen,Yousefi,Midfield
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Reza,Etemadi,Midfield
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Saeed,Yousefzadeh,Midfield
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Zobahan ESF,Ali,Hammam,Defender
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Zobahan ESF,Carlos,Santos de Jesus,Defender
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Zobahan ESF,Hadi,Mohamadi,Defender
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Zobahan ESF,Esmaeel,Farhadi,Forward
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Zobahan ESF,Masoud,Hassan Zadeh,Forward
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Zobahan ESF,Mohamad Rasheed,Mazaheri,Goalkeeper
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Zobahan ESF,Akbar,Imani,Midfield
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Zobahan ESF,Ghasem,Dehnavi,Midfield
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Zobahan ESF,Mehrdad,Ghanbari,Midfield
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Zobahan ESF,Mohsen,Mosalman,Midfield
+IPL2014,14,Malavan ANZ,Player in Line-up,00:00:00,Zobahan ESF,Pooya,Safepanahi,Midfield
+IPL2014,14,Malavan ANZ,Card: Yellow,00:01:00,Malavan ANZ,Aziz,Maeboudi,Defender
+IPL2014,14,Malavan ANZ,Card: Yellow,00:01:00,Malavan ANZ,Ezzaotollah,Pourghaz,Defender
+IPL2014,14,Malavan ANZ,Card: Yellow,00:01:00,Malavan ANZ,Maziar,Zare,Midfield
+IPL2014,14,Malavan ANZ,Card: Yellow,00:01:00,Zobahan ESF,Akbar,Imani,Midfield
+IPL2014,14,Malavan ANZ,Card: Yellow,00:01:00,Zobahan ESF,Ghasem,Dehnavi,Midfield
+IPL2014,14,Malavan ANZ,Card: Yellow,00:01:00,Zobahan ESF,Mehrdad,Ghanbari,Midfield
+IPL2014,14,Malavan ANZ,Card: Yellow,00:01:00,Zobahan ESF,Pooya,Safepanahi,Midfield
+IPL2014,14,Malavan ANZ,Penalty Scored,00:14:00,Malavan ANZ,Seyed Jalal,Rafkhaei,Forward
+IPL2014,14,Malavan ANZ,Game Half1 Stop,00:46:00,,,,
+IPL2014,14,Malavan ANZ,Game Half2 Start,00:47:00,,,,
+IPL2014,14,Malavan ANZ,Goal,00:49:00,Zobahan ESF,Carlos,Santos de Jesus,Defender
+IPL2014,14,Malavan ANZ,Player Sub-in,00:50:00,Malavan ANZ,Sadegh,Moharrami,Midfield
+IPL2014,14,Malavan ANZ,Player Sub-out,00:50:00,Malavan ANZ,Reza,Etemadi,Midfield
+IPL2014,14,Malavan ANZ,Goal,00:55:00,Zobahan ESF,Mehrdad,Ghanbari,Midfield
+IPL2014,14,Malavan ANZ,Player Sub-in,01:07:00,Zobahan ESF,Mehdi,Rajabzadeh,Midfield
+IPL2014,14,Malavan ANZ,Player Sub-out,01:07:00,Zobahan ESF,Mohsen,Mosalman,Midfield
+IPL2014,14,Malavan ANZ,Player Sub-in,01:12:00,Zobahan ESF,Morteza,Tabrizi,Forward
+IPL2014,14,Malavan ANZ,Player Sub-out,01:12:00,Zobahan ESF,Masoud,Hassan Zadeh,Forward
+IPL2014,14,Malavan ANZ,Goal,01:13:00,Zobahan ESF,Akbar,Imani,Midfield
+IPL2014,14,Malavan ANZ,Player Sub-in,01:13:00,Malavan ANZ,Mohamad,Razi,Midfield
+IPL2014,14,Malavan ANZ,Player Sub-out,01:13:00,Malavan ANZ,Mohsen,Yousefi,Midfield
+IPL2014,14,Malavan ANZ,Player Sub-in,01:18:00,Malavan ANZ,Sohail,Rahmani,Midfield
+IPL2014,14,Malavan ANZ,Player Sub-out,01:18:00,Malavan ANZ,Mohamad Hossain,Kanaani,Defender
+IPL2014,14,Malavan ANZ,Player Sub-in,01:21:00,Zobahan ESF,Mohamad Reza,Abbasi,Forward
+IPL2014,14,Malavan ANZ,Player Sub-out,01:21:00,Zobahan ESF,Esmaeel,Farhadi,Forward
+IPL2014,14,Malavan ANZ,Game Half2 Stop,01:39:00,,,,
+IPL2014,14,Malavan ANZ,Game End,01:40:00,,,,

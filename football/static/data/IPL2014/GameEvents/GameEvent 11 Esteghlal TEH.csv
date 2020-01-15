@@ -1,0 +1,44 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,11,Esteghlal TEH,Game Half1 Start,00:00:00,,,,
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Amir Hossain,Sadeghi,Defender
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Mohamad,Ghazi,Forward
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Sajjad,Shahbaz Zadeh,Forward
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Mohsen,Forozan,Goalkeeper
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Ali,Karimi,Midfield
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Hashem,Bayk Zadeh,Midfield
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Jassim,Karrar,Midfield
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Khosrow,Haydari,Midfield
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Mahdi,Karimian,Midfield
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Milad,Fakhreddini,Midfield
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Omid,Ebrahimi,Midfield
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Ahmad,Ahi,Defender
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Aziz,Maeboudi,Defender
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Ezzaotollah,Pourghaz,Defender
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Morteza,Falahati,Defender
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Seyed Jalal,Rafkhaei,Forward
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Iman,Sadeghi,Goalkeeper
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Maziar,Zare,Midfield
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Mohsen,Yousefi,Midfield
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Reza,Etemadi,Midfield
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Saeed,Yousefzadeh,Midfield
+IPL2014,11,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Sohail,Rahmani,Midfield
+IPL2014,11,Esteghlal TEH,Card: Yellow,00:01:00,Esteghlal TEH,Hashem,Bayk Zadeh,Midfield
+IPL2014,11,Esteghlal TEH,Card: Yellow,00:01:00,Esteghlal TEH,Milad,Fakhreddini,Midfield
+IPL2014,11,Esteghlal TEH,Card: Yellow,00:01:00,Malavan ANZ,Reza,Etemadi,Midfield
+IPL2014,11,Esteghlal TEH,Card: Yellow,00:01:00,Malavan ANZ,Sohail,Rahmani,Midfield
+IPL2014,11,Esteghlal TEH,Penalty Scored,00:33:00,Esteghlal TEH,Omid,Ebrahimi,Midfield
+IPL2014,11,Esteghlal TEH,Goal,00:40:00,Esteghlal TEH,Mohamad,Ghazi,Forward
+IPL2014,11,Esteghlal TEH,Game Half1 Stop,00:46:00,,,,
+IPL2014,11,Esteghlal TEH,Game Half2 Start,00:47:00,,,,
+IPL2014,11,Esteghlal TEH,Penalty Scored,00:55:00,Malavan ANZ,Seyed Jalal,Rafkhaei,Forward
+IPL2014,11,Esteghlal TEH,Player Sub-in,01:03:00,Malavan ANZ,Mahyar,Zahmatkesh,Defender
+IPL2014,11,Esteghlal TEH,Player Sub-out,01:03:00,Malavan ANZ,Mohsen,Yousefi,Midfield
+IPL2014,11,Esteghlal TEH,Player Sub-in,01:07:00,Malavan ANZ,Mehrdad,Oladi,Forward
+IPL2014,11,Esteghlal TEH,Player Sub-out,01:07:00,Malavan ANZ,Sohail,Rahmani,Midfield
+IPL2014,11,Esteghlal TEH,Player Sub-in,01:11:00,Esteghlal TEH,Mohamad Reza,Khorsandnia,Midfield
+IPL2014,11,Esteghlal TEH,Player Sub-out,01:11:00,Esteghlal TEH,Mahdi,Karimian,Midfield
+IPL2014,11,Esteghlal TEH,Goal,01:23:00,Esteghlal TEH,Sajjad,Shahbaz Zadeh,Forward
+IPL2014,11,Esteghlal TEH,Player Sub-in,01:28:00,Esteghlal TEH,Alireza,Ramezani,Forward
+IPL2014,11,Esteghlal TEH,Player Sub-out,01:28:00,Esteghlal TEH,Jassim,Karrar,Midfield
+IPL2014,11,Esteghlal TEH,Game Half2 Stop,01:39:00,,,,
+IPL2014,11,Esteghlal TEH,Game End,01:40:00,,,,

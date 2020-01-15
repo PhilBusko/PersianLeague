@@ -1,0 +1,42 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,19,Saipa ALB,Game Half1 Start,00:00:00,,,,
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Esteghlal TEH,Amir Hossain,Sadeghi,Defender
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Esteghlal TEH,Haneef,Omranzadeh,Defender
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Esteghlal TEH,Arash,Borhani,Forward
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Esteghlal TEH,Gholamreza,Enayati,Forward
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Esteghlal TEH,Sajjad,Shahbaz Zadeh,Forward
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Esteghlal TEH,Mohsen,Forozan,Goalkeeper
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Esteghlal TEH,Ali,Karimi,Midfield
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Esteghlal TEH,Jassim,Karrar,Midfield
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Esteghlal TEH,Khosrow,Haydari,Midfield
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Esteghlal TEH,Milad,Noori,Midfield
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Esteghlal TEH,Omid,Ebrahimi,Midfield
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ebrahim,Shakoori,Defender
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Hamed,Shiri,Defender
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Mahdi,Torabi,Defender
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Majid,Ayoubi,Defender
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Masih,Zahedi,Defender
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Vahid,Mohamad Zadeh,Defender
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Hakeem,Nassari,Forward
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Mohamad Reza,Akhbari,Goalkeeper
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Mojtaba,Ramezani,Midfield
+IPL2014,19,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Roozbeh,Shah Alidoost,Midfield
+IPL2014,19,Saipa ALB,Card: Red,00:01:00,Esteghlal TEH,Jassim,Karrar,Midfield
+IPL2014,19,Saipa ALB,Card: Yellow,00:01:00,Esteghlal TEH,Jassim,Karrar,Midfield
+IPL2014,19,Saipa ALB,Card: Yellow,00:01:00,Saipa ALB,Ebrahim,Sadeghi,Midfield
+IPL2014,19,Saipa ALB,Goal,00:45:00,Esteghlal TEH,Sajjad,Shahbaz Zadeh,Forward
+IPL2014,19,Saipa ALB,Game Half1 Stop,00:46:00,,,,
+IPL2014,19,Saipa ALB,Game Half2 Start,00:47:00,,,,
+IPL2014,19,Saipa ALB,Player Sub-in,00:55:00,Saipa ALB,Ebrahim,Sadeghi,Midfield
+IPL2014,19,Saipa ALB,Player Sub-out,00:55:00,Saipa ALB,Mahdi,Torabi,Defender
+IPL2014,19,Saipa ALB,Player Sub-in,01:00:00,Esteghlal TEH,Mohamad Reza,Khorsandnia,Midfield
+IPL2014,19,Saipa ALB,Player Sub-out,01:00:00,Esteghlal TEH,Milad,Noori,Midfield
+IPL2014,19,Saipa ALB,Player Sub-in,01:07:00,Saipa ALB,Hadi,Rekabi,Midfield
+IPL2014,19,Saipa ALB,Player Sub-out,01:07:00,Saipa ALB,Hakeem,Nassari,Forward
+IPL2014,19,Saipa ALB,Player Sub-in,01:17:00,Saipa ALB,Bahman,Salari,Midfield
+IPL2014,19,Saipa ALB,Player Sub-out,01:17:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2014,19,Saipa ALB,Player Sub-in,01:27:00,Esteghlal TEH,Hashem,Bayk Zadeh,Midfield
+IPL2014,19,Saipa ALB,Player Sub-out,01:27:00,Esteghlal TEH,Arash,Borhani,Forward
+IPL2014,19,Saipa ALB,Game Half2 Stop,01:39:00,,,,
+IPL2014,19,Saipa ALB,Game End,01:40:00,,,,

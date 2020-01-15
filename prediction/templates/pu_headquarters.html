@@ -1,0 +1,964 @@
+
+{% extends "common_base.html" %}
+{% load staticfiles %}
+{% load utility_ttags %}
+{% load prediction_ttags %}
+
+
+{% block content %}
+
+
+<style>
+
+.icon_button {
+    width: 26px;
+    height: 26px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white !important;
+}
+
+</style>
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_header">
+            <span class="font_title">Upgrades</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="inventory_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">My Inventory</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "roster" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+        <div class="display_block inner_margin1 frame_entry">
+            
+            <div class="outer_padding2">
+                {% ctrl_strong "t1" "Token Generator" %} <br>
+                <div id="rosterMsg_group" class="format_center" style="display: none;">
+                    * {% ctrl_normal "rosterMsg" %} *
+                </div>
+                <div class="display_block inner_margin2 ">
+                    <div id="accumulatorParent" class="display_center format_cpointer" style="width: 90%;">
+                        <div id="accumulatorBar" style="overflow: hidden; position: relative; width: 100%;">
+                            <div id="label_block" class="font_tokens"
+                                style="position: absolute; width: 100%; height: 100%;">
+                                <div style="display: table; width: 100%; height: 100%;">
+                                    <div id="accumBar_text"
+                                         style="display: table-cell; text-align: center;
+                                        vertical-align: middle; font-weight: bold;">
+                                        {{ roster.tokenAccum }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="display_block">
+                    {% ctrl_listing "tokenRate" "Token Rate" %} 
+                </div>
+                <div class="display_block">
+                    {% ctrl_listing "timeToToken" "Time-To-Token" %}
+                </div>
+            </div>
+            
+            <hr class="ctrl_separator">
+            
+            <div class="outer_padding2 format_center">
+                <div class="display_table format_full">
+                    <div class="display_row">
+                        
+                        <div class="display_cellM">
+                            <button id="exchange_button" class="inner_margin2">
+                                <div class="display_table">
+                                    <div class="display_row">
+                                        <div class="display_cellM">
+                                            <span class="" style="color: black;">Exchange</span>
+                                        </div>
+                                        <div class="display_cellM" style="min-width: 40px;">
+                                            <img id="diamond_image" style="max-width: 26px; max-height: 26px;"
+                                                   src="/static/graphics/currency_dmd_normal.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        
+                        <div class="display_cellM">
+                            <button id="store_button" class="inner_margin2">
+                                <div class="display_table">
+                                    <div class="display_row">
+                                        <div class="display_cellM">
+                                            <span class="" style="color: black;">Purchase</span>
+                                        </div>
+                                        <div class="display_cellM" style="min-width: 40px;">
+                                            <img id="diamond_image" style="max-width: 26px; max-height: 26px;"
+                                                   src="/static/graphics/currency_dmd_normal.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7 col-xl-6">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry" style="min-height: 140px;">
+            <div class="row">
+                
+                <div class="col-xs-12">
+                    {% ctrl_strong "t1" "Abilities" %}
+                </div>
+                <div id="abils_message" class="col-xs-12" style="display: none;">
+                    <div class="inner_margin2" style="padding: 0px 4px; background: white; border: 1px solid black;">
+                        You have no abilities yet.
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                    <div class="col-xs-12">
+                        {% multi_ability "abilGG" "Goals Guess" abilsOwned.goalsG.level abilsOwned.goalsG.desc "/static/graphics/pred_goals.png" %} 
+                    </div>
+                    <div class="col-xs-12">
+                        {% multi_ability "abilSG" "Scorers Guess" abilsOwned.scorersG.level abilsOwned.scorersG.desc "/static/graphics/pred_scorers.png" %} 
+                    </div>
+                    <div class="col-xs-12">
+                        {% multi_ability "abilSC" "Second Chance" abilsOwned.secondChance.level abilsOwned.secondChance.desc "/static/graphics/pred_secondChance.png" %} 
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                    <div class="col-xs-12">
+                        {% multi_ability "abilDD" "Double Down" abilsOwned.doubleDown.level abilsOwned.doubleDown.desc "/static/graphics/pred_ddownON.png" %} 
+                    </div>
+                    <div class="col-xs-12">
+                        {% multi_ability "abilCF" "Club Favorite" abilsOwned.clubFav.level abilsOwned.clubFav.desc "/static/graphics/pred_clubFav.png" %} 
+                    </div>
+                    <div class="col-xs-12">
+                        {% multi_ability "abilTR" "Token Rate" abilsOwned.tokenRate.level abilsOwned.tokenRate.desc "/static/graphics/pred_tokenRate.png" %} 
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+<div id="upgrade_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Upgrade Store</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "upgrades" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-6 col-xxl-5">
+        
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            <div class="display_block">
+                <div class="inner_margin2 format_frame outer_padding2" style="background-color: white;">
+                    {% multi_upgradeTitle "Goals Guess" "GG" "/static/graphics/pred_goals.png" storeAvailable.goalsG %}
+                    <div id="GG_upgrades" style="display: none;">
+                        <div style="height: 1px;" comment="prevent margin collapse"></div> 
+                        <div class="display_block inner_margin2">
+                            <table class="format_full" style="border-collapse: collapse;">
+                                {% multi_upgLevelsHeader "GG" %}
+                                {% for row in store.goalsGuess %}
+                                    {% multi_upgLevelsRow "Goals Guess" "GG" row.0 row.1 row.2 abilsOwned.goalsG.level  %}
+                                {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+                    <div class="inner_margin2 format_inside2 outer_padding2">
+                        <div class="inner_margin2">
+                            <b>Goals Guess:</b> Allows the user to make a goals guess.
+                            The guess can apply to any game and can be used once per round.
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        
+        <div style="height: 1px;" comment="prevent margin collapse"></div> 
+            
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            <div class="display_block">
+                <div class="inner_margin2 format_frame outer_padding2" style="background-color: white;">
+                    {% multi_upgradeTitle "Scorers Guess" "SG" "/static/graphics/pred_scorers.png" storeAvailable.scorersG %}
+                    <div id="SG_upgrades" style="display: none;">
+                        <div style="height: 1px;" comment="prevent margin collapse"></div> 
+                        <div class="display_block inner_margin2">
+                            <table class="format_full" style="border-collapse: collapse;">
+                                {% multi_upgLevelsHeader "SG" %}
+                                {% for row in store.scorersGuess %}
+                                    {% multi_upgLevelsRow "Scorers Guess" "SG" row.0 row.1 row.2 abilsOwned.scorersG.level  %}
+                                {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+                    <div class="inner_margin2 format_inside2 outer_padding2">
+                        <div class="inner_margin2">
+                            <b>Scorers Guess:</b> Allows the user to make a scorers guess.
+                            The guess can apply to any game and can be used once per round.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="height: 1px;" comment="prevent margin collapse"></div> 
+        
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            <div class="display_block">
+                <div class="inner_margin2 format_frame outer_padding2" style="background-color: white;">
+                    {% multi_upgradeTitle "Second Chance" "SC" "/static/graphics/pred_secondChance.png" storeAvailable.secondChance %}
+                    <div id="SC_upgrades" style="display: none;">
+                        <div style="height: 1px;" comment="prevent margin collapse"></div> 
+                        <div class="display_block inner_margin2">
+                            <table class="format_full" style="border-collapse: collapse;">
+                                {% multi_upgLevelsHeader "SC" %}
+                                {% for row in store.secondChance %}
+                                    {% multi_upgLevelsRow "Second Chance" "SC" row.0 row.1 row.2 abilsOwned.secondChance.level  %}
+                                {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+                    <div class="inner_margin2 format_inside2 outer_padding2">
+                        <div class="inner_margin2">
+                            <b>Second Choice:</b> For any available guess the user may make another choice.
+                            If the first choice is incorrect, the second choice will be used.
+                            The second choice may be used in any game and once per round.
+                        </div>
+                    </div>
+                </div> 
+            </div>             
+        </div>
+        
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-6 col-xxl-5">
+        
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">  
+            <div class="display_block">
+                <div class="inner_margin2 format_frame outer_padding2" style="background-color: white;">
+                    {% multi_upgradeTitle "Double Down" "DD" "/static/graphics/pred_ddownON.png" storeAvailable.doubleDown %}
+                    <div id="DD_upgrades" style="display: none;">
+                        <div style="height: 1px;" comment="prevent margin collapse"></div> 
+                        <div class="display_block inner_margin2">
+                            <table class="format_full" style="border-collapse: collapse;">
+                                {% multi_upgLevelsHeader "DD" %}
+                                {% for row in store.doubleDown %}
+                                    {% multi_upgLevelsRow "Double Down" "DD" row.0 row.1 row.2 abilsOwned.doubleDown.level  %}
+                                {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+                    <div class="inner_margin2 format_inside2 outer_padding2">
+                        <div class="inner_margin2">
+                            <b>Double Down:</b> For any single available guess the user increases the guess's point range.
+                            If the user's guess is correct, they add their double down value to their points,
+                            otherwise the double down value is subtracted.
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+        
+        <div style="height: 1px;" comment="prevent margin collapse"></div> 
+        
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">  
+            <div class="display_block">
+                <div class="inner_margin2 format_frame outer_padding2" style="background-color: white;">
+                    {% multi_upgradeTitle "Club Favorite" "CF" "/static/graphics/pred_clubFav.png" storeAvailable.clubFav %}
+                    <div id="CF_upgrades" style="display: none;">
+                        <div style="height: 1px;" comment="prevent margin collapse"></div> 
+                        <div class="display_block inner_margin2">
+                            <table class="format_full" style="border-collapse: collapse;">
+                                {% multi_upgLevelsHeader "CF" %}
+                                {% for row in store.clubFavorite %}
+                                    {% multi_upgLevelsRow "Club Favorite" "CF" row.0 row.1 row.2 abilsOwned.clubFav.level  %}
+                                {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+                    <div class="inner_margin2 format_inside2 outer_padding2">
+                        <div class="inner_margin2">
+                            <b>Club Favorite:</b> For each guess that the user makes in a game that their favorite club plays in,
+                            the user earns or loses some extra points. The extra points are equal to the value of the ability.
+                            The points are added if the guess is correct, and subtracted if the guess is wrong.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="height: 1px;" comment="prevent margin collapse"></div> 
+        
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">  
+            <div class="display_block">
+                <div class="inner_margin2 format_frame outer_padding2" style="background-color: white;">
+                    {% multi_upgradeTitle "Token Rate" "TR" "/static/graphics/pred_tokenRate.png" storeAvailable.tokenRate %}
+                    <div id="TR_upgrades" style="display: none;">
+                        <div style="height: 1px;" comment="prevent margin collapse"></div> 
+                        <div class="display_block inner_margin2">
+                            <table class="format_full" style="border-collapse: collapse;">
+                                {% multi_upgLevelsHeader "TR" %}
+                                {% for row in store.tokenRate %}
+                                    {% multi_upgLevelsRow "Token Rate" "TR" row.0 row.1 row.2 abilsOwned.tokenRate.level  %}
+                                {% endfor %}
+                            </table>
+                        </div>
+                    </div>
+                    <div class="inner_margin2 format_inside2 outer_padding2">
+                        <div class="inner_margin2">
+                            <b>Token Rate:</b> This upgrade increases the user's token accumulation rate based on the upgrade's level.
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+        
+    </div>
+    
+</div>
+
+
+<!-- dynamically rendered html -->
+
+<div id="dmdToken_dialog" title="Exchange For Tokens">
+    <div class="format_full outer_padding2">
+        <div class="format_center">
+            <span class="inner_margin2">Exchange rate: 11 Diamonds = 35 Tokens</span>
+            <div class="display_table display_center">
+                <div class="display_row">
+                    {% ctrl_select "amount" "Amount" %}
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="display_table format_full">
+        <div class="display_row">
+            <div class="display_cellM format_center" style="width: 50%;">
+                {% ctrl_button "okgoExchange" "Confirm" %}
+            </div>
+            <div class="display_cellM format_center">
+                {% ctrl_button "cancelExchange" "Cancel" %}
+            </div>
+        </div>
+        <div class="row format_center" style="display: none;">
+            {% ctrl_normal "resultExchange" %} <br>
+        </div>
+    </div>
+</div>
+
+
+<div id="upgradeBuy_dialog" title="Buy Upgrade">
+    <div class="format_full outer_padding2 format_center">
+        {% ctrl_normal "conf" "Confirm to purchase upgrade?" %} 
+    </div>
+    <div class="display_table format_full">
+        <div class="display_row">
+            <div class="display_cellM format_center" style="width: 50%;">
+                {% ctrl_button "okgoUpgrade" "Confirm" %}
+            </div>
+            <div class="display_cellM format_center">
+                {% ctrl_button "cancelUpgrade" "Cancel" %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+$(document).ready(function()
+{    
+    $("body").css("cursor", "wait");
+    
+    InitializeTokens();
+    InitializeUpgrades();
+    
+    $('body').css('cursor', 'default');
+});
+
+//
+// TOKENS
+//
+var LASTPOP = '{{ roster.lastPop }}';
+var TIMETOTOKEN = '{{ roster.timeToToken }}';
+var USER_DIAMONDS = parseFloat('{{ profile.diamonds }}');
+
+function InitializeTokens()
+{
+    $('#accumulatorBar').progressbar({ value: parseFloat('{{ roster.tokenPerc }}'), });   
+    $('#accumulatorBar > div').addClass('accumulatorStyles');
+    $('#label_block').removeClass('accumulatorStyles');             // WTF
+    
+    $('#store_button').click(function() {
+        var host = window.location.hostname;
+        var page = '{% url "central:store" %}';
+        var url = "http://{0}{1}".format(host, page);
+        //cl(url);
+        window.location = url;
+    });
+    
+    {% if roster.message %}
+    
+    $('#rosterMsg_group').show();
+    $('#rosterMsg_normal').text('{{ roster.message }}');
+    
+    $('#dmdToken_dialog').remove();
+    
+    $('#accumulatorParent').click(function() {
+        if ('{{ roster.message }}'.indexOf("logged") >= 0)
+            var msg = "Token pop is for logged in users."
+        else
+            var msg = "Token pop is not available in off-season."
+        $('#errorMsg_normal').text(msg);
+        $('#error_dialog').dialog('open');
+    });
+    
+    $('#exchange_button').click(function() {
+        if ('{{ roster.message }}'.indexOf("logged") >= 0)
+            var msg = "Diamond exchange is for logged in users."
+        else
+            var msg = "Diamond exchange is not available in off-season."
+        $('#errorMsg_normal').text(msg);
+        $('#error_dialog').dialog('open');
+    });
+        
+    {% else %}
+    
+    $('#accumulatorParent').click(function() {
+        PopAccumulator();
+    });
+    
+    /*
+    $('#accumulatorParent').tooltip({
+        items: '#accumulatorParent',
+        tooltipClass: 'jqueryUI_tooltip',
+        content: function () {
+            
+            var lastPop = Date.parseString(LASTPOP, "yyyy-MM-dd HH:mm:ss");   //cl(LASTPOP);
+            var now = new Date();   
+            var deltaMs = now.getTime() - lastPop.getTime();
+            var deltaSc = Math.floor(deltaMs / 1000);          //cl(deltaSc / 60 );    
+            
+            var secsSinceLastTick = deltaSc % TIMETOTOKEN;      
+            var lastTickDelta = SecondsToTimeDelta(TIMETOTOKEN - secsSinceLastTick);
+            var msg = "Token +1 in {0}:{1} mins".format(
+                Pad2(lastTickDelta.minutes), Pad2(lastTickDelta.seconds));
+            
+            return msg;
+        },
+        position: {
+            my: 'center bottom',
+            at: 'center top-5%',
+        }
+    });
+    */
+    $('#tokenRate_listing').text("{{ roster.rateTkDay }} tokens/day");
+    
+    var tttDelta = SecondsToTimeDelta(TIMETOTOKEN);
+    var tttDeltaText = "{0}:{1} mins".format(tttDelta.minutes, Pad2(tttDelta.seconds));
+    $('#timeToToken_listing').text(tttDeltaText);
+    
+    $('#exchange_button').click(StoreExchangeClick);
+    
+    MakeDialog('#dmdToken_dialog', "420px", false);
+    $("#okgoExchange_button").click(MakeExchange);
+    $("#cancelExchange_button").click(function() {
+        $("#dmdToken_dialog").dialog("close");
+    });
+    $('#dmdToken_dialog').on('dialogclose', function(event) {
+        
+    });
+    
+    //
+    // show current abilities owned
+    
+    var noAbils = true;
+    
+    {% if abilsOwned.goalsG.level %}
+    $('#abilGG').show();
+    noAbils = false;
+    {% endif %}
+    
+    {% if abilsOwned.scorersG.level  %}
+    $('#abilSG').show();
+    noAbils = false;
+    {% endif %}
+    
+    {% if abilsOwned.secondChance.level  %}
+    $('#abilSC').show();
+    noAbils = false;
+    {% endif %}
+    
+    {% if abilsOwned.doubleDown.level  %}
+    $('#abilDD').show();
+    noAbils = false;
+    {% endif %}
+    
+    {% if abilsOwned.clubFav.level  %}
+    $('#abilCF').show();
+    noAbils = false;
+    {% endif %}
+    
+    {% if abilsOwned.tokenRate.level  %}
+    $('#abilTR').show();
+    noAbils = false;
+    {% endif %}
+    
+    if (noAbils)
+        $('#abils_message').show();
+    
+    {% endif %}     // roster.message
+}
+
+function PopAccumulator()
+{    
+    $.ajax({
+        type: 'POST',
+        url: '/prediction/universal_jx/update_accumulator/',
+        success: function(p_data) {         //cl(p_data);
+            $('#accumulatorBar').progressbar('value', parseFloat(p_data.currTokenPerc));
+            
+            if (p_data.currAccumToken > 0)
+            {
+                $('#accumBar_text').text("");
+                setTimeout(AnimateAccumulator(p_data), 400);
+                LASTPOP = p_data.lastPop;       // leave in text format for tooltip
+            }
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, 'PopAccumulator()', '#roster_status')
+        } 
+    });
+}
+
+function AnimateAccumulator(p_tokenData)
+{
+    // animate accumulator and currency menu
+    
+    $('#accumulatorParent').tooltip({ disabled: true });
+    
+    var animTime = 2000 / p_tokenData.currAccumToken;               // each animation frame in milisec
+    var percDelta = parseFloat(p_tokenData.currTokenPerc) / parseFloat(p_tokenData.currAccumToken);
+    var percCurr = parseFloat(p_tokenData.currTokenPerc);
+    var tokenDelta = 1; 
+    var tokenCurr = parseFloat(p_tokenData.currTokenTotal);    
+    
+    var bar_interval = setInterval(BarAnimStep, animTime);
+    
+    function BarAnimStep()
+    {
+        $('#accumulatorBar').progressbar('value', percCurr);
+        percCurr = percCurr - percDelta;
+        
+        $('#tokens_listing').text(tokenCurr);
+        tokenCurr = tokenCurr + tokenDelta;
+        $('#menu_tokensStar').show();
+        
+        if (percCurr < 0)
+        {
+            clearInterval(bar_interval);
+            $('#accumulatorParent').tooltip({ disabled: false });
+            $('#accumBar_text').text("0");
+            $('#menu_tokensStar').hide();
+        }
+    }
+    
+    // animate icons flying
+    
+    var offset = $('#accumulatorBar').offset();
+    var width = $('#accumulatorBar').outerWidth();
+    var height = $('#accumulatorBar').outerHeight();
+    var startPnt = {'x': offset.left + width/2, 'y': offset.top + height/2};
+    
+    var offset = $('#token_image').offset();
+    var width = $('#token_image').outerWidth();
+    var height = $('#token_image').outerHeight();
+    var endPnt = {'x': offset.left + width/2, 'y': offset.top + height/2};
+    
+    var bias = 70;
+    var clearLeft = startPnt.x -bias;
+    if (endPnt.x < startPnt.x)
+        clearLeft = endPnt.x -bias;
+    
+    var clearTop = startPnt.y -bias;
+    if (endPnt.y < startPnt.y)
+        clearTop = endPnt.y -bias;
+    
+    var clearWidth = Math.abs(endPnt.x - startPnt.x) +bias*2;
+    var clearHeight = Math.abs(endPnt.y - startPnt.y) +bias*2;
+    
+    $('#tokens_canvas').show();
+    var canvas = document.getElementById('tokens_canvas');
+    var ctx = canvas.getContext('2d');
+    var img = new Image();  
+    img.src = "{% static 'graphics/currency_pu_normal.png' %}";    // 26x26 pixels
+    
+    var currStep = 0;
+    var trajex = [ ];
+    
+    var numSteps = 40;
+    var animTime = 2000 / numSteps;
+    var icon_interval = setInterval(IconAnimStep, animTime);
+    
+    function IconAnimStep()
+    {
+        if (currStep < 7)
+        {
+            var toSpawn = GetRandomInt(1,2);
+            
+            for (var t=0; t<toSpawn; t++)
+            {
+                var newTraj = new Trajectory(startPnt, endPnt, animTime);
+                trajex.push(newTraj);
+            }
+        }
+        
+        currStep += 1;
+        ctx.clearRect(clearLeft, clearTop, clearWidth, clearHeight);    // invalidate small rect for less memory        
+        var finished = true;
+        
+        $.each(trajex, function(idx, traj) {                
+            ctx.drawImage(img, traj.currPnt.x -13, traj.currPnt.y -13, 26, 26);
+            traj.Advance();
+            if (traj.currSegm != 3)
+                finished = false;
+        });
+        
+        if (finished)
+        {
+            clearInterval(icon_interval);        
+            ctx.clearRect(0, 0, canvas.width, canvas.height);        
+            $('#tokens_canvas').hide();
+        }
+    }
+    
+    // play the sound effects
+    
+    var audio = new Audio('{% static "soundfx/sfx_tokens.wav" %}');
+    $(audio).prop("volume", 0.8);   
+    audio.play();
+    
+}
+
+function StoreExchangeClick()
+{    
+    $('#amount_select').find('option').remove();
+    
+    if (USER_DIAMONDS < 11)
+        $('#amount_select').append($('<option>', { value : 0 }).text("Not available"));
+    if (USER_DIAMONDS >= 11)
+        $('#amount_select').append($('<option>', { value : 11 }).text("D 11 => T 35 "));
+    if (USER_DIAMONDS >= 22)
+        $('#amount_select').append($('<option>', { value : 22 }).text("D 22 => T 70 "));
+    if (USER_DIAMONDS >= 55)
+        $('#amount_select').append($('<option>', { value : 55 }).text("D 55 => T 175 "));
+    if (USER_DIAMONDS >= 110)
+        $('#amount_select').append($('<option>', { value : 110 }).text("D 110 => T 350 "));
+    if (USER_DIAMONDS >= 220)
+        $('#amount_select').append($('<option>', { value : 220 }).text("D 220 -> T 700 "));
+    if (USER_DIAMONDS >= 550)
+        $('#amount_select').append($('<option>', { value : 550 }).text("D 550 -> T 1750 "));
+    if (USER_DIAMONDS >= 1100)
+        $('#amount_select').append($('<option>', { value : 1100 }).text("D 1100 -> T 3500 "));
+    
+    $('#amount_select').removeClass('format_disable');
+    $('#okgoExchange_button').removeClass('format_disable');
+    $('#cancelExchange_button').removeClass('format_disable');        
+    $('#resultExchange_normal').parent().parent().hide();
+    
+    $("#dmdToken_dialog").dialog("open");
+}
+
+function MakeExchange()
+{        
+    var amount = $('#amount_select').val();   
+    
+    $('#amount_select').addClass('format_disable');
+    $('#okgoExchange_button').addClass('format_disable');
+    $('#cancelExchange_button').addClass('format_disable');
+    
+    $.ajax({
+        type: 'POST',
+        url: '/central/central_jx/update_exchangeTokens/',
+        data: {'diamonds': amount},
+        success: function(p_data) {         // cl(p_data);
+            $("#dmdToken_dialog").dialog("close");
+            AnimateTokens(p_data);
+        },  
+        error: function(p_err) {            
+            if (p_err.status >= 400 & p_err.status <= 499)
+            {
+                $('#resultExchange_normal').text(p_err.responseJSON);
+                $('#resultExchange_normal').parent().parent().show();
+            }
+            else
+            {
+                $("#dmdToken_dialog").dialog("close");
+                ErrorToStatus(p_err.responseText, 'MakeMoneyPurchase()', '#roster_status');
+            }
+        }
+    });
+}
+
+function AnimateTokens(p_resources)
+{
+    $('#menu_diamondsStar').show();
+    $('#menu_tokensStar').show();
+    
+    var animDuration = 2000;        // mili sec
+    var animSteps = 80;             // frames for whole duration
+    var animTime = animDuration / animSteps;
+    
+    var diamondIncr = (p_resources.diamond_new - p_resources.diamond_old) / animSteps;
+    var tokenIncr =  (p_resources.token_new - p_resources.token_old) / animSteps;
+    var diamondDisplay = p_resources.diamond_old;
+    var tokenDisplay = p_resources.token_old;
+    
+    var myInterval = setInterval(AnimationStep, animTime);
+    
+    // function runs within closure of parent function and has parent variable access
+    
+    function AnimationStep()
+    {
+        diamondDisplay += diamondIncr;
+        tokenDisplay += tokenIncr;
+        
+        $('#menu_diamondsText').text(Math.round(diamondDisplay));
+        $('#tokens_listing').text(Math.round(tokenDisplay));
+        
+        if (diamondDisplay <= p_resources.diamond_new)
+        {
+            clearInterval(myInterval);
+            $('#menu_diamondsText').text(p_resources.diamond_new);   // deal with any rounding errors
+            $('#tokens_listing').text(p_resources.token_new);
+            $('#menu_diamondsStar').hide();
+            $('#menu_tokensStar').hide();
+        }
+    }
+}
+
+
+
+
+//
+// UPGRADE STORE
+//
+function InitializeUpgrades()
+{
+    $('#GG_expand').click(function() { UpgradeExpand('GG'); });
+    $('#GG_fold').click(function() { UpgradeFold('GG'); });
+    
+    $('#SG_expand').click(function() { UpgradeExpand('SG'); });
+    $('#SG_fold').click(function() { UpgradeFold('SG'); });
+    
+    $('#SC_expand').click(function() { UpgradeExpand('SC'); });
+    $('#SC_fold').click(function() { UpgradeFold('SC'); });
+    
+    $('#DD_expand').click(function() { UpgradeExpand('DD'); });
+    $('#DD_fold').click(function() { UpgradeFold('DD'); });
+    
+    $('#CF_expand').click(function() { UpgradeExpand('CF'); });
+    $('#CF_fold').click(function() { UpgradeFold('CF'); });
+    
+    $('#TR_expand').click(function() { UpgradeExpand('TR'); });
+    $('#TR_fold').click(function() { UpgradeFold('TR'); });
+    
+    
+    {% if roster.message %}
+    
+    $('#upgradeBuy_dialog').remove();
+    
+    $('#GG_buy').click(UpgradeAnon);    
+    $('#SG_buy').click(UpgradeAnon);    
+    $('#SC_buy').click(UpgradeAnon);    
+    $('#DD_buy').click(UpgradeAnon);    
+    $('#CF_buy').click(UpgradeAnon);    
+    $('#TR_buy').click(UpgradeAnon);    
+    
+    function UpgradeAnon()
+    {
+        if ('{{ roster.message }}'.indexOf("logged") >= 0)
+            var msg = "Upgrades are for logged in users."
+        else
+            var msg = "Upgrades are not available in off-season."
+        $('#errorMsg_normal').text(msg);
+        $('#error_dialog').dialog('open');
+    }
+    
+    {% else %}
+    
+    $('#GG_buy').click(function() {
+        $("#conf_normal").text("Confirm to purchase upgrade?");
+        $("#upgradeBuy_dialog").dialog("open");
+        
+        $("#okgoUpgrade_button").click(function() {           
+            var upgradeLevel = $('#GG_buy').attr('upgradeLevel');
+            UpgradeBuy("GoalsGuess", upgradeLevel);
+        });
+    });
+    
+    $('#SG_buy').click(function() {
+        $("#conf_normal").text("Confirm to purchase upgrade?");
+        $("#upgradeBuy_dialog").dialog("open");
+            
+        $("#okgoUpgrade_button").click(function() {           
+            var upgradeLevel = $('#SG_buy').attr('upgradeLevel');
+            UpgradeBuy("ScorersGuess", upgradeLevel);
+        });
+    });
+    
+    $('#SC_buy').click(function() {
+        $("#conf_normal").text("Confirm to purchase upgrade?");
+        $("#upgradeBuy_dialog").dialog("open");
+            
+        $("#okgoUpgrade_button").click(function() {           
+            var upgradeLevel = $('#SC_buy').attr('upgradeLevel');
+            UpgradeBuy("SecondChance", upgradeLevel);
+        });
+    });
+    
+    $('#DD_buy').click(function() {
+        $("#conf_normal").text("Confirm to purchase upgrade?");
+        $("#upgradeBuy_dialog").dialog("open");
+            
+        $("#okgoUpgrade_button").click(function() {           
+            var upgradeLevel = $('#DD_buy').attr('upgradeLevel');
+            UpgradeBuy("DoubleDown", upgradeLevel);
+        });
+    });
+    
+    $('#CF_buy').click(function() {
+        $("#conf_normal").text("Confirm to purchase upgrade?");
+        $("#upgradeBuy_dialog").dialog("open");
+            
+        $("#okgoUpgrade_button").click(function() {           
+            var upgradeLevel = $('#CF_buy').attr('upgradeLevel');
+            UpgradeBuy("ClubFavorite", upgradeLevel);
+        });
+    });
+    
+    $('#TR_buy').click(function() {
+        $('#conf_normal').text("Confirm to purchase upgrade?");
+        $('#upgradeBuy_dialog').dialog('open');
+        
+        $('#okgoUpgrade_button').click(function() {           
+            var upgradeLevel = $('#TR_buy').attr('upgradeLevel');
+            UpgradeBuy('TokenRate', upgradeLevel);
+        });
+    });
+    
+    
+    MakeDialog('#upgradeBuy_dialog', '330px', false);
+    
+    $('#cancelUpgrade_button').click(function() {
+        $('#upgradeBuy_dialog').dialog('close');
+    });
+    
+    $('#upgradeBuy_dialog').on('dialogclose', function(event) {
+        $('#conf_label').text("Confirm to purchase upgrade?");
+        $('#okgoUpgrade_button').prop('disabled', false);
+        $('#cancelUpgrade_button').prop('disabled', false);
+    });
+    
+    {% endif %}
+}
+
+function UpgradeExpand(prefix)
+{
+    $('#' +prefix + '_expand').hide();
+    $('#' +prefix + '_upgrades').slideToggle('');
+    setTimeout(function() {
+        $('#' +prefix + '_fold').show();
+    }, 00);
+}
+
+function UpgradeFold(prefix)
+{
+    $('#' +prefix + '_fold').hide();
+    $('#' +prefix + '_upgrades').slideToggle('');
+    setTimeout(function() {
+        $('#' +prefix + '_expand').show();
+    }, 00);
+}
+
+function UpgradeBuy(upgradeType, upgradeLevel)
+{    
+    $("#okgoUpgrade_button").prop("disabled", true);
+    $("#cancelUpgrade_button").prop("disabled", true);
+    
+    $.ajax({
+        type: 'POST',
+        url: '/prediction/universal_jx/update_buyUpgrade/',
+        data: {'upgradeType': upgradeType, 'upgradeLevel': upgradeLevel},
+        success: function(p_data) {                     //cl(p_data);
+            if (p_data.indexOf("succes") >= 0)
+            {
+                $("#okgoUpgrade_button").prop("disabled", false);       // cached?
+                $("#cancelUpgrade_button").prop("disabled", false);
+                location.reload(); 
+            }
+            else
+            {
+                $("#conf_normal").text("Ooops! " + p_data);
+                $("#cancelUpgrade_button").prop("disabled", false);
+            }
+        }, 
+        error: function(p_err) {
+            $("#upgradeBuy_dialog").dialog("close");
+            ErrorToStatus(p_err.responseText, 'UpgradeBuy()', '#upgrades_status');
+        } 
+    });
+}
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+

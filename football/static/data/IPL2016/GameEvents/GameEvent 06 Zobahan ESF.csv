@@ -1,0 +1,46 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2016,06,Zobahan ESF,Game Half1 Start,00:00:00,,,,
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Hadi,Mohamadi,Defender
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Khaled,Shafiei,Defender
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad,Iran Pourian,Defender
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Saeed,Aghaei,Defender
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Eder Luciano,Edinho,Forward
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Farzad,Hatami,Forward
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad Reza,Akhbari,Goalkeeper
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Jassim Mohamad,Karrar,Midfield
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Mahdi,Kiani,Midfield
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Sina,Ashori,Midfield
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Soroush,Rafiei,Midfield
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Ali,Hammam,Defender
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Mehrdad,Ghanbari,Defender
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Mohamad,Nejad Mehdi,Defender
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Vahid,Mohamad Zadeh,Defender
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Jerry Ricardo,Bengston,Forward
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Mehdi,Rajabzadeh,Forward
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Hamid,Erfani,Goalkeeper
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Ehsan,Pahlevan,Midfield
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Mahdi,Mahdipour,Midfield
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Mohamad Reza,Hossaini,Midfield
+IPL2016,06,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Morteza,Tabrizi,Midfield
+IPL2016,06,Zobahan ESF,Card: Yellow,00:01:00,Teraktor TBZ,Mohamad,Iran Pourian,Defender
+IPL2016,06,Zobahan ESF,Card: Yellow,00:01:00,Teraktor TBZ,Saeed,Aghaei,Defender
+IPL2016,06,Zobahan ESF,Card: Yellow,00:01:00,Zobahan ESF,Ali,Hammam,Defender
+IPL2016,06,Zobahan ESF,Penalty Scored,00:39:00,Teraktor TBZ,Mohamad,Iran Pourian,Defender
+IPL2016,06,Zobahan ESF,Game Half1 Stop,00:46:00,,,,
+IPL2016,06,Zobahan ESF,Player Sub-in,00:46:00,Zobahan ESF,Yasser,Fayzi,Forward
+IPL2016,06,Zobahan ESF,Player Sub-out,00:46:00,Zobahan ESF,Jerry Ricardo,Bengston,Forward
+IPL2016,06,Zobahan ESF,Game Half2 Start,00:47:00,,,,
+IPL2016,06,Zobahan ESF,Player Sub-in,00:55:00,Teraktor TBZ,Mohamad,Ebrahimi,Forward
+IPL2016,06,Zobahan ESF,Player Sub-out,00:55:00,Teraktor TBZ,Jassim Mohamad,Karrar,Midfield
+IPL2016,06,Zobahan ESF,Goal,01:08:00,Zobahan ESF,Ali,Hammam,Defender
+IPL2016,06,Zobahan ESF,Player Sub-in,01:11:00,Teraktor TBZ,Mohamad,Noori,Midfield
+IPL2016,06,Zobahan ESF,Player Sub-out,01:11:00,Teraktor TBZ,Soroush,Rafiei,Midfield
+IPL2016,06,Zobahan ESF,Goal,01:14:00,Teraktor TBZ,Sina,Ashori,Midfield
+IPL2016,06,Zobahan ESF,Player Sub-in,01:15:00,Zobahan ESF,Danial,Esmaeelfar,Defender
+IPL2016,06,Zobahan ESF,Player Sub-out,01:15:00,Zobahan ESF,Vahid,Mohamad Zadeh,Defender
+IPL2016,06,Zobahan ESF,Player Sub-in,01:22:00,Zobahan ESF,Mohamad Reza,Abbasi,Midfield
+IPL2016,06,Zobahan ESF,Player Sub-out,01:22:00,Zobahan ESF,Mehdi,Rajabzadeh,Forward
+IPL2016,06,Zobahan ESF,Player Sub-in,01:29:00,Teraktor TBZ,Mohsen,Bengar,Defender
+IPL2016,06,Zobahan ESF,Player Sub-out,01:29:00,Teraktor TBZ,Eder Luciano,Edinho,Forward
+IPL2016,06,Zobahan ESF,Game Half2 Stop,01:39:00,,,,
+IPL2016,06,Zobahan ESF,Game End,01:40:00,,,,

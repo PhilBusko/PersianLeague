@@ -1,0 +1,48 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,13,Saipa ALB,Game Half1 Start,00:00:00,,,,
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Rahahan TEH,Mohsen,Iran Nejad,Defender
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Rahahan TEH,Ramin,Rezaian,Defender
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Rahahan TEH,Farzad,Mohamadi,Forward
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Rahahan TEH,Reza,Khaleghifar,Forward
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Rahahan TEH,Amir,Abedzadeh,Goalkeeper
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Rahahan TEH,Mohamad,Sattari,Goalkeeper
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Rahahan TEH,Ali,Alipour,Midfield
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Rahahan TEH,Bahador,Abdi,Midfield
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Rahahan TEH,Hamed,Noormohamadi,Midfield
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Rahahan TEH,Mohamad,Hossainpour,Midfield
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Rahahan TEH,Siamak,Koohnavard,Midfield
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ebrahim,Shakoori,Defender
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Hamed,Shiri,Defender
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Mahdi,Torabi,Defender
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Majid,Ayoubi,Defender
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Vahid,Mohamad Zadeh,Defender
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Babak,Hatami,Forward
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Gholamreza,Rezaei,Forward
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Mohamad,Nozhati,Forward
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Mohamad Reza,Akhbari,Goalkeeper
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Alireza,Alizadeh,Midfield
+IPL2014,13,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2014,13,Saipa ALB,Card: Yellow,00:01:00,Rahahan TEH,Mohamad,Sattari,Goalkeeper
+IPL2014,13,Saipa ALB,Card: Yellow,00:01:00,Rahahan TEH,Bahador,Abdi,Midfield
+IPL2014,13,Saipa ALB,Card: Yellow,00:01:00,Rahahan TEH,Milad,Mohamadi,Midfield
+IPL2014,13,Saipa ALB,Card: Yellow,00:01:00,Rahahan TEH,Siamak,Koohnavard,Midfield
+IPL2014,13,Saipa ALB,Card: Yellow,00:01:00,Saipa ALB,Alireza,Alizadeh,Midfield
+IPL2014,13,Saipa ALB,Goal,00:03:00,Rahahan TEH,Ali,Alipour,Midfield
+IPL2014,13,Saipa ALB,Goal,00:12:00,Saipa ALB,Mohamad,Nozhati,Forward
+IPL2014,13,Saipa ALB,Game Half1 Stop,00:46:00,,,,
+IPL2014,13,Saipa ALB,Player Sub-in,00:46:00,Rahahan TEH,Amin,Manoochehri,Forward
+IPL2014,13,Saipa ALB,Player Sub-out,00:46:00,Rahahan TEH,Siamak,Koohnavard,Midfield
+IPL2014,13,Saipa ALB,Game Half2 Start,00:47:00,,,,
+IPL2014,13,Saipa ALB,Goal,00:52:00,Rahahan TEH,Reza,Khaleghifar,Forward
+IPL2014,13,Saipa ALB,Player Sub-in,00:58:00,Saipa ALB,Ebrahim,Sadeghi,Midfield
+IPL2014,13,Saipa ALB,Player Sub-out,00:58:00,Saipa ALB,Alireza,Alizadeh,Midfield
+IPL2014,13,Saipa ALB,Player Sub-in,01:12:00,Rahahan TEH,Mohamad,Abshak,Midfield
+IPL2014,13,Saipa ALB,Player Sub-out,01:12:00,Rahahan TEH,Bahador,Abdi,Midfield
+IPL2014,13,Saipa ALB,Player Sub-in,01:13:00,Saipa ALB,Milad,Kermani Moghadam,Forward
+IPL2014,13,Saipa ALB,Player Sub-out,01:13:00,Saipa ALB,Mahdi,Torabi,Defender
+IPL2014,13,Saipa ALB,Player Sub-in,01:18:00,Saipa ALB,Seyed Mehdi,Seyed Salehi,Forward
+IPL2014,13,Saipa ALB,Player Sub-out,01:18:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2014,13,Saipa ALB,Player Sub-in,01:29:00,Rahahan TEH,Mojtaba,Shiri,Forward
+IPL2014,13,Saipa ALB,Player Sub-out,01:29:00,Rahahan TEH,Reza,Khaleghifar,Forward
+IPL2014,13,Saipa ALB,Game Half2 Stop,01:39:00,,,,
+IPL2014,13,Saipa ALB,Game End,01:40:00,,,,

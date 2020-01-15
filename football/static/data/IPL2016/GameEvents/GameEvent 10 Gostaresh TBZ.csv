@@ -1,0 +1,47 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2016,10,Gostaresh TBZ,Game Half1 Start,00:00:00,,,,
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Babak,Hatami,Defender
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Morteza,Asadi,Defender
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Seyed Mohsen,Hossaini,Defender
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Dariush,Shojaeian,Forward
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Luciano Pereira,Mendes,Forward
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Masoud,Ebrahimzadeh,Forward
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Mohamad Reza,Khalatbari,Forward
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Fernando Jesus,Riberio,Goalkeeper
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Alireza,Naghizadeh,Midfield
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Magno,Batista Da Silva,Midfield
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Reza,Khaleghifar,Midfield
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Hadi,Mohamadi,Defender
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Khaled,Shafiei,Defender
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad,Iran Pourian,Defender
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Saeed,Aghaei,Defender
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Eder Luciano,Edinho,Forward
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad,Ebrahimi,Forward
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad Reza,Akhbari,Goalkeeper
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Jassim Mohamad,Karrar,Midfield
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mahdi,Kiani,Midfield
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad,Noori,Midfield
+IPL2016,10,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Soroush,Rafiei,Midfield
+IPL2016,10,Gostaresh TBZ,Card: Red,00:01:00,Gostaresh TBZ,Babak,Hatami,Defender
+IPL2016,10,Gostaresh TBZ,Card: Yellow,00:01:00,Gostaresh TBZ,Babak,Hatami,Defender
+IPL2016,10,Gostaresh TBZ,Card: Yellow,00:01:00,Teraktor TBZ,Khaled,Shafiei,Defender
+IPL2016,10,Gostaresh TBZ,Card: Yellow,00:01:00,Teraktor TBZ,Jassim Mohamad,Karrar,Midfield
+IPL2016,10,Gostaresh TBZ,Card: Yellow,00:01:00,Teraktor TBZ,Mahdi,Kiani,Midfield
+IPL2016,10,Gostaresh TBZ,Goal,00:40:00,Teraktor TBZ,Eder Luciano,Edinho,Forward
+IPL2016,10,Gostaresh TBZ,Game Half1 Stop,00:46:00,,,,
+IPL2016,10,Gostaresh TBZ,Goal,00:46:00,Teraktor TBZ,Eder Luciano,Edinho,Forward
+IPL2016,10,Gostaresh TBZ,Player Sub-in,00:46:00,Teraktor TBZ,Farzad,Hatami,Forward
+IPL2016,10,Gostaresh TBZ,Player Sub-out,00:46:00,Teraktor TBZ,Mohamad,Noori,Midfield
+IPL2016,10,Gostaresh TBZ,Game Half2 Start,00:47:00,,,,
+IPL2016,10,Gostaresh TBZ,Player Sub-in,00:48:00,Gostaresh TBZ,Yousef,Seyedi,Forward
+IPL2016,10,Gostaresh TBZ,Player Sub-out,00:48:00,Gostaresh TBZ,Dariush,Shojaeian,Forward
+IPL2016,10,Gostaresh TBZ,Player Sub-in,00:50:00,Gostaresh TBZ,Mohamad Amin,Darvishi,Forward
+IPL2016,10,Gostaresh TBZ,Player Sub-out,00:50:00,Gostaresh TBZ,Mohamad Reza,Khalatbari,Forward
+IPL2016,10,Gostaresh TBZ,Player Sub-in,01:19:00,Teraktor TBZ,Shahram,Goodarzi,Forward
+IPL2016,10,Gostaresh TBZ,Player Sub-out,01:19:00,Teraktor TBZ,Eder Luciano,Edinho,Forward
+IPL2016,10,Gostaresh TBZ,Player Sub-in,01:22:00,Gostaresh TBZ,Alireza,Arjomandian,Midfield
+IPL2016,10,Gostaresh TBZ,Player Sub-out,01:22:00,Gostaresh TBZ,Reza,Khaleghifar,Midfield
+IPL2016,10,Gostaresh TBZ,Player Sub-in,01:24:00,Teraktor TBZ,Mohamad Reza,Mehdizadeh,Midfield
+IPL2016,10,Gostaresh TBZ,Player Sub-out,01:24:00,Teraktor TBZ,Jassim Mohamad,Karrar,Midfield
+IPL2016,10,Gostaresh TBZ,Game Half2 Stop,01:39:00,,,,
+IPL2016,10,Gostaresh TBZ,Game End,01:40:00,,,,

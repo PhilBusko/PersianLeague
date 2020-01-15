@@ -1,0 +1,48 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2015,20,Esteghlal KHU,Game Half1 Start,00:00:00,,,,
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Aghil,Kabi,Defender
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Danial,Mahini,Defender
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mohamad,Tayyebi,Defender
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mousa Salif,Coulibaly,Defender
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Paymon,Shirzadi,Defender
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Farshad,Jaanfaza,Forward
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Hakeem,Nassari,Forward
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Raheem,Zahivi,Forward
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Fernando Jesus,Riberio,Goalkeeper
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Ali Asghar,Ashouri,Midfield
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Hassan,Bait Saeed,Midfield
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Teraktor TBZ,Ali,Hamoodi,Defender
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Teraktor TBZ,Khaled,Shafiei,Defender
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Teraktor TBZ,Shoja,Khalil Zadeh,Defender
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Teraktor TBZ,Aloys,Nong,Forward
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Teraktor TBZ,Mahdi,Sharifi,Forward
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad Reza,Akhbari,Goalkeeper
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Teraktor TBZ,Bakhtiar,Rahmani,Midfield
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Teraktor TBZ,Mahdi,Kiani,Midfield
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Teraktor TBZ,Saeed,Aghaei,Midfield
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Teraktor TBZ,Sina,Ashori,Midfield
+IPL2015,20,Esteghlal KHU,Player in Line-up,00:00:00,Teraktor TBZ,Soroush,Rafiei,Midfield
+IPL2015,20,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Aghil,Kabi,Defender
+IPL2015,20,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Mohamad,Tayyebi,Defender
+IPL2015,20,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Raheem,Zahivi,Forward
+IPL2015,20,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Farshad,Salarvand,Midfield
+IPL2015,20,Esteghlal KHU,Card: Yellow,00:01:00,Teraktor TBZ,Mohamad Reza,Akhbari,Goalkeeper
+IPL2015,20,Esteghlal KHU,Card: Yellow,00:01:00,Teraktor TBZ,Soroush,Rafiei,Midfield
+IPL2015,20,Esteghlal KHU,Penalty Scored,00:15:00,Esteghlal KHU,Ali Asghar,Ashouri,Midfield
+IPL2015,20,Esteghlal KHU,Game Half1 Stop,00:46:00,,,,
+IPL2015,20,Esteghlal KHU,Game Half2 Start,00:47:00,,,,
+IPL2015,20,Esteghlal KHU,Player Sub-in,01:01:00,Teraktor TBZ,Augusto Cesar,Dos Santos,Midfield
+IPL2015,20,Esteghlal KHU,Player Sub-out,01:01:00,Teraktor TBZ,Aloys,Nong,Forward
+IPL2015,20,Esteghlal KHU,Player Sub-in,01:09:00,Teraktor TBZ,Ayoub,Kalantari,Midfield
+IPL2015,20,Esteghlal KHU,Player Sub-out,01:09:00,Teraktor TBZ,Bakhtiar,Rahmani,Midfield
+IPL2015,20,Esteghlal KHU,Player Sub-in,01:13:00,Esteghlal KHU,Hamdollah,Ebdam,Midfield
+IPL2015,20,Esteghlal KHU,Player Sub-out,01:13:00,Esteghlal KHU,Ali Asghar,Ashouri,Midfield
+IPL2015,20,Esteghlal KHU,Player Sub-in,01:15:00,Esteghlal KHU,Omid,Sink,Midfield
+IPL2015,20,Esteghlal KHU,Player Sub-in,01:15:00,Teraktor TBZ,Mohamad,Iran Pourian,Defender
+IPL2015,20,Esteghlal KHU,Player Sub-out,01:15:00,Esteghlal KHU,Raheem,Zahivi,Forward
+IPL2015,20,Esteghlal KHU,Player Sub-out,01:15:00,Teraktor TBZ,Sina,Ashori,Midfield
+IPL2015,20,Esteghlal KHU,Penalty Scored,01:22:00,Teraktor TBZ,Mohamad,Iran Pourian,Defender
+IPL2015,20,Esteghlal KHU,Player Sub-in,01:26:00,Esteghlal KHU,Farshad,Salarvand,Midfield
+IPL2015,20,Esteghlal KHU,Player Sub-out,01:26:00,Esteghlal KHU,Farshad,Jaanfaza,Forward
+IPL2015,20,Esteghlal KHU,Game Half2 Stop,01:39:00,,,,
+IPL2015,20,Esteghlal KHU,Game End,01:40:00,,,,

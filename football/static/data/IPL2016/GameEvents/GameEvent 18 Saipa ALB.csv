@@ -1,0 +1,40 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2016,18,Saipa ALB,Game Half1 Start,00:00:00,,,,
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,FC Mashhad MSH,Mohsen,Aghaei,Defender
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,FC Mashhad MSH,Mostafa,Ahmadi,Defender
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,FC Mashhad MSH,Abbas,Asgari,Forward
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,FC Mashhad MSH,Rouhollah,Sayfollahi,Forward
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,FC Mashhad MSH,Mohamad,Nasseri,Goalkeeper
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,FC Mashhad MSH,Alireza,Jalili,Midfield
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,FC Mashhad MSH,Hossain,Badamaki,Midfield
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,FC Mashhad MSH,Mohsen,Azarpaad,Midfield
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,FC Mashhad MSH,Reza,Sharbati,Midfield
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,FC Mashhad MSH,Salar,Afrasiabi,Midfield
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ezzatolah,Pourghaz,Defender
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Omid,Khaledi,Defender
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Siamak,Kouroshi,Defender
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ali,Gholizadeh,Forward
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Mohamad Reza,Khalatbari,Forward
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Hamed,Lak,Goalkeeper
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Alireza,Alizadeh,Midfield
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ayoub,Kalantari,Midfield
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Hamed,Shiri,Midfield
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Reza,Jafari,Midfield
+IPL2016,18,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Roozbeh,Shah Alidoost,Midfield
+IPL2016,18,Saipa ALB,Card: Yellow,00:01:00,FC Mashhad MSH,Hossain,Badamaki,Midfield
+IPL2016,18,Saipa ALB,Card: Yellow,00:01:00,Saipa ALB,Mohamad Reza,Khalatbari,Forward
+IPL2016,18,Saipa ALB,Game Half1 Stop,00:46:00,,,,
+IPL2016,18,Saipa ALB,Game Half2 Start,00:47:00,,,,
+IPL2016,18,Saipa ALB,Goal,00:47:00,Saipa ALB,Mohamad Reza,Khalatbari,Forward
+IPL2016,18,Saipa ALB,Player Sub-in,01:00:00,Saipa ALB,Gholamreza,Rezaei,Forward
+IPL2016,18,Saipa ALB,Player Sub-out,01:00:00,Saipa ALB,Ali,Gholizadeh,Forward
+IPL2016,18,Saipa ALB,Player Sub-in,01:01:00,FC Mashhad MSH,Payam,Malekian,Defender
+IPL2016,18,Saipa ALB,Player Sub-out,01:01:00,FC Mashhad MSH,Abbas,Asgari,Forward
+IPL2016,18,Saipa ALB,Player Sub-in,01:03:00,FC Mashhad MSH,Morteza,Ranjbar,Forward
+IPL2016,18,Saipa ALB,Player Sub-out,01:03:00,FC Mashhad MSH,Hossain,Badamaki,Midfield
+IPL2016,18,Saipa ALB,Player Sub-in,01:05:00,Saipa ALB,Ebrahim,Sadeghi,Midfield
+IPL2016,18,Saipa ALB,Player Sub-out,01:05:00,Saipa ALB,Ayoub,Kalantari,Midfield
+IPL2016,18,Saipa ALB,Player Sub-in,01:21:00,Saipa ALB,Amin,Javadi Moghadam,Midfield
+IPL2016,18,Saipa ALB,Player Sub-out,01:21:00,Saipa ALB,Alireza,Alizadeh,Midfield
+IPL2016,18,Saipa ALB,Game Half2 Stop,01:39:00,,,,
+IPL2016,18,Saipa ALB,Game End,01:40:00,,,,

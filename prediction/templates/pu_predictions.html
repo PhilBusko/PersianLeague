@@ -1,0 +1,516 @@
+
+{% extends "common_base.html" %}
+{% load utility_ttags %}
+{% load prediction_ttags %}
+{% load staticfiles %}
+
+{% block extra_head %}
+    <script src="{% static 'third_party/fullcalendar-2.9.1/lib_js/moment.min.js' %}"></script>
+    <script src="{% static 'third_party/fullcalendar-2.9.1/fullcalendar.min.js' %}"></script>
+    <link rel='stylesheet' href="{% static 'third_party/fullcalendar-2.9.1/fullcalendar.min.css' %}"/>
+    <script src="{% static 'prediction.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+
+<style>
+
+.pred_option {
+    float: left;
+    margin: 2px;
+    display: none;  
+}
+
+.pred_optionSpacer {
+    float: left;
+    margin: 2px;
+    visibility: hidden;  /* keeps the space */
+}
+
+.icon_button {
+    width: 26px;
+    height: 26px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white !important;
+    cursor: pointer;
+}
+
+</style>
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_header">
+            <span class="font_title">My Predictions</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="calendar_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Calendar</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "options" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-3">            
+        <div class="col-xs-10 col-sm-6 col-md-6 col-lg-12">
+            <div class="display_block inner_margin1 outer_padding2 frame_entry">
+                {% ctrl_strong "rnd" "Choose Round" %}
+                <div class="display_block">
+                    {% ctrl_select "round" "Round" %} 
+                </div>
+                <div class="display_block">
+                    {% ctrl_listing "bracket" "Bracket" %} 
+                </div>
+                <div class="display_block">
+                    {% ctrl_listing "timezone" "Time Zone" %} 
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-10 col-sm-6 col-md-6 col-lg-12">
+            <div class="display_block inner_margin1 outer_padding2 frame_entry">
+                {% ctrl_strong "abi" "Abilities" %}
+                {% ctrl_table "abilities" %}
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="col-xs-11 col-sm-11 col-md-11 col-lg-8 col-xl-7">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            
+            <div class="inner_margin2 format_frame" style="background: white;">
+                <div id="calendar" class="outer_padding2">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+</div>
+
+
+<div id="predictions_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Predictions</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "preds" %}</div>
+    </div>
+    
+    {% for g in "12345678" %}
+    
+    <div id="master_block" class="col-xs-12 col-xxl-10">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            <div class="row">
+                
+                <div id="game_block" class="col-xs-12 col-sm-10 col-md-8 col-lg-5 col-xl-5">
+                    <div class="display_block inner_margin2 format_frame outer_padding2" style="background: white;">
+                        <div class="format_inside">
+                            
+                            <div class="format_full" style="display: table;">
+                                <div class="display_row">
+                                    <div class="display_cellM format_inside format_fixline" style="width: 40%;"> 
+                                        {% ctrl_listing "gid"|add:g "Game ID" %}
+                                    </div> 
+                                    <div class="display_cellM format_inside format_fixline"> 
+                                        {% ctrl_listing "playDate"|add:g "Date" %}
+                                    </div> 
+                                </div> 
+                            </div> 
+                            
+                            <div class="format_full" style="display: table;">
+                                <div class="display_row">
+                                    <div class="display_cellM format_inside" style="width: 15%;">
+                                        {% ctrl_imageIcon "homeLogo"|add:g False %}
+                                    </div> 
+                                    <div class="display_cellM format_inside" style="width: 30%;">
+                                        {% ctrl_normal "homeClub"|add:g %}
+                                    </div> 
+                                    <div class="display_cellM format_inside format_center" style="width: 10%;">
+                                        {% ctrl_normal "homeGoals"|add:g %} 
+                                    </div> 
+                                    <div class="display_cellM format_inside " style="width: 45%;">
+                                        {% ctrl_normal "homeScorers"|add:g %}
+                                    </div> 
+                                </div> 
+                                <div class="display_row"> 
+                                    <div class="display_cellM format_inside">
+                                        {% ctrl_imageIcon "awayLogo"|add:g False %}
+                                    </div> 
+                                    <div class="display_cellM format_inside">
+                                        {% ctrl_normal "awayClub"|add:g %}
+                                    </div> 
+                                    <div class="display_cellM format_inside format_center">
+                                        {% ctrl_normal "awayGoals"|add:g %}
+                                    </div>
+                                    <div class="display_cellM format_inside">
+                                        {% ctrl_normal "awayScorers"|add:g %}
+                                    </div>                     
+                                </div> 
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="pred_block" class="col-xs-12 col-lg-7 col-xl-7">
+                    <div class="display_block inner_margin2 format_frame outer_padding2" style="background: white;">
+                        <div class="format_inside">
+                            
+                            <div class="format_full" style="display: table;">
+                                <div id="dates_row" class="display_row">
+                                    <div class="display_cellM format_inside" style="">
+                                        <div id="phase{{ g }}_group" style="display: none;">
+                                            {% ctrl_listing "phase"|add:g "Points" %}
+                                        </div>
+                                    </div> 
+                                    <div class="display_cellM format_inside format_fixline" style="width: 35%;">
+                                        {% ctrl_listing "openDate"|add:g "Open" %}
+                                    </div> 
+                                    <div class="display_cellM format_inside format_fixline" style="width: 35%;"> 
+                                        {% ctrl_listing "closeDate"|add:g "Close" %} 
+                                    </div> 
+                                </div> 
+                            </div> 
+                            
+                            <div class="format_full" style="display: table;"> 
+                                <div id="primary{{ g }}_row" class="display_row">
+                                    
+                                    <div id="result_col" class="display_cellT format_inside" style="">
+                                        
+                                        <div class="display_table" style="">
+                                            <div class="display_cellT format_full format_fixline">
+                                                {% ctrl_radio "result"|add:g spectrumOpts %}
+                                            </div>
+                                            
+                                            <div class="display_cellT" style="padding: 2px;">
+                                                <div id="scResult{{ g }}_option" class="pred_option">
+                                                    <img class="icon_button" src="/static/graphics/pred_secondChance.png"/>
+                                                </div> 
+                                                <div id="scResultUndo{{ g }}_option" class="pred_option">
+                                                    <img class="icon_button" src="/static/graphics/pred_undo.png"/>
+                                                </div> 
+                                                <div id="ddResult{{ g }}_option" class="pred_option">
+                                                    <img class="icon_button" src="/static/graphics/pred_ddownOFF.png"/>
+                                                </div> 
+                                                <div id="ddResultUndo{{ g }}_option" class="pred_option">
+                                                    <img class="icon_button" src="/static/graphics/pred_ddownON.png"/>
+                                                </div> 
+                                                <div id="cfResult{{ g }}_option" class="pred_optionSpacer">
+                                                    <img class="icon_button" style="cursor: default !important;"
+                                                         src="/static/graphics/pred_clubFav.png"/>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div> 
+                                    <div id="goals_col" class="display_cellT format_inside" style="position: relative;">
+                                        
+                                        <div id="goal{{ g }}_overlay" class="format_overlay" style="display: none;">
+                                        </div>
+                                        
+                                        <div class="display_table">
+                                            <div class="display_cellT format_full">
+                                                {% ctrl_normal "gn" "Goals" "font-weight: bold;" %}
+                                                <div class="display_table">
+                                                    <div class="display_row">
+                                                        {% ctrl_select "goalsHm"|add:g "Home" %}
+                                                    </div>
+                                                    <div class="display_row">
+                                                        {% ctrl_select "goalsAw"|add:g "Away" %} 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="display_cellT" style="padding: 2px;">
+                                                <div id="goalsUnlock{{ g }}_option" class="pred_option"
+                                                     style="position: relative; z-index: 20;">
+                                                    <img class="icon_button" src="/static/graphics/pred_goals.png"/>
+                                                </div> 
+                                                <div id="goalsLock{{ g }}_option" class="pred_option">
+                                                    <img class="icon_button" src="/static/graphics/pred_relock.png"/>
+                                                </div> 
+                                                <div id="scGoals{{ g }}_option" class="pred_option">
+                                                    <img class="icon_button" src="/static/graphics/pred_secondChance.png"/>
+                                                </div> 
+                                                <div id="scGoalsUndo{{ g }}_option" class="pred_option">
+                                                    <i class="fa fa-undo fa-lg"></i> 
+                                                </div> 
+                                                <div id="ddGoals{{ g }}_option" class="pred_option">
+                                                    <img class="icon_button" src="/static/graphics/pred_ddownOFF.png"/>
+                                                </div> 
+                                                <div id="ddGoalsUndo{{ g }}_option" class="pred_option">
+                                                    <img class="icon_button" src="/static/graphics/pred_ddownON.png"/>
+                                                </div> 
+                                                <div id="cfGoals{{ g }}_option" class="pred_optionSpacer">
+                                                    <img class="icon_button" style="cursor: default !important;"
+                                                        src="/static/graphics/pred_clubFav.png"/>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        
+                                    </div> 
+                                    <div id="scorer_col" class="display_cellT format_inside format_full" style="position: relative;">
+                                        
+                                        <div id="scorer{{ g }}_overlay" class="format_overlay" style="display: none;">
+                                        </div>
+                                        
+                                        <div class="display_table">
+                                            <div class="display_cellT format_full">
+                                                {% ctrl_normal "sn" "Scorers" "font-weight: bold;" %} 
+                                                <div class="display_table">
+                                                    <div class="display_row">
+                                                        {% ctrl_inputText "scorersHm"|add:g "Home" True %}  
+                                                    </div>
+                                                    <div class="display_row">
+                                                        {% ctrl_inputText "scorersAw"|add:g "Away" True %} 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="display_cellT" style="padding: 2px;">
+                                                <div id="scorersUnlock{{ g }}_option" class="pred_option"
+                                                     style="position: relative; z-index: 20;">
+                                                    <img class="icon_button" src="/static/graphics/pred_scorers.png"/>
+                                                </div> 
+                                                <div id="scorersLock{{ g }}_option" class="pred_option">
+                                                    <img class="icon_button" src="/static/graphics/pred_relock.png"/>
+                                                </div> 
+                                                <div id="scScorers{{ g }}_option" class="pred_option">
+                                                    <img class="icon_button" src="/static/graphics/pred_secondChance.png"/>
+                                                </div> 
+                                                <div id="scScorersUndo{{ g }}_option" class="pred_option">
+                                                    <img class="icon_button" src="/static/graphics/pred_unlock.png"/>
+                                                </div> 
+                                                <div id="ddScorers{{ g }}_option" class="pred_option">
+                                                    <img class="icon_button" src="/static/graphics/pred_ddownOFF.png"/>
+                                                </div> 
+                                                <div id="ddScorersUndo{{ g }}_option" class="pred_option">
+                                                    <img class="icon_button" src="/static/graphics/pred_ddownON.png"/>
+                                                </div> 
+                                                <div id="cfScorers{{ g }}_option" class="pred_optionSpacer">
+                                                    <img class="icon_button" style="cursor: default !important;"
+                                                        src="/static/graphics/pred_clubFav.png"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>                                 
+                                </div>
+                                
+                                <div id="secondChance{{ g }}_row" class="display_row" style="display: none;">
+                                    
+                                    <div class="display_cellT format_inside" style="text-align: left; white-space: nowrap;">
+                                        
+                                        <div id="resSC{{ g }}_block" class="display_table" style="display: none;">
+                                            <div class="display_cellT format_full">
+                                                {% ctrl_radio "resultSC"|add:g spectrumOpts %}
+                                            </div>
+                                        </div>
+                                        
+                                    </div> 
+                                    <div class="display_cellT format_inside" style="">
+                                        
+                                        <div id="goalSC{{ g }}_block" class="display_table" style="display: none;">
+                                            <div class="display_cellT format_full">
+                                                {% ctrl_normal "gn" "Goals" "font-weight: bold;" %} 
+                                                <div class="display_table">
+                                                    <div class="display_row">
+                                                        {% ctrl_select "goalsHmSC"|add:g "Home" %} 
+                                                    </div>
+                                                    <div class="display_row">
+                                                        {% ctrl_select "goalsAwSC"|add:g "Away" %} 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div> 
+                                    <div class="display_cellT format_inside">
+                                        
+                                        <div id="scorerSC{{ g }}_block" class="display_table format_full" style="display: none;">
+                                            <div class="display_cellT format_full">
+                                                {% ctrl_normal "sn" "Scorers" "font-weight: bold;" %} 
+                                                <div class="display_table">
+                                                    <div class="display_row">
+                                                        {% ctrl_inputText "scorersHmSC"|add:g "Home" True %}  
+                                                    </div>
+                                                    <div class="display_row">
+                                                        {% ctrl_inputText "scorersAwSC"|add:g "Away" True %} 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div> 
+                                </div>
+                                
+                                <div id="saveNpoints{{ g }}_row" class="display_row">
+                                    
+                                    <div class="display_cellT format_inside format_center">
+                                        <div id="resultSave{{ g }}_group" >
+                                            {% ctrl_button "resultSave"|add:g "Save" %}
+                                        </div>
+                                        <div id="resultPoints{{ g }}_group" style="display: none;">
+                                            {% ctrl_normal "resultPoints"|add:g %}
+                                        </div>
+                                    </div> 
+                                    <div class="display_cellT format_inside format_center"> 
+                                        <div id="goalsSave{{ g }}_group" >
+                                            {% ctrl_button "goalsSave"|add:g "Save" %}
+                                        </div>
+                                        <div id="goalsPoints{{ g }}_group" style="display: none;">
+                                            {% ctrl_normal "goalsPoints"|add:g %}
+                                        </div>
+                                        <div id="goalsError{{ g }}_group" style="text-align: left; display: none;">
+                                            {% ctrl_normal "goalsError"|add:g %}
+                                        </div>
+                                    </div> 
+                                    <div class="display_cellT format_inside format_center">
+                                        <div id="scorersSave{{ g }}_group" >
+                                            {% ctrl_button "scorersSave"|add:g "Save" %}
+                                        </div>
+                                        <div id="scorersPoints{{ g }}_group" style="display: none;">
+                                            {% ctrl_normal "scorersPoints"|add:g %}
+                                        </div>
+                                        <div id="scorersError{{ g }}_group" style="text-align: left; display: none;">
+                                            {% ctrl_normal "scorersError"|add:g %}
+                                        </div>
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    {% endfor %}
+    
+</div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+var USER = '{{ user }}';
+
+$(document).ready(function()
+{
+        
+    {% if not season %}
+        $('#bracket_listing').text("Off-Season");
+        return;
+    {% endif %}
+    
+    $('body').css('cursor', 'wait');
+    
+    
+    // can't get context at prediction.js
+    
+    var now_st = $.parseJSON('{{ now_dt | escapejs }}');              
+    var jPlayers = $.parseJSON('{{ players | escapejs }}');          
+    var jGames = $.parseJSON('{{ fixture | escapejs }}');                   //cl(jGames);
+    var jPreds = $.parseJSON('{{ predictions | escapejs }}');               //cl(jPreds);
+    var abilsOwned = $.parseJSON('{{ abilsOwned | escapejs }}');            //cl(abilsOwned);
+    var abilsUsedRound = $.parseJSON('{{ abilsUsedRound | escapejs }}');    //cl(abilsUsedRound);
+    
+    Pred.GAMES = jGames;
+    Pred.PREDICTIONS = jPreds;
+    Pred.NOW = Date.parseString(now_st.substring(0,16), "yyyy-MM-dd HH:mm");
+    Pred.SetCurrentPeriod();
+    
+    
+    // calendar controls
+    
+    var currRound = parseInt("{{ round }}");
+    if (currRound != 30)
+        currRound += 1;
+    
+    for (var r = currRound; r >= 1; r--)
+        $('#round_select').append( $('<option>', {value : Pad2(r) }).text(Pad2(r)) );
+    
+    $('#round_select').val("{{ round }}");
+    $('#bracket_listing').text("{{ season }}, R{{ round }}");
+    
+    var timezone = now_st.substring(16, 21).trim();
+    if (timezone == "EDT")
+        timezone = "EST";
+    $('#timezone_listing').text(timezone);
+    
+    $('#round_select').change(function() {
+        var round = $('#round_select option:selected').text();
+        Pred.RefreshPage(round);
+    });
+    
+    Pred.DisplayAbilities(abilsOwned, abilsUsedRound, USER);
+    
+    Pred.DisplayCalendar();
+    
+    
+    // games & predictions
+    
+    Pred.InitPredCtrls(jPlayers);
+    Pred.InitPredLocks();
+    
+    for (var p = 1; p <= 8; p ++)
+    {
+        var game = Pred.GAMES[p -1];
+        var pred = Pred.GetMatchingPred(game.gameid);
+        
+        Pred.DisplayGameValues(game, p);
+        Pred.DisplayPrediction(pred, p, abilsOwned, abilsUsedRound);
+        Pred.DisplayStoreLink(p, abilsOwned, abilsUsedRound);
+    }
+    
+    // play sound effect
+    
+    var audio = new Audio('/static/soundfx/pu_preds.wav');
+    $(audio).prop("volume", 1.0);
+    setTimeout(function() { audio.play(); }, 2000);
+    
+    $('body').css('cursor', 'default');    
+});
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+

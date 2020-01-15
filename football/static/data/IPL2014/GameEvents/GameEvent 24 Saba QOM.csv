@@ -1,0 +1,44 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,24,Saba QOM,Game Half1 Start,00:00:00,,,,
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Farshid,Bagheri,Defender
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Hadi,Shakoori,Defender
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Masoud,Hahgjoo,Defender
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Mohamad,Aramtabe,Defender
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Roosbeh,Cheshmi,Defender
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Vahid,Aliabadi,Defender
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Jallaledin,Alimohamadi,Forward
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Mehrdad,Tahmasbi,Goalkeeper
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Ayoub,Kalantari,Midfield
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Hossain,Kooshki,Midfield
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Hossain,Badamaki,Midfield
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Sepahan ESF,Abdollah,Karami,Defender
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Sepahan ESF,Hadi,Aghili,Defender
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Sepahan ESF,Voorya,Ghafoori,Defender
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Sepahan ESF,Mahdi,Sharifi,Forward
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Sepahan ESF,Ali,Karimi,Midfield
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Sepahan ESF,Bahram,Ahmadi,Midfield
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Sepahan ESF,Fozil,Musayev,Midfield
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Sepahan ESF,Hossain,Papi,Midfield
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Sepahan ESF,Mohamad Reza,Khalatbari,Midfield
+IPL2014,24,Saba QOM,Player in Line-up,00:00:00,Sepahan ESF,Moharam,Navidkia,Midfield
+IPL2014,24,Saba QOM,Card: Red,00:01:00,Sepahan ESF,Rahman,Ahmadi,Goalkeeper
+IPL2014,24,Saba QOM,Card: Yellow,00:01:00,Sepahan ESF,Saeed,Ghaedifar,Defender
+IPL2014,24,Saba QOM,Card: Yellow,00:01:00,Sepahan ESF,Mohamad Reza,Khalatbari,Midfield
+IPL2014,24,Saba QOM,Player Sub-in,00:11:00,Sepahan ESF,Saeed,Ghaedifar,Defender
+IPL2014,24,Saba QOM,Player Sub-out,00:11:00,Sepahan ESF,Hadi,Aghili,Defender
+IPL2014,24,Saba QOM,Game Half1 Stop,00:46:00,,,,
+IPL2014,24,Saba QOM,Game Half2 Start,00:47:00,,,,
+IPL2014,24,Saba QOM,Player Sub-in,00:47:00,Saba QOM,Abolfazl,Ebrahimi,Midfield
+IPL2014,24,Saba QOM,Player Sub-out,00:47:00,Saba QOM,Farshid,Bagheri,Defender
+IPL2014,24,Saba QOM,Player Sub-in,00:53:00,Sepahan ESF,Shahabeddin,Gordan,Goalkeeper
+IPL2014,24,Saba QOM,Player Sub-out,00:53:00,Sepahan ESF,Hossain,Papi,Midfield
+IPL2014,24,Saba QOM,Goal,01:00:00,Saba QOM,Hadi,Shakoori,Defender
+IPL2014,24,Saba QOM,Player Sub-in,01:25:00,Saba QOM,Javad,Kazemian,Forward
+IPL2014,24,Saba QOM,Player Sub-out,01:25:00,Saba QOM,Hossain,Badamaki,Midfield
+IPL2014,24,Saba QOM,Player Sub-in,01:29:00,Saba QOM,Mohamad,Ousani,Forward
+IPL2014,24,Saba QOM,Player Sub-in,01:29:00,Sepahan ESF,Luciano Pereira,Mendez,Forward
+IPL2014,24,Saba QOM,Player Sub-out,01:29:00,Saba QOM,Ayoub,Kalantari,Midfield
+IPL2014,24,Saba QOM,Player Sub-out,01:29:00,Sepahan ESF,Bahram,Ahmadi,Midfield
+IPL2014,24,Saba QOM,Goal,01:33:00,Saba QOM,Jallaledin,Alimohamadi,Forward
+IPL2014,24,Saba QOM,Game Half2 Stop,01:39:00,,,,
+IPL2014,24,Saba QOM,Game End,01:40:00,,,,

@@ -1,0 +1,48 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,05,Paykan TEH,Game Half1 Start,00:00:00,,,,
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Esteghlal TEH,Hrayr,Mkoyan,Defender
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Esteghlal TEH,Mohamad,Ghazi,Forward
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Esteghlal TEH,Sajjad,Shahbaz Zadeh,Forward
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Esteghlal TEH,Mohsen,Forozan,Goalkeeper
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Esteghlal TEH,Ali,Karimi,Midfield
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Esteghlal TEH,Hashem,Bayk Zadeh,Midfield
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Esteghlal TEH,Jassim,Karrar,Midfield
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Esteghlal TEH,Khosrow,Haydari,Midfield
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Esteghlal TEH,Mahdi,Karimian,Midfield
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Esteghlal TEH,Milad,Fakhreddini,Midfield
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Esteghlal TEH,Omid,Ebrahimi,Midfield
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Alireza,Mohamad,Defender
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Arman,Ghasemi,Defender
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Hamid Reza,Deevsalar,Defender
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Mohamad,Nosrati,Defender
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Vahid,Haydarieh,Defender
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Saeed,Daghighi,Forward
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Seyed Mahdi,Rahmati,Goalkeeper
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Amir Hossain,Feshangchi,Midfield
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Jlloyd,Samuel,Midfield
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Majid,Khodabandehlou,Midfield
+IPL2014,05,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Muamer,Svraka,Midfield
+IPL2014,05,Paykan TEH,Card: Yellow,00:01:00,Esteghlal TEH,Hashem,Bayk Zadeh,Midfield
+IPL2014,05,Paykan TEH,Card: Yellow,00:01:00,Esteghlal TEH,Jassim,Karrar,Midfield
+IPL2014,05,Paykan TEH,Card: Yellow,00:01:00,Esteghlal TEH,Milad,Fakhreddini,Midfield
+IPL2014,05,Paykan TEH,Card: Yellow,00:01:00,Paykan TEH,Hamid Reza,Deevsalar,Defender
+IPL2014,05,Paykan TEH,Card: Yellow,00:01:00,Paykan TEH,Mohamad,Nosrati,Defender
+IPL2014,05,Paykan TEH,Goal,00:29:00,Esteghlal TEH,Khosrow,Haydari,Midfield
+IPL2014,05,Paykan TEH,Game Half1 Stop,00:46:00,,,,
+IPL2014,05,Paykan TEH,Player Sub-in,00:46:00,Esteghlal TEH,Alireza,Ramezani,Forward
+IPL2014,05,Paykan TEH,Player Sub-out,00:46:00,Esteghlal TEH,Khosrow,Haydari,Midfield
+IPL2014,05,Paykan TEH,Game Half2 Start,00:47:00,,,,
+IPL2014,05,Paykan TEH,Player Sub-in,00:50:00,Paykan TEH,Milad,Noori,Midfield
+IPL2014,05,Paykan TEH,Player Sub-out,00:50:00,Paykan TEH,Majid,Khodabandehlou,Midfield
+IPL2014,05,Paykan TEH,Goal,00:53:00,Esteghlal TEH,Mahdi,Karimian,Midfield
+IPL2014,05,Paykan TEH,Goal,01:03:00,Esteghlal TEH,Sajjad,Shahbaz Zadeh,Forward
+IPL2014,05,Paykan TEH,Player Sub-in,01:03:00,Paykan TEH,Mate,Eterovic,Forward
+IPL2014,05,Paykan TEH,Player Sub-out,01:03:00,Paykan TEH,Vahid,Haydarieh,Defender
+IPL2014,05,Paykan TEH,Player Sub-in,01:10:00,Esteghlal TEH,Andranik,Taymorian,Midfield
+IPL2014,05,Paykan TEH,Player Sub-out,01:10:00,Esteghlal TEH,Mahdi,Karimian,Midfield
+IPL2014,05,Paykan TEH,Player Sub-in,01:11:00,Paykan TEH,Seyed Ali,Hossaini,Defender
+IPL2014,05,Paykan TEH,Player Sub-out,01:11:00,Paykan TEH,Alireza,Mohamad,Defender
+IPL2014,05,Paykan TEH,Player Sub-in,01:25:00,Esteghlal TEH,Amir Hossain,Tahooni,Midfield
+IPL2014,05,Paykan TEH,Player Sub-out,01:25:00,Esteghlal TEH,Jassim,Karrar,Midfield
+IPL2014,05,Paykan TEH,Game Half2 Stop,01:39:00,,,,
+IPL2014,05,Paykan TEH,Game End,01:40:00,,,,

@@ -1,0 +1,709 @@
+
+{% extends "common_base.html" %}
+{% load utility_ttags %}
+{% load staticfiles %}
+
+{% block content %}
+
+<style>
+
+.tmpt {
+    width: 100%;
+}
+@media (min-width: 768px) {     .tmpt {     /* sm  */
+    width: 90%;
+}}
+@media (min-width: 992px) {     .tmpt {     /* md */
+    width: 80%;    
+}}
+@media (min-width: 1200px) {    .tmpt {     /* lg */
+    width: 70%;    
+}}
+@media (min-width: 1440px) {    .tmpt {     /* xl */
+    width: 60%;    
+}}
+@media (min-width: 1920px) {    .tmpt {     /* xxl  */
+    width: 50%;    
+}}
+
+/***/
+
+.image_title {
+    width: 70%;
+}
+@media (min-width: 768px) {     .image_title {     /* sm  */
+    width: 50%;
+}}
+@media (min-width: 992px) {     .image_title {     /* md */
+    width: 90%;
+}}
+@media (min-width: 1200px) {    .image_title {     /* lg */
+    width: 100%;
+}}
+@media (min-width: 1440px) {    .image_title {     /* xl */
+    width: 100%;
+}}
+@media (min-width: 1920px) {    .image_title {     /* xxl  */
+    width: 90%;
+}}
+
+
+.format_slogan {
+    display: none;
+}
+@media (min-width: 768px) {     .format_slogan {     /* sm  */
+    display: none;
+}}
+@media (min-width: 992px) {     .format_slogan {     /* md */
+    display: inline-block;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}}
+@media (min-width: 1200px) {    .format_slogan {     /* lg */
+    padding-top: 20px;
+}}
+@media (min-width: 1440px) {    .format_slogan {     /* xl */
+    padding-top: 25px;
+}}
+@media (min-width: 1920px) {    .format_slogan {     /* xxl  */
+    padding-top: 25px;
+}}
+
+
+.slogan_image {
+    width: 100%;
+}
+@media (min-width: 768px) {     .slogan_image {     /* sm  */
+    width: 80%;
+}}
+@media (min-width: 992px) {     .slogan_image {     /* md */
+    width: 60%;    
+}}
+@media (min-width: 1200px) {    .slogan_image {     /* lg */
+    width: 60%;    
+}}
+@media (min-width: 1440px) {    .slogan_image {     /* xl */
+    width: 60%;    
+}}
+@media (min-width: 1920px) {    .slogan_image {     /* xxl  */
+    width: 40%;    
+}}
+
+.font_slogan {
+    display: block;
+    font-family: 'Salsa', Salsa_IE;
+    color: magenta;
+    text-align: center;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    font-size: 120%;
+}
+@media (min-width: 768px) {     .font_slogan {     /* sm  */
+    font-size: 130%;
+}}
+@media (min-width: 992px) {     .font_slogan {     /* md */
+    font-size: 120%;
+}}
+@media (min-width: 1200px) {    .font_slogan {     /* lg */
+    font-size: 130%;
+}}
+@media (min-width: 1440px) {    .font_slogan {     /* xl */
+    font-size: 170%;
+}}
+@media (min-width: 1920px) {    .font_slogan {     /* xxl  */
+    font-size: 170%;
+}}
+
+
+/***/
+
+.font_rankTitle {
+    font-family: 'AgencyFB', 'AgencyFB_IE';
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #00e600;     /* limegreen */
+    line-height: 1;
+    font-size: 160%;
+}
+@media (min-width: 768px) {     .font_rankTitle {     /* sm  */
+    font-size: 150%;
+}}
+@media (min-width: 992px) {     .font_rankTitle {     /* md */
+    font-size: 200%;
+}}
+@media (min-width: 1200px) {    .font_rankTitle {     /* lg */
+    font-size: 290%;
+}}
+@media (min-width: 1440px) {    .font_rankTitle {     /* xl */
+    font-size: 320%;
+}}
+@media (min-width: 1920px) {    .font_rankTitle {     /* xxl  */
+    font-size: 350%;
+}}
+
+.format_leaders {
+    border: 1px solid black;
+    color: purple;
+}
+
+table.dataTable tbody td {
+    padding: 0px;
+}
+
+/***/
+
+.image_trophy {
+    margin-top: 20px;
+    width: 60%;
+}
+@media (min-width: 768px) {     .image_trophy {     /* sm  */
+    width: 120%;
+}}
+@media (min-width: 992px) {     .image_trophy {     /* md */
+    width: 100%;
+}}
+@media (min-width: 1200px) {    .image_trophy {     /* lg */
+    width: 100%;
+}}
+@media (min-width: 1440px) {    .image_trophy {     /* xl */
+    width: 100%;
+}}
+@media (min-width: 1920px) {    .image_trophy {     /* xxl  */
+    width: 90%;
+}}
+
+/***/
+
+.font_playFree {
+    font-family: 'AgencyFB', 'AgencyFB_IE';
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #00e600;     /* limegreen */
+    line-height: 1;
+    font-size: 400%;
+}
+@media (min-width: 768px) {     .font_playFree {     /* sm  */
+    font-size: 250%;
+}}
+@media (min-width: 992px) {     .font_playFree {     /* md */
+    font-size: 300%;
+}}
+@media (min-width: 1200px) {    .font_playFree {     /* lg */
+    font-size: 370%;
+}}
+@media (min-width: 1440px) {    .font_playFree {     /* xl */
+    font-size: 430%;
+}}
+@media (min-width: 1920px) {    .font_playFree {     /* xxl  */
+    font-size: 450%;
+}}
+
+
+.landing_manage {
+    display: inline-block;
+    width: auto;
+    min-width: 220px;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 4px 8px;
+    background: #914383;
+    text-align: center;
+    cursor: pointer;
+}
+@media (min-width: 768px) {     .landing_manage {     /* sm  */
+    min-width: 90px;
+}}
+@media (min-width: 992px) {     .landing_manage {     /* md */
+    min-width: 120px;
+}}
+@media (min-width: 1200px) {    .landing_manage {     /* lg */
+    min-width: 170px;
+}}
+@media (min-width: 1440px) {    .landing_manage {     /* xl */
+    min-width: 210px;
+}}
+@media (min-width: 1920px) {    .landing_manage {     /* xxl  */
+    min-width: 220px;
+}}
+
+.landing_link {
+    background: #56853d !important;
+    padding: 8px 10px !important;
+}
+
+.font_manageLnd {
+    padding: 6px 0px;
+    font-family: 'AgencyFB', 'AgencyFB_IE';
+    font-variant: small-caps;
+    font-weight: bold;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    line-height: 1;
+    font-size: 260%;
+}
+@media (min-width: 768px) {     .font_manageLnd {     /* sm  */
+    font-size: 150%;
+}}
+@media (min-width: 992px) {     .font_manageLnd {     /* md */
+    font-size: 200%;
+}}
+@media (min-width: 1200px) {    .font_manageLnd {     /* lg */
+    font-size: 220%;
+}}
+@media (min-width: 1440px) {    .font_manageLnd {     /* xl */
+    font-size: 250%;
+}}
+@media (min-width: 1920px) {    .font_manageLnd {     /* xxl  */
+    font-size: 260%;
+}}
+
+/***/
+
+.logo_format {
+    margin-top: 10px;
+    text-align: center;
+}
+@media (min-width: 768px) {     .logo_format {     /* sm  */
+    margin-top: 10px;
+}}
+@media (min-width: 992px) {     .logo_format {     /* md */
+    margin-top: 20px;
+}}
+@media (min-width: 1200px) {    .logo_format {     /* lg */
+    margin-top: 25px;
+}}
+@media (min-width: 1440px) {    .logo_format {     /* xl */
+    margin-top: 100px;
+}}
+@media (min-width: 1920px) {    .logo_format {     /* xxl  */
+    margin-top: 90px;
+}}
+
+.landing_logo {
+    display: inline;
+    margin: 0px 15px;
+    max-width: 40px;
+    max-height: 40px;
+}
+@media (min-width: 768px) {     .landing_logo {     /* sm  */
+    margin: 0px 12px;
+    max-width: 40px;
+    max-height: 40px;
+}}
+@media (min-width: 992px) {     .landing_logo {     /* md */
+    margin: 0px 15px;
+    max-width: 50px;
+    max-height: 50px;
+}}
+@media (min-width: 1200px) {    .landing_logo {     /* lg */
+    margin: 0px 30px;
+    max-width: 55px;
+    max-height: 55px;
+}}
+@media (min-width: 1440px) {    .landing_logo {     /* xl */
+    margin: 0px 6px;
+    max-width: 55px;
+    max-height: 55px;
+}}
+@media (min-width: 1920px) {    .landing_logo {     /* xxl  */
+    margin: 0px 15px;
+    max-width: 60px;
+    max-height: 60px;
+}}
+
+
+</style>
+
+
+<div id="top_row" class="row">
+    
+    <div class="col-xs-12 col-md-4">
+        <div class="format_slogan" style="display: block; text-align: center; paddi ng-top: 60px;">
+            <!--
+            <img class="slogan_image" src="/static/graphics/landing_slogan1.png"/>
+            -->
+            <span class="font_slogan">
+                Lige Ma competition kicks off on July 23rd!
+            </span>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-md-4">
+        <div class="format_center" style="padd ing: 20px 0px 20px 0px; ">
+            <img class="image_title" src="/static/graphics/landing_title.png"/>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-md-4">
+        <div class="format_slogan">
+            <img class="slogan_image" style="padding-bottom: 10px;" src="/static/graphics/landing_slogan2.png"/> <br>
+            <img class="slogan_image" src="/static/graphics/landing_slogan3.png"/>
+        </div>
+    </div>
+    
+</div>
+
+
+<div id="trophy_row" class="row" style="display: table;">
+    
+    <div class="col-xs-12 col-sm-4 format_extCol" style="paddin g: 0px 0px 0px 20px;">
+        <div class="display_table" style="margin: 0px auto;">
+            <div class="display_row" >
+                <div class="display_cellM" style="padding-bo ttom: 4px;">
+                    <span class="font_rankTitle">Current Leaders</span>
+                </div>
+            </div>
+            <div class="display_row">
+                <div class="display_cellM" >
+                    <table id="topRanks_table" class="row-border format_leaders"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-4 format_extCol">
+        <div class="format_center" style="padding-top: 5%;">
+            <img class="image_trophy" src="/static/graphics/landing_trophy.png"/>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-4 format_extCol">
+        <div class="format_center" style="margin-bottom: 30px;">
+            <span class="font_playFree">Play For Free</span>
+        </div>
+        
+        <div id="player_ad" class="format_center" style="margin-bottom: 20px;">
+            <span class="landing_manage font_manageLnd"> </span>
+        </div>
+        <div id="signupLnd_link" class="format_center" style="margin-bottom: 20px;">
+            <span class="landing_manage font_manageLnd">Sign Up</span>
+        </div>
+        <div id="loginLnd_link" class="format_center" style="margin-bottom: 20px;">
+            <span class="landing_manage font_manageLnd">Log In</span>
+        </div>
+        
+        <br> <br>
+        <div id="howTo_link" class="format_center" style="margin-bottom: 20px;">
+            <span class="landing_manage landing_link font_manageLnd">How To Play</span>
+        </div>
+    </div>
+    
+</div>
+
+
+<div id="logos_row" class="row">
+    
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+        <div class="logo_format">
+            <div style="display: inline;">
+                <img class="landing_logo" src="{{ logos.0 }}" />
+            </div>
+            <div style="display: inline;">
+                <img class="landing_logo" src="{{ logos.1 }}" />
+            </div>
+            <div style="display: inline;">
+                <img class="landing_logo" src="{{ logos.2 }}" />
+            </div>
+            <div style="display: inline;">
+                <img class="landing_logo" src="{{ logos.3 }}" />
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+        <div class="logo_format">
+            <div style="display: inline;">
+                <img class="landing_logo" src="{{ logos.4 }}" />
+            </div>
+            <div style="display: inline;">
+                <img class="landing_logo" src="{{ logos.5 }}" />
+            </div>
+            <div style="display: inline;">
+                <img class="landing_logo" src="{{ logos.6 }}" />
+            </div>
+            <div style="display: inline;">
+                <img class="landing_logo" src="{{ logos.7 }}" />
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+        <div class="logo_format">
+            <div style="display: inline;">
+                <img class="landing_logo" src="{{ logos.8 }}" />
+            </div>
+            <div style="display: inline;">
+                <img class="landing_logo" src="{{ logos.9 }}" />
+            </div>
+            <div style="display: inline;">
+                <img class="landing_logo" src="{{ logos.10 }}" />
+            </div>
+            <div style="display: inline;">
+                <img class="landing_logo" src="{{ logos.11 }}" />
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+        <div class="logo_format">
+            <div style="display: inline;">
+                <img class="landing_logo" src="{{ logos.12 }}" />
+            </div>
+            <div style="display: inline;">
+                <img class="landing_logo" src="{{ logos.13 }}" />
+            </div>
+            <div style="display: inline;">
+                <img class="landing_logo" src="{{ logos.14 }}" />
+            </div>
+            <div style="display: inline;">
+                <img class="landing_logo" src="{{ logos.15 }}" />
+            </div>
+        </div>
+        </div>
+    </div>
+    
+</div>
+
+<script>
+
+$(document).ready(function()
+{   
+    $("body").css("cursor", "wait");
+    
+    $('#menu_currency').hide();
+    $('#logo_area').hide();
+    
+    
+    var jData = $.parseJSON('{{ topRanks | escapejs }}');        
+        
+    if (typeof(jData) == 'string')
+        $('#topRanks_table').text(jData);
+    else if ($(window).width() > 992)
+        SetDeluxeTopRanks('#topRanks_table', jData);
+    else
+        SetDeluxeTopRanksDim('#topRanks_table', jData);
+    
+    
+    {% if user.is_authenticated %}
+    
+    $('#player_ad span:first-child').text("{{ user }}");
+    $('#signupLnd_link').hide();
+    $('#loginLnd_link').hide();
+    
+    {% else %}
+    
+    $('#player_ad').hide();
+    $('#signupLnd_link').children().first().click(function() { LinkClickHandler("signup"); });
+    $('#loginLnd_link').children().first().click(function() { LinkClickHandler("login"); });
+    
+    {% endif %}
+    
+    $('#howTo_link').children().first().click(function() { window.location.href = '{% url "prediction:univ_rules" %}'; });
+    
+    // play the sound effect
+    
+    if (GetRandomInt(1, 2) >= 2)
+    {
+        var audio = new Audio('/static/soundfx/landing_intro.wav');
+        $(audio).prop("volume", 0.5);
+        setTimeout(function() { audio.play(); }, 1000);
+    }
+    
+    //
+    $('body').css('cursor', 'default');        
+});
+
+
+
+
+function SetDeluxeTopRanks(p_tableID, p_ranks)
+{       
+    var tableName = p_tableID.substring(1).split("_")[0];    
+    
+    var table = $(p_tableID).DataTable( {
+        data: p_ranks,
+        aoColumns: [
+            {
+                title: "Points",
+                mRender: function (data, type, full) {                    
+                    html = '<div class="font_strong format_fixline format_center">      \
+                                {0} Pnts             \
+                            </div>'.format(full.points);
+                    return html;
+                },
+            },
+            {
+                title: "Icon",
+                mRender: function (data, type, full) {                    
+                    html = '<div class="format_outline" style="height: 50px; width: 50px; margin: auto; background-color: white;    \
+                                        position: relative;" >      \
+                                <img id="{0}_{1}_icon" src="" style="max-height: 100%; max-width: 100%;         \
+                                        position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">        \
+                            </div>'.format(tableName, full.user);
+                    return html;
+                },
+            },
+            {
+                title: "User",
+                sWidth: "1 00%",
+                mRender: function (data, type, full) {
+                    html = '                            \
+                        <div>                           \
+                            <a href="/central/view_profile/{0}" target="_blank" id="{1}_link" class="font_link"     \
+                                style="display: inline-block; margin-bottom: 6px;">{2}</a> <br>                     \
+                        </div>                          \
+                    '.format(full.user, full.user, full.user );
+                    return html;
+                },
+            },
+            {
+                title: "Cup",
+                mRender: function (data, type, full) {                    
+                    html = '                                        \
+                        <div class="format_ou tline" style="height: 55px; width: 55px; margin: auto; background-color: white;   \
+                                    position: relative;">          \
+                            <img src="/static/graphics/landing_cup{0}.png" style="max-height: 100%; max-width: 100%;                         \
+                                    position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">                   \
+                        </div>                                      \
+                    '.format(full.rank);
+                    return html;
+                }, 
+            }, 
+        ], 
+        bSort: false,
+        scrollCollapse: true,
+        paging: false,
+        bFilter: false,
+        bInfo: false,
+        bDestroy: true,
+        pageLength: 10,
+        bLengthChange: false,
+        "autoWidth": false,     // fit to smallest width possible
+        fnRowCallback: function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
+            
+        },
+        fnDrawCallback: function() {
+            // remove headers
+            $(p_tableID + ' thead').remove();
+        },
+        initComplete: function() {
+            PostDraw();
+        }
+    } );
+    
+    // when the page changes, the table is redrawn - the images and tooltips must be redrawn also
+    
+    $(p_tableID).on( 'draw.dt', function () {
+        PostDraw();
+    } );
+    
+    function PostDraw()
+    {        
+        $.each(p_ranks, function(idx, rnk) {
+            
+            var path = (rnk.icon && rnk.icon != 'None' ?
+                        "/static/user_icons/" + rnk.icon :
+                        "/static/icons_source/anonymous.png");
+            $('#{0}_{1}_icon'.format(tableName, rnk.user)).attr("src", path);
+            
+            var path = (rnk.favClub && rnk.favClub != 'None' ?
+                        "/static/club_images/" + FormatFileName(rnk.favClub) + " logo.jpg" :
+                        "/static/club_images/_club logo.png");
+            $('#{0}_{1}_favClub'.format(tableName, rnk.user)).attr("src", path);
+            
+            CreateTooltip('#' + rnk.user + '_link', "View Profile");
+            
+            if (rnk.favClub && rnk.favClub != 'None')
+                CreateTooltip('#' + rnk.user + '_favClub', rnk.favClub);
+        });
+    }
+    
+}
+
+
+
+function SetDeluxeTopRanksDim(p_tableID, p_ranks)
+{       
+    var tableName = p_tableID.substring(1).split("_")[0];    
+    
+    var table = $(p_tableID).DataTable( {
+        data: p_ranks,
+        aoColumns: [
+            {
+                title: "User",
+                sWidth: "100%",
+                mRender: function (data, type, full) {
+                    html = '                            \
+                        <div>                           \
+                            <a href="/central/view_profile/{0}" target="_blank" id="{1}_link" class="font_link"     \
+                                style="display: inline-block; margin-bottom: 6px;">{2}</a> <br>                     \
+                        </div>                          \
+                    '.format(full.user, full.user, full.user );
+                    return html;
+                },
+            },
+            {
+                title: "Cup",
+                mRender: function (data, type, full) {                    
+                    html = '                                        \
+                        <div class="format_ou tline" style="height: 55px; width: 55px; margin: auto; background-color: white;   \
+                                    position: relative;">          \
+                            <img src="/static/graphics/landing_cup{0}.png" style="max-height: 100%; max-width: 100%;                         \
+                                    position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">                   \
+                        </div>                                      \
+                    '.format(full.rank);
+                    return html;
+                }, 
+            },             
+        ], 
+        bSort: false,
+        scrollCollapse: true,
+        paging: false,
+        bFilter: false,
+        bInfo: false,
+        bDestroy: true,
+        pageLength: 10,
+        bLengthChange: false,
+        fnRowCallback: function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
+            
+        },
+        fnDrawCallback: function() {
+            // remove headers
+            $(p_tableID + ' thead').remove();
+        },
+        initComplete: function() {
+            PostDraw();
+        }
+    } );
+    
+    // when the page changes, the table is redrawn - the images and tooltips must be redrawn also
+    
+    $(p_tableID).on( 'draw.dt', function () {
+        PostDraw();
+    } );
+    
+    function PostDraw()
+    {        
+        $.each(p_ranks, function(idx, rnk) {
+            
+            CreateTooltip('#' + rnk.user + '_link', "View Profile");
+            
+        });
+    }
+    
+}
+
+
+
+
+
+</script>
+
+
+{% endblock content %}
+
+
+
+
+

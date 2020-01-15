@@ -1,0 +1,47 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2016,06,Mashin Sazi TBZ,Game Half1 Start,00:00:00,,,,
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Bahman,Kamel,Defender
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Habib,Gordani,Defender
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Henrique,Edson Da Silva,Defender
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Mahdi,Ghorayshi,Defender
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Amin,Ghaseminejad,Forward
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Saman,Nariman Jahan,Forward
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Manuel Fernandez,Muniz,Goalkeeper
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Abdolreza,Zarei,Midfield
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Andranik,Taymorian,Midfield
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Hamed,Pakdel,Midfield
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Payam,Sadeghian,Midfield
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Sajjad,Rahbar,Midfield
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Sepahan ESF,Ali,Helichi,Defender
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Sepahan ESF,Armin,Sohrabian,Defender
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Sepahan ESF,Mousa Salif,Coulibaly,Defender
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Sepahan ESF,Jallaledin,Alimohamadi,Forward
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Sepahan ESF,Lee,Oliviera,Goalkeeper
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Sepahan ESF,Ehsan,Haajsafi,Midfield
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Sepahan ESF,Hamed,Bahiraei,Midfield
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Sepahan ESF,Mehrdad,Mohamadi,Midfield
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Sepahan ESF,Milad,Sarlak,Midfield
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Sepahan ESF,Moharam,Navidkia,Midfield
+IPL2016,06,Mashin Sazi TBZ,Player in Line-up,00:00:00,Sepahan ESF,Reza,Mirzaei,Midfield
+IPL2016,06,Mashin Sazi TBZ,Card: Yellow,00:01:00,Mashin Sazi TBZ,Mahdi,Ghorayshi,Defender
+IPL2016,06,Mashin Sazi TBZ,Card: Yellow,00:01:00,Mashin Sazi TBZ,Amin,Ghaseminejad,Forward
+IPL2016,06,Mashin Sazi TBZ,Card: Yellow,00:01:00,Mashin Sazi TBZ,Andranik,Taymorian,Midfield
+IPL2016,06,Mashin Sazi TBZ,Card: Yellow,00:01:00,Sepahan ESF,Armin,Sohrabian,Defender
+IPL2016,06,Mashin Sazi TBZ,Card: Yellow,00:01:00,Sepahan ESF,Jallaledin,Alimohamadi,Forward
+IPL2016,06,Mashin Sazi TBZ,Goal,00:22:00,Sepahan ESF,Reza,Mirzaei,Midfield
+IPL2016,06,Mashin Sazi TBZ,Game Half1 Stop,00:46:00,,,,
+IPL2016,06,Mashin Sazi TBZ,Player Sub-in,00:46:00,Mashin Sazi TBZ,Mehrdad,Bayrami,Forward
+IPL2016,06,Mashin Sazi TBZ,Player Sub-in,00:46:00,Mashin Sazi TBZ,Abdolreza,Zarei,Midfield
+IPL2016,06,Mashin Sazi TBZ,Player Sub-out,00:46:00,Mashin Sazi TBZ,Habib,Gordani,Defender
+IPL2016,06,Mashin Sazi TBZ,Player Sub-out,00:46:00,Mashin Sazi TBZ,Sajjad,Rahbar,Midfield
+IPL2016,06,Mashin Sazi TBZ,Game Half2 Start,00:47:00,,,,
+IPL2016,06,Mashin Sazi TBZ,Player Sub-in,00:59:00,Sepahan ESF,Farid,Behzadi Karimi,Forward
+IPL2016,06,Mashin Sazi TBZ,Player Sub-out,00:59:00,Sepahan ESF,Mehrdad,Mohamadi,Midfield
+IPL2016,06,Mashin Sazi TBZ,Player Sub-in,01:03:00,Sepahan ESF,Hossain,Papi,Midfield
+IPL2016,06,Mashin Sazi TBZ,Player Sub-out,01:03:00,Sepahan ESF,Reza,Mirzaei,Midfield
+IPL2016,06,Mashin Sazi TBZ,Player Sub-in,01:10:00,Sepahan ESF,Taleb,Raykani,Midfield
+IPL2016,06,Mashin Sazi TBZ,Player Sub-out,01:10:00,Sepahan ESF,Moharam,Navidkia,Midfield
+IPL2016,06,Mashin Sazi TBZ,Player Sub-in,01:12:00,Mashin Sazi TBZ,Mohamad,Nosrati,Defender
+IPL2016,06,Mashin Sazi TBZ,Player Sub-out,01:12:00,Mashin Sazi TBZ,Abdolreza,Zarei,Midfield
+IPL2016,06,Mashin Sazi TBZ,Game Half2 Stop,01:39:00,,,,
+IPL2016,06,Mashin Sazi TBZ,Game End,01:40:00,,,,

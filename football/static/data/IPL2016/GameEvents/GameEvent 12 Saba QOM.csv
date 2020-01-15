@@ -1,0 +1,44 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2016,12,Saba QOM,Game Half1 Start,00:00:00,,,,
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Esteghlal TEH,Hrayr,Mkoyan,Defender
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Esteghlal TEH,Januario de Paula,Robson,Defender
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Esteghlal TEH,Leandro,Padovani,Defender
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Esteghlal TEH,Ali,Ghorbani,Forward
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Esteghlal TEH,Kaveh,Rezaei,Forward
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Esteghlal TEH,Seyed Mahdi,Rahmati,Goalkeeper
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Esteghlal TEH,Amir Hossain,Karimi,Midfield
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Esteghlal TEH,Bakhtiar,Rahmani,Midfield
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Esteghlal TEH,Jaber,Ansari,Midfield
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Esteghlal TEH,Omid,Ebrahimi,Midfield
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Hamid Reza,Deevsalar,Defender
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Masoud,Hahgjoo,Defender
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Pooya,Safepanahi,Defender
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Gholamreza,Enayati,Forward
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Kayvon,Amraei,Forward
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Hamed,Lak,Goalkeeper
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Ahmad,Hassan Zadeh,Midfield
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Ghasem,Dehnavi,Midfield
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Mehran,Amiri,Midfield
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Milad,Abtahi,Midfield
+IPL2016,12,Saba QOM,Player in Line-up,00:00:00,Saba QOM,Seyed Ali,Fatemi,Midfield
+IPL2016,12,Saba QOM,Card: Red,00:01:00,Saba QOM,Hamid Reza,Deevsalar,Defender
+IPL2016,12,Saba QOM,Card: Yellow,00:01:00,Esteghlal TEH,Yaghoub,Karimi,Midfield
+IPL2016,12,Saba QOM,Card: Yellow,00:01:00,Saba QOM,Masoud,Hahgjoo,Defender
+IPL2016,12,Saba QOM,Card: Yellow,00:01:00,Saba QOM,Gholamreza,Enayati,Forward
+IPL2016,12,Saba QOM,Card: Yellow,00:01:00,Saba QOM,Ghasem,Dehnavi,Midfield
+IPL2016,12,Saba QOM,Goal,00:18:00,Esteghlal TEH,Kaveh,Rezaei,Forward
+IPL2016,12,Saba QOM,Game Half1 Stop,00:46:00,,,,
+IPL2016,12,Saba QOM,Game Half2 Start,00:47:00,,,,
+IPL2016,12,Saba QOM,Player Sub-in,00:59:00,Saba QOM,Vahid,Aliabadi,Midfield
+IPL2016,12,Saba QOM,Player Sub-out,00:59:00,Saba QOM,Milad,Abtahi,Midfield
+IPL2016,12,Saba QOM,Player Sub-in,01:00:00,Esteghlal TEH,Khosrow,Haydari,Midfield
+IPL2016,12,Saba QOM,Player Sub-out,01:00:00,Esteghlal TEH,Amir Hossain,Karimi,Midfield
+IPL2016,12,Saba QOM,Goal,01:08:00,Esteghlal TEH,Ali,Ghorbani,Forward
+IPL2016,12,Saba QOM,Player Sub-in,01:10:00,Saba QOM,Omid,Jahanbakhshi,Midfield
+IPL2016,12,Saba QOM,Player Sub-out,01:10:00,Saba QOM,Seyed Ali,Fatemi,Midfield
+IPL2016,12,Saba QOM,Player Sub-in,01:13:00,Saba QOM,Mohamad,Baouj Rezaei,Midfield
+IPL2016,12,Saba QOM,Player Sub-out,01:13:00,Saba QOM,Kayvon,Amraei,Forward
+IPL2016,12,Saba QOM,Player Sub-in,01:25:00,Esteghlal TEH,Mojtaba,Haghdoost,Forward
+IPL2016,12,Saba QOM,Player Sub-out,01:25:00,Esteghlal TEH,Ali,Ghorbani,Forward
+IPL2016,12,Saba QOM,Game Half2 Stop,01:39:00,,,,
+IPL2016,12,Saba QOM,Game End,01:40:00,,,,

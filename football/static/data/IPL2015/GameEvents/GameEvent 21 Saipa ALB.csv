@@ -1,0 +1,45 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2015,21,Saipa ALB,Game Half1 Start,00:00:00,,,,
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Perspolis TEH,Luca,Maric,Defender
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Perspolis TEH,Mohsen,Bengar,Defender
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Perspolis TEH,Ramin,Rezaeian,Defender
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Perspolis TEH,Ali,Alipour,Forward
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Perspolis TEH,Farshad,Ahmadzadeh,Forward
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Perspolis TEH,Aleksandr,Lobanov,Goalkeeper
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Perspolis TEH,Ahmad,Nooroullahi,Midfield
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Perspolis TEH,Kamal,Kamyabinia,Midfield
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Perspolis TEH,Mohamad,Ansari,Midfield
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Perspolis TEH,Mohsen,Mosalman,Midfield
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Perspolis TEH,Omid,Allishah,Midfield
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ali,Zaynali,Defender
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ebrahim,Shakoori,Defender
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Hamed,Shiri,Defender
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Mahdi,Torabi,Defender
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Majid,Ayoubi,Defender
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Gholamreza,Rezaei,Forward
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Hamed,Fallahzadeh,Goalkeeper
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Andranik,Taymourian,Midfield
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ebrahim,Sadeghi,Midfield
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2015,21,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Roozbeh,Shah Alidoost,Midfield
+IPL2015,21,Saipa ALB,Card: Red,00:01:00,Perspolis TEH,Jerry,Bengston,Forward
+IPL2015,21,Saipa ALB,Card: Yellow,00:01:00,Perspolis TEH,Jerry,Bengston,Forward
+IPL2015,21,Saipa ALB,Card: Yellow,00:01:00,Saipa ALB,Majid,Ayoubi,Defender
+IPL2015,21,Saipa ALB,Goal,00:10:00,Perspolis TEH,Ahmad,Nooroullahi,Midfield
+IPL2015,21,Saipa ALB,Game Half1 Stop,00:46:00,,,,
+IPL2015,21,Saipa ALB,Game Half2 Start,00:47:00,,,,
+IPL2015,21,Saipa ALB,Player Sub-in,00:58:00,Saipa ALB,Mehdi,Daghagheleh,Forward
+IPL2015,21,Saipa ALB,Player Sub-out,00:58:00,Saipa ALB,Gholamreza,Rezaei,Forward
+IPL2015,21,Saipa ALB,Player Sub-in,01:04:00,Perspolis TEH,Jerry,Bengston,Forward
+IPL2015,21,Saipa ALB,Player Sub-out,01:04:00,Perspolis TEH,Farshad,Ahmadzadeh,Forward
+IPL2015,21,Saipa ALB,Player Sub-in,01:17:00,Saipa ALB,Mohamad,Soltani,Midfield
+IPL2015,21,Saipa ALB,Player Sub-out,01:17:00,Saipa ALB,Ali,Zaynali,Defender
+IPL2015,21,Saipa ALB,Player Sub-in,01:21:00,Perspolis TEH,Babak,Hatami,Forward
+IPL2015,21,Saipa ALB,Player Sub-out,01:21:00,Perspolis TEH,Mohsen,Mosalman,Midfield
+IPL2015,21,Saipa ALB,Player Sub-in,01:27:00,Perspolis TEH,Alireza,Noormohamadi,Defender
+IPL2015,21,Saipa ALB,Player Sub-out,01:27:00,Perspolis TEH,Omid,Allishah,Midfield
+IPL2015,21,Saipa ALB,Player Sub-in,01:29:00,Saipa ALB,Mojtaba,Ramezani,Midfield
+IPL2015,21,Saipa ALB,Player Sub-out,01:29:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2015,21,Saipa ALB,Goal,01:31:00,Saipa ALB,Mehdi,Daghagheleh,Forward
+IPL2015,21,Saipa ALB,Game Half2 Stop,01:39:00,,,,
+IPL2015,21,Saipa ALB,Game End,01:40:00,,,,

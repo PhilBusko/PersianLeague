@@ -1,0 +1,49 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2015,14,Saipa ALB,Game Half1 Start,00:00:00,,,,
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Esteghlal AHV,Maki,Sharifi,Defender
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Esteghlal AHV,Ali,Helichi,Forward
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Esteghlal AHV,Mohamad,Gholami,Forward
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Esteghlal AHV,Reza,Bahmaei,Forward
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Esteghlal AHV,Taleb,Reekani,Forward
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Esteghlal AHV,Parviz,Karimi,Goalkeeper
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Esteghlal AHV,Adel,Kolahkaj,Midfield
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Esteghlal AHV,Farzad,Ashobi,Midfield
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Esteghlal AHV,Hossain,Bahrami,Midfield
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Esteghlal AHV,Mohamad Esmaeel,Nazari,Midfield
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Esteghlal AHV,Shahin,Majidi,Midfield
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ali,Zaynali,Defender
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ebrahim,Shakoori,Defender
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Mahdi,Torabi,Defender
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Majid,Ayoubi,Defender
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Sajjad,Moshkelpour,Defender
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Gholamreza,Rezaei,Forward
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ratko,Dujkovic,Goalkeeper
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ebrahim,Sadeghi,Midfield
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Javad,Nekonam,Midfield
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2015,14,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Roozbeh,Shah Alidoost,Midfield
+IPL2015,14,Saipa ALB,Card: Red,00:01:00,Saipa ALB,Sajjad,Moshkelpour,Defender
+IPL2015,14,Saipa ALB,Card: Yellow,00:01:00,Saipa ALB,Sajjad,Moshkelpour,Defender
+IPL2015,14,Saipa ALB,Card: Yellow,00:01:00,Saipa ALB,Ratko,Dujkovic,Goalkeeper
+IPL2015,14,Saipa ALB,Card: Yellow,00:01:00,Saipa ALB,Roozbeh,Shah Alidoost,Midfield
+IPL2015,14,Saipa ALB,Goal,00:26:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2015,14,Saipa ALB,Goal,00:31:00,Saipa ALB,Sajjad,Moshkelpour,Defender
+IPL2015,14,Saipa ALB,Goal,00:34:00,Saipa ALB,Javad,Nekonam,Midfield
+IPL2015,14,Saipa ALB,Player Sub-in,00:40:00,Esteghlal AHV,Hossain,Saaki,Midfield
+IPL2015,14,Saipa ALB,Player Sub-out,00:40:00,Esteghlal AHV,Reza,Bahmaei,Forward
+IPL2015,14,Saipa ALB,Goal,00:41:00,Saipa ALB,Ali,Zaynali,Defender
+IPL2015,14,Saipa ALB,Game Half1 Stop,00:46:00,,,,
+IPL2015,14,Saipa ALB,Player Sub-in,00:46:00,Esteghlal AHV,Luiz,Fernando,Goalkeeper
+IPL2015,14,Saipa ALB,Player Sub-out,00:46:00,Esteghlal AHV,Parviz,Karimi,Goalkeeper
+IPL2015,14,Saipa ALB,Game Half2 Start,00:47:00,,,,
+IPL2015,14,Saipa ALB,Player Sub-in,01:10:00,Saipa ALB,Vahid,Mohamad Zadeh,Defender
+IPL2015,14,Saipa ALB,Player Sub-out,01:10:00,Saipa ALB,Gholamreza,Rezaei,Forward
+IPL2015,14,Saipa ALB,Penalty Scored,01:18:00,Esteghlal AHV,Mohamad,Gholami,Forward
+IPL2015,14,Saipa ALB,Player Sub-in,01:19:00,Saipa ALB,Mohamad,Alinejad,Forward
+IPL2015,14,Saipa ALB,Player Sub-out,01:19:00,Saipa ALB,Mahdi,Torabi,Defender
+IPL2015,14,Saipa ALB,Player Sub-in,01:23:00,Saipa ALB,Mahan,Rahmani,Midfield
+IPL2015,14,Saipa ALB,Player Sub-out,01:23:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2015,14,Saipa ALB,Player Sub-in,01:24:00,Esteghlal AHV,Mehdi,Eslami,Goalkeeper
+IPL2015,14,Saipa ALB,Player Sub-out,01:24:00,Esteghlal AHV,Hossain,Bahrami,Midfield
+IPL2015,14,Saipa ALB,Game Half2 Stop,01:39:00,,,,
+IPL2015,14,Saipa ALB,Game End,01:40:00,,,,

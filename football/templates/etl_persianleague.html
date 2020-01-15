@@ -1,0 +1,110 @@
+
+{% extends "common_base.html" %}
+{% load utility_ttags %}
+
+{% block content %}
+
+
+<div class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_admin">
+            <span class="font_title">ETL Persian League</span>
+        </div>
+    </div>
+    <div class="col-xs-12">
+        <hr class="format_separator">
+    </div>            
+</div>
+
+
+<div class="row">
+    
+    <div class="col-xs-12">
+        <div class="inner_margin1 frame_admin">
+            <span class="font_section">Live Fixtures</span>
+        </div>
+    </div>
+    
+    <div class="col-sm-12">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_inputText "url" "URL" True %}
+            {% ctrl_button "import" "Web Import" %}        
+        </div>
+    </div>
+    
+    <div class="col-xs-12">
+        <div style="display: none;">{% ctrl_status "liveFixtures" %}</div>
+        <hr class="format_separator">
+    </div>
+    
+</div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+var USER = "{{ user }}";
+
+$(document).ready(function()
+{      
+    $('body').css('cursor', 'wait');
+    
+    //$('#url_text').val("http://www.persianleague.com/index.php/matchdate?id=39&id2=39&displayresults=yes&badges_ondisplay=yes&venue_id=7");
+    
+    $("#import_button").click(function() {
+        ImportFixture();
+    });
+    
+    
+    
+    
+    
+    
+    $("body").css("cursor", "default");
+});
+
+
+function DisableForm()
+{
+    $("#_select").prop("disabled", true);
+    $("body").css("cursor", "wait");
+}
+
+function EnableForm()
+{
+    $("#_select").prop("disabled", false);
+    $("body").css("cursor", "default");    
+}
+
+function ImportFixture()
+{    
+    $("body").css("cursor", "wait");
+    var url = $("#url_text").val();
+    $("#liveFixtures_status").html(null);
+    
+    $.ajax({
+        type: 'POST',
+        url: '/football/persianleague/import_fixture/',
+        data: {'url': url,},
+        success: function(p_data) {     cl(p_data);
+            
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "ImportFixture()", '#liveFixtures_status');
+        },
+        complete: function() {
+            $("body").css("cursor", "default");
+        }
+    });
+}
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+

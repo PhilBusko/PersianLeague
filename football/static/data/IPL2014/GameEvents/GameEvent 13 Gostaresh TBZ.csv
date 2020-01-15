@@ -1,0 +1,46 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,13,Gostaresh TBZ,Game Half1 Start,00:00:00,,,,
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Mahmoud,Khamisi,Defender
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Morteza,Asadi,Defender
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Mehrdad,Bayrami,Forward
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Rodrigo,Lopez Odriozola,Goalkeeper
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Alireza,Latifi,Midfield
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Alireza,Naghizadeh,Midfield
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Jaber,Ansari,Midfield
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Magno,Batista Da Silva,Midfield
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Milad,Jahani,Midfield
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Omid,Nezamipour,Midfield
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Ditmar,Bicaj,Defender
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Habib,Gordani,Defender
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mir Hani,Hashemi,Defender
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad,Iran Pourian,Defender
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Farshad,Ahmadzadeh,Forward
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Luciano,Edinho,Forward
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mohsen,Daleer,Forward
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Shahin,Saghebi,Forward
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Hamed,Lak,Goalkeeper
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mahdi,Kiani,Midfield
+IPL2014,13,Gostaresh TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Shahryar,Shirvand,Midfield
+IPL2014,13,Gostaresh TBZ,Card: Yellow,00:01:00,Gostaresh TBZ,Alireza,Naghizadeh,Midfield
+IPL2014,13,Gostaresh TBZ,Card: Yellow,00:01:00,Teraktor TBZ,Ditmar,Bicaj,Defender
+IPL2014,13,Gostaresh TBZ,Card: Yellow,00:01:00,Teraktor TBZ,Mahdi,Kiani,Midfield
+IPL2014,13,Gostaresh TBZ,Goal,00:07:00,Teraktor TBZ,Farshad,Ahmadzadeh,Forward
+IPL2014,13,Gostaresh TBZ,Goal,00:14:00,Teraktor TBZ,Luciano,Edinho,Forward
+IPL2014,13,Gostaresh TBZ,Goal,00:27:00,Gostaresh TBZ,Jaber,Ansari,Midfield
+IPL2014,13,Gostaresh TBZ,Game Half1 Stop,00:46:00,,,,
+IPL2014,13,Gostaresh TBZ,Player Sub-in,00:46:00,Teraktor TBZ,Saman,Nariman Jahan,Midfield
+IPL2014,13,Gostaresh TBZ,Player Sub-out,00:46:00,Teraktor TBZ,Mohsen,Daleer,Forward
+IPL2014,13,Gostaresh TBZ,Game Half2 Start,00:47:00,,,,
+IPL2014,13,Gostaresh TBZ,Player Sub-in,00:59:00,Gostaresh TBZ,Yousef,Seyedi,Forward
+IPL2014,13,Gostaresh TBZ,Player Sub-out,00:59:00,Gostaresh TBZ,Alireza,Naghizadeh,Midfield
+IPL2014,13,Gostaresh TBZ,Player Sub-in,01:27:00,Gostaresh TBZ,Rasool,Pirzadeh,Midfield
+IPL2014,13,Gostaresh TBZ,Player Sub-out,01:27:00,Gostaresh TBZ,Mehrdad,Bayrami,Forward
+IPL2014,13,Gostaresh TBZ,Penalty Scored,01:28:00,Teraktor TBZ,Luciano,Edinho,Forward
+IPL2014,13,Gostaresh TBZ,Player Sub-in,01:29:00,Gostaresh TBZ,Hamid Reza,Joekar,Defender
+IPL2014,13,Gostaresh TBZ,Player Sub-in,01:29:00,Teraktor TBZ,Ahmad,Kamdar,Midfield
+IPL2014,13,Gostaresh TBZ,Player Sub-in,01:29:00,Teraktor TBZ,Saeed,Aghaeei,Midfield
+IPL2014,13,Gostaresh TBZ,Player Sub-out,01:29:00,Gostaresh TBZ,Omid,Nezamipour,Midfield
+IPL2014,13,Gostaresh TBZ,Player Sub-out,01:29:00,Teraktor TBZ,Farshad,Ahmadzadeh,Forward
+IPL2014,13,Gostaresh TBZ,Player Sub-out,01:29:00,Teraktor TBZ,Luciano,Edinho,Forward
+IPL2014,13,Gostaresh TBZ,Game Half2 Stop,01:39:00,,,,
+IPL2014,13,Gostaresh TBZ,Game End,01:40:00,,,,

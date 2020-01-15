@@ -1,0 +1,8 @@
+# ignore images in this folder, as they are specific to botusers
+
+*.jpg
+*.png
+*.bmp
+*.gif
+
+

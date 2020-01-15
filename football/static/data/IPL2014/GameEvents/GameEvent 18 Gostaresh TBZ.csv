@@ -1,0 +1,47 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,18,Gostaresh TBZ,Game Half1 Start,00:00:00,,,,
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Morteza,Asadi,Defender
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Mostafa,Ekrami,Defender
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Leonardo,Pimenta,Forward
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Mohamad,Ebrahimi,Forward
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Davood,Nooshi Sofyani,Goalkeeper
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Diogo,de Oliveira,Midfield
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Jaber,Ansari,Midfield
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Magno,Batista Da Silva,Midfield
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Milad,Jahani,Midfield
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Mohamad Amin,Darvish,Midfield
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Seyed Mohsen,Hossaini,Midfield
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Saipa ALB,Ebrahim,Shakoori,Defender
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Saipa ALB,Hamed,Shiri,Defender
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Saipa ALB,Majid,Ayoubi,Defender
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Saipa ALB,Masih,Zahedi,Defender
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Saipa ALB,Vahid,Mohamad Zadeh,Defender
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Saipa ALB,Hakeem,Nassari,Forward
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Saipa ALB,Mohamad Reza,Akhbari,Goalkeeper
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Saipa ALB,Ebrahim,Sadeghi,Midfield
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Saipa ALB,Mojtaba,Ramezani,Midfield
+IPL2014,18,Gostaresh TBZ,Player in Line-up,00:00:00,Saipa ALB,Roozbeh,Shah Alidoost,Midfield
+IPL2014,18,Gostaresh TBZ,Card: Red,00:01:00,Gostaresh TBZ,Mostafa,Ekrami,Defender
+IPL2014,18,Gostaresh TBZ,Card: Yellow,00:01:00,Gostaresh TBZ,Mostafa,Ekrami,Defender
+IPL2014,18,Gostaresh TBZ,Card: Yellow,00:01:00,Gostaresh TBZ,Leonardo,Pimenta,Forward
+IPL2014,18,Gostaresh TBZ,Card: Yellow,00:01:00,Saipa ALB,Hamed,Shiri,Defender
+IPL2014,18,Gostaresh TBZ,Goal,00:04:00,Gostaresh TBZ,Magno,Batista Da Silva,Midfield
+IPL2014,18,Gostaresh TBZ,Goal,00:06:00,Gostaresh TBZ,Leonardo,Pimenta,Forward
+IPL2014,18,Gostaresh TBZ,Goal,00:17:00,Saipa ALB,Vahid,Mohamad Zadeh,Defender
+IPL2014,18,Gostaresh TBZ,Game Half1 Stop,00:46:00,,,,
+IPL2014,18,Gostaresh TBZ,Game Half2 Start,00:47:00,,,,
+IPL2014,18,Gostaresh TBZ,Player Sub-in,00:55:00,Gostaresh TBZ,Yousef,Seyedi,Forward
+IPL2014,18,Gostaresh TBZ,Player Sub-out,00:55:00,Gostaresh TBZ,Milad,Jahani,Midfield
+IPL2014,18,Gostaresh TBZ,Player Sub-in,00:59:00,Saipa ALB,Mahdi,Torabi,Defender
+IPL2014,18,Gostaresh TBZ,Player Sub-out,00:59:00,Saipa ALB,Ebrahim,Sadeghi,Midfield
+IPL2014,18,Gostaresh TBZ,Goal,01:02:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2014,18,Gostaresh TBZ,Player Sub-in,01:26:00,Saipa ALB,Mahan,Rahmani,Midfield
+IPL2014,18,Gostaresh TBZ,Player Sub-out,01:26:00,Saipa ALB,Mojtaba,Ramezani,Midfield
+IPL2014,18,Gostaresh TBZ,Player Sub-in,01:28:00,Gostaresh TBZ,Rasool,Pirzadeh,Midfield
+IPL2014,18,Gostaresh TBZ,Player Sub-out,01:28:00,Gostaresh TBZ,Leonardo,Pimenta,Forward
+IPL2014,18,Gostaresh TBZ,Goal,01:29:00,Saipa ALB,Vahid,Mohamad Zadeh,Defender
+IPL2014,18,Gostaresh TBZ,Player Sub-in,01:29:00,Saipa ALB,Bahman,Salari,Midfield
+IPL2014,18,Gostaresh TBZ,Player Sub-out,01:29:00,Saipa ALB,Hakeem,Nassari,Forward
+IPL2014,18,Gostaresh TBZ,Game Half2 Stop,01:39:00,,,,
+IPL2014,18,Gostaresh TBZ,Game End,01:40:00,,,,

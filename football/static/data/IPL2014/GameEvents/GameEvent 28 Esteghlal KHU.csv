@@ -1,0 +1,47 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,28,Esteghlal KHU,Game Half1 Start,00:00:00,,,,
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Majid,Haydari,Defender
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mohamad,Tayyebi,Defender
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mousa Salif,Coulibaly,Defender
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mehdi,Momeni,Forward
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Rouhollah,Sayfollahi,Forward
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Seyed Mehdi,Seyed Salehi,Forward
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Soumbeila,Diakite,Goalkeeper
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Maysam,Baoo,Midfield
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Maysam,Doraghi,Midfield
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Maysam,Majidi,Midfield
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mohsen,Bayat,Midfield
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Sepahan ESF,Abdollah,Karami,Defender
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Sepahan ESF,Ehsan,Hajsafi,Defender
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Sepahan ESF,Hadi,Aghili,Defender
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Sepahan ESF,Voorya,Ghafoori,Defender
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Sepahan ESF,Luciano Pereira,Mendez,Forward
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Sepahan ESF,Mahdi,Sharifi,Forward
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Sepahan ESF,Shahabeddin,Gordan,Goalkeeper
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Sepahan ESF,Fozil,Musayev,Midfield
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Sepahan ESF,Mohamad Reza,Khalatbari,Midfield
+IPL2014,28,Esteghlal KHU,Player in Line-up,00:00:00,Sepahan ESF,Moharam,Navidkia,Midfield
+IPL2014,28,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Majid,Haydari,Defender
+IPL2014,28,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Maysam,Doraghi,Midfield
+IPL2014,28,Esteghlal KHU,Card: Yellow,00:01:00,Sepahan ESF,Shahabeddin,Gordan,Goalkeeper
+IPL2014,28,Esteghlal KHU,Card: Yellow,00:01:00,Sepahan ESF,Rasool,Navidkia,Midfield
+IPL2014,28,Esteghlal KHU,Goal,00:04:00,Sepahan ESF,Moharam,Navidkia,Midfield
+IPL2014,28,Esteghlal KHU,Game Half1 Stop,00:46:00,,,,
+IPL2014,28,Esteghlal KHU,Player Sub-in,00:46:00,Sepahan ESF,Bahram,Ahmadi,Midfield
+IPL2014,28,Esteghlal KHU,Player Sub-out,00:46:00,Sepahan ESF,Shahabeddin,Gordan,Goalkeeper
+IPL2014,28,Esteghlal KHU,Game Half2 Start,00:47:00,,,,
+IPL2014,28,Esteghlal KHU,Player Sub-in,00:58:00,Sepahan ESF,Hossain,Papi,Midfield
+IPL2014,28,Esteghlal KHU,Player Sub-out,00:58:00,Sepahan ESF,Moharam,Navidkia,Midfield
+IPL2014,28,Esteghlal KHU,Goal,01:03:00,Sepahan ESF,Luciano Pereira,Mendez,Forward
+IPL2014,28,Esteghlal KHU,Player Sub-in,01:07:00,Esteghlal KHU,Abdolhadi,Khanifar,Midfield
+IPL2014,28,Esteghlal KHU,Player Sub-out,01:07:00,Esteghlal KHU,Maysam,Doraghi,Midfield
+IPL2014,28,Esteghlal KHU,Goal,01:10:00,Esteghlal KHU,Mehdi,Momeni,Forward
+IPL2014,28,Esteghlal KHU,Player Sub-in,01:17:00,Esteghlal KHU,Yazdan,Abbasian,Midfield
+IPL2014,28,Esteghlal KHU,Player Sub-out,01:17:00,Esteghlal KHU,Rouhollah,Sayfollahi,Forward
+IPL2014,28,Esteghlal KHU,Player Sub-in,01:21:00,Sepahan ESF,Marcio Henrique,Maia Passos,Midfield
+IPL2014,28,Esteghlal KHU,Player Sub-out,01:21:00,Sepahan ESF,Mahdi,Sharifi,Forward
+IPL2014,28,Esteghlal KHU,Player Sub-in,01:23:00,Esteghlal KHU,Lamine,Diawara,Forward
+IPL2014,28,Esteghlal KHU,Player Sub-out,01:23:00,Esteghlal KHU,Seyed Mehdi,Seyed Salehi,Forward
+IPL2014,28,Esteghlal KHU,Goal,01:30:00,Sepahan ESF,Luciano Pereira,Mendez,Forward
+IPL2014,28,Esteghlal KHU,Game Half2 Stop,01:39:00,,,,
+IPL2014,28,Esteghlal KHU,Game End,01:40:00,,,,

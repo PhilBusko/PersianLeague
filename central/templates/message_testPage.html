@@ -1,0 +1,53 @@
+
+{% load utility_ttags %}
+{% load staticfiles %}
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap: The above 3 meta tags *must* come first in the head -->
+    
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link   href="{% static 'third_party/bootstrap-3.3.7-dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <script src="{% static 'third_party/bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
+    <link   href="{% static 'third_party/bootstrap-extra/navbar-fixed-side.css' %}" rel="stylesheet">
+    <link   href="{% static 'third_party/bootstrap-extra/bootstrap-xl-xxl.css' %}" rel="stylesheet">
+    
+    <script src="{% static 'third_party/DataTables-1.10.10/media/js/jquery.dataTables.min.js' %}"></script>
+    <link   href="{% static 'third_party/DataTables-1.10.10/media/css/jquery.dataTables.min.css' %}" rel="stylesheet" />
+    <script src="{% static 'third_party/jquery-ui-1.11.4/jquery-ui.min.js' %}"></script>
+    <link   href="{% static 'third_party/jquery-ui-1.11.4/jquery-ui.min.css' %}" rel="stylesheet" />
+    <link   href="{% static 'third_party/font-awesome-4.6.3/css/font-awesome.min.css' %}" rel="stylesheet" />
+    <script src="{% static 'third_party/JavascriptToolbox/date.js' %}"></script>
+    
+    <!-- Bootstrap: put custom css after bootstrap.css so custom styles override -->
+    <link   href="{% static 'style.css' %}?{% now 'U' %}" rel="stylesheet" /> 
+    <script src="{% static 'utility.js' %}?{% now 'U' %}"></script>
+    
+    <title>Message Test</title>
+    
+</head>
+
+
+<body>
+    
+        <div class="display_table" style="background: white; width: 30%;"> 
+            <div class="display_cellM " style="border: 2px solid black;">
+                <div class="display_block outer_padding2">
+                    <span id="body_normal">
+                        
+                        {% include "message_puRankRewards.html" %}
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+</body>
+
+
+
+
+
+

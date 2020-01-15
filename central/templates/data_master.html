@@ -1,0 +1,991 @@
+
+{% extends "common_base.html" %}
+{% load utility_ttags %}
+
+{% block content %}
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_admin">
+            <span class="font_title">Data Master</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="csv_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_admin" style="margin-right: 0px;">
+                        <span class="font_section">Football Tables</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_admin format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "csv" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_strong "mss" "Master Season" %}  <br> 
+            {% ctrl_select "expSeason" "Season" %} 
+            <hr class="format_separator">
+            
+            {% ctrl_strong "ftt" "CSV Backups" %}  <br> <br>
+            <div class="display_table format_full">
+                <div class="display_cellM format_center" style="width: 50%;">
+                    {% ctrl_button "expSeason" "Export Season" %} 
+                </div>
+                <div class="display_cellM format_center" >
+                    {% ctrl_button "impSeason" "Import Season" %}  
+                </div>
+            </div>
+            <br>
+            <hr class="format_separator">
+            
+            {% ctrl_strong "dlt" "Delete Tables" %}  <br> <br>
+            <div class="display_table format_full">
+                <div class="display_cellM format_center" style="width: 50%;">
+                    {% ctrl_button "deleteEvents" "Delete Events" %}
+                </div>
+                <div class="display_cellM format_center" >
+                    {% ctrl_button "deleteGames" "Delete Games" %} 
+                </div>
+            </div>
+            <br>
+            <div class="format_center">
+                {% ctrl_button "deletePlayers" "Delete ALL Players" %} 
+            </div>
+            <br>
+        </div>
+    </div>
+    
+    
+    <div class="col-xs-12 col-sm-6 col-md-4 col-xl-7">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_strong "simx" "Simulation" %}  <br>
+            <div class="display_table ">
+                <div class="display_row">
+                    <div class="display_cellM format_center" style="padding: 0px 50px;">
+                        {% ctrl_button "importPlayers" "Import Players" %} 
+                    </div> 
+                    <div class="display_cellT" style="">
+                        <div class="display_row">
+                            {% ctrl_select "rndStart" "Start Round" %} 
+                        </div>
+                        <div class="display_row">
+                            {% ctrl_select "rndEnd" "End Round" %} 
+                        </div>
+                    </div> 
+                    <div class="display_cellM format_center" style="padding: 0px 20px;">
+                        {% ctrl_button "importGames" "Import Games" %} <br> <br>
+                        {% ctrl_button "importEvents" "Import Events" %} <br> <br>
+                    </div> 
+                </div>
+            </div>
+            <hr class="format_separator">
+            
+            {% ctrl_strong "impGM" "Import By Game" %} 
+            <div class="display_table">
+                <div class="display_row">
+                    <div class="display_cellT format_center" style="padding: 0px 30px;">
+                        <br> <br>
+                        {% ctrl_button "displayFixture" "Display Start Round" %}
+                        <br> <br>
+                    </div>
+                    <div class="display_cellM" style="">
+                        {% ctrl_table "fixture" %}
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="col-xs-12"></div>
+    
+    <div class="col-xs-12 col-sm-10 col-md-8 col-xl-5">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin" style="min-height: 400px;">
+            <div class="display_table ">
+                <div class="display_row">
+                    <div class="display_cellT">
+                        {% ctrl_listing "plTotal" "Total Players" %}
+                        {% ctrl_table "seasonSummary" False False "Season Summary" %}
+                    </div>
+                    <div class="display_cellT" style="padding-left: 20px;">
+                        {% ctrl_table "byRound" False False "By Round" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-4 col-xl-offset-1 col-xl-4">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_strong "tm" "Time Machine" %} <br> <br>
+            
+            {% ctrl_listing "simTime" "Sim Time" %} <br> <br>
+            
+            <div class="display_table format_full">
+                <div class="display_cellM">
+                    <div class="display_row">
+                        {% ctrl_datepicker "nextDate" "Next Date" %} 
+                    </div>
+                    <div class="display_row">
+                        {% ctrl_select "nextTime" "Next Time" %}                            
+                    </div>
+                </div>
+                <div class="display_cellM">
+                    {% ctrl_button "saveTime" "Save Next Sim" %}
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+</div>
+
+
+<div id="initDB_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_admin" style="margin-right: 0px;">
+                        <span class="font_section">Initialize Database</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_admin format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "init" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin ">
+            {% ctrl_strong "gc" "General Config" %}
+            <div class="display_block format_center">
+                {% ctrl_listing "adminName" "Message Admin" "None" %}
+                {% ctrl_button "makeAdmin" "Create Message Admin" %}
+            </div>
+            <hr class="ctrl_separator">
+            <div class="display_block">
+                {% ctrl_listing "sitesDomain" "Domain" sites.domain %}
+            </div>
+            <div class="display_block">
+                {% ctrl_listing "sitesName" "Name" sites.name %}
+            </div>
+            <div class="display_block format_center">
+                {% ctrl_button "sitesTable" "Init Sites Table" %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_strong "ft" "Football" %}
+            <div class="display_block format_center">
+                {% ctrl_button "loadCore" "Load Core Data" %} <br><br>
+            </div>
+            {% ctrl_table "core" False False "Core Tables Summary" %}
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_strong "prd" "Prediction" %}
+            <div class="display_block format_center">
+                {% ctrl_button "initPred" "Init Pred Minis" %} <br><br>
+            </div>
+            {% ctrl_table "config" False False "Game Config" %}
+        </div>
+    </div>
+    
+    
+</div>
+
+
+<div id="coreTables_section" class="row">
+
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_admin" style="margin-right: 0px;">
+                        <span class="font_section">Core Tables</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_admin format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "tables" %}</div>
+    </div>
+    
+    <div class="col-xs-12">
+        <div class="display_block inner_margin1 outer_padding2 ">
+            {% ctrl_table "season" %} 
+        </div>
+    </div>
+    
+    <div class="col-xs-12">
+        <div class="display_block inner_margin1 outer_padding2 ">
+            {% ctrl_table "club" %} 
+        </div>
+    </div>
+    
+    <div class="col-xs-12">
+        <div class="display_block inner_margin1 outer_padding2 ">
+            {% ctrl_table "event" %}
+        </div>
+    </div>
+    
+    
+</div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+$(document).ready(function()
+{       
+    $("body").css("cursor", "wait");
+    
+    InitializeDB();
+    
+    InitTableManager();
+    
+    $('body').css('cursor', 'default');
+});
+//
+//  INIT DB
+//
+function InitializeDB()
+{
+    {% if msgAdmin %}
+        $('#adminName_listing').text("{{ msgAdmin.username }}");
+    {% endif %}
+    
+    $("#makeAdmin_button").click(function() {
+        CreateAdmin();
+    });
+    
+    $("#sitesTable_button").click(function() {
+        InitializeSites();
+    });
+        
+    $("#loadCore_button").click(function() {
+       LoadCore();
+    });
+    
+    $("#initPred_button").click(function() {
+       LoadPredConfig();
+    });
+        
+    {% if coreSummary %}
+        var dataArray = $.parseJSON('{{ coreSummary }}');
+        var fullT = JSONtoFullTable(dataArray);
+        SetDataTable('#core_table', fullT);
+    {% else %}
+        $('#core_table').text("Core counts not available.");
+    {% endif %}
+    
+    {% if seasonTable %}
+        var dataArray = $.parseJSON('{{ seasonTable }}');
+        var fullT = JSONtoFullTable(dataArray);
+        SetDataTable('#season_table', fullT);
+    {% else %}
+        $('#season_table').text("Football.Season has no data.");
+    {% endif %}
+    
+    {% if clubTable %}
+        var dataArray = $.parseJSON('{{ clubTable }}');
+        var fullT = JSONtoFullTable(dataArray);
+        SetDataTable('#club_table', fullT);
+    {% else %}
+        $('#club_table').text("Football.Club has no data.");
+    {% endif %}
+    
+    DisplayConfig();        //TODO: move to server 
+}
+
+
+function CreateAdmin()
+{
+    DisableForm();
+    
+    $.ajax({
+        type: "POST",
+        url: "{% url 'central:central_jx' 'create_msgUser' %}",
+        success: function(p_data) {
+            $('#adminName_listing').text(p_data);
+            EnableForm();
+        },
+        error: function(p_err) {
+            EnableForm();
+            ErrorToStatus(p_err.responseText, 'CreateAdmin()', '#init_status');
+        } 
+    });
+}
+
+function InitializeSites()
+{
+    DisableForm();
+    
+    $.ajax({
+        type: 'POST',
+        url: '{% url "central:central_jx" "update_sites" %}',
+        success: function(p_data) {            //cl(p_data);
+            $('#sitesDomain_listing').text(p_data.domain);
+            $('#sitesName_listing').text(p_data.name);
+            EnableForm();
+        },
+        error: function(p_err) {
+            EnableForm();
+            ErrorToStatus(p_err.responseText, 'InitializeSites()', '#init_status');
+        } 
+    });
+}
+
+
+function LoadCore(p_thdmsg)
+{   
+    DisableForm();
+    
+    $.ajax({
+        type: "POST",
+        url: "{% url 'football:dataManager_jx' 'load_core' %}",
+        success: function(p_data) { 
+            EnableForm();
+            location.reload(); 
+        },
+        error: function(p_err) {
+            EnableForm();
+            ErrorToStatus(p_err.responseText, 'LoadCore()', '#init_status');
+        } 
+    });
+}
+
+
+
+function LoadPredConfig()
+{   
+    DisableForm();
+    
+    $.ajax({
+        type: 'POST',
+        url: "",
+        success: function(p_data) {     //cl(p_data);
+            DisplayConfig();
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "LoadTables()", '#init_status');
+        },
+        complete: function() {
+            EnableForm();
+        }
+    });
+}
+
+function DisplayConfig()
+{        
+    $.ajax({
+        url: '/prediction/minigames_jx/get_config/',
+        success: function(p_data) {    // cl(p_data);
+            if (!p_data || p_data.length == 0) {
+                $('#config_table').html("Config table not available.");
+            }
+            else {
+                //var fullT = JSONtoFullTable(p_data.data);
+                //SetDataTable('#config_table', fullT, p_data.colFormat);
+                var fullT = JSONtoFullTable(p_data);
+                SetDataTable('#config_table', fullT);
+            }
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "DisplayConfig()", '#init_status');
+        }
+    });
+}
+
+
+//
+//  FOOTBALL TABLES
+//
+function InitTableManager()
+{
+    {% for ssn in seasons %}
+    $('#expSeason_select').append($('<option>', {value : '{{ ssn }}' }).text('{{ ssn }}'));
+    {% endfor %}
+    
+    $('#expSeason_select').change(function() {
+        RefreshData();
+    });
+    //
+    // csv controls
+    
+    $('#expSeason_button').click(function() {
+        ExportSeason();
+    });
+    
+    $('#impSeason_button').click(function() {
+        ImportSeason();
+    });
+    
+    //
+    // delete tables
+    
+    $('#deleteEvents_button').click(function() {
+        DeleteEvents();
+    });
+    
+    $('#deleteGames_button').click(function() {
+        DeleteGames();
+    });
+    
+    $('#deletePlayers_button').click(function() {
+        DeleteAllPlayers();
+    });
+    
+    //
+    // simulation
+    
+    var rounds = [];
+    for (var r = 1; r <= 30; r++)
+        rounds.push(r);
+    
+    $.each(rounds, function(key, value) {
+        $('#rndStart_select').append($('<option>', {value : key }).text(value));
+        $('#rndEnd_select').append($('<option>', {value : key }).text(value));
+    });
+    
+    $('#importPlayers_button').click(function() {
+        ImportPlayers();
+    });
+    
+    $('#importGames_button').click(function() {
+        ImportGames();
+    });
+    
+    $('#importEvents_button').click(function() {
+        ImportEvents();
+    });
+    //
+    // by game controls
+    
+    $('#displayFixture_button').click(function() {
+        DisplayFixture();
+    });
+    
+    $('#nextDate_datepicker').datepicker({ dateFormat: "yy-mm-dd" });
+    
+    var times = ["00:00", "06:00", "12:00", "18:00"];
+    $.each(times, function(key, value) {
+        $('#nextTime_select').append($('<option>', {value : key }).text(value));
+    });
+    
+    $('#saveTime_button').click(function() {
+        SaveSimTime();
+    });
+    
+    {% if simTime %}
+    $('#simTime_listing').text('{{ simTime }}');
+    {% else %}
+    $('#simTime_listing').text("None");    
+    {% endif %}
+    
+    //
+    // display current data tables
+    
+    var results = {};
+    {% if seasonSummary %}
+        results.seasonSummary = $.parseJSON('{{ seasonSummary }}');
+    {% else %}
+        results.seasonSummary = null;
+    {% endif %}
+    
+    {% if byRound %}
+        results.byRound = $.parseJSON('{{ byRound }}');
+    {% else %}
+        results.byRound = "No round.";
+    {% endif %}
+    
+    RefreshTables(results);
+}
+
+
+function RefreshData()
+{
+    var season = $("#expSeason_select option:selected").text();
+    
+    $.ajax({
+        url: "{% url 'football:dataManager_jx' 'get_tableReport' %}",
+        data: {'season': season,},
+        success: function(p_data) {     //cl(p_data);
+            RefreshTables(p_data);
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "RefreshData()", '#csv_status');
+        },
+        complete: function() {
+            EnableForm();
+        }
+    });    
+}
+
+
+function RefreshTables(p_result)
+{
+    $('#plTotal_listing').html(null);
+    $('#seasonSummary_table').html(null);
+    $('#byRound_table').html(null);
+    
+    $('#plTotal_listing').html(p_result.seasonSummary.plTotal);
+    var fullT = JSONtoFullTable(p_result.seasonSummary.summary);
+    SetDataTable('#seasonSummary_table', fullT, p_result.seasonSummary.colFmt);
+    
+    if (typeof(p_result.byRound) !== "string")
+    {
+        var fullT = JSONtoFullTable(p_result.byRound.data);
+        SetDataTable('#byRound_table', fullT, p_result.byRound.colFmt);    
+    }
+    else
+    {
+        $('#byRound_table').html('<div class="inner_margin2">By round not available.</div>');
+    }
+}
+
+
+function ExportSeason()
+{
+    DisableForm();
+    
+    var season = $("#expSeason_select option:selected").text();     
+    
+    $.ajax({
+        url: "{% url 'football:dataManager_jx' 'exp_season' %}",
+        data: {'season': season,},
+        success: function(p_data) {    // cl(p_data);
+            alert("Season Exported");
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "ExportSeason()", '#csv_status');
+        },
+        complete: function() {
+            EnableForm();
+        }
+    });
+}
+
+
+function ImportSeason()
+{
+    DisableForm();
+    $("#seasonSummary_table").empty();
+    $('#plTotal_listing').empty();
+    $("#csv_status").empty();
+    
+    var season = $("#expSeason_select option:selected").text();   
+    
+    $.ajax({
+        type: 'POST',
+        url: "{% url 'football:dataManager_jx' 'imp_season' %}",
+        data: {'season': season,},
+        success: function(p_data) {     //cl(p_data);
+            RefreshTables(p_data);
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "ImportSeason()", '#csv_status');
+        },
+        complete: function() {
+            EnableForm();
+        }
+    });
+}
+
+//  
+// DELETE TABLES
+//
+function DeleteEvents()
+{
+    DisableForm();
+    $("#seasonSummary_table").empty();
+    $('#plTotal_listing').empty();
+    $("#csv_status").empty();
+    
+    var season = $("#expSeason_select option:selected").text();     //cl(season);
+    
+    $.ajax({
+        type: 'POST',
+        url: "{% url 'football:dataManager_jx' 'delete_events' %}",
+        data: {'season': season,},
+        success: function(p_data) {     //cl(p_data);
+            RefreshTables(p_data);
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "DeleteEvents()", '#csv_status');
+        },
+        complete: function() {
+            EnableForm();
+        }
+    });
+}
+
+function DeleteGames()
+{
+    DisableForm();
+    $("#seasonSummary_table").empty();
+    $('#plTotal_listing').empty();
+    $("#csv_status").empty();
+    
+    var season = $("#expSeason_select option:selected").text();     
+    
+    $.ajax({
+        type: 'POST',
+        url: "{% url 'football:dataManager_jx' 'delete_games' %}",
+        data: {'season': season,},
+        success: function(p_data) {     //cl(p_data);
+            RefreshTables(p_data);
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "DeleteGames()", '#csv_status');
+        },
+        complete: function() {
+            EnableForm();
+        }
+    });
+}
+
+function DeleteAllPlayers()
+{
+    DisableForm();
+    $("#seasonSummary_table").empty();
+    $('#plTotal_listing').empty();
+    $("#csv_status").empty();
+        
+    $.ajax({
+        type: 'POST',
+        url: "{% url 'football:dataManager_jx' 'delete_allPlayers' %}",
+        success: function(p_data) {     //cl(p_data);
+            RefreshTables(p_data);
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "DeleteAllPlayers()", '#csv_status');
+        },
+        complete: function() {
+            EnableForm();
+        }
+    });
+}
+
+
+//
+// SIMULATION
+//
+function ImportPlayers()
+{
+    DisableForm();
+    
+    var season = $('#expSeason_select option:selected').text();   
+    
+    $.ajax({
+        type: 'POST',
+        url: "{% url 'football:dataManager_jx' 'imp_players' %}",
+        data: { 'season': season },
+        success: function(p_data) {     //cl(p_data);
+            RefreshTables(p_data);
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "ImportPlayers()", '#csv_status');
+        },
+        complete: function() {
+            EnableForm();
+        }
+    });
+}
+
+
+function ImportGames()
+{
+    DisableForm();
+    
+    var season = $('#expSeason_select option:selected').text();   
+    var rndStart = $('#rndStart_select option:selected').text();   
+    var rndEnd = $('#rndEnd_select option:selected').text();   
+    
+    $.ajax({
+        type: 'POST',
+        url: "{% url 'football:dataManager_jx' 'imp_games' %}",
+        data: { 'season': season, 'rndStart': rndStart, 'rndEnd': rndEnd },
+        success: function(p_data) {     //cl(p_data);
+            RefreshTables(p_data);
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "ImportSeason()", '#csv_status');
+        },
+        complete: function() {
+            EnableForm();
+        }
+    });
+}
+
+
+function ImportEvents()
+{
+    DisableForm();
+    
+    var season = $('#expSeason_select option:selected').text();   
+    var rndStart = $('#rndStart_select option:selected').text();   
+    var rndEnd = $('#rndEnd_select option:selected').text();   
+    
+    $.ajax({
+        type: 'POST',
+        url: "{% url 'football:dataManager_jx' 'imp_events' %}",
+        data: { 'season': season, 'rndStart': rndStart, 'rndEnd': rndEnd },
+        success: function(p_data) {     //cl(p_data);
+            RefreshTables(p_data);
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "ImportEvents()", '#csv_status');
+        },
+        complete: function() {
+            EnableForm();
+        }
+    });
+}
+
+
+function DisplayFixture()
+{
+    DisableForm();
+    $('#fixture_table').html(null);
+    
+    var season = $('#expSeason_select option:selected').text();   
+    var rndStart = $('#rndStart_select option:selected').text();   
+    
+    $.ajax({
+        type: 'GET',
+        url: "{% url 'football:dataManager_jx' 'get_fixture' %}",
+        data: { 'season': season, 'rndStart': rndStart },
+        success: function(p_data) {     //cl(p_data);
+            
+            if (typeof p_data != 'string')
+                SetDeluxeFixture('#fixture_table', p_data.data);
+            else
+                $('#fixture_table').html('<div style="margin: 4px;">Fixture data not available.</div>');
+            
+            //RefreshTables(p_data);
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "DisplayFixture()", '#csv_status');
+        },
+        complete: function() {
+            EnableForm();
+        }
+    });
+}
+
+
+function SetDeluxeFixture(p_tableID, p_fixt)
+{           
+    //var tableName = p_tableID.substring(1).split("_")[0];       //cl(tableID);
+    //var prevPerc = 0;
+    
+    var table = $(p_tableID).DataTable( {
+        data: p_fixt,
+        aoColumns: [
+            {
+                title: "Home",
+                mData: "home_club",
+                sClass: "format_fixline",
+            },
+            {
+                title: "Away",
+                mData: "away_club",
+                sClass: "format_fixline",
+            },
+            {
+                title: "Play Date",
+                mData: "play_date",
+                sWidth: "",
+                sClass: "format_fixline",
+                mRender: function (data, type, full) {
+                    var msg = full.play_date;
+                    return msg;
+                }   
+            },  
+            {
+                title: "Status",
+                mData: "HG",
+                sWidth: "",
+                sClass: "format_center",
+                mRender: function (data, type, full) {
+                    if (full.HG == '*')
+                    {   
+                        var html = '                            \
+                            <div class="">                      \
+                                <input id="imp{0}_button" type="button" value="Import"      \
+                                    class="format_button" style="">                         \
+                                </input>                        \
+                            </div>                              \
+                            '.format(full.id); 
+                    }   
+                    else    
+                    {   
+                        var html = "{0} - {1}".format(full.HG, full.AG);    
+                    }   
+                    return html; 
+                }   
+            },  
+        ],  
+        bSort: false,
+        scrollCollapse: true,
+        paging: false,
+        bFilter: false,
+        bInfo: false,
+        bDestroy: true,                 // necessary to refresh the data
+        fnRowCallback: function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
+        
+        },
+        initComplete: function() {
+            PostDraw();
+        }
+    } );
+    
+    function PostDraw()
+    {        
+        $.each(p_fixt, function(idx, game) {
+            $('#imp{0}_button'.format(game.id)).click(function() {
+                var htmlID = $(this).attr('id');        // get the html-id of the calling element
+                var id = htmlID.match(/\d+/)[0];        // get the first number in string
+                //cl(id);
+                
+                ImportSingleGame(id);
+            });
+        });
+    }
+    
+}
+
+
+function ImportSingleGame(p_id)
+{
+    DisableForm();
+    $('#fixture_table').html(null);
+    
+    $.ajax({
+        type: 'POST',
+        url: "{% url 'football:dataManager_jx' 'load_game' %}",
+        data: { 'gameid': p_id },
+        success: function(p_data) {     //cl(p_data);
+            
+            if (typeof p_data != 'string')
+                SetDeluxeFixture('#fixture_table', p_data.data);
+            else
+                $('#fixture_table').html('<div style="margin: 4px;">Fixture data not available.</div>');
+            
+            //RefreshTables(p_data);
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "ImportSingleGame()", '#csv_status');
+        },
+        complete: function() {
+            EnableForm();
+        }
+    });    
+}
+
+
+function SaveSimTime()
+{
+    DisableForm();
+    
+    var date = $('#nextDate_datepicker').datepicker( 'getDate' );    
+    if (date)
+        date = date.format('yyyy-MM-dd');
+    var time = $('#nextTime_select option:selected').text();   
+    
+    $.ajax({
+        type: 'POST',
+        url: "{% url 'football:dataManager_jx' 'update_simDate' %}",
+        data: { 'simDate': date, 'simTime': time },
+        success: function(p_data) {     //cl(p_data);
+            if (p_data)
+                $('#simTime_listing').text(p_data);
+            else
+                $('#simTime_listing').text("None");
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "SaveSimTime()", '#csv_status');
+        },
+        complete: function() {
+            EnableForm();
+        }
+    });
+}
+
+
+//
+//
+function DisableForm()
+{
+    $('body').css('cursor', 'wait');
+    
+    $('#expSeason_select').prop('disabled', true);
+    $('#expSeason_button').prop('disabled', true);
+    $('#impSeason_button').prop('disabled', true);
+    $('#deleteEvents_button').prop('disabled', true);
+    $('#deleteGames_button').prop('disabled', true);
+    $('#deletePlayers_button').prop('disabled', true);
+    
+    $('#rndStart_select').prop('disabled', true);
+    $('#rndEnd_select').prop('disabled', true);
+    $('#importGames_button').prop('disabled', true);
+    $('#importEvents_button').prop('disabled', true);
+    
+    $('#csv_status').parent().parent().hide(); 
+}
+
+
+function EnableForm()
+{
+    $("body").css("cursor", "default");
+    
+    $('#expSeason_select').prop('disabled', false);
+    $('#expSeason_button').prop('disabled', false);
+    $('#impSeason_button').prop('disabled', false);
+    $('#deleteEvents_button').prop('disabled', false);
+    $('#deleteGames_button').prop('disabled', false);
+    $('#deletePlayers_button').prop('disabled', false);
+    
+    $('#rndStart_select').prop('disabled', false);
+    $('#rndEnd_select').prop('disabled', false);
+    $('#importGames_button').prop('disabled', false);
+    $('#importEvents_button').prop('disabled', false);
+}
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+

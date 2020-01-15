@@ -1,0 +1,620 @@
+
+{% extends "common_base.html" %}
+{% load utility_ttags %}
+{% load staticfiles %}
+
+{% block extra_head %}
+    <script src="{% static 'third_party/flot-083/jquery.flot.js' %}"></script>
+    <script src="{% static 'third_party/flot-extras/jquery.flot.axislabels.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_admin">
+            <span class="font_title">Universal Rewards</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="rankings_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_admin" style="margin-right: 0px;">
+                        <span class="font_section">Rankings</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_admin format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "ranks" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-xl-2">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_strong "options" "Options" %}
+            <div class="display_table">
+                <div class="display_row">
+                    {% ctrl_select "season" "Season" %} 
+                </div>
+                <div class="display_row">
+                    {% ctrl_select "round" "Round" %} 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12"></div>
+    
+    <div class="col-xs-12 col-sm-6 col-xl-5">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_strong "ttat" "All Time Rankings" %}
+            <div class="display_block">
+                {% ctrl_listing "userCntAT" "Number of Users" %}
+            </div>
+            <div class="display_block">
+                {% ctrl_listing "binCntAT" "Points Profile" %}
+            </div>
+            
+            {% ctrl_plot "histAT" %}
+            
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-xl-4" style="display: none;">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_table "aggregAT" False False "Aggregate" %}
+            
+        </div>
+    </div>    
+    
+    <div class="col-xs-12" style="display: none;"></div>
+    
+    <div class="col-xs-12 col-sm-6 col-xl-5">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_strong "ttrd" "By Round Rankings" %}
+            <div class="display_block">
+                {% ctrl_listing "userCntRD" "Number of Users" %} 
+            </div>
+            <div class="display_block">
+                {% ctrl_listing "binCntRD" "Points Profile" %}
+            </div>
+            
+            {% ctrl_plot "histRD" %}
+            
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-xl-4" style="display: none;">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_table "aggregRD" False False "Aggregate" %}
+        </div>
+    </div>    
+    
+</div>
+
+
+<div id="rewards_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_admin" style="margin-right: 0px;">
+                        <span class="font_section">Send Rewards</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_admin format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "rewards" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-10 col-xl-4 col-xxl-4">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin" style="min-height: 400px;">
+            {% ctrl_strong "snsm" "Season Summary" %}
+            {% ctrl_table "rewards" %}
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-10 col-xl-4 col-xxl-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_strong "snsm" "Do The Work" %}
+            <div class="format_center">
+                <br> 
+                {% ctrl_button "sendRewards" "Send Rewards" %}
+                <br> <br>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+
+<!-- SCRIPTS -->
+
+<script>
+
+var USER = "{{ user }}";
+
+$(document).ready(function()
+{
+    $("body").css("cursor", "wait");
+    
+    // initialize controls
+    
+    {% for ssn in seasons %}
+        $('#season_select').append($('<option>', {value : '{{ ssn }}' }).text('{{ ssn }}'));
+    {% endfor %}
+    
+    {% for rnd in roundList %}
+        $('#round_select').append($('<option>', {value : '{{ rnd }}' }).text('{{ rnd }}'));
+    {% endfor %}
+    
+    $('#season_select').change(function() {
+        RefreshSeason();
+    });
+    
+    $('#round_select').change(function() {
+        RefreshRound();
+    });
+    //
+    // initialize statistics
+    
+    {% if charts %}
+    var charts = $.parseJSON('{{ charts | escapejs }}');        
+    {% else %}
+    var charts = "No point distribution available.";
+    {% endif %}
+    
+    DisplayCharts(charts);
+    
+    //
+    // initialize rewards section
+    
+    {% if status %}
+    var status = $.parseJSON('{{ status | escapejs }}');        
+    {% else %}
+    var status = "No scores summary available.";
+    {% endif %}
+    
+    DisplayStatus(status);
+    
+    $('#sendRewards_button').click(function() {
+        SendRewards();
+    });
+    
+    
+    $('body').css('cursor', 'default');    
+});
+
+
+function DisplayCharts(p_charts)
+{
+    $('#userCntAT_listing').text(p_charts.userCntAT); 
+    $('#binCntAT_listing').text(p_charts.binCntAT);
+    PlotPointsDist(p_charts.histAT_plt, p_charts.gradeAT_plt, 'AT');
+    
+    $('#userCntRD_listing').text(p_charts.userCntRD); 
+    $('#binCntRD_listing').text(p_charts.binCntRD);
+    PlotPointsDist(p_charts.histRD_plt, p_charts.gradeRD_plt, 'RD');
+}
+
+
+function DisplayStatus(p_status)
+{
+    if (typeof p_status != 'string')
+    {
+        var fullT = JSONtoFullTable(p_status.scoreSummary);
+        SetDataTable('#rewards_table', fullT, p_status.colFmt);
+    }
+    else
+    {
+        $('#rewards_table').html("<div class='inner_margin2'>No scores available.</div>");
+    }
+}
+
+
+function PlotPointsDist(p_pointHist, p_gradeLine, p_type)
+{
+    var dataset = [
+            { data: p_pointHist, bars: { show: true, align: "right" } },
+            { data: p_gradeLine, },
+        ];
+    
+    var options = {
+        xaxis: {
+            axisLabel: "Points",
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 14,
+            axisLabelFontFamily: 'Impact',
+            axisLabelPadding: 0,
+            transform: function(v) { return -v; },
+            inverseTransform: function(v) { return -v; }
+            },
+        yaxis: {
+            axisLabel: "Count",
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 14,
+            axisLabelFontFamily: 'Impact',
+            axisLabelPadding: 10,
+            },
+        colors: ["blue", "red"], 
+        grid: {
+            hoverable: true,        // this enables the tooltip, move to dataset ?
+            },
+    };
+    
+    $.plot('#hist{0}_plot'.format(p_type), dataset, options);
+    
+    AttachPointsLabels('#hist{0}_plot'.format(p_type));
+    
+    var previousPoint = null, previousLabel = null;
+    function AttachPointsLabels(p_elemId)
+    {
+        // display grades letter label
+        
+        var plot = $.data($(p_elemId)[0], 'plot');        // why is this [0] necessary ?
+        var dataset1 = plot.getData()[1];
+        var sColor = dataset1.color;
+        
+        $.each(dataset1.data, function(i, el) {
+            if (i % 5 == 2)
+            {   
+                var o = plot.pointOffset({x: el[0], y: el[1]});
+                var msg = el[2];
+                
+                $('<div class="data-point-label">' + msg + '</div>'
+                    ).css( {
+                        position: 'absolute',
+                        'text-align': 'center',
+                        top: o.top - 20,
+                        left: o.left -4,
+                        'font-weight': 'bold',
+                        color: sColor,
+                        } 
+                    ).appendTo(plot.getPlaceholder());
+            } 
+        });
+        
+        
+        // display bins data point on hover
+        
+        $(p_elemId).bind("plothover", function (event, pos, item) {
+            if (item)
+            {
+                if ((previousLabel != item.series.label) || (previousPoint != item.dataIndex))
+                {
+                    previousPoint = item.dataIndex;
+                    previousLabel = item.series.label;
+                    $("#tooltip").remove();
+                    
+                    var x = item.datapoint[0];
+                    var y = item.datapoint[1];
+                    var color = item.series.color;
+                    
+                    if (item.seriesIndex == 0)
+                    {
+                        var html = '<div class="format_center">     \
+                                    Pnts {0}<br>Cnt {1}             \
+                                    </div>'.format(x, y);
+                        ShowTooltip(item.pageX, item.pageY, color, html);
+                    }
+                }
+            }
+            else
+            {
+                $("#tooltip").remove();
+                previousPoint = null;
+            }
+        });
+        
+        function ShowTooltip(x, y, color, contents) {
+            $('<div id="tooltip">' + contents + '</div>').css({
+                display: 'none',
+                position: 'absolute',
+                top: y -54,
+                left: x -17,
+                padding: '3px',
+                border: '2px solid ' + color,
+                'border-radius': '5px',             // properties with dash need to be escaped
+                'background-color': 'white',    
+                opacity: 0.9,
+                'font-size': '12px',
+                'font-family': 'Impact',
+            }).appendTo("body").fadeIn(200);
+        }
+    }
+        
+}
+
+
+function RefreshSeason()
+{
+    $("body").css("cursor", "wait");
+    
+    var season = $('#season_select option:selected').text();
+    var roundv = $('#round_select option:selected').text();
+    
+    $('#userCntAT_listing').empty(); 
+    $('#binCntAT_listing').empty();
+    $("#histAT_plot").empty();
+    $("#aggregAT_table").empty();
+    
+    $('#userCntRD_listing').empty(); 
+    $('#binCntRD_listing').empty();
+    $("#histRD_plot").empty();
+    $("#aggregRD_table").empty();
+    
+    $('#round_select').find('option').remove();
+    $('#ranks_status').html(null);
+    $('#rewards_table').html(null);
+    $('#rewards_status').html(null);
+    
+    $.ajax({
+        url: '/central/pu_rewards_jx/get_rewardStatus/',
+        data: {'season': season, 'roundv': roundv},
+        success: function(p_data) {                  //cl(p_data);
+            $.each(p_data.rounds, function(key, value) {
+                $('#round_select').append($('<option>', {value : key }).text(value));
+            });
+            DisplayCharts(p_data.charts);
+            DisplayStatus(p_data.status);
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "RefreshSeason()", '#ranks_status');
+        },
+        complete: function() {
+            $('body').css('cursor', 'default');
+        }
+    });
+}
+
+
+function RefreshRound()
+{
+    $("body").css("cursor", "wait");
+    
+    var season = $('#season_select option:selected').text();
+    var roundv = $('#round_select option:selected').text();
+    
+    $('#userCntAT_listing').empty(); 
+    $('#binCntAT_listing').empty();
+    $("#histAT_plot").empty();
+    $("#aggregAT_table").empty();
+    
+    $('#userCntRD_listing').empty(); 
+    $('#binCntRD_listing').empty();
+    $("#histRD_plot").empty();
+    $("#aggregRD_table").empty();
+    
+    $('#ranks_status').html(null);
+    
+    $.ajax({
+        url: '/central/pu_rewards_jx/get_pointsDist/',
+        data: {'season': season, 'roundv': roundv},
+        success: function(p_data) {             // cl(p_data);
+            DisplayCharts(p_data);
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "RefreshRound()", '#rewards_status');
+        },
+        complete: function() {
+            $('body').css('cursor', 'default');
+        }
+    });
+}
+
+
+function SendRewards()
+{
+    $('body').css('cursor', 'wait');
+    $('#sendRewards_button').addClass('format_wait')
+    
+    var season = $('#season_select option:selected').text();
+    var roundv = $('#round_select option:selected').text();
+    
+    $('#rewards_table').html(null);
+    $('#rewards_status').html(null);
+    
+    $.ajax({
+        type: 'POST',
+        url: '/central/pu_rewards_jx/update_rankRewards/',
+        data: {'season': season, 'roundv': roundv},
+        success: function(p_data) {              //cl(p_data);
+            DisplayStatus(p_data);
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "SendRewards()", '#rewards_status');
+        },
+        complete: function() {
+            $('#sendRewards_button').removeClass('format_wait')
+            $('body').css('cursor', 'default');
+        }
+    });
+}
+
+
+function SetDoubleRankings(p_tableID, p_aggreg)
+{           
+    var tableName = p_tableID.substring(1).split("_")[0];       //cl(tableID);
+    var prevPerc = 0;
+    
+    var table = $(p_tableID).DataTable( {
+        data: p_aggreg,
+        aoColumns: [
+            {
+                title: "Grade",
+                mData: "grade",
+                sWidth: "",
+                sClass: "format_center format_fixline",
+                //mRender: function (data, type, full) {
+                //    var msg = "{0} ({1}%)".format(full.grade, full.percGroup);
+                //    return msg;
+                //} 
+            },
+            {
+                title: "Points",
+                mData: "",
+                sWidth: "",
+                sClass: "format_center format_fixline",
+                mRender: function (data, type, full) {
+                    var details_json = full.details;            //cl(details_json);
+                    var min = Number.POSITIVE_INFINITY;
+                    var max = Number.NEGATIVE_INFINITY;
+                    var tmp;
+                    for (var i=details_json.length-1; i>=0; i--) {
+                        tmp = details_json[i]['points'];
+                        if (tmp < min) min = tmp;
+                        if (tmp > max) max = tmp;
+                    }
+                    
+                    if (min != max && min != Number.POSITIVE_INFINITY)
+                        var msg = "{0} :: {1}".format(min, max);
+                    else if (min === Number.POSITIVE_INFINITY)
+                        var msg = "None";
+                    else
+                        var msg = min;
+                    
+                    return msg;
+                }
+            },
+            {
+                title: "Users",
+                mData: "userCnt",
+                sWidth: "",
+                sClass: "format_center ",
+            },
+            {
+                title: "Details",
+                sWidth: "",
+                mRender: function (data, type, full) {                    
+                    /*
+                    html = '
+                        <div class="display_table">
+                            <div class="display_row">
+                                <div class="display_cellT">
+                                    <div class="inner_margin2 format_center">
+                                        <div id="{0}_{1}_expand" style="">
+                                            <i class="fa fa-caret-square-o-down fa-2x format_cpointer"
+                                               style="color: ForestGreen;" aria-hidden="true"> </i>
+                                        </div>
+                                        <div id="{0}_{1}_fold" style="display: none;">
+                                            <i class="fa fa-caret-square-o-up fa-2x format_cpointer"
+                                               style="color: blue;" aria-hidden="true"> </i>
+                                        </div> 
+                                    </div> 
+                                </div> 
+                                <div class="display_cellT">                        
+                                    <div id="{0}_{1}_group">
+                                        <table id="{0}_{1}_table" class="format_outline"
+                                            style="background: white; margin-left: 4px; display: none;"> </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ';
+                    */
+                    html = "";  //html.format(tableName, full.percGroup);
+                    return html;
+                }, 
+            }, 
+        ], 
+        bSort: false,
+        scrollCollapse: true,
+        paging: false,
+        bFilter: false,
+        bInfo: false,
+        bDestroy: true,                 // necessary to refresh the data
+        fnRowCallback: function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
+        
+        },
+        initComplete: function() {
+            PostDraw();
+        }
+    } );
+    
+    // do not create a double datatable inside a draw.dt event, it causes infinite recursion
+    
+    function PostDraw()
+    {        
+        
+        $.each(p_aggreg, function(idx, aggregBin) {
+            
+            var subId = '#' + tableName + '_' + aggregBin.percGroup;
+            
+            /*
+            if ( $.fn.DataTable.isDataTable(subId + '_table')  {
+                $(subId + '_table').DataTable().destroy(true);
+                $(subId + '_group').html(`
+                        <table id="` + tableName + `_` + aggregBin.percGroup + `_table" class="format_outline"
+                                            style="background: white; margin-left: 4px; display: none;"> </table>  `);
+            }
+            */
+            
+            var table = $(subId + '_table').DataTable( {
+                data: aggregBin.details,
+                aoColumns: [
+                    {
+                        title: "Perc%",
+                        mData: "perc%",
+                        sWidth: "",
+                        sClass: "format_center",
+                    },
+                    {
+                        title: "Pnts",
+                        mData: "points",
+                        sWidth: "",
+                        sClass: "format_center ",
+                    },
+                    {
+                        title: "Users",
+                        mData: "count",
+                        sWidth: "",
+                        sClass: "format_center ",
+                    } ],
+                bSort: false,
+                scrollCollapse: true,
+                paging: false,
+                bFilter: false,
+                bInfo: false,
+                bDestroy: false,  
+            } );
+            
+            $(subId + '_expand').click( function() {
+                $(subId + '_expand').hide();
+                $(subId + '_fold').show();
+                $(subId + '_table').slideToggle('fast');
+            });
+            
+            $(subId + '_fold').click( function() {
+                $(subId + '_expand').show();
+                $(subId + '_fold').hide();
+                $(subId + '_table').slideToggle('fast');
+            });
+        });     // foreach
+    }
+    
+}
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+

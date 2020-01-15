@@ -1,0 +1,48 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,19,Esteghlal KHU,Game Half1 Start,00:00:00,,,,
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mohamad Ebrahim,Khosravi,Defender
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mousa Salif,Coulibaly,Defender
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mehdi,Momeni,Forward
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Seyed Mehdi,Seyed Salehi,Forward
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Maysam Parviz,Karimi,Goalkeeper
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Abdolhadi,Khanifar,Midfield
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Iman,Basafa,Midfield
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Maysam,Majidi,Midfield
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Maysam,Doraghi,Midfield
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mohamad Reza,Mahdavi,Midfield
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mohsen,Bayat,Midfield
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Foolad KHU,Leonard,Mesaric,Defender
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Foolad KHU,Mehrdad,Jamaati,Defender
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Foolad KHU,Aloys,Nong,Forward
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Foolad KHU,Mohamad,Ghazi,Forward
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Foolad KHU,Sasan,Ansari,Forward
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Foolad KHU,Alireza,Salimi,Goalkeeper
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Foolad KHU,Esmaeel,Sharifat,Midfield
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Foolad KHU,Mahdi,Baderlo,Midfield
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Foolad KHU,Mathias,Chago,Midfield
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Foolad KHU,Mohsen,Mosalman,Midfield
+IPL2014,19,Esteghlal KHU,Player in Line-up,00:00:00,Foolad KHU,Yousef,Vakia,Midfield
+IPL2014,19,Esteghlal KHU,Card: Red,00:01:00,Esteghlal KHU,Mousa Salif,Coulibaly,Defender
+IPL2014,19,Esteghlal KHU,Card: Red,00:01:00,Foolad KHU,Leonard,Mesaric,Defender
+IPL2014,19,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Mehdi,Momeni,Forward
+IPL2014,19,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Mohsen,Bayat,Midfield
+IPL2014,19,Esteghlal KHU,Card: Yellow,00:01:00,Foolad KHU,Yousef,Vakia,Midfield
+IPL2014,19,Esteghlal KHU,Goal,00:08:00,Foolad KHU,Mahdi,Baderlo,Midfield
+IPL2014,19,Esteghlal KHU,Goal,00:28:00,Foolad KHU,Aloys,Nong,Forward
+IPL2014,19,Esteghlal KHU,Game Half1 Stop,00:46:00,,,,
+IPL2014,19,Esteghlal KHU,Game Half2 Start,00:47:00,,,,
+IPL2014,19,Esteghlal KHU,Player Sub-in,01:06:00,Foolad KHU,Omid,Khaledi,Defender
+IPL2014,19,Esteghlal KHU,Player Sub-out,01:06:00,Foolad KHU,Yousef,Vakia,Midfield
+IPL2014,19,Esteghlal KHU,Player Sub-in,01:08:00,Foolad KHU,Ahmad,Alnemae,Defender
+IPL2014,19,Esteghlal KHU,Player Sub-out,01:08:00,Foolad KHU,Mohamad,Ghazi,Forward
+IPL2014,19,Esteghlal KHU,Player Sub-in,01:10:00,Esteghlal KHU,Hojat,Chaharmahali,Midfield
+IPL2014,19,Esteghlal KHU,Player Sub-out,01:10:00,Esteghlal KHU,Abdolhadi,Khanifar,Midfield
+IPL2014,19,Esteghlal KHU,Player Sub-in,01:13:00,Esteghlal KHU,Reza,Kardoost,Midfield
+IPL2014,19,Esteghlal KHU,Player Sub-out,01:13:00,Esteghlal KHU,Mohamad Reza,Mahdavi,Midfield
+IPL2014,19,Esteghlal KHU,Player Sub-in,01:20:00,Esteghlal KHU,Maysam,Baoo,Midfield
+IPL2014,19,Esteghlal KHU,Player Sub-out,01:20:00,Esteghlal KHU,Iman,Basafa,Midfield
+IPL2014,19,Esteghlal KHU,Goal,01:22:00,Foolad KHU,Aloys,Nong,Forward
+IPL2014,19,Esteghlal KHU,Player Sub-in,01:28:00,Foolad KHU,Bahman,Jahantigh,Forward
+IPL2014,19,Esteghlal KHU,Player Sub-out,01:28:00,Foolad KHU,Aloys,Nong,Forward
+IPL2014,19,Esteghlal KHU,Game Half2 Stop,01:39:00,,,,
+IPL2014,19,Esteghlal KHU,Game End,01:40:00,,,,

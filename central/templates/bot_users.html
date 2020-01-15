@@ -1,0 +1,415 @@
+
+{% extends "common_base.html" %}
+{% load utility_ttags %}
+
+{% block content %}
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_admin">
+            <span class="font_title">Bot Users</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="createUsers_section" class="row">
+
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_admin" style="margin-right: 0px;">
+                        <span class="font_section">Create Users</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_admin format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "create" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4 col-xl-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            <div class="display_table">
+                <div class="display_row">
+                    {% ctrl_inputText "usersNum" "Number of Users" True %}
+                </div>
+                <div class="display_row">
+                    {% ctrl_select "season" "Season" %}
+                </div>               
+            </div>
+            <div class="format_center">
+                {% ctrl_button "create" "Create Users" %} <br><br>
+                {% ctrl_button "delete" "Delete Users" %}        
+            </div>               
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_listing "usersTotal" "Current Users" %}
+            {% ctrl_table "users" %}        
+        </div>
+    </div>
+    
+    
+</div>
+
+
+<div id="makePreds_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_admin" style="margin-right: 0px;">
+                        <span class="font_section">Make Predictions</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_admin format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "preds" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-7 col-md-6 col-lg-4 col-xl-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_select "round" "Round" %}
+            <div class="format_center">
+                {% ctrl_button "round" "Make Predictions" %}  
+            </div>               
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-7 col-md-6 col-lg-5 col-xl-4">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_table "preds" "" "" "Data Summary" %}
+        </div>
+    </div>
+    
+    
+</div>
+
+
+<div id="emailTest_section" class="row" style="display: none;">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_admin" style="margin-right: 0px;">
+                        <span class="font_section">Test Email</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_admin format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "email" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-xl-4">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_inputText "email" "E-mail" True %}
+            {% ctrl_button "email" "Send E-mail" %}  
+        </div>
+    </div>
+    
+    
+</div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+//
+// FORM BASICS
+//
+$(document).ready(function()
+{      
+    // create users
+    
+    $('#usersNum_text').val('100');  
+
+    {% for ssn in seasons %}
+    $('#season_select').append($('<option>', {value : '{{ ssn }}' }).text('{{ ssn }}'));
+    {% endfor %}
+    
+    $('#season_select').change(function() {
+        InitPreds();
+    });
+    
+    $('#create_button').click(function() {
+        CreateTestUsers();
+    });
+    
+    $('#delete_button').click(function() {
+        DeleteBotUsers();
+    });
+    
+    DisplayTestUserCount();            
+    DisplayTestUserDetails();
+    
+    // make predictions
+    
+    InitPreds();
+    
+    $('#round_button').click(function() {
+        MakeOneRound();
+    });
+    
+    // test email
+    
+    $('#email_text').val('liono@hotmail.com');
+    
+    $('#email_button').click(function() {
+        SendTestEmail();
+    });
+
+});
+
+function DisableForm()
+{
+    $("#usersNum_text").prop("disabled", true);
+    $("#season_select").prop("disabled", true);
+    $("#create_button").prop("disabled", true);
+    $("#round_select").prop("disabled", true);
+    $("#round_button").prop("disabled", true);
+    $("body").css("cursor", "wait");
+}
+
+function EnableForm()
+{
+    $('#usersNum_text').prop('disabled', false);
+    $('#season_select').prop('disabled', false);
+    $('#create_button').prop('disabled', false);
+    $('#round_select').prop('disabled', false);
+    $('#round_button').prop('disabled', false);
+    $('body').css('cursor', 'default');    
+}
+
+
+//
+// BOT USERS
+//
+function CreateTestUsers()
+{
+    var userNum = $('#usersNum_text').val();
+    var season = $('#season_select option:selected').text();
+    $('#usersTotal_listing').val(null);
+    $('#create_status').text('');
+    DisableForm();
+    
+    $.ajax({
+        type: 'POST',
+        url: '{% url "central:botUsers_jx" "create_testUsers" %}',
+        data: {'userNum': userNum, 'season': season},
+        success: function(p_data) {  
+            DisplayTestUserCount();            
+            DisplayTestUserDetails();
+            DisplayCurrentData();
+        },
+        error: function(p_err) {  
+            ErrorToStatus(p_err.responseText, 'CreateTestUsers()', '#create_status');
+        },
+        complete: function() {
+            EnableForm();    
+        }
+    });
+}
+
+function DisplayTestUserCount()
+{
+        
+    $.ajax({
+        type: "GET",
+        url: '{% url "central:botUsers_jx" "testUsers_count" %}',
+        success: function(p_data) {        cl(p_data);
+            $("#usersTotal_listing").text(p_data.userCnt);
+        },
+        error: function(p_err) {   
+            ErrorToStatus(p_err.responseText, 'DisplayTestUserCount()', '#create_status');
+        },
+        complete: function() {
+            EnableForm();    
+        }
+    });
+}
+
+function DisplayTestUserDetails()
+{
+    $.ajax({
+        type: "GET",
+        url: '{% url "central:botUsers_jx" "testUsers_details" %}',
+        success: function(p_data) {         //cl(p_data);
+            if (!p_data || p_data.length == 0)
+            {
+                $('#users_table').html("Bot data not available.");
+            }
+            else
+            {
+                // TODO: update to use colFormat 
+                cols = ["Club", "Total", "Slogan", "Icon"]
+                recs = []
+                $.each(p_data, function(key, value) {
+                    newRow = [value.club, value.total, value.slogan, value.icon];
+                    recs.push(newRow);
+                }); 
+                dtable = {'columns': cols, 'records': recs}
+                SetDataTable('#users_table', dtable);
+            }
+        },
+        error: function(p_err) {   
+            ErrorToStatus(p_err.responseText, 'DisplayTestUserDetails()', '#create_status');
+        },
+        complete: function() {
+            EnableForm();    
+        }
+    });
+}
+
+
+function DeleteBotUsers()
+{
+    var userNum = $("#usersNum_text").val();
+    var season = $("#season_select option:selected").text();
+    $("#usersTotal_listing").val(null);
+    $("#create_status").text("");
+    DisableForm();
+    
+    $.ajax({
+        type: "POST",
+        url: '{% url "central:botUsers_jx" "delete_testUsers" %}',
+        data: {'userNum': userNum, 'season': season},
+        success: function(p_data) {  
+            DisplayTestUserCount();            
+            DisplayTestUserDetails();
+            DisplayCurrentData();
+        },
+        error: function(p_err) {  
+            ErrorToStatus(p_err.responseText, 'CreateTestUsers()', '#create_status');
+        },
+        complete: function() {
+            EnableForm();    
+        }
+    });
+}
+
+
+//
+// MAKE PREDICTIONS
+//
+function InitPreds()
+{
+    var season = $('#season_select option:selected').text();    
+    $('#round_select').empty();
+    
+    $.ajax({    
+        url: '{% url "football:research_jx" "rounds" %}',
+        data: {'season': season},
+        success: function(p_data) {             cl(p_data);
+            if (typeof(p_data) == 'string')
+                $('#round_select').append($('<option>', {"none" : "none" }).text("none"));
+            else 
+                $.each(p_data, function(key, value) {
+                    $('#round_select').append($('<option>', {value : key }).text(value));
+                });
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "InitPreds()", '#preds_status');
+        } 
+    });
+    
+    DisplayCurrentData();
+}
+
+function MakeOneRound()
+{   
+    $("#preds_status").text("");
+    var season = $("#season_select option:selected").text();
+    var round = $("#round_select option:selected").text();
+    DisableForm();
+    
+    $.ajax({
+        type: "POST",
+        url: '{% url "central:botUsers_jx" "makePreds_testUsers" %}',
+        data: {'season': season, 'round': round},
+        success: function(p_data) {  
+            DisplayCurrentData();  
+        }, 
+        error: function(p_err) {
+            $("#preds_table").html(null);
+            DisplayCurrentData();  
+            ErrorToStatus(p_err.responseText, 'MakeOneRound()', '#preds_status');
+        }, 
+        complete: function() {
+            EnableForm();    
+        }
+    });
+}
+
+function DisplayCurrentData()
+{
+    var season = $("#season_select option:selected").text();   
+    $("#preds_table").html(null);
+    $("#preds_status").html(null);
+    
+    $.ajax({
+        url: '{% url "prediction:universal_jx" "get_fixtSummary" %}',
+        data: {'season': season},
+        success: function(p_data) {   //cl(p_data);
+            if (typeof(p_data) == 'string') {
+                $('#preds_table').html(p_data);
+            }
+            else {
+                var fullT = JSONtoFullTable(p_data.data);
+                SetDataTable('#preds_table', fullT, p_data.colFormat);
+            }
+        },  
+        error: function(p_err) {   
+            ErrorToStatus(p_err.responseText, 'DisplayCurrentData()', '#preds_status');
+        }   
+    }); 
+}   
+
+//
+// TEST EMAIL
+//
+function SendTestEmail()
+{
+    var email = $('#email_text').val();   
+    $('#email_status').html(null);       
+    
+    $.ajax({
+        type: 'post',
+        url: '/members/test_email/',
+        data: {'email': email},
+        success: function(p_data) {     
+            $('#email_status').html(p_data);
+        },
+        error: function(p_err) {   
+            ErrorToStatus(p_err.responseText, 'SendTestEmail()', '#email_status');
+        } 
+    });
+}
+
+
+</script>
+
+
+{% endblock content %}
+
+
+
+
+

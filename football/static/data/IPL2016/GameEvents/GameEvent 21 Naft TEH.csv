@@ -1,0 +1,46 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2016,21,Naft TEH,Game Half1 Start,00:00:00,,,,
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Farid,Mohamadi Zadeh,Defender
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Igor,Prahic,Defender
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Mohamd,Daneshgar,Defender
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Reza,Aliyari,Defender
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Mohamad,Ghazi,Forward
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Milad,Farahani,Goalkeeper
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Akbar,Sadeghi,Midfield
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Amir Arsalan,Mottahari,Midfield
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Arash,Rezavand,Midfield
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Reza,Asadi,Midfield
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Toeheed,Gholami,Midfield
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Ali,Hamoodi,Defender
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Amir Hossain,Sadeghi,Defender
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Levon,Hayrapetyan,Defender
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Siavash,Yazdani,Defender
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Godwin,Mensha,Forward
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Rahman,Ahmadi,Goalkeeper
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Abolfazl,Ebrahimi,Midfield
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Amir Hossain,Karimi,Midfield
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Mehdi,Shiri,Midfield
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Mohamad Sadegh,Barani,Midfield
+IPL2016,21,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Siamak,Nemati,Midfield
+IPL2016,21,Naft TEH,Card: Yellow,00:01:00,Naft TEH,Toeheed,Gholami,Midfield
+IPL2016,21,Naft TEH,Card: Yellow,00:01:00,Paykan TEH,Ali,Hamoodi,Defender
+IPL2016,21,Naft TEH,Card: Yellow,00:01:00,Paykan TEH,Mohamad Sadegh,Barani,Midfield
+IPL2016,21,Naft TEH,Goal,00:25:00,Naft TEH,Amir Arsalan,Mottahari,Midfield
+IPL2016,21,Naft TEH,Game Half1 Stop,00:46:00,,,,
+IPL2016,21,Naft TEH,Game Half2 Start,00:47:00,,,,
+IPL2016,21,Naft TEH,Player Sub-in,00:56:00,Naft TEH,Andranik,Taymorian,Midfield
+IPL2016,21,Naft TEH,Player Sub-out,00:56:00,Naft TEH,Toeheed,Gholami,Midfield
+IPL2016,21,Naft TEH,Goal,00:57:00,Naft TEH,Igor,Prahic,Defender
+IPL2016,21,Naft TEH,Player Sub-in,00:57:00,Paykan TEH,Morteza,Aghakhan,Forward
+IPL2016,21,Naft TEH,Player Sub-out,00:57:00,Paykan TEH,Ali,Hamoodi,Defender
+IPL2016,21,Naft TEH,Player Sub-in,01:09:00,Paykan TEH,Sajjad,Ashouri,Midfield
+IPL2016,21,Naft TEH,Player Sub-out,01:09:00,Paykan TEH,Mehdi,Shiri,Midfield
+IPL2016,21,Naft TEH,Player Sub-in,01:17:00,Paykan TEH,Shahriyar,Moghanlou,Defender
+IPL2016,21,Naft TEH,Player Sub-out,01:17:00,Paykan TEH,Amir Hossain,Karimi,Midfield
+IPL2016,21,Naft TEH,Goal,01:19:00,Paykan TEH,Mohamad Sadegh,Barani,Midfield
+IPL2016,21,Naft TEH,Player Sub-in,01:23:00,Naft TEH,Alireza,Ezzat Keramat,Midfield
+IPL2016,21,Naft TEH,Player Sub-out,01:23:00,Naft TEH,Amir Arsalan,Mottahari,Midfield
+IPL2016,21,Naft TEH,Player Sub-in,01:29:00,Naft TEH,Vahid,Hamdinejad,Defender
+IPL2016,21,Naft TEH,Player Sub-out,01:29:00,Naft TEH,Reza,Aliyari,Defender
+IPL2016,21,Naft TEH,Game Half2 Stop,01:39:00,,,,
+IPL2016,21,Naft TEH,Game End,01:40:00,,,,

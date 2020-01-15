@@ -1,0 +1,302 @@
+
+{% extends "common_base.html" %}
+{% load staticfiles %}
+{% load utility_ttags %}
+
+{% block content %}
+
+
+<style>
+
+
+.panel_store {
+    margin: 6px;
+    padding: 20px;
+    
+    background-image: url(/static/graphics/store_panel.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    text-align: center;  
+    cursor: pointer;
+}
+.panel_store:hover {
+    background-image: url(/static/graphics/store_panelHover.png);
+}
+
+
+.silvertext {
+	-webkit-transition: color 0.2s ease;
+	-moz-transition: color 0.2s ease;
+	-o-transition: color 0.2s ease;
+	transition: color 0.2s ease;
+	position: relative;
+	font-family: Voltaire;
+	font-size: 50px;
+	font-weight: bold;
+	color: #a6a6a6;
+	text-shadow: 0px 1px 0px #ABABAB, 
+                     0px 2px 3px #828282, 
+                     0px 3px 0px #4F4F4F, 
+                     0px 4px 0px #4F4F4F, 
+                     0px 5px 0px #4F4F4F, 
+                     0px 6px 1px rgba(0,0,0,0.7), 
+                     0px 10px 5px rgba(0,0,0,0.5);
+}
+.silvertext:hover {
+	color: #DEDEDE;
+}
+
+
+</style>
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_header">
+            <span class="font_title">The Store</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="store_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Real Money Store</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "money" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-xl-10">            
+        <div class="display_block inner_margin1 frame_entry" style="padding: 6px;">
+            <div class="row">
+                {% for item in storeConfig %}
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
+                        
+                        <div style="display: block;">
+                            <div id="money{{ item.id }}_store" class="panel_store">
+                                <span class="font_diamond" style="font-size: 24px; padding-top: 4px;">Diamonds<br>
+                                    x{{ item.diamonds }}
+                                </span>
+                                <span style="display: block; height: 10px;"> </span>
+                                
+                                <div class="format_center">
+                                    <img id="storeDmd{{ item.id }}_image" style="max-width: 65px; max-height: 65px;"
+                                        src="/static/graphics/store_diamond.png"
+                                        onmouseover="this.src='/static/graphics/store_diamondHover.png'"
+                                        onmouseout="this.src='/static/graphics/store_diamond.png'"/>
+                                </div>
+                                <span style="display: block; height: 10px;"> </span>
+                                
+                                <span class="font_dollar silvertext" style="font-size: 26px;">${{ item.dollars }}</span> <br>
+                                <span style="display: block; height: 10px;"> </span>
+                                
+                                <span class="" style="font-style: italic; color: black">{{ item.caption }}</span>
+                                <span style="display: block; height: 10px;"> </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                {% endfor %}
+            </div>    
+        </div>    
+    </div>
+    
+    
+</div>
+
+
+<!-- dynamically rendered html -->
+
+{% for item in storeConfig %}
+
+<div id="storeMoney{{item.id}}_dialog" title="Purchase Diamonds">
+    <div class="outer_padding2 format_center">
+        <span>
+            Purchase 
+            <img id="diamond_image" style="max-width: 26px; max-height: 26px;"
+                src="/static/graphics/currency_dmd_normal.png" />
+            {{ item.diamonds }}
+            for ${{ item.dollars }} ?
+        </span> <br> <br>
+        {{ item.form.render }} <br> 
+        You will be redirected to paypal.com where you can pay with your account,
+        or a credit card. 
+    </div>
+</div>
+
+{% endfor %}
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+
+$(document).ready(function()
+{
+    
+    {% if user.is_authenticated %}
+        {% for item in storeConfig %}
+        
+        $('#money{0}_store'.format('{{ item.id }}')).click(function() {
+                var htmlID = $(this).attr('id');        // get the html-id of the calling element
+                var id = htmlID.match(/\d+/)[0];        // get the first number in string
+                
+                $('#storeMoney{0}_dialog'.format(id)).dialog('open');
+                $('[name="submit"]').blur();        // remove focus from paypal button
+            });
+        
+        MakeDialog('#storeMoney{0}_dialog'.format('{{ item.id }}'), '380px');
+        
+        {% endfor %}
+    {% else %}
+        {% for item in storeConfig %}
+        
+        $('#money{0}_store'.format('{{ item.id }}')).click(function() {
+            var msg = "Buying diamonds is for logged in users.";
+            $('#errorMsg_normal').text(msg);
+            $('#error_dialog').dialog('open');
+        });
+        
+        $('#storeMoney{0}_dialog'.format('{{ item.id }}')).remove();
+        
+        {% endfor %}
+    {% endif %}
+
+});
+
+</script>
+
+
+<script>
+
+// OLD shit
+
+function InitializeRealMoney()
+{
+    MONEYSTORE = $.parseJSON('{{ storeConfig_js | escapejs }}');
+    
+    $.each(MONEYSTORE, function(idx, value) {
+        $('#money' + (idx +1) + '_store').click(StoreMoneyClick);
+    });
+    
+    MakeDialog('#storeMoney_dialog', '380px');
+    
+    $('#okgoMoney_button').click(MakeMoneyPurchase);
+    
+    $('#cancelMoney_button').click(function() {
+        $('#storeMoney_dialog').dialog('close');
+    });
+    
+    $('#storeMoney_dialog').on('dialogclose', function(event) {
+        CURRENTITEM = {};
+    });
+    
+}
+
+function StoreMoneyClick()
+{
+    var htmlID = $(this).attr('id');        // get the html-id of the calling element
+    var id = htmlID.match(/\d+/);           // get the first number in string
+    CURRENTITEM = MONEYSTORE[id -1];
+    
+    var htmlRaw = '                 \
+        <div>                       \
+            <span>                  \
+                Purchase            \
+                <i class="fa fa-diamond fa-lg icon_exDiamond" style=""></i> {0}     \
+                for \${1} ?         \
+            </span>                 \
+        </div>                      \
+    '.format(CURRENTITEM.diamonds, CURRENTITEM.dollars);
+    
+    $('#questionMoney_normal').html(htmlRaw);
+    $('#okgoMoney_button').removeClass('format_disable');
+    $('#cancelMoney_button').removeClass('format_disable');    
+    $('#resultMoney_normal').parent().parent().hide();
+    
+    $("#storeMoney_dialog").dialog("open");
+    $('[name="submit"]').blur();        // remove focus from paypal button
+}
+
+function MakeMoneyPurchase()
+{        
+    $('#okgoMoney_button').addClass('format_disable');
+    $('#cancelMoney_button').addClass('format_disable');    
+    
+    $.ajax({
+        type: 'POST',
+        url: '/central/central_jx/update_buyDiamonds/',
+        data: {'itemId': CURRENTITEM.id},
+        success: function(p_data) {         //cl(p_data);
+            $("#storeMoney_dialog").dialog("close");
+            AnimateDiamonds(p_data);
+        }, 
+        error: function(p_err) {
+            if (p_err.status >= 400 & p_err.status <= 499)
+            {
+                $('#resultMoney_normal').text(p_err.responseJSON);
+                $('#resultMoney_normal').parent().parent().show(400);
+            }
+            else
+            {
+                $("#storeMoney_dialog").dialog("close");
+                ErrorToStatus(p_err.responseText, 'MakeMoneyPurchase()', '#money_status');
+            }
+        }
+    });
+    
+}
+
+function AnimateDiamonds(p_resources)
+{
+    $('#menu_diamondsStar').show();
+    
+    var animDuration = 2000;        // lasts 2 secs
+    var animSteps = 80;             // frames for whole duration
+    var animTime = animDuration / animSteps;
+    
+    var diamondIncr = (p_resources.diamond_new - p_resources.diamond_old) / animSteps;
+    var diamondDisplay = p_resources.diamond_old;
+    
+    var myInterval = setInterval(AnimationStep, animTime);
+    
+    // function runs within closure of parent function and has parent variable access
+    
+    function AnimationStep()
+    {
+        diamondDisplay += diamondIncr;
+        
+        $('#menu_diamondsText').text("Diamonds: " + Math.round(diamondDisplay));
+        
+        if (diamondDisplay >= p_resources.diamond_new)
+        {
+            clearInterval(myInterval);
+            $('#menu_diamondsText').text("Diamonds: " + p_resources.diamond_new);   // deal with any rounding errors
+            $('#menu_diamondsStar').hide();
+        }
+    }
+}
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+

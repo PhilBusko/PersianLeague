@@ -1,0 +1,504 @@
+Season,SquadClub,FirstName,LastName,Nationality,DateOfBirth,PositionDef,ShirtNo
+IPL2014,Esteghlal KHU,Abdolhadi,Khanifar,Iran,0001-01-01,Midfield,20
+IPL2014,Esteghlal KHU,Ali Akbar,Ahaki,Iran,0001-01-01,Goalkeeper,33
+IPL2014,Esteghlal KHU,Bagher,Hashemi,Iran,0001-01-01,Defender,
+IPL2014,Esteghlal KHU,Ebrahim,Salehi,Iran,0001-01-01,Midfield,7
+IPL2014,Esteghlal KHU,Farzad,Jafari,Iran,0001-01-01,Defender,25
+IPL2014,Esteghlal KHU,Hamdollah,Ebdam,Iran,0001-01-01,Midfield,
+IPL2014,Esteghlal KHU,Hassan,Moaavi,Iran,0001-01-01,Midfield,18
+IPL2014,Esteghlal KHU,Hojat,Chaharmahali,Iran,0001-01-01,Midfield,
+IPL2014,Esteghlal KHU,Iman,Basafa,Iran,0001-01-01,Midfield,34
+IPL2014,Esteghlal KHU,Lamine,Diawara,Mali,0001-01-01,Forward,9
+IPL2014,Esteghlal KHU,Majid,Haydari,Iran,0001-01-01,Defender,3
+IPL2014,Esteghlal KHU,Maysam,Majidi,Iran,0001-01-01,Midfield,
+IPL2014,Esteghlal KHU,Maysam,Baoo,Iran,0001-01-01,Midfield,
+IPL2014,Esteghlal KHU,Maysam,Doraghi,Iran,0001-01-01,Midfield,6
+IPL2014,Esteghlal KHU,Maysam Parviz,Karimi,Iran,0001-01-01,Goalkeeper,1
+IPL2014,Esteghlal KHU,Mehdi,Momeni,Iran,0001-01-01,Forward,10
+IPL2014,Esteghlal KHU,Milad,Rabbanifard,Iran,0001-01-01,Defender,
+IPL2014,Esteghlal KHU,Mohamad,Tayyebi,Iran,0001-01-01,Defender,2
+IPL2014,Esteghlal KHU,Mohamad Ebrahim,Khosravi,Iran,0001-01-01,Defender,4
+IPL2014,Esteghlal KHU,Mohamad Reza,Mahdavi,Iran,0001-01-01,Midfield,11
+IPL2014,Esteghlal KHU,Mohsen,Bayat,Iran,0001-01-01,Midfield,
+IPL2014,Esteghlal KHU,Mousa Salif,Coulibaly,Mali,0001-01-01,Defender,5
+IPL2014,Esteghlal KHU,Reza,Kardoost,Iran,0001-01-01,Midfield,8
+IPL2014,Esteghlal KHU,Rouhollah,Sayfollahi,Iran,0001-01-01,Forward,17
+IPL2014,Esteghlal KHU,Sadegh,Sadeghi Baba Ahmadi,Iran,0001-01-01,Forward,15
+IPL2014,Esteghlal KHU,Seyed Mehdi,Seyed Salehi,Iran,0001-01-01,Forward,
+IPL2014,Esteghlal KHU,Soumbeila,Diakite,Mali,0001-01-01,Goalkeeper,
+IPL2014,Esteghlal KHU,Yazdan,Abbasian,Iran,0001-01-01,Midfield,
+IPL2014,Esteghlal TEH,Alberto Rafael,Da Silva,Brazil,0001-01-01,Goalkeeper,12
+IPL2014,Esteghlal TEH,Alireza,Ramezani,Iran,0001-01-01,Forward,19
+IPL2014,Esteghlal TEH,Amir Hossain,Sadeghi,Iran,0001-01-01,Defender,4
+IPL2014,Esteghlal TEH,Amir Hossain,Tahooni,Iran,0001-01-01,Midfield,
+IPL2014,Esteghlal TEH,Arash,Borhani,Iran,0001-01-01,Forward,9
+IPL2014,Esteghlal TEH,Behnam,Barzaei,Iran,0001-01-01,Forward,
+IPL2014,Esteghlal TEH,Gholamreza,Enayati,Iran,0001-01-01,Forward,
+IPL2014,Esteghlal TEH,Haneef,Omranzadeh,Iran,0001-01-01,Defender,5
+IPL2014,Esteghlal TEH,Hashem,Bayk Zadeh,Iran,0001-01-01,Midfield,16
+IPL2014,Esteghlal TEH,Hendrik,Helmke,Germany,0001-01-01,Midfield,
+IPL2014,Esteghlal TEH,Hrayr,Mkoyan,Armenia,0001-01-01,Defender,15
+IPL2014,Esteghlal TEH,Jassim,Karrar,Iraq,0001-01-01,Midfield,13
+IPL2014,Esteghlal TEH,Khosrow,Haydari,Iran,0001-01-01,Midfield,2
+IPL2014,Esteghlal TEH,Mahdi,Karimian,Iran,0001-01-01,Midfield,23
+IPL2014,Esteghlal TEH,Majid,Hossaini,Iran,0001-01-01,Midfield,
+IPL2014,Esteghlal TEH,Milad,Solayman Fallah,Iran,0001-01-01,Forward,
+IPL2014,Esteghlal TEH,Milad,Fakhreddini,Iran,0001-01-01,Midfield,32
+IPL2014,Esteghlal TEH,Milad,Noori,Iran,0001-01-01,Midfield,
+IPL2014,Esteghlal TEH,Mohamad,Khalili,Iran,0001-01-01,Midfield,25
+IPL2014,Esteghlal TEH,Mohamad Reza,Khorsandnia,Iran,0001-01-01,Midfield,3
+IPL2014,Esteghlal TEH,Mohsen,Forozan,Iran,0001-01-01,Goalkeeper,1
+IPL2014,Esteghlal TEH,Mohsen,Karimi,Iran,0001-01-01,Forward,28
+IPL2014,Esteghlal TEH,Omid,Ebrahimi,Iran,0001-01-01,Midfield,6
+IPL2014,Esteghlal TEH,Sajjad,Shahbaz Zadeh,Iran,0001-01-01,Forward,10
+IPL2014,Esteghlal TEH,Vahid,Talebloo,Iran,0001-01-01,Goalkeeper,
+IPL2014,Esteghlal TEH,Yaghoub,Karimi,Iran,0001-01-01,Midfield,17
+IPL2014,Foolad KHU,Ahmad,Alnemae,Iran,0001-01-01,Defender,
+IPL2014,Foolad KHU,Ahmad,Abdollahzadeh,Iran,0001-01-01,Midfield,20
+IPL2014,Foolad KHU,Ali,Sina Rabbani,Iran,0001-01-01,Midfield,29
+IPL2014,Foolad KHU,Alireza,Salimi,Iran,0001-01-01,Goalkeeper,1
+IPL2014,Foolad KHU,Aloys,Nong,Cameroon,0001-01-01,Forward,
+IPL2014,Foolad KHU,Arash,Afshin,Iran,0001-01-01,Forward,16
+IPL2014,Foolad KHU,Ayoub,Vali,Iran,0001-01-01,Defender,4
+IPL2014,Foolad KHU,Bahman,Jahantigh,Iran,0001-01-01,Forward,26
+IPL2014,Foolad KHU,Bahman,Kamel,Iran,0001-01-01,Defender,19
+IPL2014,Foolad KHU,Bakhtiar,Rahmani,Iran,0001-01-01,Midfield,11
+IPL2014,Foolad KHU,Behnam,Mousavi,Iran,0001-01-01,Goalkeeper,22
+IPL2014,Foolad KHU,Ershad,Yousefi,Iran,0001-01-01,Goalkeeper,63
+IPL2014,Foolad KHU,Esmaeel,Sharifat,Iran,0001-01-01,Midfield,10
+IPL2014,Foolad KHU,Hadi,Habibinejad,Iran,0001-01-01,Midfield,32
+IPL2014,Foolad KHU,Iman,Mousavi,Iran,0001-01-01,Forward,9
+IPL2014,Foolad KHU,Leonard,Mesaric,Croatia,0001-01-01,Defender,3
+IPL2014,Foolad KHU,Mahdi,Niyayeshpour,Iran,0001-01-01,Forward,22
+IPL2014,Foolad KHU,Mahdi,Baderlo,Iran,0001-01-01,Midfield,5
+IPL2014,Foolad KHU,Mathias,Chago,Cameroon,0001-01-01,Midfield,15
+IPL2014,Foolad KHU,Mehrdad,Jamaati,Iran,0001-01-01,Defender,24
+IPL2014,Foolad KHU,Milad,Homayooni Sangari,Iran,0001-01-01,Goalkeeper,31
+IPL2014,Foolad KHU,Mohamad,Ghazi,Iran,0001-01-01,Forward,
+IPL2014,Foolad KHU,Mohamad,Ahle Shakheh,Iran,0001-01-01,Defender,25
+IPL2014,Foolad KHU,Mohsen,Mosalman,Iran,0001-01-01,Midfield,
+IPL2014,Foolad KHU,Omid,Khaledi,Iran,0001-01-01,Defender,21
+IPL2014,Foolad KHU,Reza,Ahmadi,Iran,0001-01-01,Defender,6
+IPL2014,Foolad KHU,Sasan,Ansari,Iran,0001-01-01,Forward,8
+IPL2014,Foolad KHU,Shahab,Karami,Iran,0001-01-01,Midfield,14
+IPL2014,Foolad KHU,Sina,Moradi,Iran,0001-01-01,Midfield,
+IPL2014,Foolad KHU,Soroush,Rafiei,Iran,0001-01-01,Midfield,7
+IPL2014,Foolad KHU,Soroush,Saeedi,Iran,0001-01-01,Midfield,33
+IPL2014,Foolad KHU,Waleed,Mashaei Zadeh,Iran,0001-01-01,Midfield,23
+IPL2014,Foolad KHU,Yousef,Vakia,Iran,0001-01-01,Midfield,40
+IPL2014,Gostaresh TBZ,Adel,Sarshar,Iran,0001-01-01,Defender,
+IPL2014,Gostaresh TBZ,Alireza,Latifi,Iran,0001-01-01,Midfield,
+IPL2014,Gostaresh TBZ,Alireza,Naghizadeh,Iran,0001-01-01,Midfield,16
+IPL2014,Gostaresh TBZ,Behnam,Dadashvand,Iran,0001-01-01,Defender,31
+IPL2014,Gostaresh TBZ,Davood,Nooshi Sofyani,Iran,0001-01-01,Goalkeeper,
+IPL2014,Gostaresh TBZ,Diogo,de Oliveira,Brazil,0001-01-01,Midfield,
+IPL2014,Gostaresh TBZ,Farshad,Pour Khan Mohamad,Iran,0001-01-01,Midfield,
+IPL2014,Gostaresh TBZ,Hamed,Noorollahi,Iran,0001-01-01,Midfield,
+IPL2014,Gostaresh TBZ,Hamid Reza,Joekar,Iran,0001-01-01,Defender,
+IPL2014,Gostaresh TBZ,Jaber,Ansari,Iran,0001-01-01,Midfield,9
+IPL2014,Gostaresh TBZ,Leonardo,Pimenta,Brazil,0001-01-01,Forward,
+IPL2014,Gostaresh TBZ,Magno,Batista Da Silva,Brazil,0001-01-01,Midfield,14
+IPL2014,Gostaresh TBZ,Mahmoud,Khamisi,Iran,0001-01-01,Defender,4
+IPL2014,Gostaresh TBZ,Maysam,Naghizadeh,Iran,0001-01-01,Midfield,6
+IPL2014,Gostaresh TBZ,Mehdi,Qoreyshi,Iran,0001-01-01,Defender,3
+IPL2014,Gostaresh TBZ,Mehdi,Eslami,Iran,0001-01-01,Goalkeeper,22
+IPL2014,Gostaresh TBZ,Milad,Jahani,Iran,0001-01-01,Midfield,
+IPL2014,Gostaresh TBZ,Mohamad,Mokhtari,Iran,0001-01-01,Defender,
+IPL2014,Gostaresh TBZ,Mohamad,Nasseri,Iran,0001-01-01,Goalkeeper,44
+IPL2014,Gostaresh TBZ,Mohamad,Haydari,Iran,0001-01-01,Midfield,
+IPL2014,Gostaresh TBZ,Mohamad,Ebrahimi,Iran,0001-01-01,Forward,
+IPL2014,Gostaresh TBZ,Mohamad Amin,Darvish,Iran,0001-01-01,Midfield,
+IPL2014,Gostaresh TBZ,Mohsen,Bayatinia,Iran,0001-01-01,Forward,
+IPL2014,Gostaresh TBZ,Morteza,Asadi,Iran,0001-01-01,Defender,8
+IPL2014,Gostaresh TBZ,Morteza,Mahfouzi,Iran,0001-01-01,Defender,7
+IPL2014,Gostaresh TBZ,Mostafa,Ekrami,Iran,0001-01-01,Defender,
+IPL2014,Gostaresh TBZ,Omid,Nezamipour,Iran,0001-01-01,Midfield,11
+IPL2014,Gostaresh TBZ,Paymon,Ranjbari,Iran,0001-01-01,Forward,
+IPL2014,Gostaresh TBZ,Rasool,Pirzadeh,Iran,0001-01-01,Midfield,23
+IPL2014,Gostaresh TBZ,Rodrigo,Lopez Odriozola,Uruguay,0001-01-01,Goalkeeper,33
+IPL2014,Gostaresh TBZ,Seyed Ali,Mirshafieian,Iran,0001-01-01,Midfield,
+IPL2014,Gostaresh TBZ,Seyed Mohsen,Hossaini,Iran,0001-01-01,Midfield,
+IPL2014,Gostaresh TBZ,Yousef,Seyedi,Iran,0001-01-01,Forward,18
+IPL2014,Malavan ANZ,Abolhassan,Jafari,Iran,0001-01-01,Defender,3
+IPL2014,Malavan ANZ,Ahmad,Ahi,Iran,0001-01-01,Defender,6
+IPL2014,Malavan ANZ,Ali,Abedi,Iran,0001-01-01,Forward,20
+IPL2014,Malavan ANZ,Alireza,Ramezani,Iran,0001-01-01,Midfield,16
+IPL2014,Malavan ANZ,Arman,Ramezani,Iran,0001-01-01,Forward,27
+IPL2014,Malavan ANZ,Aziz,Maeboudi,Iran,0001-01-01,Defender,14
+IPL2014,Malavan ANZ,Ezzaotollah,Pourghaz,Iran,0001-01-01,Defender,5
+IPL2014,Malavan ANZ,Farid,Mokhtari,Iran,0001-01-01,Forward,
+IPL2014,Malavan ANZ,Farzad,Hatami,Iran,0001-01-01,Forward,
+IPL2014,Malavan ANZ,Fouad,Aghaei,Iran,0001-01-01,Midfield,
+IPL2014,Malavan ANZ,Hamid,Golzari,Iran,0001-01-01,Midfield,18
+IPL2014,Malavan ANZ,Hossain,Hossaini,Iran,0001-01-01,Goalkeeper,22
+IPL2014,Malavan ANZ,Iman,Sadeghi,Iran,0001-01-01,Goalkeeper,1
+IPL2014,Malavan ANZ,Jamal,Hossaini,Iran,0001-01-01,Defender,30
+IPL2014,Malavan ANZ,Mahyar,Zahmatkesh,Iran,0001-01-01,Defender,26
+IPL2014,Malavan ANZ,Maziar,Zare,Iran,0001-01-01,Midfield,9
+IPL2014,Malavan ANZ,Mehrdad,Oladi,Iran,0001-01-01,Forward,77
+IPL2014,Malavan ANZ,Mohamad,Jalali,Iran,0001-01-01,Midfield,17
+IPL2014,Malavan ANZ,Mohamad,Abshak,Iran,0001-01-01,Midfield,
+IPL2014,Malavan ANZ,Mohamad,Darabi,Iran,0001-01-01,Midfield,21
+IPL2014,Malavan ANZ,Mohamad,Gholamin,Iran,0001-01-01,Forward,11
+IPL2014,Malavan ANZ,Mohamad,Rabiepour,Iran,0001-01-01,Midfield,
+IPL2014,Malavan ANZ,Mohamad,Razi,Iran,0001-01-01,Midfield,19
+IPL2014,Malavan ANZ,Mohamad Hadi,Yaghoubi,Iran,0001-01-01,Forward,24
+IPL2014,Malavan ANZ,Mohamad Hossain,Kanaani,Iran,0001-01-01,Defender,15
+IPL2014,Malavan ANZ,Mohamad Reza,Ghavidel,Iran,0001-01-01,Goalkeeper,33
+IPL2014,Malavan ANZ,Mohsen,Yousefi,Iran,0001-01-01,Midfield,13
+IPL2014,Malavan ANZ,Morteza,Falahati,Iran,0001-01-01,Defender,2
+IPL2014,Malavan ANZ,Nima,Mirza Zaad,Iran,0001-01-01,Goalkeeper,44
+IPL2014,Malavan ANZ,NIma,Delavari,Iran,0001-01-01,Defender,4
+IPL2014,Malavan ANZ,Pejman,Noori,Iran,0001-01-01,Midfield,
+IPL2014,Malavan ANZ,Reza,Etemadi,Iran,0001-01-01,Midfield,35
+IPL2014,Malavan ANZ,Rouhollah,Arab,Iran,0001-01-01,Forward,
+IPL2014,Malavan ANZ,Sadegh,Moharrami,Iran,0001-01-01,Midfield,25
+IPL2014,Malavan ANZ,Saeed,Yousefzadeh,Iran,0001-01-01,Midfield,40
+IPL2014,Malavan ANZ,Seyed Jalal,Rafkhaei,Iran,0001-01-01,Forward,10
+IPL2014,Malavan ANZ,Shayan,Kargar,Iran,0001-01-01,Defender,23
+IPL2014,Malavan ANZ,Sohail,Rahmani,Iran,0001-01-01,Midfield,12
+IPL2014,Naft MJS,Abbas,Asgari,Iran,0001-01-01,Forward,9
+IPL2014,Naft MJS,Alexandru,Pascenco,Moldavia,0001-01-01,Midfield,
+IPL2014,Naft MJS,Ali,Kianifar,Iran,0001-01-01,Midfield,18
+IPL2014,Naft MJS,Aref,Solayman Ahmad,Iran,0001-01-01,Midfield,24
+IPL2014,Naft MJS,Bahman,Maleki,Iran,0001-01-01,Midfield,
+IPL2014,Naft MJS,Bahram,Ahmadi,Iran,0001-01-01,Midfield,
+IPL2014,Naft MJS,Ehsan,Abdi,Iran,0001-01-01,Midfield,6
+IPL2014,Naft MJS,Ehsan,Alvanzadeh,Iran,0001-01-01,Forward,27
+IPL2014,Naft MJS,Esmaeel,Ali Shirazi,Iran,0001-01-01,Defender,5
+IPL2014,Naft MJS,Farzad,Mohamadi,Iran,0001-01-01,Forward,17
+IPL2014,Naft MJS,Georgi,Georgiev,Bulgaria,0001-01-01,Goalkeeper,
+IPL2014,Naft MJS,Goudarz,Davoodi,Iran,0001-01-01,Goalkeeper,55
+IPL2014,Naft MJS,Hamed,Mahmoudi,Iran,0001-01-01,Defender,4
+IPL2014,Naft MJS,Hamid,Bouhamdan,Iran,0001-01-01,Midfield,8
+IPL2014,Naft MJS,Hamzeh,Haddadi,Iran,0001-01-01,Defender,13
+IPL2014,Naft MJS,Hossain,Maleki,Iran,0001-01-01,Forward,21
+IPL2014,Naft MJS,Kayvon,Amraei,Iran,0001-01-01,Forward,
+IPL2014,Naft MJS,Kiomars,Cheraghi,Iran,0001-01-01,Defender,16
+IPL2014,Naft MJS,Luis Carlos,Dos Santos Martins,Brazil,0001-01-01,Forward,
+IPL2014,Naft MJS,Mahmoud,Tighnavard,Iran,0001-01-01,Midfield,7
+IPL2014,Naft MJS,Milad,Znayadpour,Iran,0001-01-01,Forward,20
+IPL2014,Naft MJS,Milad,Jafari,Iran,0001-01-01,Midfield,11
+IPL2014,Naft MJS,Milad,Sheikhi Solaymani,Iran,0001-01-01,Defender,23
+IPL2014,Naft MJS,Mohamad,Madmalisi,Iran,0001-01-01,Defender,15
+IPL2014,Naft MJS,Mohamad,Salehi Kambou,Iran,0001-01-01,Midfield,19
+IPL2014,Naft MJS,Reza,Darvishi,Iran,0001-01-01,Midfield,10
+IPL2014,Naft MJS,Reza,Karmelachab,Iran,0001-01-01,Midfield,
+IPL2014,Naft MJS,Reza,Haydari,Iran,0001-01-01,Goalkeeper,70
+IPL2014,Naft MJS,Reza,Mohamadi,Iran,0001-01-01,Goalkeeper,1
+IPL2014,Naft MJS,Ruslan,Melziddinov,Uzbekistan,0001-01-01,Midfield,
+IPL2014,Naft MJS,Saeed,Salarzadeh,Iran,0001-01-01,Defender,3
+IPL2014,Naft MJS,Sattar,Deraji,Iran,0001-01-01,Midfield,32
+IPL2014,Naft MJS,Seyed Jalal,Abdi,Iran,0001-01-01,Defender,2
+IPL2014,Naft MJS,Seyed Sajjad,Mousavi,Iran,0001-01-01,Defender,30
+IPL2014,Naft TEH,Abbas,Bouazar,Iran,0001-01-01,Midfield,16
+IPL2014,Naft TEH,Ali,Ghorbani,Iran,0001-01-01,Forward,31
+IPL2014,Naft TEH,Ali,Mohsen Zadeh,Iran,0001-01-01,Goalkeeper,30
+IPL2014,Naft TEH,Alireza,Ezzati,Iran,0001-01-01,Midfield,6
+IPL2014,Naft TEH,Alireza,Bayranvand,Iran,0001-01-01,Goalkeeper,1
+IPL2014,Naft TEH,Amir Arsalan,Mottahari,Iran,0001-01-01,Midfield,
+IPL2014,Naft TEH,Arash,Rezavand,Iran,0001-01-01,Midfield,28
+IPL2014,Naft TEH,Bahram,Dabbagh,Iran,0001-01-01,Defender,17
+IPL2014,Naft TEH,David,Wirikom,Cameroon,0001-01-01,Forward,18
+IPL2014,Naft TEH,Donovan,Deekman,Netherlands,0001-01-01,Forward,
+IPL2014,Naft TEH,Gholamreza,Rezaei,Iran,0001-01-01,Forward,10
+IPL2014,Naft TEH,Hossain,Ebrahimi,Iran,0001-01-01,Forward,7
+IPL2014,Naft TEH,Iman,Mobali,Iran,0001-01-01,Midfield,23
+IPL2014,Naft TEH,Kamal,Kamyabinia,Iran,0001-01-01,Midfield,11
+IPL2014,Naft TEH,Leandro,Padovani,Brazil,0001-01-01,Defender,
+IPL2014,Naft TEH,Maysam,Jodaki,Iran,0001-01-01,Goalkeeper,12
+IPL2014,Naft TEH,Mehdi,Shiri,Iran,0001-01-01,Midfield,21
+IPL2014,Naft TEH,Mohamad Amin,Haj Mohamadi,Iran,0001-01-01,Defender,5
+IPL2014,Naft TEH,Morteza,Pour Ali Ganji,Iran,0001-01-01,Midfield,66
+IPL2014,Naft TEH,Reza,Aliyari,Iran,0001-01-01,Defender,3
+IPL2014,Naft TEH,Saeed,Lotfi,Iran,0001-01-01,Midfield,14
+IPL2014,Naft TEH,Siamak,Kouroshi,Iran,0001-01-01,Defender,4
+IPL2014,Naft TEH,Vahid,Amiri,Iran,0001-01-01,Midfield,9
+IPL2014,Naft TEH,Vahid,Hamdinejad,Iran,0001-01-01,Defender,13
+IPL2014,Naft TEH,Vahid,Sheikhvisi,Iran,0001-01-01,Goalkeeper,40
+IPL2014,Padideh MSH,Abdollah,Mombeini,Iran,0001-01-01,Midfield,25
+IPL2014,Padideh MSH,Ahmad,Eskandari,Iran,0001-01-01,Midfield,30
+IPL2014,Padideh MSH,Akbar,Sadeghi,Iran,0001-01-01,Midfield,5
+IPL2014,Padideh MSH,Ali,Choopani,Iran,0001-01-01,Forward,66
+IPL2014,Padideh MSH,Alireza,Haydari,Iran,0001-01-01,Goalkeeper,22
+IPL2014,Padideh MSH,Bahodir,Nasimov,Uzbekistan,0001-01-01,Forward,76
+IPL2014,Padideh MSH,Hossain,Kiani Moghadam,Iran,0001-01-01,Midfield,44
+IPL2014,Padideh MSH,Hossein,Mehraban,Iran,0001-01-01,Defender,37
+IPL2014,Padideh MSH,Igor,Prahic,Croatia,0001-01-01,Defender,19
+IPL2014,Padideh MSH,Masoud,Nazarzadeh,Iran,0001-01-01,Defender,21
+IPL2014,Padideh MSH,Maysam,Rezapour,Iran,0001-01-01,Midfield,33
+IPL2014,Padideh MSH,Mehdi,Khayri,Iran,0001-01-01,Midfield,14
+IPL2014,Padideh MSH,Milad,Gharibi,Iran,0001-01-01,Forward,99
+IPL2014,Padideh MSH,Milan,Jovanovic,Montenegro,0001-01-01,Defender,4
+IPL2014,Padideh MSH,Moein,Abbasian,Iran,0001-01-01,Midfield,23
+IPL2014,Padideh MSH,Mohamad,Rajabi,Iran,0001-01-01,Midfield,
+IPL2014,Padideh MSH,Mohamad,Valizadeh,Iran,0001-01-01,Defender,32
+IPL2014,Padideh MSH,Mohamad,Gholami,Iran,0001-01-01,Forward,
+IPL2014,Padideh MSH,Mohamad,Salsali,Iran,0001-01-01,Defender,
+IPL2014,Padideh MSH,Mohamad,Nejad Mehdi,Iran,0001-01-01,Defender,2
+IPL2014,Padideh MSH,Mohamad Ali,Farzami,Iran,0001-01-01,Midfield,
+IPL2014,Padideh MSH,Mohamad Hassan,Rajabzadeh,Iran,0001-01-01,Midfield,
+IPL2014,Padideh MSH,Mohamad Mahdi,Nazari,Iran,0001-01-01,Midfield,
+IPL2014,Padideh MSH,Mohamad Reza,Kaveh,Iran,0001-01-01,Midfield,60
+IPL2014,Padideh MSH,Mohamad Reza,Basaj,Iran,0001-01-01,Midfield,88
+IPL2014,Padideh MSH,Mohamad Reza,Nasehi,Iran,0001-01-01,Midfield,9
+IPL2014,Padideh MSH,Mojtaba,Roshangar,Iran,0001-01-01,Goalkeeper,1
+IPL2014,Padideh MSH,Reza,Otaghi Farimiani,Iran,0001-01-01,Midfield,24
+IPL2014,Padideh MSH,Reza,Haghighi,Iran,0001-01-01,Midfield,
+IPL2014,Padideh MSH,Rouhollah,Bagheri,Iran,0001-01-01,Forward,17
+IPL2014,Padideh MSH,Saeed,Jalali,Iran,0001-01-01,Goalkeeper,35
+IPL2014,Padideh MSH,Saeed,Ghezel,Iran,0001-01-01,Defender,
+IPL2014,Padideh MSH,Seyed Abolfazl,Qoreyshi,Iran,0001-01-01,Forward,15
+IPL2014,Padideh MSH,Vahid,Asgari,Iran,0001-01-01,Defender,20
+IPL2014,Padideh MSH,Younes,Shakeri,Iran,0001-01-01,Forward,11
+IPL2014,Padideh MSH,Zoran,Knezevic,Serbia,0001-01-01,Midfield,27
+IPL2014,Paykan TEH,Ahmad,Jamshidian,Iran,0001-01-01,Midfield,
+IPL2014,Paykan TEH,Ahmad,Mehdizadeh,Iran,0001-01-01,Defender,
+IPL2014,Paykan TEH,Ali,Salah Hashim,Iraq,0001-01-01,Forward,
+IPL2014,Paykan TEH,Alireza,Mohamad,Iran,0001-01-01,Defender,24
+IPL2014,Paykan TEH,Amir Hossain,Feshangchi,Iran,0001-01-01,Midfield,23
+IPL2014,Paykan TEH,Arman,Ghasemi,Iran,0001-01-01,Defender,16
+IPL2014,Paykan TEH,Faraz,Emamali,Iran,0001-01-01,Midfield,
+IPL2014,Paykan TEH,Hamid Reza,Deevsalar,Iran,0001-01-01,Defender,2
+IPL2014,Paykan TEH,Jahangir,Asgari,Iran,0001-01-01,Forward,11
+IPL2014,Paykan TEH,Jlloyd,Samuel,Trinidad and Tobago,0001-01-01,Midfield,3
+IPL2014,Paykan TEH,Keyvan,Vahdani,Iran,0001-01-01,Forward,21
+IPL2014,Paykan TEH,Majid,Khodabandehlou,Iran,0001-01-01,Midfield,8
+IPL2014,Paykan TEH,Mate,Eterovic,Croatia,0001-01-01,Forward,
+IPL2014,Paykan TEH,Mobin,Ezati,Iran,0001-01-01,Forward,28
+IPL2014,Paykan TEH,Mohamad,Nosrati,Iran,0001-01-01,Defender,20
+IPL2014,Paykan TEH,Mohammad Sadegh,Barani,Iran,0001-01-01,Midfield,7
+IPL2014,Paykan TEH,Morteza,Aghakhan,Iran,0001-01-01,Forward,26
+IPL2014,Paykan TEH,Mostafa,Shojaei,Iran,0001-01-01,Forward,
+IPL2014,Paykan TEH,Muamer,Svraka,Bosnia Herzegovina,0001-01-01,Midfield,
+IPL2014,Paykan TEH,Oybek,Kilichev,Uzbekistan,0001-01-01,Midfield,14
+IPL2014,Paykan TEH,Saeed,Daghighi,Iran,0001-01-01,Forward,10
+IPL2014,Paykan TEH,Sandro,Ferreira Andre Dodo,Brazil,0001-01-01,Midfield,
+IPL2014,Paykan TEH,Seyed Ali,Hossaini,Iran,0001-01-01,Defender,4
+IPL2014,Paykan TEH,Seyed Amir Hossain,Amiri,Iran,0001-01-01,Defender,
+IPL2014,Paykan TEH,Seyed Hossain,Karimi,Iran,0001-01-01,Midfield,35
+IPL2014,Paykan TEH,Seyed Mahdi,Rahmati,Iran,0001-01-01,Goalkeeper,1
+IPL2014,Paykan TEH,Seyed Milad,Ahmadian,Iran,0001-01-01,Goalkeeper,12
+IPL2014,Paykan TEH,Shahryar,Moghanblo,Iran,0001-01-01,Midfield,
+IPL2014,Paykan TEH,Siamak,Nemati,Iran,0001-01-01,Midfield,
+IPL2014,Paykan TEH,Siavash,Akbarpour,Iran,0001-01-01,Forward,
+IPL2014,Paykan TEH,Siavash,Yazdani,Iran,0001-01-01,Midfield,
+IPL2014,Paykan TEH,Vahid,Haydarieh,Iran,0001-01-01,Defender,19
+IPL2014,Perspolis TEH,Ahmad,Nooroullahi,Iran,0001-01-01,Midfield,28
+IPL2014,Perspolis TEH,Ali,Alipour,Iran,0001-01-01,Forward,77
+IPL2014,Perspolis TEH,Ali,Fatemi,Iran,0001-01-01,Forward,
+IPL2014,Perspolis TEH,Ali,Astani,Iran,0001-01-01,Midfield,
+IPL2014,Perspolis TEH,Alireza,Noormohamadi,Iran,0001-01-01,Defender,20
+IPL2014,Perspolis TEH,Babak,Hatami,Iran,0001-01-01,Forward,99
+IPL2014,Perspolis TEH,Correa Junior,Nilson,Brazil,0001-01-01,Goalkeeper,40
+IPL2014,Perspolis TEH,Farsheed,Esmaeel Zadeh,Iran,0001-01-01,Midfield,15
+IPL2014,Perspolis TEH,Fernando,Gabriel,Brazil,0001-01-01,Midfield,66
+IPL2014,Perspolis TEH,Hadi,Nourozi,Iran,0001-01-01,Forward,24
+IPL2014,Perspolis TEH,Hamid Reza,Ali Asgari,Iran,0001-01-01,Midfield,26
+IPL2014,Perspolis TEH,Hossain,Mahini,Iran,0001-01-01,Defender,13
+IPL2014,Perspolis TEH,Jose,Tadeu Mouro Junior,Brazil,0001-01-01,Forward,22
+IPL2014,Perspolis TEH,Mahdi,Taremi,Iran,0001-01-01,Forward,17
+IPL2014,Perspolis TEH,Masoud,Homami,Iran,0001-01-01,Goalkeeper,44
+IPL2014,Perspolis TEH,Maysam,Hossaini,Iran,0001-01-01,Defender,12
+IPL2014,Perspolis TEH,Mehdi,Jafarpour,Iran,0001-01-01,Midfield,
+IPL2014,Perspolis TEH,Mehdi,Daghagheleh,Iran,0001-01-01,Forward,8
+IPL2014,Perspolis TEH,Mehrdad,Kafshgari,Iran,0001-01-01,Midfield,18
+IPL2014,Perspolis TEH,Michael,Umana Corrales,Costa Rica,0001-01-01,Defender,4
+IPL2014,Perspolis TEH,Milad,Kamadani,Iran,0001-01-01,Midfield,19
+IPL2014,Perspolis TEH,Mobin,Mirdoroghi,Iran,0001-01-01,Defender,
+IPL2014,Perspolis TEH,Mohamad,Abbaszadeh,Iran,0001-01-01,Forward,33
+IPL2014,Perspolis TEH,Mohamad,Noori,Iran,0001-01-01,Midfield,14
+IPL2014,Perspolis TEH,Mohamad Reza,Khanzadeh,Iran,0001-01-01,Defender,3
+IPL2014,Perspolis TEH,Mohsen,Bengar,Iran,0001-01-01,Defender,6
+IPL2014,Perspolis TEH,Nader,Safarzaei,Iran,0001-01-01,Goalkeeper,23
+IPL2014,Perspolis TEH,Navid,Sabouri,Iran,0001-01-01,Defender,
+IPL2014,Perspolis TEH,Omid,Allishah,Iran,0001-01-01,Midfield,2
+IPL2014,Perspolis TEH,Payam,Sadeghian,Iran,0001-01-01,Forward,11
+IPL2014,Perspolis TEH,Reza,Norouzi,Iran,0001-01-01,Forward,10
+IPL2014,Perspolis TEH,Reza,Khaleghifar,Iran,0001-01-01,Forward,16
+IPL2014,Perspolis TEH,Shahab,Zahedi,Iran,0001-01-01,Forward,23
+IPL2014,Perspolis TEH,Sosha,Makani,Iran,0001-01-01,Goalkeeper,1
+IPL2014,Rahahan TEH,Abbas,Mohamad Rezaei,Iran,0001-01-01,Midfield,
+IPL2014,Rahahan TEH,Adel,Kolahkaj,Iran,0001-01-01,Forward,
+IPL2014,Rahahan TEH,Ali,Alipour,Iran,0001-01-01,Midfield,16
+IPL2014,Rahahan TEH,Alireza,Azimi,Iran,0001-01-01,Forward,17
+IPL2014,Rahahan TEH,Amin,Manoochehri,Iran,0001-01-01,Forward,11
+IPL2014,Rahahan TEH,Amir,Abedzadeh,Iran,0001-01-01,Goalkeeper,22
+IPL2014,Rahahan TEH,Bahador,Abdi,Iran,0001-01-01,Midfield,10
+IPL2014,Rahahan TEH,Bojan,Jokic,Slovenia,0001-01-01,Defender,15
+IPL2014,Rahahan TEH,Ebrahim,Karimi,Iran,0001-01-01,Defender,5
+IPL2014,Rahahan TEH,Farshad,Faraji,Iran,0001-01-01,Midfield,
+IPL2014,Rahahan TEH,Hamed,Noormohamadi,Iran,0001-01-01,Midfield,6
+IPL2014,Rahahan TEH,Igor,Nenezic,Slovenia,0001-01-01,Goalkeeper,40
+IPL2014,Rahahan TEH,Martin Kayongo,Mutumba,Uganda,0001-01-01,Forward,99
+IPL2014,Rahahan TEH,Mehdi,Zarei,Iran,0001-01-01,Defender,21
+IPL2014,Rahahan TEH,Mehrdad,Mohamadi,Iran,0001-01-01,Midfield,23
+IPL2014,Rahahan TEH,Milad,Abtahi,Iran,0001-01-01,Forward,29
+IPL2014,Rahahan TEH,Milad,Akbari,Iran,0001-01-01,Midfield,
+IPL2014,Rahahan TEH,Milad,Mohamadi,Iran,0001-01-01,Midfield,24
+IPL2014,Rahahan TEH,Mohamad,Sattari,Iran,0001-01-01,Goalkeeper,33
+IPL2014,Rahahan TEH,Mohamad,Hossainpour,Iran,0001-01-01,Midfield,14
+IPL2014,Rahahan TEH,Mohamad Reza,Khazaeifard,Iran,0001-01-01,Midfield,
+IPL2014,Rahahan TEH,Mohamad Solaymon,Alizadeh,Iran,0001-01-01,Midfield,7
+IPL2014,Rahahan TEH,Mohsen,Iran Nejad,Iran,0001-01-01,Defender,3
+IPL2014,Rahahan TEH,Mohsen,Mirabi,Iran,0001-01-01,Defender,
+IPL2014,Rahahan TEH,Mojtaba,Shiri,Iran,0001-01-01,Forward,19
+IPL2014,Rahahan TEH,Navid,Khoshhava,Iran,0001-01-01,Defender,
+IPL2014,Rahahan TEH,Ramin,Rezaian,Iran,0001-01-01,Defender,27
+IPL2014,Rahahan TEH,Seyed Ahmad,Mousavi,Iran,0001-01-01,Defender,2
+IPL2014,Rahahan TEH,Shays,Rezaei,Iran,0001-01-01,Defender,4
+IPL2014,Rahahan TEH,Shervin,Razminia,Iran,0001-01-01,Forward,
+IPL2014,Rahahan TEH,Siamak,Koohnavard,Iran,0001-01-01,Midfield,30
+IPL2014,Rahahan TEH,Vahid,Javanmardi,Iran,0001-01-01,Midfield,
+IPL2014,Saba QOM,Abbas,Ghadian,Iran,0001-01-01,Forward,99
+IPL2014,Saba QOM,Abolfazl,Ebrahimi,Iran,0001-01-01,Midfield,7
+IPL2014,Saba QOM,Ahmad,Hassan Zadeh,Iran,0001-01-01,Forward,70
+IPL2014,Saba QOM,Ambuno,Achille,Cameroon,0001-01-01,Midfield,9
+IPL2014,Saba QOM,Aram,Abbasi,Iran,0001-01-01,Forward,
+IPL2014,Saba QOM,Ayoub,Kalantari,Iran,0001-01-01,Midfield,11
+IPL2014,Saba QOM,Davood,Bahadori,Iran,0001-01-01,Defender,22
+IPL2014,Saba QOM,Ehsan,Sokhandan,Iran,0001-01-01,Midfield,
+IPL2014,Saba QOM,Farshid,Bagheri,Iran,0001-01-01,Defender,31
+IPL2014,Saba QOM,Ghasem,Gerami,Iran,0001-01-01,Midfield,14
+IPL2014,Saba QOM,Ghassem,Akbari,Iran,0001-01-01,Forward,
+IPL2014,Saba QOM,Hadi,Shakoori,Iran,0001-01-01,Defender,6
+IPL2014,Saba QOM,Hamid Reza,Kazemi,Iran,0001-01-01,Midfield,32
+IPL2014,Saba QOM,Hossain,Kooshki,Iran,0001-01-01,Midfield,
+IPL2014,Saba QOM,Hossain,Badamaki,Iran,0001-01-01,Midfield,10
+IPL2014,Saba QOM,Ioseb,Chakhvashvili,Georgia,0001-01-01,Midfield,
+IPL2014,Saba QOM,Jallaledin,Alimohamadi,Iran,0001-01-01,Forward,17
+IPL2014,Saba QOM,Javad,Kazemian,Iran,0001-01-01,Forward,
+IPL2014,Saba QOM,Marco,Aurelio,Brazil,0001-01-01,Forward,16
+IPL2014,Saba QOM,Masoud,Hahgjoo,Iran,0001-01-01,Defender,4
+IPL2014,Saba QOM,Mehrdad,Tahmasbi,Iran,0001-01-01,Goalkeeper,1
+IPL2014,Saba QOM,Milad,Farhani,Iran,0001-01-01,Goalkeeper,12
+IPL2014,Saba QOM,Mohamad,Heydari,Iran,0001-01-01,Midfield,
+IPL2014,Saba QOM,Mohamad,Ousani,Iran,0001-01-01,Forward,
+IPL2014,Saba QOM,Mohamad,Borjlo,Iran,0001-01-01,Defender,
+IPL2014,Saba QOM,Mohamad,Aramtabe,Iran,0001-01-01,Defender,13
+IPL2014,Saba QOM,Mohamad Reza,Ghodrati,Iran,0001-01-01,Goalkeeper,40
+IPL2014,Saba QOM,Mohsen,Karami,Iran,0001-01-01,Midfield,
+IPL2014,Saba QOM,Omid,Ghorbani,Iran,0001-01-01,Midfield,26
+IPL2014,Saba QOM,Pirooz,Ghorbani,Iran,0001-01-01,Defender,20
+IPL2014,Saba QOM,Roosbeh,Cheshmi,Iran,0001-01-01,Defender,5
+IPL2014,Saba QOM,Saeed,Mehdipour,Iran,0001-01-01,Midfield,
+IPL2014,Saba QOM,Sajjad,Kermani,Iran,0001-01-01,Defender,29
+IPL2014,Saba QOM,Vahid,Aliabadi,Iran,0001-01-01,Defender,
+IPL2014,Saipa ALB,Ali,Zaynali,Iran,0001-01-01,Defender,23
+IPL2014,Saipa ALB,Ali,Gholizadeh,Iran,0001-01-01,Midfield,
+IPL2014,Saipa ALB,Ali,Nademi,Iran,0001-01-01,Midfield,
+IPL2014,Saipa ALB,Alireza,Alizadeh,Iran,0001-01-01,Midfield,
+IPL2014,Saipa ALB,Bagher,Niari,Iran,0001-01-01,Forward,37
+IPL2014,Saipa ALB,Bahman,Salari,Iran,0001-01-01,Midfield,27
+IPL2014,Saipa ALB,Davood,Shahvaraghi,Iran,0001-01-01,Midfield,15
+IPL2014,Saipa ALB,Ebrahim,Sadeghi,Iran,0001-01-01,Midfield,8
+IPL2014,Saipa ALB,Ebrahim,Shakoori,Iran,0001-01-01,Defender,13
+IPL2014,Saipa ALB,Farshad,Ghasemi,Iran,0001-01-01,Defender,
+IPL2014,Saipa ALB,Hadi,Rekabi,Iran,0001-01-01,Midfield,
+IPL2014,Saipa ALB,Hakeem,Nassari,Iran,0001-01-01,Forward,
+IPL2014,Saipa ALB,Hamed,Fallahzadeh,Iran,0001-01-01,Goalkeeper,
+IPL2014,Saipa ALB,Hamed,Shiri,Iran,0001-01-01,Defender,18
+IPL2014,Saipa ALB,Mahan,Rahmani,Iran,0001-01-01,Midfield,
+IPL2014,Saipa ALB,Mahdi,Torabi,Iran,0001-01-01,Defender,16
+IPL2014,Saipa ALB,Majid,Ayoubi,Iran,0001-01-01,Defender,5
+IPL2014,Saipa ALB,Masih,Zahedi,Iran,0001-01-01,Defender,
+IPL2014,Saipa ALB,Masoud,Ebrahimzadeh,Iran,0001-01-01,Midfield,
+IPL2014,Saipa ALB,Milad,Maydavoodi,Iran,0001-01-01,Midfield,
+IPL2014,Saipa ALB,Milad,Kermani Moghadam,Iran,0001-01-01,Forward,
+IPL2014,Saipa ALB,Mohamad,Nozhati,Iran,0001-01-01,Forward,
+IPL2014,Saipa ALB,Mohamad Reza,Akhbari,Iran,0001-01-01,Goalkeeper,
+IPL2014,Saipa ALB,Mohsen,Arzani,Iran,0001-01-01,Defender,21
+IPL2014,Saipa ALB,Mohsen,Karimi,Iran,0001-01-01,Midfield,
+IPL2014,Saipa ALB,Mojtaba,Ramezani,Iran,0001-01-01,Midfield,
+IPL2014,Saipa ALB,Roozbeh,Shah Alidoost,Iran,0001-01-01,Midfield,4
+IPL2014,Saipa ALB,Sajjad,Moshkelpour,Iran,0001-01-01,Defender,19
+IPL2014,Saipa ALB,Vahid,Mohamad Zadeh,Iran,0001-01-01,Defender,
+IPL2014,Sepahan ESF,Abdollah,Karami,Iran,0001-01-01,Defender,10
+IPL2014,Sepahan ESF,Ali,Gholami,Iran,0001-01-01,Midfield,
+IPL2014,Sepahan ESF,Ali,Karimi,Iran,0001-01-01,Midfield,12
+IPL2014,Sepahan ESF,Ali,Hamoodi,Iran,0001-01-01,Defender,40
+IPL2014,Sepahan ESF,Amin,Jahan Alian,Iran,0001-01-01,Defender,
+IPL2014,Sepahan ESF,Amir Hossain,Karimi,Iran,0001-01-01,Forward,99
+IPL2014,Sepahan ESF,Armin,Sohrabian,Iran,0001-01-01,Defender,24
+IPL2014,Sepahan ESF,Ehsan,Hajsafi,Iran,0001-01-01,Defender,28
+IPL2014,Sepahan ESF,Erfan,Maftoolkar,Iran,0001-01-01,Defender,54
+IPL2014,Sepahan ESF,Fozil,Musayev,Uzbekistan,0001-01-01,Midfield,
+IPL2014,Sepahan ESF,Hadi,Aghili,Iran,0001-01-01,Defender,5
+IPL2014,Sepahan ESF,Hossain,Fazeli,Iran,0001-01-01,Forward,37
+IPL2014,Sepahan ESF,Hossain,Papi,Iran,0001-01-01,Midfield,7
+IPL2014,Sepahan ESF,Luciano Pereira,Mendez,Brazil,0001-01-01,Forward,29
+IPL2014,Sepahan ESF,Mahdi,Sharifi,Iran,0001-01-01,Forward,20
+IPL2014,Sepahan ESF,Mahdi,Amini,Iran,0001-01-01,Goalkeeper,22
+IPL2014,Sepahan ESF,Marcio Henrique,Maia Passos,Brazil,0001-01-01,Midfield,
+IPL2014,Sepahan ESF,Milad,Sarlak,Iran,0001-01-01,Midfield,
+IPL2014,Sepahan ESF,Mohamad,Roshandel,Iran,0001-01-01,Midfield,39
+IPL2014,Sepahan ESF,Mohamad Ali,Ahmadi,Iran,0001-01-01,Defender,6
+IPL2014,Sepahan ESF,Mohamad Hossain,Moradmand,Iran,0001-01-01,Defender,55
+IPL2014,Sepahan ESF,Mohamad Reza,Khalatbari,Iran,0001-01-01,Midfield,9
+IPL2014,Sepahan ESF,Moharam,Navidkia,Iran,0001-01-01,Midfield,4
+IPL2014,Sepahan ESF,Mohsen,Aghaei,Iran,0001-01-01,Midfield,51
+IPL2014,Sepahan ESF,Rahman,Ahmadi,Iran,0001-01-01,Goalkeeper,1
+IPL2014,Sepahan ESF,Rasool,Navidkia,Iran,0001-01-01,Midfield,8
+IPL2014,Sepahan ESF,Saeed,Ghaedifar,Iran,0001-01-01,Defender,33
+IPL2014,Sepahan ESF,Shahabeddin,Gordan,Iran,0001-01-01,Goalkeeper,35
+IPL2014,Sepahan ESF,Shoja,Khalil Zadeh,Iran,0001-01-01,Defender,3
+IPL2014,Sepahan ESF,Voorya,Ghafoori,Iran,0001-01-01,Defender,21
+IPL2014,Sepahan ESF,Xhevahir,Sukaj,Albania,0001-01-01,Forward,14
+IPL2014,Teraktor TBZ,Ahmad,Kamdar,Iran,0001-01-01,Midfield,
+IPL2014,Teraktor TBZ,Alaa,Abdul-Zahra,Iraq,0001-01-01,Midfield,
+IPL2014,Teraktor TBZ,Andranik,Taymorian,Iran,0001-01-01,Midfield,
+IPL2014,Teraktor TBZ,Celio,Ferreira dos Santos,Brazil,0001-01-01,Defender,
+IPL2014,Teraktor TBZ,Ditmar,Bicaj,Albania,0001-01-01,Defender,
+IPL2014,Teraktor TBZ,Ebrahim,Abednejad,Iran,0001-01-01,Midfield,31
+IPL2014,Teraktor TBZ,Fardin,Abedini,Iran,0001-01-01,Midfield,
+IPL2014,Teraktor TBZ,Farid,Karimi,Iran,0001-01-01,Forward,
+IPL2014,Teraktor TBZ,Farshad,Ahmadzadeh,Iran,0001-01-01,Forward,27
+IPL2014,Teraktor TBZ,Habib,Gordani,Iran,0001-01-01,Defender,3
+IPL2014,Teraktor TBZ,Hamed,Lak,Iran,0001-01-01,Goalkeeper,1
+IPL2014,Teraktor TBZ,Issa,Ndoye,Senegal,0001-01-01,Goalkeeper,
+IPL2014,Teraktor TBZ,Khaled,Shafiei,Iran,0001-01-01,Defender,
+IPL2014,Teraktor TBZ,Luciano,Edinho,Brazil,0001-01-01,Forward,30
+IPL2014,Teraktor TBZ,Mahdi,Kiani,Iran,0001-01-01,Midfield,6
+IPL2014,Teraktor TBZ,Mehrdad,Bayrami,Iran,0001-01-01,Forward,
+IPL2014,Teraktor TBZ,Mir Hani,Hashemi,Iran,0001-01-01,Defender,
+IPL2014,Teraktor TBZ,Mir Mehdi,Ghorashi,Iran,0001-01-01,Midfield,
+IPL2014,Teraktor TBZ,Mohamad,Pour Rahmatollah,Iran,0001-01-01,Midfield,
+IPL2014,Teraktor TBZ,Mohamad,Iran Pourian,Iran,0001-01-01,Defender,2
+IPL2014,Teraktor TBZ,Mohamad Ali,Ramezanian,Iran,0001-01-01,Midfield,
+IPL2014,Teraktor TBZ,Mohamad Reza,Shah Mohamadi,Iran,0001-01-01,Defender,
+IPL2014,Teraktor TBZ,Mohsen,Daleer,Iran,0001-01-01,Forward,21
+IPL2014,Teraktor TBZ,Payman,Keshavarz,Iran,0001-01-01,Midfield,
+IPL2014,Teraktor TBZ,Paymon,Babaei,Iran,0001-01-01,Defender,
+IPL2014,Teraktor TBZ,Radames Martins,Rodrigues,Brazil,0001-01-01,Midfield,
+IPL2014,Teraktor TBZ,Saeed,Aghaeei,Iran,0001-01-01,Midfield,
+IPL2014,Teraktor TBZ,Saman,Nariman Jahan,Iran,0001-01-01,Midfield,
+IPL2014,Teraktor TBZ,Shahin,Saghebi,Iran,0001-01-01,Forward,
+IPL2014,Teraktor TBZ,Shahryar,Shirvand,Iran,0001-01-01,Midfield,16
+IPL2014,Zobahan ESF,Akbar,Imani,Iran,0001-01-01,Midfield,4
+IPL2014,Zobahan ESF,Ali,Hammam,Lebanon,0001-01-01,Defender,18
+IPL2014,Zobahan ESF,Amin,Nasiri,Iran,0001-01-01,Forward,32
+IPL2014,Zobahan ESF,Amir Meghdad,Maleki,Iran,0001-01-01,Goalkeeper,33
+IPL2014,Zobahan ESF,Carlos,Santos de Jesus,Croatia,0001-01-01,Defender,3
+IPL2014,Zobahan ESF,Danial,Esmaeelfar,Iran,0001-01-01,Forward,23
+IPL2014,Zobahan ESF,Ehsan,Pahlevan,Iran,0001-01-01,Forward,15
+IPL2014,Zobahan ESF,Esmaeel,Farhadi,Iran,0001-01-01,Forward,10
+IPL2014,Zobahan ESF,Ghasem,Dehnavi,Iran,0001-01-01,Midfield,5
+IPL2014,Zobahan ESF,Ghasem,Haddadifar,Iran,0001-01-01,Midfield,8
+IPL2014,Zobahan ESF,Hadi,Mohamadi,Iran,0001-01-01,Defender,2
+IPL2014,Zobahan ESF,Hojjat,Haghverdi,Iran,0001-01-01,Midfield,16
+IPL2014,Zobahan ESF,Hossain,Doostdar,Iran,0001-01-01,Midfield,24
+IPL2014,Zobahan ESF,Kaveh,Rezaei,Iran,0001-01-01,Forward,99
+IPL2014,Zobahan ESF,Mahdi,Mahdipour,Iran,0001-01-01,Midfield,26
+IPL2014,Zobahan ESF,Masoud,Hassan Zadeh,Iran,0001-01-01,Forward,17
+IPL2014,Zobahan ESF,Mehdi,Rajabzadeh,Iran,0001-01-01,Midfield,30
+IPL2014,Zobahan ESF,Mehrdad,Ghanbari,Iran,0001-01-01,Midfield,19
+IPL2014,Zobahan ESF,Mohamad Bagher,Sadeghi,Iran,0001-01-01,Goalkeeper,1
+IPL2014,Zobahan ESF,Mohamad Rasheed,Mazaheri,Iran,0001-01-01,Goalkeeper,12
+IPL2014,Zobahan ESF,Mohamad Reza,Abbasi,Iran,0001-01-01,Forward,25
+IPL2014,Zobahan ESF,Mohammadreza,Baouj,Iran,0001-01-01,Midfield,34
+IPL2014,Zobahan ESF,Morteza,Tabrizi,Iran,0001-01-01,Forward,11
+IPL2014,Zobahan ESF,Paymon,Salmani,Iran,0001-01-01,Midfield,40
+IPL2014,Zobahan ESF,Pooya,Safepanahi,Iran,0001-01-01,Midfield,13
+IPL2014,Zobahan ESF,Saeb,Mohebi,Iran,0001-01-01,Defender,21
+IPL2014,Zobahan ESF,Sina,Ashori,Iran,0001-01-01,Midfield,6
+IPL2014,Zobahan ESF,Walid,Ismail,Lebanon,0001-01-01,Defender,27

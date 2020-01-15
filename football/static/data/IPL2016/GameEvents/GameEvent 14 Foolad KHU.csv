@@ -1,0 +1,44 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2016,14,Foolad KHU,Game Half1 Start,00:00:00,,,,
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Abdollah,Karami,Defender
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Abdollah,Nasseri,Defender
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Mathias,Chago,Defender
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Soroush,Saeedi,Defender
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Sasan,Ansari,Forward
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Vahid,Taleblou,Goalkeeper
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Ahmad,Abdollahzadeh,Midfield
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Ayoub,Vaali,Midfield
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Esmaeel,Sharifat,Midfield
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Hamid,Bouhamdan,Midfield
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Sina,Maridi,Midfield
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Sanat Naft ABD,Ali,Abodollah Zadeh,Defender
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Sanat Naft ABD,Farshad,Faraji,Defender
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Sanat Naft ABD,Hossain,Baghlani,Defender
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Sanat Naft ABD,Mojtaba,Mamshali,Defender
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Sanat Naft ABD,Hakeem,Nassari,Forward
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Sanat Naft ABD,Reza,Norouzi,Forward
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Sanat Naft ABD,Hassan,Hoori,Goalkeeper
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Sanat Naft ABD,Bruno,Oliveira de Matos,Midfield
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Sanat Naft ABD,Mohamad,Shaadkaam,Midfield
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Sanat Naft ABD,Mohamad Reza,Pour Mohamad,Midfield
+IPL2016,14,Foolad KHU,Player in Line-up,00:00:00,Sanat Naft ABD,Zobair,Neeknafs,Midfield
+IPL2016,14,Foolad KHU,Card: Yellow,00:01:00,Foolad KHU,Mathias,Chago,Defender
+IPL2016,14,Foolad KHU,Card: Yellow,00:01:00,Foolad KHU,Ahmad,Abdollahzadeh,Midfield
+IPL2016,14,Foolad KHU,Card: Yellow,00:01:00,Foolad KHU,Hamid,Bouhamdan,Midfield
+IPL2016,14,Foolad KHU,Card: Yellow,00:01:00,Sanat Naft ABD,Ali,Abodollah Zadeh,Defender
+IPL2016,14,Foolad KHU,Card: Yellow,00:01:00,Sanat Naft ABD,Zobair,Neeknafs,Midfield
+IPL2016,14,Foolad KHU,Goal,00:42:00,Foolad KHU,Sasan,Ansari,Forward
+IPL2016,14,Foolad KHU,Game Half1 Stop,00:46:00,,,,
+IPL2016,14,Foolad KHU,Game Half2 Start,00:47:00,,,,
+IPL2016,14,Foolad KHU,Penalty Scored,00:58:00,Foolad KHU,Sasan,Ansari,Forward
+IPL2016,14,Foolad KHU,Goal,01:00:00,Foolad KHU,Ayoub,Vaali,Midfield
+IPL2016,14,Foolad KHU,Player Sub-in,01:06:00,Sanat Naft ABD,Reza,Jubayreh,Midfield
+IPL2016,14,Foolad KHU,Player Sub-out,01:06:00,Sanat Naft ABD,Farshad,Faraji,Defender
+IPL2016,14,Foolad KHU,Player Sub-in,01:21:00,Foolad KHU,Hadi,Habibi Nejad,Midfield
+IPL2016,14,Foolad KHU,Player Sub-out,01:21:00,Foolad KHU,Mathias,Chago,Defender
+IPL2016,14,Foolad KHU,Player Sub-in,01:22:00,Sanat Naft ABD,Hossain,Saaki,Forward
+IPL2016,14,Foolad KHU,Player Sub-out,01:22:00,Sanat Naft ABD,Bruno,Oliveira de Matos,Midfield
+IPL2016,14,Foolad KHU,Player Sub-in,01:26:00,Foolad KHU,Mojtaba,Najjarian,Midfield
+IPL2016,14,Foolad KHU,Player Sub-out,01:26:00,Foolad KHU,Esmaeel,Sharifat,Midfield
+IPL2016,14,Foolad KHU,Game Half2 Stop,01:39:00,,,,
+IPL2016,14,Foolad KHU,Game End,01:40:00,,,,

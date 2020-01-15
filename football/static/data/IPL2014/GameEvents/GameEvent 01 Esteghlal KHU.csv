@@ -1,0 +1,44 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,01,Esteghlal KHU,Game Half1 Start,00:00:00,,,,
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mohamad,Tayyebi,Defender
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mohamad Ebrahim,Khosravi,Defender
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mousa Salif,Coulibaly,Defender
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Lamine,Diawara,Forward
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mehdi,Momeni,Forward
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Maysam Parviz,Karimi,Goalkeeper
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Abdolhadi,Khanifar,Midfield
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Maysam,Doraghi,Midfield
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Maysam,Majidi,Midfield
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mohamad Reza,Mahdavi,Midfield
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Reza,Kardoost,Midfield
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Hamid Reza,Joekar,Defender
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Mahmoud,Khamisi,Defender
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Morteza,Asadi,Defender
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Paymon,Ranjbari,Forward
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Mehdi,Eslami,Goalkeeper
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Alireza,Naghizadeh,Midfield
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Jaber,Ansari,Midfield
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Mohamad Mahdi,Nazari,Midfield
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Omid,Nezamipour,Midfield
+IPL2014,01,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Rasool,Pirzadeh,Midfield
+IPL2014,01,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Mohamad Reza,Mahdavi,Midfield
+IPL2014,01,Esteghlal KHU,Card: Yellow,00:01:00,Gostaresh TBZ,Hamid Reza,Joekar,Defender
+IPL2014,01,Esteghlal KHU,Card: Yellow,00:01:00,Gostaresh TBZ,Maysam,Naghizadeh,Midfield
+IPL2014,01,Esteghlal KHU,Game Half1 Stop,00:46:00,,,,
+IPL2014,01,Esteghlal KHU,Player Sub-in,00:46:00,Gostaresh TBZ,Magno,Batista Da Silva,Midfield
+IPL2014,01,Esteghlal KHU,Player Sub-out,00:46:00,Gostaresh TBZ,Paymon,Ranjbari,Forward
+IPL2014,01,Esteghlal KHU,Game Half2 Start,00:47:00,,,,
+IPL2014,01,Esteghlal KHU,"Goal, Own",00:47:00,Gostaresh TBZ,Reza,Kardoost,Midfield
+IPL2014,01,Esteghlal KHU,Player Sub-in,00:58:00,Esteghlal KHU,Rouhollah,Sayfollahi,Forward
+IPL2014,01,Esteghlal KHU,Player Sub-out,00:58:00,Esteghlal KHU,Maysam,Doraghi,Midfield
+IPL2014,01,Esteghlal KHU,Player Sub-in,01:03:00,Gostaresh TBZ,Morteza,Mahfouzi,Defender
+IPL2014,01,Esteghlal KHU,Player Sub-out,01:03:00,Gostaresh TBZ,Rasool,Pirzadeh,Midfield
+IPL2014,01,Esteghlal KHU,Player Sub-in,01:17:00,Gostaresh TBZ,Mehdi,Qoreyshi,Defender
+IPL2014,01,Esteghlal KHU,Player Sub-out,01:17:00,Gostaresh TBZ,Alireza,Naghizadeh,Midfield
+IPL2014,01,Esteghlal KHU,Player Sub-in,01:18:00,Esteghlal KHU,Mohamad,Ousani,Forward
+IPL2014,01,Esteghlal KHU,Player Sub-out,01:18:00,Esteghlal KHU,Mohamad,Tayyebi,Defender
+IPL2014,01,Esteghlal KHU,Player Sub-in,01:24:00,Esteghlal KHU,Yazdan,Abbasian,Midfield
+IPL2014,01,Esteghlal KHU,Player Sub-out,01:24:00,Esteghlal KHU,Reza,Kardoost,Midfield
+IPL2014,01,Esteghlal KHU,Goal,01:30:00,Esteghlal KHU,Rouhollah,Sayfollahi,Forward
+IPL2014,01,Esteghlal KHU,Game Half2 Stop,01:39:00,,,,
+IPL2014,01,Esteghlal KHU,Game End,01:40:00,,,,

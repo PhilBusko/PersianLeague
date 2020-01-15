@@ -1,0 +1,441 @@
+
+{% extends "common_base.html" %}
+{% load staticfiles %}
+{% load utility_ttags %}
+
+{% block content %}
+
+
+<style>
+    
+    .rulesCell {
+        padding: 4px;
+        border: 1px solid black;    
+        text-align: center;
+        min-width: 70px;
+    }
+    
+    .inline_image {
+        height: 23px;
+        line-height: 1;
+    }
+    
+    .inline_transp {
+        height: 23px;
+        line-height: 1;
+        background-color: white;
+    }
+    
+</style>
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_header">
+            <span class="font_title">Game Rules: <i>Pishbini Baazi</i></span>
+        </div>
+    </div>
+</div>
+
+
+<div id="rules_section" class="row">
+    
+    <div class="col-xs-12 col-lg-6">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_paragraph "intro" %}
+            <div class="inner_margin2 format_center font_section" style="display: block;">
+                Baazi Mikoni?
+            </div>
+            {% ctrl_paragraph "game" %}
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-lg-6">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_paragraph "rewards" %}
+            <br><br>
+            <table class="display_center" style="background: white; border-collapse: collapse;">
+                <tr>
+                    <td class="rulesCell font_bold" rowspan=2 >Rank</td>
+                    <td class="rulesCell font_bold" rowspan=2 >Perc%</td>                    
+                    <td class="rulesCell font_bold" colspan=2 >All Time</td>                    
+                    <td class="rulesCell font_bold" colspan=2 >By Round</td>                    
+                </tr>
+                <tr>
+                    <td class="rulesCell font_bold">Dmds</td>                    
+                    <td class="rulesCell font_bold">Tokens</td>                    
+                    <td class="rulesCell font_bold">Dmds</td>                    
+                    <td class="rulesCell font_bold">Tokens</td>                    
+                </tr>
+                
+                <tr>
+                    <td class="rulesCell" style="">A</td>
+                    <td class="rulesCell" style="">1%</td>                    
+                    <td class="rulesCell" style="">29</td>                    
+                    <td class="rulesCell" style="">80</td>                    
+                    <td class="rulesCell" style="">16</td>                    
+                    <td class="rulesCell" style="">130</td>                    
+                </tr>
+                <tr>
+                    <td class="rulesCell" style="">B</td>
+                    <td class="rulesCell" style="">4%</td>                    
+                    <td class="rulesCell" style="">25</td>                    
+                    <td class="rulesCell" style="">75</td>                    
+                    <td class="rulesCell" style="">15</td>                    
+                    <td class="rulesCell" style="">120</td>                    
+                </tr>
+                <tr>
+                    <td class="rulesCell" style="">C</td>
+                    <td class="rulesCell" style="">9%</td>                    
+                    <td class="rulesCell" style="">22</td>                    
+                    <td class="rulesCell" style="">70</td>                    
+                    <td class="rulesCell" style="">14</td>                    
+                    <td class="rulesCell" style="">112</td>                    
+                </tr>
+                <tr>
+                    <td class="rulesCell" style="">D</td>
+                    <td class="rulesCell" style="">16%</td>                    
+                    <td class="rulesCell" style="">19</td>                    
+                    <td class="rulesCell" style="">65</td>                    
+                    <td class="rulesCell" style="">13</td>                    
+                    <td class="rulesCell" style="">104</td>                    
+                </tr>
+                <tr>
+                    <td class="rulesCell" style="">E</td>
+                    <td class="rulesCell" style="">25%</td>                    
+                    <td class="rulesCell" style="">17</td>                    
+                    <td class="rulesCell" style="">60</td>                    
+                    <td class="rulesCell" style="">12</td>                    
+                    <td class="rulesCell" style="">97</td>                    
+                </tr>
+                <tr>
+                    <td class="rulesCell" style="">F</td>
+                    <td class="rulesCell" style="">36%</td>                    
+                    <td class="rulesCell" style="">15</td>                    
+                    <td class="rulesCell" style="">55</td>                    
+                    <td class="rulesCell" style="">11</td>                    
+                    <td class="rulesCell" style="">90</td>                    
+                </tr>
+                <tr>
+                    <td class="rulesCell" style="">G</td>
+                    <td class="rulesCell" style="">49%</td>                    
+                    <td class="rulesCell" style="">13</td>                    
+                    <td class="rulesCell" style="">50</td>                    
+                    <td class="rulesCell" style="">10</td>                    
+                    <td class="rulesCell" style="">83</td>                    
+                </tr>
+                <tr>
+                    <td class="rulesCell" style="">H</td>
+                    <td class="rulesCell" style="">64%</td>                    
+                    <td class="rulesCell" style="">12</td>                    
+                    <td class="rulesCell" style="">45</td>                    
+                    <td class="rulesCell" style="">9</td>                    
+                    <td class="rulesCell" style="">77</td>                    
+                </tr>
+                <tr>
+                    <td class="rulesCell" style="">I</td>
+                    <td class="rulesCell" style="">81%</td>                    
+                    <td class="rulesCell" style="">11</td>                    
+                    <td class="rulesCell" style="">40</td>                    
+                    <td class="rulesCell" style="">8</td>                    
+                    <td class="rulesCell" style="">71</td>                    
+                </tr>
+                <tr>
+                    <td class="rulesCell" style="">J</td>
+                    <td class="rulesCell" style="">100%</td>                    
+                    <td class="rulesCell" style="">10</td>                    
+                    <td class="rulesCell" style="">35</td>                    
+                    <td class="rulesCell" style="">7</td>                    
+                    <td class="rulesCell" style="">65</td>                    
+                </tr>
+            </table>
+	
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-lg-6">
+        
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_paragraph "pishbini" %}
+            {% ctrl_entry "result" %}
+            {% ctrl_entry "goals" %}
+            {% ctrl_entry "scorers" %}
+            {% ctrl_entry "window" %}
+            
+            <div class="display_block format_center">
+                <img style="height: 350px;" src="/static/graphics/rules_cal.png" />
+            </div>
+            <br>
+            
+            {% ctrl_paragraph "scoring" %}
+            
+            <table class="display_center" style="background: white; border-collapse: collapse;">
+                 <tr>
+                     <td class="outer_padding2 font_bold format_outline">Guess Type</td>
+                     <td class="outer_padding2 font_bold format_outline">Options</td>                    
+                     <td class="outer_padding2 font_bold format_outline">Scoring</td>                    
+                 </tr>
+                 <tr>
+                     <td class="outer_padding2 format_outline" style="vertical-align: top;">Result</td>
+                     <td class="outer_padding2 format_outline" style="vertical-align: top;">Home Win<br>Away Win<br>Tie<br>Abstain</td>                    
+                     <td class="outer_padding2 format_outline" style="vertical-align: top;">Correct: +2<br>Incorrect: -1<br>Abstain: 0</td>                    
+                 </tr>
+                 <tr>
+                     <td class="outer_padding2 format_outline" style="vertical-align: top;">
+                         Goals
+                     </td>   
+                     <td class="outer_padding2 format_outline" style="vertical-align: top;">
+                         Home & Away Goals<br>Abstain
+                     </td> 
+                     <td class="outer_padding2 format_outline" style="vertical-align: top;">
+                         Correct Both: +5<br>Correct Difference: +3<br>Correct Home/Away Only: 0<br>Incorrect: -2<br>Abstain: 0
+                     </td>         
+                 </tr>
+                 <tr>
+                     <td class="outer_padding2 format_outline" style="vertical-align: top;">
+                         Scorers
+                     </td>   
+                     <td class="outer_padding2 format_outline" style="vertical-align: top;">
+                         Home & Away Scorers<br>Home Scorer<br>Away Scorer<br>Abstain
+                     </td> 
+                     <td class="outer_padding2 format_outline" style="vertical-align: top;">
+                         Guess 2, Correct 2: +8<br>Guess 2, Correct 1: +3<br>Guess 2, Correct 0: -3<br>
+                         Guess 1, Correct 1: +4<br>Guess 1, Correct 0: -2<br>Abstain: 0
+                     </td>         
+                 </tr>
+             </table>
+        
+        </div>
+        
+    </div>
+    
+    <div class="col-xs-12 col-lg-6">
+        
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_paragraph "currencies" %}
+            <br><br>
+            
+            {% ctrl_paragraph "abilities" %}
+            {% ctrl_entry "goalsGuess" %}
+            {% ctrl_entry "scorersGuess" %}
+            {% ctrl_entry "secondChance" %}
+            {% ctrl_entry "doubleDown" %}
+            {% ctrl_entry "clubFav" %}
+            {% ctrl_entry "tokenRate" %}
+
+        </div>
+        
+    </div>
+    
+</div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+
+$(document).ready(function()
+{   
+    $('body').css('cursor', 'wait');
+    
+    var startLang = "english";
+    
+    if (startLang == "english")
+    {
+        DisplayTop_EN();
+        DisplayRules_EN();
+        DisplayAbilities_EN();
+    }
+    
+    else
+    {
+        DisplayTop_FS();
+        DisplayRules_FS();
+        DisplayAbilities_FS();
+    }
+    
+    $('#_paragT').html("");
+    $('#_paragX').html(" ");
+    $('#_entryT').html(":");
+    $('#_entryX').html(" ");
+
+    $('body').css('cursor', 'default');
+});
+
+
+function DisplayTop_EN()
+{
+    var elems ='Dorood bar Shoma and Welcome to Lige Ma’s Pishbini Baazi!               \
+                Take the field to prove how well you really know Iranian football.      \
+                Submit weekly predictions for Lige Bartar football games to earn points \
+                and move up the leaderboard to win the Lige Ma Jaame Talayi!            \
+                    <img class="inline_image" src="/static/graphics/landing_cup1.png" \>         \
+                Earn medals, talk smack and compete with your hamvatans for the love of the game!';
+    
+    $('#intro_paragT').html("Introduction");
+    $('#intro_paragX').html(elems);
+
+    var elems ='Predicting accurately requires knowledge and skill. \
+                How well you know Lige Bartar will play a large role in your success. \
+                However, it will take more than your prediction skills to reach the top. \
+                You will begin the competition with a baseline set of abilities. \
+                To stay competitive, you will need to upgrade your abilities using your Lige Ma Tokens. \
+                    <img class="inline_image" src="/static/graphics/currency_pu_bkgd.png" \>         \
+                Upgrade wisely!';
+    
+    $('#game_paragT').html("A Game of Skill and Strategy");
+    $('#game_paragX').html(elems);
+
+    
+    var elems ='Your weekly performance will be rewarded with Lige Ma Diamonds                      \
+                    <img class="inline_image" src="/static/graphics/currency_dmd_normal.png" \>     \
+                and Tokens              \
+                    <img class="inline_image" src="/static/graphics/currency_pu_bkgd.png" \>         \
+                based on how well you predicted.                                            \
+                You will receive two types of rewards –                                     \
+                one based on your Overall Rank (your cumulative performance)                \
+                and the other based on your Round Rank (your performance that week).        \
+                The following table shows the reward structure.                            \
+                For example, if your cumulative performance ranks within the top 1%ile of all users, \
+                you will receive an Overall Rank of “A”, rewarding you with 29 Diamonds and 80 Tokens.  \
+                <br><br>                        \
+                Your rewards will be distributed to your Inbox on Saturday or as soon as the round finishes. \
+                So don’t forget to check your Inbox and claim your rewards. You earned it!';
+    
+    $('#rewards_paragT').html("Rewards based on Your Performance");
+    $('#rewards_paragX').html(elems);
+}
+
+function DisplayRules_EN()
+{
+    var elems ='There are three types of predictions: Results, Goals and Scorers.';
+    $('#pishbini_paragT').html("Pishbini (Prediction) Rules");
+    $('#pishbini_paragX').html(elems);
+    
+    var elems ='Starting out, you will be able to predict the result of each Lige Bartar game – \
+               Home Win, Away Win, or Tie. \
+               You also have the option to Abstain from submitting a prediction.';
+    $('#result_entryT').html("Result:");
+    $('#result_entryX').html(elems);
+    
+    var elems ='This ability is locked until you choose to acquire it in the Upgrades page. \
+               Once you do, you will be able to predict the number of goals scored by the home and away teams.';
+    $('#goals_entryT').html("Goals:");
+    $('#goals_entryX').html(elems);
+    
+    var elems ='This ability is locked until you choose to acquire it in the Upgrades page. \
+               Once you do, you will be able to predict which player(s) will score a goal during a game.';
+    $('#scorers_entryT').html("Scorers:");
+    $('#scorers_entryX').html(elems);
+    
+    var elems ='All predictions must be submitted within the prediction window, \
+               which opens 2 days before the Lige-Bartar game starts, \
+               and closes 30 minutes before the Lige Bartar game starts. \
+               The My Predictions page shows a calendar of the current week’s schedule. \
+               The prediction windows are shown in green, while the games themselves are in blue.';
+    $('#window_entryT').html("Prediction Window:");
+    $('#window_entryX').html(elems);
+    
+    //
+    
+    var elems ='You will be able to see the points you received for each prediction on the \
+                My Predictions page after the real-life Lige Bartar game is finished. \
+                Your weekly score is the sum of the scores from your predictions for the week. \
+                Your cumulative score is the sum of all your weekly scores for the current season. \
+                The table below shows the scoring scheme for the predictions.';
+    $('#scoring_paragT').html("Scoring");
+    $('#scoring_paragX').html(elems);
+}
+
+
+function DisplayAbilities_EN()
+{
+    var elems ='As mentioned above, you will be rewarded with Lige Ma Diamonds and Tokens based on your performance. \
+                You can exchange your Diamonds to Tokens on the Upgrade page at the rate of 11 Diamonds per 35 Tokens. \
+                Your Tokens can be used to acquire upgrades to prediction abilities. \
+                <br><br>                \
+                You also have a token generator which can be found in the Upgrades page. \
+                Free money! Starting out, your token generator will be able to produce 50 tokens/day. \
+                The token generator can store a maximus of 50 tokens,\
+                so make sure to pop the token generator to claim your tokens before it gets full. \
+                If you like money, you can upgrade its production rate in the Upgrades page.';
+    
+    $('#currencies_paragT').html("Diamonds and Tokens");
+    $('#currencies_paragX').html(elems);
+    
+    var elems ='There are 6 abilities you can upgrade in the game – \
+               Goals Guess, Scorers Guess, Second Chance, Double Down, Club Favorite, and Token Rate.';
+    
+    $('#abilities_paragT').html("Abilities");
+    $('#abilities_paragX').html(elems);
+    
+    var title ='<img class="inline_transp" src="/static/graphics/pred_goals.png" \>    \
+                Goals Guess:';
+    var elems ='This ability allows you to predict the goals that will be scored by the Home and Away Team. \
+               Starting out, this prediction type will be locked. You can unlock it in the Upgrades page. \
+               A Level 1 upgrade will allow you to predict the goals for one game in the week. \
+               A Level 2 upgrade will allow you to predict the goals for two games in the week, and so on.';
+    $('#goalsGuess_entryT').html(title);
+    $('#goalsGuess_entryX').html(elems);
+    
+    var title ='<img class="inline_transp" src="/static/graphics/pred_scorers.png" \>    \
+                Scorers Guess:';
+    var elems ='This ability allows you to predict up to one player from each team who will score a goal. \
+               Starting out, this prediction type will be locked. You can unlock it in the Upgrades page. \
+               A Level 1 upgrade will allow you to predict the goal scorer(s) for one game in the week. \
+               A Level 2 upgrade will allow you to predict the goal scorer(s) for two games in the week, and so on.';
+    $('#scorersGuess_entryT').html(title);
+    $('#scorersGuess_entryX').html(elems);
+    
+    var title ='<img class="inline_transp" src="/static/graphics/pred_secondChance.png" \>    \
+                Second Chance:';
+    var elems ='This ability will allow you to submit a second guess for a prediction. \
+               For example, your first guess may be that the home team will defeat the away team. \
+               However, if you are unsure, you may use the second chance ability \
+               and submit a second guess; for example, that they will tie instead. \
+               A Level 1 upgrade will provide you one second chance ability. \
+               A Level 2 upgrade will provide you two second chance abilities, and so on. ';
+    $('#secondChance_entryT').html(title);
+    $('#secondChance_entryX').html(elems);
+    
+    var title ='<img class="inline_transp" src="/static/graphics/pred_ddownON.png" \>    \
+                Double Down:';
+    var elems ='This ability allows you to increase the point value for one prediction. \
+               For example, if you have a level 1 ability and apply it to a correct prediction, \
+               you will get +1 points for that guess. \
+               However, if you apply this ability and your prediction was wrong, you lose  \
+               as many points. \
+               This ability can only be applied to one prediction per week. \
+               A Level 1 upgrade grants points +1. \
+               A Level 2 upgrade grants points +2, and so on.';
+    $('#doubleDown_entryT').html(title);
+    $('#doubleDown_entryX').html(elems);
+    
+    var title ='<img class="inline_transp" src="/static/graphics/pred_clubFav.png" \>    \
+                Club Favorite:';
+    var elems ='This ability automatically applies to all guesses of a game involving your favorite club. \
+                You set your favorite club on the Profile page.         \
+                This ability works exactly like the Double Down ability, \
+                except it only applies to your favorite club.';
+    $('#clubFav_entryT').html(title);
+    $('#clubFav_entryX').html(elems);
+    
+    var title ='<img class="inline_transp" src="/static/graphics/pred_tokenRate.png" \>    \
+                Token Rate:';
+    var elems ='This ability increases the production rate of your Token Generator. \
+               Starting out, your Token Generator produces 50 tokens/day. \
+               A Level 1 upgrade will enhance the production rate to 55 tokens/day, and so on.';
+    $('#tokenRate_entryT').html(title);
+    $('#tokenRate_entryX').html(elems);
+}
+
+//
+</script>
+
+{% endblock content %}
+
+
+
+
+

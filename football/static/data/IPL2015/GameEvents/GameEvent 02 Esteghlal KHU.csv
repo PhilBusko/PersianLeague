@@ -1,0 +1,45 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2015,02,Esteghlal KHU,Game Half1 Start,00:00:00,,,,
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Eduardo Soares,Ferreira,Defender
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Jalal,Abdi,Defender
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mohamad,Tayyebi,Defender
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mousa Salif,Coulibaly,Defender
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Paymon,Shirzadi,Defender
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Hakeem,Nassari,Forward
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Raheem,Zahivi,Forward
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Rouhollah,Sayfollahi,Forward
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Fernando Jesus,Riberio,Goalkeeper
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Hassan,Bait Saeed,Midfield
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Maysam,Doraghi,Midfield
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Perspolis TEH,Alireza,Noormohamadi,Defender
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Perspolis TEH,Luca,Maric,Defender
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Perspolis TEH,Ramin,Rezaeian,Defender
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Perspolis TEH,Babak,Hatami,Forward
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Perspolis TEH,Farshad,Ahmadzadeh,Forward
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Perspolis TEH,Hadi,Nourozi,Forward
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Perspolis TEH,Mahdi,Taremi,Forward
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Perspolis TEH,Reza,Khaleghifar,Forward
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Perspolis TEH,Iman,Sadeghi,Goalkeeper
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Perspolis TEH,Kamal,Kamyabinia,Midfield
+IPL2015,02,Esteghlal KHU,Player in Line-up,00:00:00,Perspolis TEH,Omid,Allishah,Midfield
+IPL2015,02,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Eduardo Soares,Ferreira,Defender
+IPL2015,02,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Paymon,Shirzadi,Defender
+IPL2015,02,Esteghlal KHU,Card: Yellow,00:01:00,Perspolis TEH,Babak,Hatami,Forward
+IPL2015,02,Esteghlal KHU,Card: Yellow,00:01:00,Perspolis TEH,Mahdi,Taremi,Forward
+IPL2015,02,Esteghlal KHU,Game Half1 Stop,00:46:00,,,,
+IPL2015,02,Esteghlal KHU,Player Sub-in,00:46:00,Esteghlal KHU,Abdolhadi,Khanifar,Midfield
+IPL2015,02,Esteghlal KHU,Player Sub-out,00:46:00,Esteghlal KHU,Eduardo Soares,Ferreira,Defender
+IPL2015,02,Esteghlal KHU,Game Half2 Start,00:47:00,,,,
+IPL2015,02,Esteghlal KHU,Goal,00:47:00,Esteghlal KHU,Hassan,Bait Saeed,Midfield
+IPL2015,02,Esteghlal KHU,Goal,00:57:00,Esteghlal KHU,Hassan,Bait Saeed,Midfield
+IPL2015,02,Esteghlal KHU,Player Sub-in,01:02:00,Perspolis TEH,Ali,Alipour,Forward
+IPL2015,02,Esteghlal KHU,Player Sub-out,01:02:00,Perspolis TEH,Reza,Khaleghifar,Forward
+IPL2015,02,Esteghlal KHU,Player Sub-in,01:03:00,Perspolis TEH,Milad,Kamadani,Midfield
+IPL2015,02,Esteghlal KHU,Player Sub-out,01:03:00,Perspolis TEH,Farshad,Ahmadzadeh,Forward
+IPL2015,02,Esteghlal KHU,Player Sub-in,01:04:00,Esteghlal KHU,Farshad,Salarvand,Midfield
+IPL2015,02,Esteghlal KHU,Player Sub-out,01:04:00,Esteghlal KHU,Raheem,Zahivi,Forward
+IPL2015,02,Esteghlal KHU,Player Sub-in,01:15:00,Esteghlal KHU,Farshad,Jaanfaza,Forward
+IPL2015,02,Esteghlal KHU,Player Sub-out,01:15:00,Esteghlal KHU,Rouhollah,Sayfollahi,Forward
+IPL2015,02,Esteghlal KHU,Goal,01:27:00,Perspolis TEH,Mahdi,Taremi,Forward
+IPL2015,02,Esteghlal KHU,Game Half2 Stop,01:39:00,,,,
+IPL2015,02,Esteghlal KHU,Game End,01:40:00,,,,

@@ -1,0 +1,332 @@
+
+{% extends "common_base.html" %}
+{% load staticfiles %}
+{% load utility_ttags %}
+
+{% block content %}
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_header">
+            <span class="font_title">Season Reference</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="clubRanks_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Club Rankings</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "ranking" %}</div>
+    </div>
+    
+    <div class="col-xs-8 col-sm-5 col-md-4 col-lg-3 col-xl-2">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_select "season" "Season" %}
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_table "ranking" %}   
+        </div>
+    </div>
+    
+</div>
+
+
+<div id="fixture_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Round Fixture</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "round" %}</div>
+    </div>
+    
+    <div class="col-xs-8 col-sm-5 col-md-4 col-lg-3 col-xl-2">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_select "round" "Round" %}
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-11 col-md-8 col-lg-6 col-xl-5">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_table "fixture" %}   
+        </div>
+    </div>
+    
+</div>
+
+
+<div id="compare_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Compare Clubs</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "compare" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-11 col-md-10 col-lg-6 col-xl-6">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_select "club1" "Club 1" %}
+            {% ctrl_table "club1" %}               
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-11 col-md-10 col-lg-6 col-xl-6">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_select "club2" "Club 2" %}
+            {% ctrl_table "club2" %}               
+        </div>
+    </div>
+    
+    
+</div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+$(document).ready(function()
+{       
+    // club ranking
+    
+    {% for ssn in seasons %}
+    $('#season_select').append($('<option>', {value : '{{ ssn }}' }).text('{{ ssn }}'));
+    {% endfor %}
+    
+    $('#season_select').val("{{ cSeason }}");
+    
+    var jTable = $.parseJSON('{{ clubRanking | escapejs }}');        
+    DisplayRankings(jTable);
+    
+    $('#season_select').change(function() {
+        RunSeasonData();
+    });
+    
+    // round fixture
+    
+    {% for rnd in rounds %}
+    $('#round_select').append($('<option>', {value : '{{ rnd }}' }).text('{{ rnd }}'));
+    {% endfor %}
+    
+    var jTable = $.parseJSON('{{ fixture | escapejs }}');
+    DisplayFixture(jTable);
+    
+    $('#round_select').change(function() {
+        RunRoundData();
+    });
+    
+    // club games by round
+    
+    {% for clb in clubs %}
+    $('#club1_select').append($('<option>', {value : '{{ clb }}' }).text('{{ clb }}'));
+    $('#club2_select').append($('<option>', {value : '{{ clb }}' }).text('{{ clb }}'));
+    {% endfor %}
+    
+    var $options = $('#club2_select').find('option');
+    $options.eq(1).prop('selected', true);
+    
+    var jTable = $.parseJSON('{{ club1 | escapejs }}');   
+    DisplayCompare(jTable, '#club1');
+    
+    var jTable = $.parseJSON('{{ club2 | escapejs }}');    
+    DisplayCompare(jTable, '#club2');
+    
+    $('#club1_select').change(function() {
+        RunClubGames('#club1');
+    });
+    
+    $('#club2_select').change(function() {
+        RunClubGames('#club2');
+    });
+    
+});
+
+
+function DisplayRankings(p_ftable)
+{    
+    if (typeof(p_ftable) == 'string')
+        $('#ranking_table').html('<div style="margin: 4px;">{0}</div>'.format(p_ftable));
+    else
+    {
+        var fullT = JSONtoFullTable(p_ftable.data);
+        SetDataTable('#ranking_table', fullT, p_ftable.colFmt);
+    }
+}
+
+
+function DisplayFixture(p_ftable)
+{
+    if (typeof(p_ftable) == 'string')
+    {
+        $('#fixture_table').html('<div style="margin: 4px;">{0}</div>'.format(p_ftable));
+        return;
+    }
+    
+    $.each(p_ftable.data, function(index, row) {
+        var myDate = Date.parseString(row.play_date.substring(0,16), "yyyy-MM-dd HH:mm");
+        var lowTime = myDate.getTime() -  2332800000   // 27 days before play time
+        var highTime = myDate.getTime() + 604800000    // 7 days after play time
+        var nowTime = (new Date()).getTime();
+        
+        if (lowTime < nowTime && nowTime < highTime)
+            var frmt = myDate.format("NNN d HH:mm");
+        else
+            var frmt = myDate.format("yyyy-MM-dd");
+        row.play_date = frmt;
+        delete row.id;
+    });
+    
+    var fullT = JSONtoFullTable(p_ftable.data);
+    SetDataTable('#fixture_table', fullT, p_ftable.colFmt);
+}
+
+
+function DisplayCompare(p_ftable, p_id)
+{
+    if (typeof(p_ftable) == 'string')
+        $('{0}_table'.format(p_id)).html('<div style="margin: 4px;">{0}</div>'.format(p_ftable));
+    else
+    {
+        var fullT = JSONtoFullTable(p_ftable.data);
+        SetDataTable('{0}_table'.format(p_id), fullT, p_ftable.colFmt);
+    }
+}
+
+//
+
+function RunSeasonData()
+{
+    $('body').css('cursor', 'wait');
+    
+    var season = $('#season_select option:selected').text();
+    $('#round_select').html(null);
+    $('#club1_select').html(null);
+    $('#club2_select').html(null);
+    $('#club1_table').html(null);
+    $('#club2_table').html(null);
+    
+    $.ajax({
+        url: "{% url 'football:research_jx' 'season_data' %}",
+        data: {'season': season},
+        success: function(p_data) {                     cl(p_data);
+            DisplayRankings(p_data.clubRanking);
+            
+            $.each(p_data.rounds, function(index, value) {
+                $('#round_select').append($('<option>', {value : index}).text(value));
+            });
+            DisplayFixture(p_data.fixture);
+            
+            if (typeof(p_data.clubs) != 'string') {
+                $.each(p_data.clubs, function(index, value) {
+                    $('#club1_select').append($('<option>', {value : index}).text(value));
+                    $('#club2_select').append($('<option>', {value : index}).text(value));
+                });
+                var $options = $('#club2_select').find('option');
+                $options.eq(1).prop('selected', true);
+            }
+            DisplayCompare(p_data.club1, '#club1');
+            DisplayCompare(p_data.club2, '#club2');
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "RunSeasonData()", '#ranking_status');
+        },
+        complete: function() {
+            $('body').css('cursor', 'default');
+        }
+    });
+}
+
+
+function RunRoundData()
+{
+    $('body').css('cursor', 'wait');
+    
+    var season = $("#season_select option:selected").text();
+    var round = $("#round_select option:selected").text();
+    
+    $.ajax({
+        url: "{% url 'football:research_jx' 'round_fixture' %}",
+        data: {'season': season, 'round': round},
+        success: function(p_data) {                     cl(p_data);
+            DisplayFixture(p_data);
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "RunRoundData()", '#round_status');
+        },
+        complete: function() {
+            $('body').css('cursor', 'default');
+        }
+    });
+}
+
+
+function RunClubGames(p_id)
+{
+    $('body').css('cursor', 'wait');
+    
+    var season = $('#season_select option:selected').text();
+    var club = $(p_id + '_select option:selected').text();
+    
+    $.ajax({
+        url: "{% url 'football:research_jx' 'club_games' %}",
+        data: {'season': season, 'club': club},
+        success: function(p_data) {                     cl(p_data);
+            DisplayCompare(p_data, p_id);
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "RunRoundData()", '#compare_status');
+        },
+        complete: function() {
+            $('body').css('cursor', 'default');
+        }
+    });
+}
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+

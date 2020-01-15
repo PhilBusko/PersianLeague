@@ -1,0 +1,525 @@
+
+{% extends "common_base.html" %}
+{% load staticfiles %}
+{% load utility_ttags %}
+
+{% block extra_head %}
+    <script src="{% static 'third_party/flot-083/jquery.flot.js' %}"></script>
+    <script src="{% static 'third_party/flot-extras/jquery.flot.axislabels.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_header">
+            <span class="font_title">View Profile</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="userInfo_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">User Profile</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "info" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-lg-4 col-xl-4 col-xxl-3">
+        <div class="row">
+            
+            <div class="col-xs-12 col-sm-6 col-lg-12 ">
+                <div class="display_block inner_margin1 frame_entry outer_padding2">
+                    <div class="row">
+                        
+                        <div class="col-xs-12">
+                            {% ctrl_strong "upp" "Personal Info" %}
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="display_block">
+                                {% ctrl_listing "userName" "User Name" profileData.userName %}
+                            </div>
+                            <div class="display_block">
+                                {% ctrl_listing "realName" "Real Name" profileData.realName %}
+                            </div>
+                            <div class="display_block">
+                                {% ctrl_listing "email" "E-mail" profileData.email %}
+                            </div>
+                            <div class="display_block">
+                                {% ctrl_listing "timezone" "Time Zone" profileData.timezone %}                
+                            </div>
+                            <div class="display_block">
+                                {% ctrl_listing "country" "Country" profileData.country %}
+                            </div>
+                        </div>
+                        <div class="col-xs-12 format_center">
+                            <div class="inner_margin2">
+                                {% ctrl_imageIcon "icon" %}
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-sm-6 col-lg-12">
+                <div class="display_block inner_margin1 frame_entry outer_padding2">
+                    <div class="row">
+                        
+                        <div class="col-xs-12">
+                            {% ctrl_strong "upw" "Website Info" %}
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="display_block">
+                                {% ctrl_listing "relationship" "Relationship" profileData.relationship %}
+                            </div>
+                            <div class="display_block">
+                                {% ctrl_listing "slogan" "Slogan" profileData.slogan %}
+                            </div>
+                            <div class="display_block">
+                                {% ctrl_listing "lifetimeDiamonds" "Lifetime Diamonds" profileData.lifetimeDiamonds %}
+                            </div>
+                            <div class="display_block">
+                                {% ctrl_listing "timeOnWebsite" "Time On Website" profileData.timeOnWebsite %}
+                            </div>
+                            <div class="display_block">
+                                {% ctrl_listing "dateJoined" "Date Joined" profileData.dateJoined %}
+                            </div>
+                        </div>
+                        <div class="col-xs-12 format_center">
+                            <div class="inner_margin2">
+                                {% ctrl_imageIcon "favClub" %}                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-0 col-xl-7 col-xxl-5">
+        <div class="display_block inner_margin1 frame_entry outer_padding2">
+            {% ctrl_strong "f1" "Friends List" %}
+            {% ctrl_tableDeluxe "friends" %}
+        </div>
+    </div>
+    
+</div>
+
+
+<div id="univPred_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Universal Prediction</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "records" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-5 col-lg-3 col-xl-3 col-xxl-2">
+        <div class="display_block inner_margin1 frame_entry outer_padding2">
+            {% ctrl_strong "U1" "Abilities" %}
+            {% ctrl_table "upgrades" %}
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-md-9 col-lg-7 col-xl-6 col-xxl-5">
+        <div class="display_block inner_margin1 frame_entry outer_padding2">
+            {% ctrl_strong "U2" "Overall Record" %}
+            {% ctrl_plot "recordAT" %}
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-md-9  col-lg-offset-3 col-lg-7  col-xl-offset-3 col-xl-6  col-xxl-offset-0 col-xxl-5">
+        <div class="display_block inner_margin1 frame_entry outer_padding2">
+            {% ctrl_strong "U3" "By Round Record" %}
+            {% ctrl_plot "recordRD" %}
+        </div>
+    </div>
+    
+    
+</div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+$(document).ready(function()
+{
+    $("body").css("cursor", "wait");
+    
+    $(document).prop('title', 'View Profile');
+    
+    // initialize remaining user info
+    // others are initialized in html
+    
+    {% if not profileData.icon %}
+        var iconPath = "/static/icons_source/anonymous.png";
+    {% else %}
+        var iconPath = "/static/user_icons/" + "{{ profileData.icon }}" ;
+        CreateTooltip('#icon_image', '{{ profileData.icon }}', 'bottom');
+    {% endif %}   
+    $('#icon_image').attr('src', iconPath);
+    
+    {% if not profileData.favClub %}
+        var clubPath = "/static/club_images/_club logo.png";
+    {% else %}
+        var clubPath = "/static/club_images/" + FormatFileName("{{ profileData.favClub }}") + " logo.jpg";
+        CreateTooltip('#favClub_image', '{{ profileData.favClub }}', 'bottom');
+    {% endif %}
+    $('#favClub_image').attr('src', clubPath);
+    
+    {% if friendList %}
+        var flat = '{{ friendList | escapejs }}';
+        var escaped = flat.replace("'", "\u0027");
+        var dataArray = $.parseJSON(escaped);      
+        SetDeluxeTableFriends('#friends_table', dataArray);
+    {% else %}
+        $('#friends_table').text("No friends in list.");
+    {% endif %}
+    
+    // initialize universal prediction info
+    
+    InitializeUnivPred();
+    
+    $('body').css('cursor', 'default');
+});
+
+function SetDeluxeTableFriends(p_tableID, p_friends)
+{
+    
+    var table = $(p_tableID).DataTable( {
+        data: p_friends,
+        aoColumns: [
+            {
+                mRender: function (data, type, full) {                    
+                    html = `
+                        <div class="format_outline" style="height: 50px; width: 50px; margin: auto; background-color: white;
+                                    position: relative;" >
+                            <img id="{0}_icon" src="" style="max-height: 100%; max-width: 100%;
+                                    position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;"> </img>
+                        </div>
+                    `;
+                    html = html.format(full.name);
+                    return html;
+                },
+            },
+            {
+                mRender: function (data, type, full) {
+                    html = `
+                        <div>
+                            <a href='/central/view_profile/{0}' id="{1}_link"
+                                style='display: inline-block; margin-bottom: 6px;'>{2}</a> <br>
+                            <span>{3}</span>
+                        </div>
+                    `;
+                    html = html.format(full.name, full.name, full.name, (full.slogan && full.slogan != 'None' ? full.slogan : "") );
+                    return html;
+                },
+            },
+            {
+                mRender: function (data, type, full) {                    
+                    html = '    \
+                        <div class="format_outline" style=" height: 50px; width: 50px; margin: auto; background-color: white;   \
+                                    position: relative;" >          \
+                            <img id="{0}_favClub" src="" style="max-height: 100%; max-width: 100%;      \
+                                    position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;"> </img>    \
+                        </div>  ';
+                    html = html.format(full.name);
+                    return html;
+                },
+            },
+        ], 
+        bSort: false,
+        scrollCollapse: true,
+        paging: true,
+        bFilter: true,
+        bInfo: true,
+        bDestroy: true,                     // necessary to refresh the data
+        fnRowCallback: function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {                        
+        },
+        fnDrawCallback: function() {        // remove headers
+            $(p_tableID + ' thead').remove();
+        },
+        initComplete: function() {
+            PostDraw();
+        }
+    } );
+    
+    // when the page changes, the table is redrawn - the images and tooltips must be redrawn also
+    
+    $(p_tableID).on( 'draw.dt', function () {
+        PostDraw();
+    } );
+    
+    function PostDraw()
+    {
+        $.each(p_friends, function(idx, frd) {
+            
+            var path = (frd.icon && frd.icon != 'None' ?
+                        "/static/user_icons/" + frd.icon :
+                        "/static/icons_source/anonymous.png");
+            $('#' + frd.name + '_icon').attr("src", path);
+            
+            var path = (frd.favClub && frd.favClub != 'None' ?
+                        "/static/club_images/" + FormatFileName(frd.favClub) + " logo.png" :
+                        "/static/club_images/_club logo.png");
+            $('#' + frd.name + '_favClub').attr("src", path);
+            
+            var ttID = '#' + frd.name + '_link';
+            $(ttID).tooltip({
+                items: ttID,
+                tooltipClass: 'jqueryUI_tooltip',
+                content: function () {
+                    return "View Profile";
+                },
+                position: {
+                    my: 'left center',          // relative to tooltip
+                    at: 'right+5% center',      // relative to parent
+                }
+            });
+            
+            if (frd.favClub && frd.favClub != 'None')
+            {
+                var ttID = '#' + frd.name + '_favClub';
+                $(ttID).tooltip({
+                    items: ttID ,
+                    tooltipClass: 'jqueryUI_tooltip',
+                    content: function () {
+                        return frd.favClub;
+                    },
+                    position: {
+                        my: 'right-5% center',   
+                        at: 'left center',    
+                    }
+                });
+            }            
+        });
+    }
+        
+}
+//
+// PREDICTION
+//
+function InitializeUnivPred()
+{            
+    var abilsOwned = $.parseJSON('{{ puAbilsOwned | escapejs }}');      //cl(abilsOwned);
+    var abils = [];
+    
+    if (abilsOwned.goalsG.level > 0)
+    {
+        var abil = { Upgrade: "Goals Guess", Level: abilsOwned.goalsG.level };
+        abils.push(abil);
+    }
+    if (abilsOwned.scorersG.level > 0)
+    {
+        var abil = { Upgrade: "Scorers Guess", Level: abilsOwned.scorersG.level };
+        abils.push(abil);
+    }
+    if (abilsOwned.secondChance.level > 0)
+    {
+        var abil = { Upgrade: "Second Chance", Level: abilsOwned.secondChance.level };
+        abils.push(abil);
+    }
+    if (abilsOwned.doubleDown.level > 0)
+    {
+        var abil = { Upgrade: "Double Down", Level: abilsOwned.doubleDown.level };
+        abils.push(abil);
+    }
+    if (abilsOwned.clubFav.level > 0)
+    {
+        var abil = { Upgrade: "Club Favorite", Level: abilsOwned.clubFav.level };
+        abils.push(abil);
+    }
+    if (abilsOwned.tokenRate.level > 0)
+    {
+        var abil = { Upgrade: "Token Rate", Level: abilsOwned.tokenRate.level };
+        abils.push(abil);
+    }
+    
+    if (abils.length > 0)
+    { 
+        var colsClass = { Upgrade: "", Level: "format_center" };
+        var fullT = JSONtoFullTable(abils);
+        SetDataTable('#upgrades_table', fullT, colsClass);
+    }
+    else
+    {
+        $('#upgrades_table').html('<div class="inner_margin2">User has no abilities.</div>');
+    }
+    
+    var record = $.parseJSON('{{ puRecordAT | escapejs }}');
+    var thresholds = $.parseJSON('{{ puThresholds | escapejs }}');
+    PlotUserRankings(record, "AT", thresholds);
+
+    var record = $.parseJSON('{{ puRecordRD | escapejs }}');
+    PlotUserRankings(record, "RD", thresholds);
+}
+
+function PlotUserRankings(p_record, p_type, p_thresholds)
+{
+    var dataset = [
+        { data: p_record, points: {show: true}, lines: {show: true} },
+    ];
+    
+    $.each(p_thresholds, function(idx, thr) {
+        var newData = { data: thr, color: "crimson", lines: {lineWidth: 1} };
+        dataset.push(newData);
+    });
+    
+    var options = {
+        xaxis: {
+            axisLabel: "Round",
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 14,
+            axisLabelFontFamily: 'Impact',
+            axisLabelPadding: 10,
+            min: 0,
+            max: 31,
+            },
+        yaxis: {
+            axisLabel: "Percentile",
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 14,
+            axisLabelFontFamily: 'Impact',
+            axisLabelPadding: 0,
+            min: -2,
+            max: 100,
+            },
+        colors: ["green", ], 
+        grid: {
+            hoverable: true,        // this enables the tooltip, move to dataset ?
+            },
+    };
+    
+    $.plot('#record{0}_plot'.format(p_type), dataset, options);
+    
+    AttachUserLabels('#record{0}_plot'.format(p_type));
+    
+    var previousPoint = null, previousLabel = null;
+    function AttachUserLabels(p_elemId)
+    {
+        // display grade thresholds 
+        
+        var plot = $.data($(p_elemId)[0], 'plot');        // why is this [0] necessary ?
+        var dataset = plot.getData();
+        var sColor = dataset[1].color;
+        
+        $.each(dataset, function(idx, dataElem) {
+                
+                // skip the actual data
+                if (idx==0) 
+                    return;
+                
+                var dataField = dataElem.data;
+                var firstData = dataField[0];
+                
+                var o = plot.pointOffset({x: firstData[0], y: firstData[1]});
+                var msg = firstData[2];
+                
+                $('<div class="data-point-label">' + msg + '</div>'
+                    ).css( {
+                        position: 'absolute',
+                        'text-align': 'center',
+                        top: o.top - 12,
+                        left: o.left - 15,
+                        'font-weight': 'bold',
+                        color: sColor,
+                        } 
+                    ).appendTo(plot.getPlaceholder());
+        });
+        
+        // display bins data point on hover
+        
+        $(p_elemId).bind("plothover", function (event, pos, item) {
+            if (item)
+            {
+                if ((previousLabel != item.series.label) || (previousPoint != item.dataIndex))
+                {
+                    previousPoint = item.dataIndex;
+                    previousLabel = item.series.label;
+                    $("#tooltip").remove();
+                    
+                    if (item.seriesIndex == 0)
+                    {
+                        var dataseries = item.series.data;
+                        var color = item.series.color;
+                        var fullData = [];
+                        
+                        $.each(dataseries, function(idx, val) {
+                            if (val[0] == item.datapoint[0]) {
+                                fullData = val;
+                                return false;       // can't break from a function delegate
+                            }
+                        });
+                        
+                        var html = `<div class="format_center">
+                                    Perc% {0} <br> Pnts {1}
+                                    </div>`.format(fullData[1], fullData[2]);
+                        ShowTooltip(item.pageX, item.pageY, color, html);
+                    }
+                }
+            }
+            else
+            {
+                $("#tooltip").remove();
+                previousPoint = null;
+            }
+        });
+        
+        function ShowTooltip(x, y, color, contents) {
+            $('<div id="tooltip">' + contents + '</div>').css({
+                display: 'none',
+                position: 'absolute',
+                top: y -54,
+                left: x -45,
+                padding: '3px',
+                border: '2px solid ' + color,
+                'border-radius': '5px',             // properties with dash need to be escaped
+                'background-color': 'white',    
+                opacity: 0.9,
+                'font-size': '12px',
+                'font-family': 'Impact',
+            }).appendTo("body").fadeIn(200);
+        }
+    }   
+    
+}
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+

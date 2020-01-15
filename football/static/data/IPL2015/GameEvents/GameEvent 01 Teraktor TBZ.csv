@@ -1,0 +1,41 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2015,01,Teraktor TBZ,Game Half1 Start,00:00:00,,,,
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Naft TEH,Carlos,Santos,Defender
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Naft TEH,Saeed,Lotfi,Defender
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Naft TEH,Seyed Jalal,Hossaini,Defender
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Naft TEH,Siamak,Kouroshi,Defender
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Naft TEH,Vahid,Hamdinejad,Defender
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Naft TEH,Amir Arsalan,Mottahari,Forward
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Naft TEH,Eissa,Ale Kaseer,Forward
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Naft TEH,Alireza,Bayranvand,Goalkeeper
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Naft TEH,Alireza,Ezzat Keramat,Midfield
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Naft TEH,Iman,Mobali,Midfield
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Naft TEH,Vahid,Amiri,Midfield
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Carlos Alexandre,Cardoso,Defender
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Khaled,Shafiei,Defender
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad,Iran Pourian,Defender
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Farid,Behzadi Karimi,Forward
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mehrdad,Bayrami,Forward
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad Reza,Akhbari,Goalkeeper
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Augusto Cesar,Dos Santos,Midfield
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Bakhtiar,Rahmani,Midfield
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Saeed,Aghaei,Midfield
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Sina,Ashori,Midfield
+IPL2015,01,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Soroush,Rafiei,Midfield
+IPL2015,01,Teraktor TBZ,Card: Yellow,00:01:00,Naft TEH,Aloys,Nong,Forward
+IPL2015,01,Teraktor TBZ,Player Sub-in,00:30:00,Naft TEH,Mehdi,Shiri,Defender
+IPL2015,01,Teraktor TBZ,Player Sub-out,00:30:00,Naft TEH,Saeed,Lotfi,Defender
+IPL2015,01,Teraktor TBZ,Game Half1 Stop,00:46:00,,,,
+IPL2015,01,Teraktor TBZ,Game Half2 Start,00:47:00,,,,
+IPL2015,01,Teraktor TBZ,Player Sub-in,00:58:00,Teraktor TBZ,Hamza,Younes,Forward
+IPL2015,01,Teraktor TBZ,Player Sub-out,00:58:00,Teraktor TBZ,Mehrdad,Bayrami,Forward
+IPL2015,01,Teraktor TBZ,Player Sub-in,01:08:00,Naft TEH,Aloys,Nong,Forward
+IPL2015,01,Teraktor TBZ,Player Sub-out,01:08:00,Naft TEH,Eissa,Ale Kaseer,Forward
+IPL2015,01,Teraktor TBZ,Player Sub-in,01:09:00,Teraktor TBZ,Shahin,Saghebi,Forward
+IPL2015,01,Teraktor TBZ,Player Sub-out,01:09:00,Teraktor TBZ,Farid,Behzadi Karimi,Forward
+IPL2015,01,Teraktor TBZ,Player Sub-in,01:15:00,Naft TEH,Arash,Rezavand,Midfield
+IPL2015,01,Teraktor TBZ,Player Sub-out,01:15:00,Naft TEH,Siamak,Kouroshi,Defender
+IPL2015,01,Teraktor TBZ,Player Sub-in,01:17:00,Teraktor TBZ,Ahmad,Abdollahzadeh,Midfield
+IPL2015,01,Teraktor TBZ,Player Sub-out,01:17:00,Teraktor TBZ,Sina,Ashori,Midfield
+IPL2015,01,Teraktor TBZ,Game Half2 Stop,01:39:00,,,,
+IPL2015,01,Teraktor TBZ,Game End,01:40:00,,,,

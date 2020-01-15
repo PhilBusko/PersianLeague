@@ -1,0 +1,18 @@
+
+{% load staticfiles %}
+{% load utility_ttags %}
+
+{% load account %}
+    
+    {% autoescape off %}
+    
+        Salaam and Hello from your friends at Lige Ma,
+    
+        {{ inviter }} is inviting you to join the league.
+        
+        Baazi Mikoni? 
+    
+        Sign up at: www.lige-ma.com
+    
+    {% endautoescape %}
+

@@ -1,0 +1,45 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2015,12,Esteghlal KHU,Game Half1 Start,00:00:00,,,,
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Aghil,Kabi,Defender
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Danial,Mahini,Defender
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mohamad,Tayyebi,Defender
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Paymon,Shirzadi,Defender
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Hakeem,Nassari,Forward
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Raheem,Zahivi,Forward
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Fernando Jesus,Riberio,Goalkeeper
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Ali Asghar,Ashouri,Midfield
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Hassan,Bait Saeed,Midfield
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mahdi,Zobaydi,Midfield
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Maysam,Doraghi,Midfield
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Dariush,Shojaeian,Defender
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Mohamad,Nosrati,Defender
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Morteza,Asadi,Defender
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Mohamad,Ebrahimi,Forward
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Shahram,Goodarzi,Forward
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Georgi,Georgiev,Goalkeeper
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Alireza,Latifi,Midfield
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Magno,Batista Da Silva,Midfield
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Mahdi,Kiani,Midfield
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Mohamad Amin,Darvishi,Midfield
+IPL2015,12,Esteghlal KHU,Player in Line-up,00:00:00,Gostaresh TBZ,Omid,Nezamipour,Midfield
+IPL2015,12,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Eduardo Soares,Ferreira,Defender
+IPL2015,12,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Paymon,Shirzadi,Defender
+IPL2015,12,Esteghlal KHU,Card: Yellow,00:01:00,Gostaresh TBZ,Mohamad,Nosrati,Defender
+IPL2015,12,Esteghlal KHU,Card: Yellow,00:01:00,Gostaresh TBZ,Yousef,Seyedi,Forward
+IPL2015,12,Esteghlal KHU,Penalty Scored,00:36:00,Esteghlal KHU,Maysam,Doraghi,Midfield
+IPL2015,12,Esteghlal KHU,Game Half1 Stop,00:46:00,,,,
+IPL2015,12,Esteghlal KHU,Game Half2 Start,00:47:00,,,,
+IPL2015,12,Esteghlal KHU,Player Sub-in,01:14:00,Esteghlal KHU,Hamdollah,Ebdam,Midfield
+IPL2015,12,Esteghlal KHU,Player Sub-in,01:14:00,Gostaresh TBZ,Amir Hossain,Karimi,Midfield
+IPL2015,12,Esteghlal KHU,Player Sub-out,01:14:00,Esteghlal KHU,Ali Asghar,Ashouri,Midfield
+IPL2015,12,Esteghlal KHU,Player Sub-out,01:14:00,Gostaresh TBZ,Shahram,Goodarzi,Forward
+IPL2015,12,Esteghlal KHU,Player Sub-in,01:18:00,Gostaresh TBZ,Seyed Mohsen,Hossaini,Midfield
+IPL2015,12,Esteghlal KHU,Player Sub-out,01:18:00,Gostaresh TBZ,Mohamad Amin,Darvishi,Midfield
+IPL2015,12,Esteghlal KHU,Player Sub-in,01:21:00,Esteghlal KHU,Rouhollah,Sayfollahi,Forward
+IPL2015,12,Esteghlal KHU,Player Sub-out,01:21:00,Esteghlal KHU,Mahdi,Zobaydi,Midfield
+IPL2015,12,Esteghlal KHU,Player Sub-in,01:25:00,Gostaresh TBZ,Yousef,Seyedi,Forward
+IPL2015,12,Esteghlal KHU,Player Sub-out,01:25:00,Gostaresh TBZ,Dariush,Shojaeian,Defender
+IPL2015,12,Esteghlal KHU,Player Sub-in,01:29:00,Esteghlal KHU,Eduardo Soares,Ferreira,Defender
+IPL2015,12,Esteghlal KHU,Player Sub-out,01:29:00,Esteghlal KHU,Hassan,Bait Saeed,Midfield
+IPL2015,12,Esteghlal KHU,Game Half2 Stop,01:39:00,,,,
+IPL2015,12,Esteghlal KHU,Game End,01:40:00,,,,

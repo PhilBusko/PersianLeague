@@ -1,0 +1,89 @@
+
+{% load utility_ttags %}
+
+
+
+<div id="body_block" class="">
+    <span id="body_block">
+        {{ body }}
+    </span id="body_block">
+</div>
+
+
+<div id="buttons_block" class="format_full">
+    <div class="display_table format_full">
+        <div class="display_cellM format_center" style="width: 50%;">
+            <div class="inner_margin2">
+                <span id="accept_link" class="font_link font_bold">Accept</span>
+            </div>
+        </div>
+        <div class="display_cellM format_center" style="width: 50%;">
+            <div class="inner_margin2">
+                <span id="reject_link" class="font_link font_bold">Reject</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+var MESSAGE_ID = "{{ messageID }}";
+
+$(function() {
+
+    {% if not replied %}
+    
+    $("#accept_link").on('click', function() {
+        ReplyFriend("1");
+    });
+    
+    $("#reject_link").on('click', function() {
+        ReplyFriend("0");
+    });
+    
+    {% else %}
+    
+    DisableLinks();
+    
+    {% endif %}
+    
+});
+
+function ReplyFriend(p_accept)
+{    
+    $("body").css("cursor", "wait");
+    
+    $.ajax({
+        type: "post",
+        url: "/members/db_edit/msg_friendReply/",
+        data: { 'accept': p_accept, 'messageID': MESSAGE_ID },
+        success: function(p_data) {         cl(p_data);
+            DisableLinks();
+            setTimeout(location.reload(true), 800);
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "ReplyFriend()", '#messages_status');
+        },
+        complete: function() {
+            $("body").css("cursor", "default");
+        }
+    });
+}
+
+function DisableLinks()
+{
+    $("#accept_link").off();
+    $("#accept_link").addClass("format_disable");
+    $("#reject_link").off();
+    $("#reject_link").addClass("format_disable");
+}
+
+
+
+</script>
+
+
+
+
+

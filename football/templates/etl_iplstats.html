@@ -1,0 +1,560 @@
+
+{% extends "common_base.html" %}
+{% load utility_ttags %}
+
+{% block content %}
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_admin">
+            <span class="font_title">IPLStats ETL</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="player_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_admin" style="margin-right: 0px;">
+                        <span class="font_section">Player Data</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_admin format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "players" %}</div>
+    </div>
+    
+    <div class="col-sm-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_select "plSeasons" "Season" %} 
+            <div class="format_center">
+                {% ctrl_button "plRequest" "Web Import" %} 
+                <hr class="ctrl_separator"> 
+                {% ctrl_button "plDelete" "Delete Players" %}  
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-sm-5">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_table "players" False False "Current Data" %}    
+        </div>
+    </div>
+    
+    
+</div>
+
+
+<div id="game_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_admin" style="margin-right: 0px;">
+                        <span class="font_section">Game Data</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_admin format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "games" %}</div>
+    </div>
+    
+    <div class="col-sm-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_strong "fullgd" "Import Full Data" %}
+            <div class="display_table">
+                <div class="display_row">
+                    {% ctrl_select "gmSeasons" "Season" %}
+                </div>
+                <div class="display_row">
+                    {% ctrl_select "startRound" "Start Round" %} 
+                </div> 
+            </div> 
+            <div class="format_center">
+                {% ctrl_button "gmRequest" "Web Import" %}
+                <hr class="ctrl_separator"> 
+                {% ctrl_button "gmDelete" "Delete Games" %}
+            </div> 
+        </div> 
+    </div> 
+    
+    <div class="col-sm-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_strong "tt1" "Import Fixtures Only" %}
+            <div class="display_table ">
+                <div class="display_row ">
+                    {% ctrl_select "rndStart" "Start Round" %}
+                </div>
+                <div class="display_row ">
+                    {% ctrl_select "rndEnd" "End Round" %}
+                </div>
+            </div>
+            <div class="format_center ">
+                {% ctrl_button "fixture" "Import Fixtures" %} 
+            </div>
+            <hr class="ctrl_separator">       
+            {% ctrl_strong "tt2" "Import Events Only" %}
+            {% ctrl_select "evRound" "Events Round" %}
+            <div class="format_center">
+                {% ctrl_button "evRound" "Import Events" %}
+                <br>
+                {% ctrl_button "ptDelete" "Delete Events" %}   
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-sm-4">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_table "byround" False False "Group by Round" %}
+            <br>
+            {% ctrl_table "byevent" False False "Group by Event Type" %}    
+        </div>
+    </div>
+    
+    
+</div>
+
+
+<div id="single_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_admin" style="margin-right: 0px;">
+                        <span class="font_section">Single Game</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_admin format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "single" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-md-6">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_inputText "singleURL" "Game URL" True %}
+            <div class="format_center">
+                {% ctrl_button "getSingle" "Import Single" %}
+            </div> 
+        </div> 
+    </div> 
+    
+    
+</div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+// form functions
+
+$(document).ready(function()
+{     
+    // import player data
+    
+    {% for ssn in seasons %}
+    $('#plSeasons_select').append($('<option>', {value : '{{ ssn }}' }).text('{{ ssn }}'));
+    {% endfor %}
+    
+    DisplayPlayerData();
+    
+    $("#plSeasons_select").change(function() {
+        DisplayPlayerData();
+    });
+    
+    $("#plRequest_button").click(function() {
+       LoadPlayerData();
+    });
+    
+    $("#plDelete_button").click(function() {
+       DeletePlayerData();
+    });
+    //
+    // import game data
+    
+    {% for ssn in seasons %}
+    $('#gmSeasons_select').append($('<option>', {value : '{{ ssn }}' }).text('{{ ssn }}'));
+    {% endfor %}
+    
+    DisplayGameData();
+    
+    var rounds = [];
+    for (var r = 1; r <= 30; r++)
+        rounds.push(r);
+    $.each(rounds, function(key, value) {
+        $("#startRound_select").append($('<option>', {value : key }).text(value));
+    });
+    
+    $("#gmSeasons_select").change(function() {
+        DisplayGameData();
+    });
+    
+    $("#gmRequest_button").click(function() {
+       LoadGameData();
+    });
+    
+    $("#gmDelete_button").click(function() {
+       DeleteGameData();
+    });
+    //
+    // import partial game data
+    
+    $.each(rounds, function(key, value) {
+        $("#rndStart_select").append($('<option>', {value : key }).text(value));
+        $("#rndEnd_select").append($('<option>', {value : key }).text(value));
+        $("#evRound_select").append($('<option>', {value : key }).text(value));
+    });
+    
+    $("#rndEnd_select option").filter(function() {
+        return $(this).text() == "5"; 
+    }).prop('selected', true);
+    
+    $("#fixture_button").click(function() {
+        LoadFixtures();
+    });
+    
+    $("#evRound_button").click(function() {
+        LoadOneRound();
+    });
+    
+    $("#ptDelete_button").click(function() {
+        DeleteEventData();
+    });
+    //
+    // single game
+    
+    $("#getSingle_button").click(function() {
+       ImportSingle();
+    });
+    
+    
+});
+
+function DisableForm()
+{
+    $("#plSeasons_select").prop("disabled", true);
+    $("#plRequest_button").prop("disabled", true);
+    $("#plDelete_button").prop("disabled", true);
+    
+    $("#gmSeasons_select").prop("disabled", true);
+    $("#startRound_select").prop("disabled", true);
+    $("#gmRequest_button").prop("disabled", true);
+    $("#gmDelete_button").prop("disabled", true);
+    
+    $("#rndStart_select").prop("disabled", true);
+    $("#rndEnd_select").prop("disabled", true);
+    $("#fixture_button").prop("disabled", true);
+    $("#evRound_select").prop("disabled", true);
+    $("#evRound_button").prop("disabled", true);
+    $("#ptDelete_button").prop("disabled", true);
+
+    $("#singleURL_text").prop("disabled", true);
+    $("#getSingle_button").prop("disabled", true);
+    
+    $("body").css("cursor", "wait");
+}
+
+function EnableForm()
+{
+    $("#plSeasons_select").prop("disabled", false);
+    $("#plRequest_button").prop("disabled", false);
+    $("#plDelete_button").prop("disabled", false);
+    
+    $("#gmSeasons_select").prop("disabled", false);
+    $("#startRound_select").prop("disabled", false);
+    $("#gmRequest_button").prop("disabled", false);
+    $("#gmDelete_button").prop("disabled", false);
+    
+    $("#rndStart_select").prop("disabled", false);
+    $("#rndEnd_select").prop("disabled", false);
+    $("#fixture_button").prop("disabled", false);
+    $("#evRound_select").prop("disabled", false);
+    $("#evRound_button").prop("disabled", false);
+    $("#ptDelete_button").prop("disabled", false);
+    
+    $("#singleURL_text").prop("disabled", false);
+    $("#getSingle_button").prop("disabled", false);
+    
+    $("body").css("cursor", "default");    
+}
+
+
+//
+// player data functions
+
+function DisplayPlayerData()
+{
+    var season = $('#plSeasons_select option:selected').text();
+    $('#players_table').html(null);
+    $('#players_status').html(null);
+    
+    $.ajax({
+        url: '{% url "football:etl_iplstats_jx" "get_players" %}',
+        data: {'season': season},
+        success: function(p_data) {    //cl(p_data);
+            if (typeof(p_data) == 'string')
+                $('#players_table').text(p_data);
+            else
+            {
+                var fullT = JSONtoFullTable(p_data.data);
+                SetDataTable('#players_table', fullT, p_data.colFormat);
+            }
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, 'DisplayPlayerData()', '#players_status');
+        } 
+    }); 
+} 
+
+function LoadPlayerData()
+{   
+    DisableForm();
+    $('#players_table').html(null);
+    $('#players_status').html(null);
+    var season = $('#plSeasons_select option:selected').text();
+    
+    $.ajax({
+        type: 'POST',
+        url: '{% url "football:etl_iplstats_jx" "load_players" %}',
+        data: {'season': season},
+        success: function(p_data) {     //cl(p_data);
+            DisplayPlayerData();
+            EnableForm();    
+        },
+        error: function(p_err) {    //cl(p_err);
+            ErrorToStatus(p_err.responseText, "LoadPlayerData()", '#players_status');
+            EnableForm();   
+        } 
+    });
+}
+
+function DeletePlayerData(p_thdmsg)
+{   
+    DisableForm();
+    $("#players_table").html(null);
+    $("#players_status").html(null);
+    
+    $.ajax({
+        url: '{% url "football:dataManager_jx" "delete_players" %}',
+        success: function(p_data) { cl(p_data);
+            DisplayPlayerData();
+            EnableForm();                
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, 'DeletePlayerData()', '#players_status');
+            EnableForm();    
+        } 
+    });
+}
+
+//
+// game data functions
+
+function DisplayGameData()
+{
+    var season = $("#gmSeasons_select option:selected").text();
+    $("#byround_table").html(null);
+    $("#byevent_table").html(null);
+    $("#games_status").html(null);
+    
+    $.ajax({
+        url: '{% url "football:etl_iplstats_jx" "game_byround" %}',
+        data: {'season': season},
+        success: function(p_data) {     //cl(p_data);
+            if (typeof(p_data) == 'string')
+                $('#byround_table').text(p_data);
+            else
+            {
+                var fullT = JSONtoFullTable(p_data.data);
+                SetDataTable('#byround_table', fullT, p_data.colFormat);
+            }
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, 'DisplayGameData()', '#games_status');
+        } 
+    });
+    
+    $.ajax({
+        url: '{% url "football:etl_iplstats_jx" "game_byevent" %}',
+        data: {'season': season},
+        success: function(p_data) {     //cl(p_data);
+            if (typeof(p_data) == 'string')
+                $('#byevent_table').text(p_data);
+            else
+            {
+                var fullT = JSONtoFullTable(p_data.data);
+                SetDataTable('#byevent_table', fullT, p_data.colFormat);
+            }
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, 'DisplayGameData()', '#games_status');
+        } 
+    }); 
+}
+
+function LoadGameData()
+{   
+    DisableForm();
+    $("#byround_table").html(null);
+    $("#games_status").html(null);
+    var season = $("#gmSeasons_select option:selected").text();
+    var startRound = $("#startRound_select option:selected").text();
+    
+    $.ajax({
+        type: "POST",
+        url: '{% url "football:etl_iplstats_jx" "load_game" %}',
+        data: {'season': season, 'rndStart': startRound},
+        success: function(p_data) { cl(p_data);
+            DisplayGameData();  
+            EnableForm();    
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, 'LoadGameData()', '#games_status');
+            EnableForm();    
+        } 
+    });
+}
+
+function DeleteGameData(p_thdmsg)
+{   
+    DisableForm();
+    $("#games_table").html(null);
+    $("#games_status").html(null);
+    
+    $.ajax({
+        url: '{% url "football:dataManager_jx" "delete_games" %}',
+        success: function(p_data) { cl(p_data);
+            DisplayGameData();
+            EnableForm();    
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, 'DeleteGameData()', '#games_status');
+            EnableForm();    
+        } 
+    });
+}
+
+//
+// partial game data functions
+
+function LoadFixtures()
+{   
+    DisableForm();
+    $("#current_table").html(null);
+    $("#games_status").html(null);
+    var season = $("#gmSeasons_select option:selected").text();
+    var rndStart = $("#rndStart_select option:selected").text();
+    var rndEnd = $("#rndEnd_select option:selected").text();
+    
+    $.ajax({
+        type: "POST",
+        url: '{% url "football:etl_iplstats_jx" "game_fixtures" %}',
+        data: {'season': season, 'rndStart': rndStart, 'rndEnd': rndEnd},
+        success: function(p_data) {     //cl(p_data);
+            DisplayGameData();  
+            EnableForm();   
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "LoadFixtures()", '#games_status')
+            EnableForm();    
+        } 
+    });
+}
+
+function LoadOneRound()
+{   
+    DisableForm();
+    $("#games_status").html(null);
+    var season = $("#gmSeasons_select option:selected").text();
+    var round = $("#evRound_select option:selected").text();
+    
+    $.ajax({
+        type: "POST",
+        url: '{% url "football:etl_iplstats_jx" "game_oneround" %}',
+        data: {'season': season, 'round': round},
+        success: function(p_data) {     //cl(p_data);
+            DisplayGameData();  
+            EnableForm();  
+        }, 
+        error: function(p_err) {
+            DisplayGameData();  
+            EnableForm();
+            ErrorToStatus(p_err.responseText, "LoadOneRound()", '#games_status')
+        }
+    });
+}
+
+function DeleteEventData()
+{   
+    DisableForm();
+    $('#byround_table').empty();
+    $('#byevent_table').empty();
+    $('#games_status').empty();
+    
+    $.ajax({
+        url: '{% url "prediction:universal_jx" "delete_events" %}',
+        success: function(p_data) {     //cl(p_data);
+            DisplayGameData();
+            EnableForm();    
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "DeleteEventData()", '#games_status')
+            EnableForm();    
+        } 
+    });
+}
+
+//
+// single game
+
+function ImportSingle()
+{   
+    DisableForm();
+    $('#single_status').empty();
+    
+    var gameUrl = $('#singleURL_text').val();       cl(gameUrl);
+    
+    $.ajax({
+        type: "POST",
+        url: '{% url "football:etl_iplstats_jx" "load_singleGame" %}',
+        data: { 'gameUrl': gameUrl },
+        success: function(p_data) {     cl(p_data);
+            
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "ImportSingle()", '#single_status')
+        },
+        complete: function() {
+            EnableForm();                
+        }
+    });
+}
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+

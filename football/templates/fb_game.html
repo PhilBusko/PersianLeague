@@ -1,0 +1,376 @@
+
+{% extends "common_base.html" %}
+{% load staticfiles %}
+{% load utility_ttags %}
+
+{% block content %}
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_header">
+            <span class="font_title">Game Reference</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="search_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Search for Game</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "options" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            <div class="">
+                {% ctrl_strong "opts" "Search Options" %}
+                <div class="display_table">
+                    <div class="display_row">
+                        {% ctrl_select "season" "Season" %}
+                    </div>
+                    <div class="display_row">
+                        {% ctrl_select "round" "Round" %}
+                    </div>
+                    <div class="display_row">
+                        {% ctrl_select "game" "Game" %}
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-7 col-xl-6 col-xxl-5">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry" style="min-height: 200px;">
+            {% ctrl_strong "fxt" "Games in Round" %} <br>
+            {% ctrl_table "fixture" %}
+        </div>
+    </div>
+    
+</div>
+
+
+<div id="properties_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Game Info</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "game" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-6 col-xxl-5">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry" style="min-height: 500px;">
+            <div class="format_center" style="font-size: 150%;">
+                {% ctrl_strong "home" "Home Club" %} <br>
+            </div>
+            <div class="display_table format_full">
+                <div class="display_row">
+                    <div class="display_cellM format_fixline" style="width: 60%;">
+                        {% ctrl_table "homeLineUp" "center" %}            
+                    </div>
+                    <div class="display_cellM format_center" style="width: 40%;">
+                        {% ctrl_image "homeUni" "image_smallSize format_frame" %} <br>
+                        {% ctrl_strong "homeGoals" "Goals: " %} <br>
+                    </div>      
+                </div>    
+            </div>     
+            <br>    
+            <div class="format_full">
+                {% ctrl_table "homeEvents" "center" %}            
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-2 col-lg-offset-0 col-lg-6 col-xxl-5">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry" style="min-height: 500px;">
+            <div class="format_center" style="font-size: 150%;">
+                {% ctrl_strong "away" "Away Club" %} <br>
+            </div>
+            <div class="display_table format_full">
+                <div class="display_row">
+                    <div class="display_cellM format_center" style="width: 40%;" >
+                        {% ctrl_image "awayUni" "image_smallSize format_frame" %} <br>
+                        {% ctrl_strong "awayGoals" "Goals: " %} <br>
+                    </div>
+                    <div class="display_cellM format_fixline" style="width: 60%;">
+                        {% ctrl_table "awayLineUp" "center" %}            
+                    </div>
+                </div>                
+            </div>
+            <br>
+            <div class="format_full">
+                {% ctrl_table "awayEvents" "center" %}            
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+<!-- SCRIPTS -->
+
+
+<script>
+
+$(document).ready(function()
+{
+    
+    {% for ssn in seasons %}
+    $('#season_select').append($('<option>', {value : '{{ ssn }}' }).text('{{ ssn }}'));
+    {% endfor %}
+    
+    $('#season_select').val("{{ cSeason }}");
+    
+    $('#season_select').change(function() {
+        RefreshSeason();
+    });
+    //
+    {% for rnd in rounds %}
+    $('#round_select').append($('<option>', {value : '{{ rnd }}' }).text('{{ rnd }}'));
+    {% endfor %}
+    
+    $('#round_select').change(function() {
+        RefreshRound();
+    });
+    
+    $('#game_select').change(function() {
+        RefreshGame();
+    });
+    
+    var jTable = $.parseJSON('{{ fixture | escapejs }}');
+    DisplayRound(jTable);
+    
+    var jTable = $.parseJSON('{{ gameProps | escapejs }}');
+    DisplayGameSide(jTable['home'], '#home');
+    DisplayGameSide(jTable['away'], '#away');
+    
+    var homeClub = jTable.home.name;
+    $('#game_select option:contains("{0}")'.format(homeClub)).prop('selected', true);
+});
+
+// form display and reset
+
+function ResetForm()
+{
+    $('#round_select').html(null);
+    $('#game_select').html(null);
+    $('#options_status').html(null);
+    ResetGame();
+}
+
+
+function ResetGame()
+{
+    $("#game_status").html(null);
+    
+    $("#home_strong").html("Home Club");
+    $("#homeUni_image").attr("src", "");
+    $("#homeGoals_strong").html("Goals: ");
+    $("#homeLineUp_table").html(null);
+    $("#homeEvents_table").html(null);
+    
+    $("#away_strong").html("Away Club");
+    $("#awayUni_image").attr("src", "");
+    $("#awayGoals_strong").html("Goals: ");
+    $("#awayLineUp_table").html(null);
+    $("#awayEvents_table").html(null);
+}
+
+
+function DisplayRound(p_ftable)
+{
+    if (typeof(p_ftable) == 'string')
+    {
+        $('#fixture_table').html('<div style="margin: 4px;">{0}</div>'.format(p_ftable));
+        return;
+    }
+    
+    // add fixture data to game select
+    
+    var options = []
+    $.each(p_ftable.data, function(index, value) {
+        option = value.home_club + " | " + value.away_club;
+        options.push(option);
+    });
+    
+    $.each(options, function(index, value) {
+        $('#game_select').append($('<option>', {value : index }).text(value));
+    });
+    
+    // display fixture table
+    
+    $.each(p_ftable.data, function(index, row) {
+        var myDate = Date.parseString(row.play_date.substring(0,16), "yyyy-MM-dd HH:mm");
+        var lowTime = myDate.getTime() -  2332800000   // 27 days before play time
+        var highTime = myDate.getTime() + 604800000    // 7 days after play time
+        var nowTime = (new Date()).getTime();
+        
+        if (lowTime < nowTime && nowTime < highTime)
+            var frmt = myDate.format("NNN d HH:mm");
+        else
+            var frmt = myDate.format("yyyy-MM-dd HH:mm");
+        row.play_date = frmt;
+        delete row.id;
+    });
+    
+    var fullT = JSONtoFullTable(p_ftable.data);
+    SetDataTable('#fixture_table', fullT, p_ftable.colFmt);
+}
+
+
+function DisplayGameSide(p_club, p_id)
+{
+    if (!p_club) 
+        return;
+    
+    $(p_id + '_strong').html(p_club.name);
+    
+    var path = '/static/club_images/' + FormatFileName(p_club.name) + ' uni_home.png';   
+    $(p_id + 'Uni_image').attr('src', path);
+    
+    $(p_id + 'Goals_strong').html('Goals: ' + p_club.goals);
+    
+    var lineup_dx = {};
+    $.each(p_club.lineup, function(key, value) {
+
+        var players = "";
+        $.each(value, function(index, value) {
+            players += value + "<br>";
+        });
+        
+        lineup_dx[key] = players;
+    });
+    
+    var fullT = JObjToFullTable(lineup_dx);
+    var trans = TransposeFullTable(fullT);
+    SetVerticalTable(p_id + 'LineUp_table', trans);
+    
+    var fullT = JSONtoFullTable(p_club.moves);
+    SetDataTable(p_id + 'Events_table', fullT);
+}
+
+// control handlers
+
+function RefreshSeason()
+{
+    $('body').css('cursor', 'wait');
+    
+    $('#round_select').html(null);
+    $('#game_select').html(null);
+    $('#fixture_table').html(null);
+    ResetGame();
+    
+    var season = $("#season_select option:selected").text();
+    
+    $.ajax({
+        url: "{% url 'football:research_jx' 'season_refresh' %}",
+        data: {'season': season},
+        success: function(p_data) {                 //cl(p_data);
+            
+            $.each(p_data.rounds, function(idx, val) {
+                $('#round_select').append($('<option>', {value : val }).text( val ));
+            });
+            
+            DisplayRound(p_data.fixture);
+            DisplayGameSide(p_data.home, '#home');
+            DisplayGameSide(p_data.away, '#away');
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "RefreshRound()", '#options_status');
+        },
+        complete: function() {
+            $('body').css('cursor', 'default');
+        }
+    });
+}
+
+
+function RefreshRound()
+{
+    $('body').css('cursor', 'wait');
+    
+    $('#game_select').html(null);
+    $('#fixture_table').html(null);
+    ResetGame();
+    
+    var season = $("#season_select option:selected").text();
+    var round = $("#round_select option:selected").text();
+    
+    $.ajax({
+        url: "{% url 'football:research_jx' 'round_game' %}",
+        data: {'season': season, 'round': round},
+        success: function(p_data) {                 //cl(p_data);
+            DisplayRound(p_data.fixture);
+            DisplayGameSide(p_data.home, '#home');
+            DisplayGameSide(p_data.away, '#away');
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "RefreshRound()", '#options_status');
+        },
+        complete: function() {
+            $('body').css('cursor', 'default');
+        }
+    });
+}
+
+
+function RefreshGame()
+{
+    ResetGame();
+    
+    var season = $("#season_select option:selected").text();
+    var round = $("#round_select option:selected").text();
+    var game = $("#game_select option:selected").text();
+    var home_club = game.substring(0, game.indexOf(" |"));
+    
+    $.ajax({
+        url: "{% url 'football:research_jx' 'game_properties' %}",
+        data: {'season': season, 'round': round, 'home_club': home_club},
+        success: function(p_data) {     //cl(p_data);
+            DisplayGameSide(p_data['home'], '#home');
+            DisplayGameSide(p_data['away'], '#away');
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "DisplayGame()", '#game_status');
+        } 
+    });
+}
+
+
+
+
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+

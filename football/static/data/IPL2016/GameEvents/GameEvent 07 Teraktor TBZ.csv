@@ -1,0 +1,48 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2016,07,Teraktor TBZ,Game Half1 Start,00:00:00,,,,
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,FC Mashhad MSH,Maysam,Hossaini,Defender
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,FC Mashhad MSH,Mohamad Reza,Khanzadeh,Defender
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,FC Mashhad MSH,Mostafa,Ahmadi,Defender
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,FC Mashhad MSH,Payam,Malekian,Defender
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,FC Mashhad MSH,Reza,Darvishi,Forward
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,FC Mashhad MSH,Rouhollah,Sayfollahi,Forward
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,FC Mashhad MSH,Andrey,Nazario Afonso,Goalkeeper
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,FC Mashhad MSH,Ayoub,Kalantari,Midfield
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,FC Mashhad MSH,Hamid Reza,Ali Asgari,Midfield
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,FC Mashhad MSH,Moosa,Traore,Midfield
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,FC Mashhad MSH,Reza,Sharbati,Midfield
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Hadi,Mohamadi,Defender
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Khaled,Shafiei,Defender
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad,Iran Pourian,Defender
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Saeed,Aghaei,Defender
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Farzad,Hatami,Forward
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad,Ebrahimi,Forward
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad Reza,Akhbari,Goalkeeper
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mahdi,Kiani,Midfield
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad,Noori,Midfield
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Sina,Ashori,Midfield
+IPL2016,07,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Soroush,Rafiei,Midfield
+IPL2016,07,Teraktor TBZ,Card: Red,00:01:00,FC Mashhad MSH,Moosa,Traore,Midfield
+IPL2016,07,Teraktor TBZ,Card: Yellow,00:01:00,FC Mashhad MSH,Maysam,Hossaini,Defender
+IPL2016,07,Teraktor TBZ,Card: Yellow,00:01:00,FC Mashhad MSH,Moosa,Traore,Midfield
+IPL2016,07,Teraktor TBZ,Card: Yellow,00:01:00,Teraktor TBZ,Hadi,Mohamadi,Defender
+IPL2016,07,Teraktor TBZ,Card: Yellow,00:01:00,Teraktor TBZ,Soroush,Rafiei,Midfield
+IPL2016,07,Teraktor TBZ,Penalty Scored,00:03:00,Teraktor TBZ,Mohamad,Iran Pourian,Defender
+IPL2016,07,Teraktor TBZ,Game Half1 Stop,00:46:00,,,,
+IPL2016,07,Teraktor TBZ,Player Sub-in,00:46:00,FC Mashhad MSH,Saeed,Daghighi,Forward
+IPL2016,07,Teraktor TBZ,Player Sub-out,00:46:00,FC Mashhad MSH,Ayoub,Kalantari,Midfield
+IPL2016,07,Teraktor TBZ,Game Half2 Start,00:47:00,,,,
+IPL2016,07,Teraktor TBZ,Player Sub-in,00:55:00,Teraktor TBZ,Eder Luciano,Edinho,Forward
+IPL2016,07,Teraktor TBZ,Player Sub-out,00:55:00,Teraktor TBZ,Mohamad,Noori,Midfield
+IPL2016,07,Teraktor TBZ,Goal,00:58:00,Teraktor TBZ,Farzad,Hatami,Forward
+IPL2016,07,Teraktor TBZ,Player Sub-in,01:01:00,FC Mashhad MSH,Saeed,Moradi,Midfield
+IPL2016,07,Teraktor TBZ,Player Sub-out,01:01:00,FC Mashhad MSH,Reza,Darvishi,Forward
+IPL2016,07,Teraktor TBZ,Player Sub-in,01:13:00,FC Mashhad MSH,Mohsen,Aghaei,Defender
+IPL2016,07,Teraktor TBZ,Player Sub-out,01:13:00,FC Mashhad MSH,Maysam,Hossaini,Defender
+IPL2016,07,Teraktor TBZ,Player Sub-in,01:23:00,Teraktor TBZ,Shahram,Goodarzi,Forward
+IPL2016,07,Teraktor TBZ,Player Sub-out,01:23:00,Teraktor TBZ,Farzad,Hatami,Forward
+IPL2016,07,Teraktor TBZ,Player Sub-in,01:29:00,Teraktor TBZ,Alireza,Ramezani,Midfield
+IPL2016,07,Teraktor TBZ,Player Sub-out,01:29:00,Teraktor TBZ,Soroush,Rafiei,Midfield
+IPL2016,07,Teraktor TBZ,Goal,01:30:00,Teraktor TBZ,Mahdi,Kiani,Midfield
+IPL2016,07,Teraktor TBZ,Game Half2 Stop,01:39:00,,,,
+IPL2016,07,Teraktor TBZ,Game End,01:40:00,,,,

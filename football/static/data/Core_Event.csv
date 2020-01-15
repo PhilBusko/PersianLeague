@@ -1,0 +1,26 @@
+Type,Event,Score,GK,DF,MF,FW,Description
+Game,Game Half1 Start,0,0,0,0,0,-
+Game,Game Half1 Stop,0,0,0,0,0,-
+Game,Game Half2 Start,0,0,0,0,0,-
+Game,Game Half2 Stop,0,0,0,0,0,-
+Game,Overtime Start,0,0,0,0,0,-
+Game,Overtime Stop,0,0,0,0,0,-
+Game,Penalty Round Starts,0,0,0,0,0,-
+Game,Game End,0,0,0,0,0,-
+OnField,Player in Line-up,3,0,0,0,0,Players that start the game get points.
+OnField,Player Sub-out,-1,0,0,0,0,If a player is subbed out they lose points.
+OnField,Player Sub-in,1,0,0,0,0,"If a player subs in they get points, but not as much as the line-up."
+Move,Card: Yellow,-1,0,0,0,0,Player receives a yellow card.
+Move,Card: D-Yellow,-2,0,0,0,0,The player recieves a second yellow card after getting one the previous game.
+Move,Card: Red,-5,0,0,0,0,The player is expelled from the game. Also counts as 2 yellow cards in the same game.
+Move,Goal,3,0,0,1,2,Player scored a goal!
+Move,"Goal, Special Move",4,0,0,1,2,"Player scored a spectacular goal! Can be: headbutt, bicycle kick, or from own side of the field."
+Move,Goal Assist,1,0,0,2,1,Player does the last pass before a goal is scored.
+Move,Goalie Control,0,1,0,0,0,-
+Move,Rival Goal x0 in Half1,0,0,3,0,0,How defenders make their money.
+Move,Rival Goal x1 in Half1,0,0,1,0,0,How defenders make their money.
+Move,Rival Goal x0 in Half2,0,0,3,0,0,How defenders make their money.
+Move,Rival Goal x1 in Half2,0,0,1,0,0,How defenders make their money.
+Move,"Goal, Own",-2,0,0,-1,-2,-
+Move,Penalty Scored,1,0,0,0,0,-
+Move,Penalty Saved,0,1,0,0,0,For goalie only.

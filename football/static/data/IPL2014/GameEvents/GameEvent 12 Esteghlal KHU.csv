@@ -1,0 +1,41 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,12,Esteghlal KHU,Game Half1 Start,00:00:00,,,,
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Majid,Haydari,Defender
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mohamad,Tayyebi,Defender
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mohamad Ebrahim,Khosravi,Defender
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Lamine,Diawara,Forward
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mehdi,Momeni,Forward
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Rouhollah,Sayfollahi,Forward
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Maysam Parviz,Karimi,Goalkeeper
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Abdolhadi,Khanifar,Midfield
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Maysam,Majidi,Midfield
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Maysam,Doraghi,Midfield
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Reza,Kardoost,Midfield
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Naft MJS,Mohamad,Madmalisi,Defender
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Naft MJS,Saeed,Salarzadeh,Defender
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Naft MJS,Luis Carlos,Dos Santos Martins,Forward
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Naft MJS,Milad,Solayman Fallah,Forward
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Naft MJS,Milad,Znayadpour,Forward
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Naft MJS,Amir Meghdad,Maleki,Goalkeeper
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Naft MJS,Reza,Haydari,Goalkeeper
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Naft MJS,Bahador,Abdi,Midfield
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Naft MJS,Hamid,Bouhamdan,Midfield
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Naft MJS,Mahmoud,Tighnavard,Midfield
+IPL2014,12,Esteghlal KHU,Player in Line-up,00:00:00,Naft MJS,Milad,Jafari,Midfield
+IPL2014,12,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Majid,Haydari,Defender
+IPL2014,12,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Mohamad Ebrahim,Khosravi,Defender
+IPL2014,12,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Reza,Kardoost,Midfield
+IPL2014,12,Esteghlal KHU,Game Half1 Stop,00:46:00,,,,
+IPL2014,12,Esteghlal KHU,Game Half2 Start,00:47:00,,,,
+IPL2014,12,Esteghlal KHU,Player Sub-in,00:57:00,Naft MJS,Reza,Darvishi,Midfield
+IPL2014,12,Esteghlal KHU,Player Sub-out,00:57:00,Naft MJS,Milad,Solayman Fallah,Forward
+IPL2014,12,Esteghlal KHU,Player Sub-in,01:02:00,Esteghlal KHU,Sadegh,Sadeghi Baba Ahmadi,Forward
+IPL2014,12,Esteghlal KHU,Player Sub-out,01:02:00,Esteghlal KHU,Lamine,Diawara,Forward
+IPL2014,12,Esteghlal KHU,Player Sub-in,01:18:00,Esteghlal KHU,Mohamad,Ousani,Forward
+IPL2014,12,Esteghlal KHU,Player Sub-out,01:18:00,Esteghlal KHU,Rouhollah,Sayfollahi,Forward
+IPL2014,12,Esteghlal KHU,Player Sub-in,01:24:00,Esteghlal KHU,Farzad,Jafari,Defender
+IPL2014,12,Esteghlal KHU,Player Sub-out,01:24:00,Esteghlal KHU,Abdolhadi,Khanifar,Midfield
+IPL2014,12,Esteghlal KHU,Player Sub-in,01:29:00,Naft MJS,Farzad,Mohamadi,Forward
+IPL2014,12,Esteghlal KHU,Player Sub-out,01:29:00,Naft MJS,Luis Carlos,Dos Santos Martins,Forward
+IPL2014,12,Esteghlal KHU,Game Half2 Stop,01:39:00,,,,
+IPL2014,12,Esteghlal KHU,Game End,01:40:00,,,,

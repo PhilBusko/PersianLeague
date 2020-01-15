@@ -1,0 +1,47 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,25,Saipa ALB,Game Half1 Start,00:00:00,,,,
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saba QOM,Hadi,Shakoori,Defender
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saba QOM,Masoud,Hahgjoo,Defender
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saba QOM,Roosbeh,Cheshmi,Defender
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saba QOM,Vahid,Aliabadi,Defender
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saba QOM,Jallaledin,Alimohamadi,Forward
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saba QOM,Javad,Kazemian,Forward
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saba QOM,Mehrdad,Tahmasbi,Goalkeeper
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saba QOM,Abolfazl,Ebrahimi,Midfield
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saba QOM,Ayoub,Kalantari,Midfield
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saba QOM,Hossain,Badamaki,Midfield
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saba QOM,Hossain,Kooshki,Midfield
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ali,Zaynali,Defender
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ebrahim,Shakoori,Defender
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Hamed,Shiri,Defender
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Sajjad,Moshkelpour,Defender
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Vahid,Mohamad Zadeh,Defender
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Hakeem,Nassari,Forward
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Mohamad,Nozhati,Forward
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Hamed,Fallahzadeh,Goalkeeper
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ebrahim,Sadeghi,Midfield
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2014,25,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Roozbeh,Shah Alidoost,Midfield
+IPL2014,25,Saipa ALB,Card: Yellow,00:01:00,Saba QOM,Masoud,Hahgjoo,Defender
+IPL2014,25,Saipa ALB,Card: Yellow,00:01:00,Saba QOM,Mehrdad,Tahmasbi,Goalkeeper
+IPL2014,25,Saipa ALB,Card: Yellow,00:01:00,Saipa ALB,Ebrahim,Sadeghi,Midfield
+IPL2014,25,Saipa ALB,Card: Yellow,00:01:00,Saipa ALB,Roozbeh,Shah Alidoost,Midfield
+IPL2014,25,Saipa ALB,Penalty Scored,00:20:00,Saipa ALB,Hamed,Shiri,Defender
+IPL2014,25,Saipa ALB,Game Half1 Stop,00:46:00,,,,
+IPL2014,25,Saipa ALB,Game Half2 Start,00:47:00,,,,
+IPL2014,25,Saipa ALB,Goal,00:56:00,Saipa ALB,Ebrahim,Sadeghi,Midfield
+IPL2014,25,Saipa ALB,Player Sub-in,00:59:00,Saba QOM,Ambuno,Achille,Midfield
+IPL2014,25,Saipa ALB,Player Sub-out,00:59:00,Saba QOM,Javad,Kazemian,Forward
+IPL2014,25,Saipa ALB,Player Sub-in,01:11:00,Saba QOM,Mohamad,Ousani,Forward
+IPL2014,25,Saipa ALB,Player Sub-out,01:11:00,Saba QOM,Hossain,Badamaki,Midfield
+IPL2014,25,Saipa ALB,Player Sub-in,01:14:00,Saipa ALB,Mojtaba,Ramezani,Midfield
+IPL2014,25,Saipa ALB,Player Sub-out,01:14:00,Saipa ALB,Mohamad,Nozhati,Forward
+IPL2014,25,Saipa ALB,Goal,01:18:00,Saipa ALB,Ali,Zaynali,Defender
+IPL2014,25,Saipa ALB,Player Sub-in,01:20:00,Saba QOM,Mohsen,Karami,Midfield
+IPL2014,25,Saipa ALB,Player Sub-out,01:20:00,Saba QOM,Abolfazl,Ebrahimi,Midfield
+IPL2014,25,Saipa ALB,Player Sub-in,01:26:00,Saipa ALB,Mahan,Rahmani,Midfield
+IPL2014,25,Saipa ALB,Player Sub-out,01:26:00,Saipa ALB,Ali,Zaynali,Defender
+IPL2014,25,Saipa ALB,Player Sub-in,01:29:00,Saipa ALB,Bagher,Niari,Forward
+IPL2014,25,Saipa ALB,Player Sub-out,01:29:00,Saipa ALB,Hakeem,Nassari,Forward
+IPL2014,25,Saipa ALB,Game Half2 Stop,01:39:00,,,,
+IPL2014,25,Saipa ALB,Game End,01:40:00,,,,

@@ -1,0 +1,44 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,02,Esteghlal TEH,Game Half1 Start,00:00:00,,,,
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal KHU,Majid,Haydari,Defender
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal KHU,Mohamad,Tayyebi,Defender
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal KHU,Mousa Salif,Coulibaly,Defender
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal KHU,Lamine,Diawara,Forward
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal KHU,Mehdi,Momeni,Forward
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal KHU,Rouhollah,Sayfollahi,Forward
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal KHU,Maysam Parviz,Karimi,Goalkeeper
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal KHU,Abdolhadi,Khanifar,Midfield
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal KHU,Maysam,Majidi,Midfield
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal KHU,Mohamad Reza,Mahdavi,Midfield
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal KHU,Reza,Kardoost,Midfield
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Hrayr,Mkoyan,Defender
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Arash,Borhani,Forward
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Mohamad,Ghazi,Forward
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Sajjad,Shahbaz Zadeh,Forward
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Mohsen,Forozan,Goalkeeper
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Andranik,Taymorian,Midfield
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Hashem,Bayk Zadeh,Midfield
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Jassim,Karrar,Midfield
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Khosrow,Haydari,Midfield
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Milad,Fakhreddini,Midfield
+IPL2014,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Mohamad Reza,Khorsandnia,Midfield
+IPL2014,02,Esteghlal TEH,Card: Yellow,00:01:00,Esteghlal KHU,Mousa Salif,Coulibaly,Defender
+IPL2014,02,Esteghlal TEH,Card: Yellow,00:01:00,Esteghlal KHU,Abdolhadi,Khanifar,Midfield
+IPL2014,02,Esteghlal TEH,Card: Yellow,00:01:00,Esteghlal TEH,Andranik,Taymorian,Midfield
+IPL2014,02,Esteghlal TEH,Game Half1 Stop,00:46:00,,,,
+IPL2014,02,Esteghlal TEH,Game Half2 Start,00:47:00,,,,
+IPL2014,02,Esteghlal TEH,Player Sub-in,01:00:00,Esteghlal KHU,Iman,Basafa,Midfield
+IPL2014,02,Esteghlal TEH,Player Sub-out,01:00:00,Esteghlal KHU,Reza,Kardoost,Midfield
+IPL2014,02,Esteghlal TEH,Player Sub-in,01:08:00,Esteghlal TEH,Alireza,Ramezani,Forward
+IPL2014,02,Esteghlal TEH,Player Sub-out,01:08:00,Esteghlal TEH,Arash,Borhani,Forward
+IPL2014,02,Esteghlal TEH,Player Sub-in,01:14:00,Esteghlal KHU,Sadegh,Sadeghi Baba Ahmadi,Forward
+IPL2014,02,Esteghlal TEH,Player Sub-out,01:14:00,Esteghlal KHU,Rouhollah,Sayfollahi,Forward
+IPL2014,02,Esteghlal TEH,Player Sub-in,01:20:00,Esteghlal KHU,Mohamad Ebrahim,Khosravi,Defender
+IPL2014,02,Esteghlal TEH,Player Sub-out,01:20:00,Esteghlal KHU,Mohamad Reza,Mahdavi,Midfield
+IPL2014,02,Esteghlal TEH,Player Sub-in,01:28:00,Esteghlal TEH,Mahdi,Karimian,Midfield
+IPL2014,02,Esteghlal TEH,Player Sub-out,01:28:00,Esteghlal TEH,Khosrow,Haydari,Midfield
+IPL2014,02,Esteghlal TEH,Player Sub-in,01:29:00,Esteghlal TEH,Ali,Karimi,Midfield
+IPL2014,02,Esteghlal TEH,Player Sub-out,01:29:00,Esteghlal TEH,Jassim,Karrar,Midfield
+IPL2014,02,Esteghlal TEH,Goal,01:32:00,Esteghlal TEH,Sajjad,Shahbaz Zadeh,Forward
+IPL2014,02,Esteghlal TEH,Game Half2 Stop,01:39:00,,,,
+IPL2014,02,Esteghlal TEH,Game End,01:40:00,,,,

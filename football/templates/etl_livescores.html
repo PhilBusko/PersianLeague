@@ -1,0 +1,427 @@
+
+{% extends "common_base.html" %}
+{% load utility_ttags %}
+
+{% block content %}
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_admin">
+            <span class="font_title">ETL LiveScores</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="import_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_admin" style="margin-right: 0px;">
+                        <span class="font_section">Web Import</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_admin format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "import" %}</div>
+    </div>
+    
+    <div class="col-xs-12 ">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_strong "cfg" "Import Config" %}
+            <div class="display_block">
+                {% ctrl_select "season" "Season" %} 
+            </div>
+            {% ctrl_select "round" "Round" %} <br>
+            
+            {% ctrl_table "editRnd" %}
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin" style="min-height: 400px;">
+            {% ctrl_strong "cfg" "Transform Data" %}
+            <div class="display_block">
+                {% ctrl_listing "home" "Home" %}
+            </div>
+            {% ctrl_listing "away" "Away" %}
+            
+            {% ctrl_table "gameEvents" %}
+            
+            <div class="display_table">
+                <div class="display_row">
+                    <div class="display_cellM" style="width: 100%;">
+                        {% ctrl_normal "loadmsg" %}
+                    </div>
+                    <div class="display_cellM">
+                        {% ctrl_button "load" "Load Game" %}
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+var PLAYERS = [];
+var GAMEDATA = {};
+
+$(document).ready(function()
+{      
+    $('body').css('cursor', 'wait');
+    
+    {% for ssn in seasons %}
+    $('#season_select').append($('<option>', {value : '{{ ssn }}' }).text('{{ ssn }}'));
+    {% endfor %}
+    
+    {% for rnd in rounds %}
+    $('#round_select').append($('<option>', {value : '{{ rnd }}' }).text('{{ rnd }}'));
+    {% endfor %}
+    
+    $('#round_select option[value={{ currRnd }}]').attr('selected','selected');
+    
+    $('#round_select').change(function() {
+        RefreshRound();
+    });
+    
+    var fixture = $.parseJSON('{{ fixture | escapejs }}');      cl(fixture);
+    SetDeluxeFixtureDetails(fixture);    
+    
+    PLAYERS = $.parseJSON('{{ players | escapejs }}');
+    
+    $('#load_button').addClass('format_disable');
+    $('#load_button').click(function() {
+        LoadGameLive();
+    });
+    
+    //$('#url6909_text').val("http://www.livescores.com/soccer/iran/persian-gulf-league/zob-ahan-vs-gostaresh-foolad-fc/1-2305741/");
+    
+    $('body').css('cursor', 'default');
+});
+
+// DISPLAY FUNCTIONS
+
+function SetDeluxeFixtureDetails(p_fixt)
+{               
+    var table = $('#editRnd_table').DataTable( {
+        data: p_fixt,
+        aoColumns: [
+            {
+                title: "Home",
+                mData: "home_club",
+                sClass: "format_fixline",
+            },
+            {
+                title: "Away",
+                mData: "away_club",
+                sClass: "format_fixline",
+            },
+            {
+                title: "Game Over",
+                mData: "gameOver",
+                sClass: "format_fixline",
+                mRender: function (data, type, full) {
+                    
+                    var js_dt = Date.parseString(full.gameOver.substring(0,16), "yyyy-MM-dd HH:mm");
+                    var msg = js_dt.format("MM-dd HH:mm");
+                    
+                    return msg;
+                }   
+            },  
+            {
+                title: "Events",
+                mData: "events",
+                sClass: "format_center",
+            },  
+            {   
+                title: "LiveScores URL",
+                sWidth: "100%",
+                sClass: "",
+                mRender: function (data, type, full) {
+                    var html = '                            \
+                        <div class="">                      \
+                            <input id="url{0}_text" type="text"  class="format_disable"  \
+                                style="width: 96%; box-sizing: border-box; ">  \
+                            </input>                        \
+                        </div>                              \
+                        '.format(full.id); 
+                    return html; 
+                }   
+            },  
+            {   
+                title: "Extract",
+                sClass: "format_center",
+                mRender: function (data, type, full) {
+                    var html = '                            \
+                        <div class="">                      \
+                            <input id="import{0}_button" type="button" value="Extract"      \
+                                class="format_button format_disable">                      \
+                            </input>                        \
+                        </div>                              \
+                        '.format(full.id); 
+                    return html; 
+                }   
+            },  
+            {   
+                title: "Delete Events",
+                sClass: "format_center",
+                mRender: function (data, type, full) {
+                    var html = '                            \
+                        <div class="">                      \
+                            <input id="delete{0}_button" type="button" value="Delete"   \
+                                class="format_button format_disable">                   \
+                            </input>                        \
+                        </div>                              \
+                        '.format(full.id); 
+                    return html; 
+                }   
+            },  
+        ],  
+        bSort: false,
+        scrollCollapse: true,
+        paging: false,
+        bFilter: false,
+        bInfo: false,
+        bDestroy: true,          
+        initComplete: function() {
+            PostDraw();
+        }
+    } );
+    
+    function PostDraw()
+    {        
+        $.each(p_fixt, function(idx, game) {
+            if (game.events == 0)
+            {
+                $('#import{0}_button'.format(game.id)).removeClass('format_disable');
+                $('#url{0}_text'.format(game.id)).removeClass('format_disable');
+                $('#import{0}_button'.format(game.id)).click(function() {
+                    var htmlID = $(this).attr('id');        // get the html-id of the calling element
+                    var id = htmlID.match(/\d+/)[0];        // get the first number in string
+                    ImportGameLive(id);
+                });
+            }
+            else
+            {
+                $('#delete{0}_button'.format(game.id)).removeClass('format_disable');
+                $('#delete{0}_button'.format(game.id)).click(function() {
+                    var htmlID = $(this).attr('id');        // get the html-id of the calling element
+                    var id = htmlID.match(/\d+/)[0];        // get the first number in string
+                    DeleteGameEvents(id);
+                });                
+            }
+        });
+    }
+    
+}
+
+function SetDeluxeGameEvents(p_events)
+{               
+    var table = $('#gameEvents_table').DataTable( {
+        data: p_events,
+        aoColumns: [
+            {
+                title: "Event",
+                mData: "event",
+                sClass: "format_fixline",
+            },
+            {
+                title: "Time",
+                mData: "time",
+                sClass: "format_center",
+            },
+            {
+                title: "Club",
+                mData: "club",
+                sClass: "format_fixline",
+            },  
+            {
+                title: "LiveScore Player",
+                mData: "live_player",
+                sClass: "format_fixline",
+            },  
+            {   
+                title: "IPLStats Player",
+                sWidth: "100%",
+                sClass: "",
+                mRender: function (data, type, full) {
+                    if (full.live_player)
+                    {
+                        var html = '                        \
+                        <div class="">                      \
+                            <input id="player{0}_text" type="text" class="format_disable"  \
+                                style="width: 96%; box-sizing: border-box;">  \
+                            </input>                        \
+                        </div>                              \
+                        '.format(full.time);
+                        return html; 
+                    }
+                    return "";
+                }   
+            },  
+        ],  
+        bSort: false,
+        scrollCollapse: true,
+        paging: false,
+        bFilter: false,
+        bInfo: false,
+        bDestroy: true,          
+        initComplete: function() {
+            PostDraw();
+        }
+    } );
+    
+    function PostDraw()
+    {   
+        $.each(p_events, function(idx, event) {
+            if (event.ipls_player)
+            {
+                $('#player{0}_text'.format(event.time)).val(event.ipls_player);
+            }
+            else
+            {
+                $('#player{0}_text'.format(event.time)).removeClass('format_disable');
+                $('#player{0}_text'.format(event.time)).autocomplete({ source: PLAYERS, minLength: 4 });
+            }
+        });
+    }
+}
+
+
+// AJAX FUNCTIONS
+
+
+function RefreshRound()
+{    
+    $('body').css('cursor', 'wait');
+    
+    var round = $('#round_select option:selected').text();
+    
+    $.ajax({
+        url: '{% url "football:etl_livescores_jx" "refresh_round" %}',
+        data: {'round': round, },
+        success: function(p_data) {         cl(p_data);
+            
+            SetDeluxeFixtureDetails(p_data);    
+            
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "RefreshRound()", '#import_status');
+        },
+        complete: function() {
+            $('body').css('cursor', 'default');
+        }
+    });
+}
+
+
+function ImportGameLive(p_id)
+{    
+    $('body').css('cursor', 'wait');
+
+    var url = $('#url{0}_text'.format(p_id)).val();     //cl(url);
+    
+    $.ajax({
+        //type: 'POST',
+        url: '{% url "football:etl_livescores_jx" "preImport_liveGame" %}',
+        data: {'gameId': p_id, 'url': url,},
+        success: function(p_data) {         //cl(p_data);
+            GAMEDATA = p_data;
+            $('#home_listing').text(p_data.home);
+            $('#away_listing').text(p_data.away);
+            SetDeluxeGameEvents(p_data.events);
+            $('#load_button').removeClass('format_disable');
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "ImportGameLive()", '#import_status');
+        },
+        complete: function() {
+            $('body').css('cursor', 'default');
+        }
+    });
+}
+
+
+function DeleteGameEvents(p_id)
+{    
+    $('body').css('cursor', 'wait');
+    
+    $.ajax({
+        type: 'POST',
+        url: '{% url "football:etl_livescores_jx" "delete_gameEvents" %}',
+        data: {'gameId': p_id,},
+        success: function(p_data) {    // cl(p_data);
+            SetDeluxeFixtureDetails(p_data);  
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "DeleteEvents()", '#import_status');
+        },
+        complete: function() {
+            $('body').css('cursor', 'default');
+        }
+    });
+}
+
+
+function LoadGameLive(p_id)
+{    
+    $('body').css('cursor', 'wait');
+    $('#loadmsg_normal').text("");
+    var passed = true;
+    
+    $.each(GAMEDATA.events, function(idx, event) {
+        if (event.live_player)
+        {
+            var ipls_player = $('#player{0}_text'.format(event.time)).val();
+            if (!ipls_player)
+            {
+                $('#loadmsg_normal').text("IPLS player is missing.");
+                passed = false;
+                $('body').css('cursor', 'default');
+                return false;       // retun false to abort $each iteration
+            }
+            event.ipls_player = ipls_player;
+        }
+    });
+    
+    if (!passed)
+        return;
+    
+    $.ajax({
+        type: 'POST',
+        url: '{% url "football:etl_livescores_jx" "load_liveGame" %}',
+        data: { 'gameData': JSON.stringify(GAMEDATA) },     // json data must be encoded as string
+        success: function(p_data) {             //cl(p_data);
+            $('#loadmsg_normal').text(p_data);
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "LoadGameLive()", '#import_status');
+        },
+        complete: function() {
+            $('body').css('cursor', 'default');
+        }
+    });
+}
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+

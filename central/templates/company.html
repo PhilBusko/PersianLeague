@@ -1,0 +1,136 @@
+
+{% extends "common_base.html" %}
+{% load staticfiles %}
+{% load utility_ttags %}
+
+{% block content %}
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_header">
+            <span class="font_title">Company</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="aboutus_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">About Us</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-6 col-xxl-6">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            <div class="inner_margin2">
+                Lige Ma LLC is a start-up company located in Baltimore, Maryland.
+                The two co-founders are long-time friends that share a passion for sports and games.
+                The idea for a Persian Gulf Pro League gaming platform came from the lack of such a thing existing in the first place!
+                Our mission is to provide prediction, fantasy, and other game modes, to the iranian soccer league fandom.
+            </div>
+            <div class="format_full inner_margin2">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    {% ctrl_image "about1" "image_smallSize" "/static/graphics/aboutus_01.jpg" %}
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    {% ctrl_image "about2" "image_smallSize2" "/static/graphics/aboutus_02.jpg" %}
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    {% ctrl_image "about3" "image_smallSize" "/static/graphics/aboutus_03.jpg" %}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<div id="thirdparty_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Source Code</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_strong "tt1" "Server Side" %} <br><br>
+            {% ctrl_linkA "s01" "https://www.python.org/" "Python Language" True %} <br>
+            {% ctrl_linkA "s02" "https://www.djangoproject.com/" "Django Framework" True %} <br>
+            {% ctrl_linkA "s03" "https://www.postgresql.org/" "PostgreSQL Database" True %} <br>
+            {% ctrl_linkA "s04" "http://django-allauth.readthedocs.io/en/latest/index.html" "django-allauth" True %} <br>
+            {% ctrl_linkA "s05" "https://bitbucket.org/psam/django-postman/wiki/Home" "django-postman" True %} <br>
+            {% ctrl_linkA "s06" "https://django-paypal.readthedocs.io/en/stable/index.html#" "django-paypal" True %} <br>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_strong "tt1" "Client Side" %} <br><br>
+            {% ctrl_linkA "c01" "https://jquery.com/" "jQuery" True %} <br>
+            {% ctrl_linkA "c02" "http://getbootstrap.com/" "Bootstrap" True %} <br>
+            {% ctrl_linkA "c03" "https://datatables.net/" "DataTables" True %} <br>
+            {% ctrl_linkA "c04" "http://www.javascripttoolbox.com/" "JavascriptToolbox" True %} <br>
+            {% ctrl_linkA "c05" "http://fontawesome.io/" "Font Awesome" True %} <br>
+            {% ctrl_linkA "c06" "http://www.flotcharts.org/" "Flot" True %} <br>
+            {% ctrl_linkA "c07" "https://fullcalendar.io/" "FullCalendar" True %} <br>
+            {% ctrl_linkA "c08" "http://jqueryui.com/" "jQuery UI" True %} <br>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+
+$(document).ready(function()
+{      
+    $('body').css('cursor', 'wait');
+       
+    
+    $('body').css('cursor', 'default');
+});
+
+$(window).on("load", function() {
+    
+    RecursiveLightning('.frame_entry', '#00BFFF');
+    
+});
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+

@@ -1,0 +1,326 @@
+
+{% extends "common_base.html" %}
+{% load utility_ttags %}
+{% load staticfiles %}
+
+{% block extra_head %}
+    <script src="{% static 'members.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_admin">
+            <span class="font_title">Admin Messages</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="messages_section" class="row" style="min-height: 400px;">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_admin" style="margin-right: 0px;">
+                        <span class="font_section">Messages</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_admin format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "messages" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-md-6 col-xxl-5">
+        <div class="display_block inner_margin1 frame_admin">
+            <div class="outer_padding2">
+                {% ctrl_strong "m1" "LigeMa's Inbox" %} <br>
+                {% ctrl_tableDeluxe "inbox" %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-md-6 col-xxl-5">
+        <div class="display_block inner_margin1 frame_admin outer_padding2">
+            
+            <div id="title_block" class="">
+                <div class="display_table" style="">
+                    <div class="display_cellM" style="width: 100%;">
+                        {% ctrl_strong "m2" "Compose" %}
+                    </div>
+                    <div class="display_cellM">
+                        <div id="msgCtrl_group" class="display_row" style="display: none;" >
+                            <div id="close_clicker" class="display_cellM">
+                                {% ctrl_iconAwesome "closeMsg" "fa-times" "red" %}
+                            </div>
+                            <div id="reply_clicker" class="display_cellM">
+                                {% ctrl_iconAwesome "replyMsg" "fa-reply" "green" %}
+                            </div>
+                            <div id="delete_clicker" class="display_cellM">
+                                {% ctrl_iconAwesome "deleteMsg" "fa-trash" "#647382" %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="messages_list" class="">
+            </div>
+            
+            <div id="compose_block" class="">
+                <div class="display_block inner_margin2 outer_padding2"
+                     style="background: rgba(170, 170, 170); border-radius: 4px;">
+                    
+                    <div id="msgType_group">
+                        {% ctrl_radioVert "recOpts" recTypes %}
+                    </div>
+                    
+                    <div id="msgTo_group" class="display_table">
+                        <div class="display_row">
+                            {% ctrl_inputText "toUser" "User" "TLR" %}
+                        </div>
+                        <div class="display_row">
+                            {% ctrl_inputText "subject" "Subject" "TLR" %}
+                        </div>
+                        <div id="msgID_data" style="display: none;"></div>
+                    </div>
+                    
+                    <div id="body_group" class="" style="width: 100%;">
+                        <div class="display_block inner_margin2" comment="margin must surround a textarea">
+                            <textarea id="body_text" maxlength="500" rows="8"
+                                      style="width: 100%; color: black; 
+                                            box-sizing: border-box; resize: none; border-radius: 3px;"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div id="button_group" class="display_table" style="width: 100%;">
+                        <div class="display_cellM" style="width: 80%;">
+                            {% ctrl_normal "send" "" %}
+                        </div>
+                        <div class="display_cellM" style="text-align: center;">
+                            {% ctrl_button "send" "Send" %}
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+
+
+<div id="oversight_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_admin" style="margin-right: 0px;">
+                        <span class="font_section">Oversight</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_admin format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "oversight" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-xl-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_strong "name" "Deletion" %} <br>
+            <div class="format_center">
+                <br>
+                {% ctrl_button "msgsDelete" "Delete 2-week Messages" %}
+                <br> <br> 
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-xl-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin" style="min-height: 500px;">
+            {% ctrl_listing "msgCnt" "Number of Messages" %}
+            {% ctrl_table "msgReport" %}
+        </div>
+    </div>
+    
+</div>
+
+
+<!-- dynamically rendered html -->
+
+<div id="message_template" style="display: none; " >
+    <div id="message_block">
+        
+        <div class="display_block inner_margin2 format_inside">
+            <div id="topRow_block" class="format_cpointer">
+                <div class="display_table" style="width: 100%; border-collapse: separate; background: white; color: black;">
+                    <div class="display_cellM format_inside" style="width: 50%;">   
+                        {% ctrl_listing "from" "From" %}
+                    </div> 
+                    <div class="display_cellM format_inside" style="">    
+                        {% ctrl_listing "sent" "Sent" %}
+                    </div> 
+                </div>
+            </div> 
+            <div id="collapse_block">
+                <div class="display_table" style="width: 100%; border-collapse: separate; background: white; color: black;">
+                    <div class="display_cellM format_inside" style="width: 50%;">   
+                        {% ctrl_listing "to" "To" %}
+                    </div>  
+                    <div class="display_cellM format_inside" style="width: 50%;">    
+                        {% ctrl_listing "read" "Read" %}
+                    </div> 
+                </div>
+                <div class="display_table" style="width: 100%; background: white; color: black;"> 
+                    <div class="display_cellM format_inside">
+                        <div class="display_block outer_padding2">
+                            <span id="body_normal"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+            <div id="spacer_block">
+                <div class="" style="width: 100%; margin-bottom: 8px;"></div>
+            </div> 
+        
+    </div>
+</div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+
+$(document).ready(function()
+{      
+    $('body').css('cursor', 'wait');
+    
+    Messages.USER = 'LigeMa';
+    Messages.URL_OPENMSG = '/central/adminMsg_jx/get_message/'; 
+    Messages.URL_OPENCONVO = '/central/adminMsg_jx/get_convo/'; 
+    Messages.URL_DELETECONVO = '/central/adminMsg_jx/delete_conv/';
+    Messages.URL_WRITEMSG = '/central/adminMsg_jx/insert_newMsg/';
+    Messages.URL_REPLYMSG = '/central/adminMsg_jx/insert_replyMsg/';
+    Messages.URL_GETINBOX = '/central/adminMsg_jx/get_inbox/';
+    
+    Messages.InitControls();
+    
+    {% if inbox %}
+        var flat = '{{ inbox | escapejs }}';
+        var escaped = flat.replace("'", "\u0027");
+        var dataArray = $.parseJSON(escaped);      
+        Messages.SetDeluxeInbox(dataArray);
+    {% else %}
+        $('#inbox_table').text("Inbox is empty.");
+    {% endif %}
+    
+    $('input[name=recOpts]').on('change', function() {
+        var opt = $('input[name=recOpts]:checked').val();
+        
+        if (opt == "ToAllUsers") {
+            $("#toUser_text").val("ALL USERS");
+        }
+        else {
+            $("#toUser_text").val(null);
+        }
+    });
+    
+    //
+    // oversight
+    
+    $('#msgsDelete_button').click(function() {
+        DeleteMessages();
+    });
+    
+    
+    var msgReport = $.parseJSON('{{ msgReport | escapejs }}');   
+    $('#msgCnt_listing').text(msgReport.msgCnt); 
+    var fullT = JSONtoFullTable(msgReport.data);
+    SetDataTable('#msgReport_table', fullT, msgReport.colFmt);    
+    
+    
+    $('body').css('cursor', 'default');
+});
+
+
+function DisableForm()
+{
+    $('#msgUser_listing').prop('disabled', true);
+    $('#msgUser_button').prop('disabled', true);
+    $('body').css('cursor', 'wait');
+}
+
+function EnableForm()
+{
+    $('#msgUser_listing').prop('disabled', false);
+    $('#msgUser_button').prop('disabled', false);
+    $('body').css('cursor', 'default');    
+}
+
+
+Messages.GetRecipient = function()
+{
+    var recType = $("input[name='recOpts']:checked").val();  
+    
+    if (recType == "ToAllUsers")
+        var recipients = "ALL USERS";
+    
+    else 
+        var recipients = $('#toUser_text').val();
+    
+    return recipients;
+}
+//
+// OVERSIGHT
+//
+
+function DeleteMessages()
+{    
+    DisableForm();
+    $('#msgCnt_listing').text("#");
+    $('#msgReport_table').html(null);
+    
+    $.ajax({
+        type: 'POST',
+        url: '/central/adminMsg_jx/delete_messages/',
+        data: {}, 
+        success: function(p_data) {
+            var msgReport = p_data;   
+            $('#msgCnt_listing').text(msgReport.msgCnt); 
+            var fullT = JSONtoFullTable(msgReport.data);
+            SetDataTable('#msgReport_table', fullT, msgReport.colFmt);    
+        },  
+        error: function(p_err) {    
+            ErrorToStatus(p_err.responseText, "DeleteMessages()", '#oversight_status');
+        },  
+        complete: function() {
+            EnableForm();
+        }
+    }); 
+}
+
+
+</script>
+
+
+{% endblock content %}
+
+
+
+
+

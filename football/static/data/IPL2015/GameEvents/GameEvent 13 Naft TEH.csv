@@ -1,0 +1,49 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2015,13,Naft TEH,Game Half1 Start,00:00:00,,,,
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Mehdi,Shiri,Defender
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Mohamd,Daneshgar,Defender
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Reza,Aliyari,Defender
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Saeed,Lotfi,Defender
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Siamak,Kouroshi,Defender
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Aloys,Nong,Forward
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Alireza,Bayranvand,Goalkeeper
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Hamid,Bouhamdan,Midfield
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Iman,Mobali,Midfield
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Payam,Sadeghian,Midfield
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Vahid,Amiri,Midfield
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Alireza,Noormohamadi,Defender
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Mohsen,Bengar,Defender
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Ramin,Rezaeian,Defender
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Ali,Alipour,Forward
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Farshad,Ahmadzadeh,Forward
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Mahdi,Taremi,Forward
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Sosha,Makani,Goalkeeper
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Ahmad,Nooroullahi,Midfield
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Milad,Kamadani,Midfield
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Mohamad,Ansari,Midfield
+IPL2015,13,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Mohsen,Mosalman,Midfield
+IPL2015,13,Naft TEH,Card: Yellow,00:01:00,Naft TEH,Mohamd,Daneshgar,Defender
+IPL2015,13,Naft TEH,Card: Yellow,00:01:00,Naft TEH,Amir Arsalan,Mottahari,Forward
+IPL2015,13,Naft TEH,Card: Yellow,00:01:00,Naft TEH,Iman,Mobali,Midfield
+IPL2015,13,Naft TEH,Card: Yellow,00:01:00,Naft TEH,Payam,Sadeghian,Midfield
+IPL2015,13,Naft TEH,Card: Yellow,00:01:00,Perspolis TEH,Ali,Alipour,Forward
+IPL2015,13,Naft TEH,Card: Yellow,00:01:00,Perspolis TEH,Mahdi,Taremi,Forward
+IPL2015,13,Naft TEH,Card: Yellow,00:01:00,Perspolis TEH,Ahmad,Nooroullahi,Midfield
+IPL2015,13,Naft TEH,Card: Yellow,00:01:00,Perspolis TEH,Mohamad,Ansari,Midfield
+IPL2015,13,Naft TEH,Card: Yellow,00:01:00,Perspolis TEH,Mohsen,Mosalman,Midfield
+IPL2015,13,Naft TEH,Goal,00:40:00,Perspolis TEH,Milad,Kamadani,Midfield
+IPL2015,13,Naft TEH,Game Half1 Stop,00:46:00,,,,
+IPL2015,13,Naft TEH,Game Half2 Start,00:47:00,,,,
+IPL2015,13,Naft TEH,Player Sub-in,00:49:00,Naft TEH,Abbas,Bouazar,Midfield
+IPL2015,13,Naft TEH,Player Sub-out,00:49:00,Naft TEH,Saeed,Lotfi,Defender
+IPL2015,13,Naft TEH,Player Sub-in,01:12:00,Naft TEH,Arash,Rezavand,Midfield
+IPL2015,13,Naft TEH,Player Sub-out,01:12:00,Naft TEH,Payam,Sadeghian,Midfield
+IPL2015,13,Naft TEH,Goal,01:13:00,Naft TEH,Mohamd,Daneshgar,Defender
+IPL2015,13,Naft TEH,Player Sub-in,01:16:00,Perspolis TEH,Babak,Hatami,Forward
+IPL2015,13,Naft TEH,Player Sub-out,01:16:00,Perspolis TEH,Milad,Kamadani,Midfield
+IPL2015,13,Naft TEH,Player Sub-in,01:23:00,Naft TEH,Amir Arsalan,Mottahari,Forward
+IPL2015,13,Naft TEH,Player Sub-out,01:23:00,Naft TEH,Hamid,Bouhamdan,Midfield
+IPL2015,13,Naft TEH,Player Sub-in,01:24:00,Perspolis TEH,Jerry,Bengston,Forward
+IPL2015,13,Naft TEH,Player Sub-out,01:24:00,Perspolis TEH,Mohsen,Mosalman,Midfield
+IPL2015,13,Naft TEH,Game Half2 Stop,01:39:00,,,,
+IPL2015,13,Naft TEH,Game End,01:40:00,,,,

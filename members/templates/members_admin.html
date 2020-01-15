@@ -1,0 +1,117 @@
+
+{% extends "common_base.html" %}
+{% load utility_ttags %}
+{% load staticfiles %}
+
+{% block content %}
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_admin">
+            <span class="font_title">Members Admin</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_admin" style="margin-right: 0px;">
+                        <span class="font_section">Users</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_admin format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "users" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="display_block inner_margin1 outer_padding2 frame_admin">
+            {% ctrl_strong "ttl" "Delete User" %}
+            {% ctrl_inputText "userName" "User Name" True %}
+            <div class="display_table">
+                <div class="display_row">
+                    <div class="display_cellM" style="width: 100%;">
+                        {% ctrl_normal "userResult" %}
+                    </div>
+                    <div class="display_cellM">
+                        {% ctrl_button "delete" "Delete User" %}
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+$(document).ready(function()
+{      
+    $('body').css('cursor', 'wait');
+    
+    $('#delete_button').click(function() {
+        DeleteUser();
+    });
+        
+    //
+    $('body').css('cursor', 'default');
+});
+
+
+function DisableForm()
+{
+    $('#delete_button').prop('disabled', true);
+    $('body').css('cursor', 'wait');
+}
+
+function EnableForm()
+{
+    $('#delete_button').prop('disabled', false);
+    $('body').css('cursor', 'default');    
+}
+
+function DeleteUser()
+{    
+    var userName = $('#userName_text').val();
+    
+    DisableForm();
+    $('#userResult_normal').text('');
+    
+    $.ajax({
+        type: 'POST',
+        url: '/members/db_edit/delete_user/',
+        data: {'userName': userName,},
+        success: function(p_data) {     cl(p_data);
+            $('#userResult_normal').text(p_data);
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "DeleteUser()", '#users_status');
+        },
+        complete: function() {
+            EnableForm();
+        }
+    });
+}
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+

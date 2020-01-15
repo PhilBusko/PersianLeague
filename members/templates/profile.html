@@ -1,0 +1,910 @@
+
+{% extends "common_base.html" %}
+{% load utility_ttags %}
+{% load staticfiles %}
+
+{% block content %}
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_header">
+            <span class="font_title">My Profile</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="userInfo_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">User Info</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "info" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 col-xxl-4">
+        <div class="display_block inner_margin1 frame_entry">
+            
+            <div id="userName_block" class="outer_padding2">
+                
+                <div id="userName_group">
+                    <div class="display_cellM format_full">
+                        {% ctrl_listing "userName" "User Name" user %}
+                    </div>
+                    <div class="display_cellM font_small">
+                        {% ctrl_link "editUser" "Edit" %}
+                    </div>
+                </div>
+                
+                <div id="userEdit_group" class="frame_editProf">
+                    <form id="changeUser_form" class="outer_padding2">
+                        {% csrf_token %}
+                        <div class="inner_margin2" style="display: none;">
+                            <span>It requires 10 diamonds to change the user name.</span>
+                        </div>
+                        <div>
+                            <div class="display_cellM">
+                                <div class="inner_margin2" style="white-space: nowrap;">
+                                    {{ changeUser_form.username.label }}
+                                </div>
+                            </div>
+                            <div class="display_cellM format_full">
+                                <div class="inner_margin2">
+                                    {{ changeUser_form.username }}  
+                                </div>
+                            </div>
+                        </div>  
+                        <div>   
+                            <div class="display_cellM format_full">
+                                {% ctrl_status "changeUser" %}
+                            </div>
+                            <div class="display_cellM">
+                                {% ctrl_button "changeUser" "Save" True %} 
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+            
+            <hr class="ctrl_separator">
+            <div id="email_block" class="outer_padding2">
+                
+                <div id="email_group">
+                    <div class="display_cellM format_full">
+                        {% ctrl_listing "editEmail" "E-mail" user.email %}
+                    </div>
+                    <div class="display_cellM font_small">
+                        {% ctrl_link "editEmail" "Edit" %}
+                    </div>
+                </div>
+                
+                <div id="editEmail_block" class="frame_editProf">
+                    <form id="editEmail_form" class="outer_padding2">
+                        {% csrf_token %}
+                        <div>
+                            <div class="display_cellM">
+                                <div class="inner_margin2" style="white-space: nowrap;">
+                                    {{ editEmail_form.email.label }}:
+                                </div>
+                            </div>
+                            <div class="display_cellM" style="width: 100%;">
+                                <div class="inner_margin2">
+                                    {{ editEmail_form.email }}
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="display_cellM" style="width: 100%;">
+                                {% ctrl_status "editEmail" %}
+                            </div>
+                            <div class="display_cellM">
+                                <div class="inner_margin2">
+                                    <input type="submit" value="Save" name="action_add" class="format_button"/>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div> 
+                
+            </div>
+            
+            <hr class="ctrl_separator">
+            <div id="password_block" class="outer_padding2">
+                
+                <div id="password_group">
+                    <div class="display_cellM format_full">
+                        {% ctrl_listing "pass" "Password" "******" %}  
+                    </div>
+                    <div class="display_cellM font_small">
+                        {% ctrl_link "editPassword" "Edit" %}
+                    </div>
+                </div>
+                
+                <div id="passEdit_group" class="frame_editProf">
+                    <form id="password_form" class="outer_padding2">
+                        {% csrf_token %}
+                        
+                        <div class="display_row">
+                            <div class="display_cellM">
+                                <div class="inner_margin2" style="white-space: nowrap;">
+                                    {{ password_form.oldpassword.label }}:
+                                </div>
+                            </div>
+                            <div class="display_cellM" style="width: 100%;">
+                                <div class="inner_margin2">
+                                    {{ password_form.oldpassword }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="display_row">
+                            <div class="display_cellM">
+                                <div class="inner_margin2" style="white-space: nowrap;">
+                                    {{ password_form.password1.label }}:
+                                </div>
+                            </div>
+                            <div class="display_cellM" style="width: 100%;">
+                                <div class="inner_margin2">
+                                    {{ password_form.password1 }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="display_row">
+                            <div class="display_cellM">
+                                <div class="inner_margin2" style="white-space: nowrap;">
+                                    {{ password_form.password2.label }}:
+                                </div>
+                            </div>
+                            <div class="display_cellM" style="width: 100%;">
+                                <div class="inner_margin2">
+                                    {{ password_form.password2 }}
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="display_cellM" style="width: 100%;">
+                                {% ctrl_status "editPassword" %}
+                            </div>
+                            <div class="display_cellM">
+                                {% ctrl_button "editPassword" "Save" True %} 
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-3">
+        <div class="inner_margin1 frame_entry display_block">
+            
+            <div id="realName_block" class="outer_padding2">
+                
+                <div id="realName_group">
+                    <div class="display_cellM format_full">
+                        {% ctrl_listing "realName" "Real Name" user.get_full_name %}
+                    </div>
+                    <div class="display_cellM font_small">
+                        {% ctrl_link "editReal" "Edit" %}
+                    </div>
+                </div>
+                
+                <div id="realEdit_group" class="frame_editProf">
+                    <form id="formPlaceholder" class="outer_padding2">
+                        <div class="display_row">
+                            {% ctrl_inputText "firstName" "First Name" True %}
+                        </div>
+                        <div class="display_row">
+                            {% ctrl_inputText "lastName" "Last Name" True %}
+                        </div>
+                        <div class="">
+                            <div class="display_cellM format_full">
+                                {% ctrl_status "editReal" %}
+                            </div>
+                            <div class="display_cellM">
+                                {% ctrl_button "realName" "Save" %} 
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+            
+            <hr class="ctrl_separator">
+            <div id="favClub_block" class="outer_padding2">
+                
+                <div id="favClub_group">
+                    <div class="display_cellM format_full">
+                        {% ctrl_listing "club" "Favorite Club" profile.favClub %}
+                    </div>
+                    <div class="display_cellM font_small">
+                        {% ctrl_link "editClub" "Edit" %}
+                    </div>
+                </div>
+                
+                <div id="clubEdit_group" class="frame_editProf">
+                    <div id="editClub_form" class="outer_padding2">
+                        <div class="inner_margin2">
+                            <span>You may only set/change your favorite club once per IPL season.</span>
+                        </div>
+                        <div>
+                            {% ctrl_select "favClub" "Club" %}
+                        </div>
+                        <div>
+                            <div class="display_cellM format_full">
+                                {% ctrl_status "editClub" %}
+                            </div>
+                            <div class="display_cellM">
+                                {% ctrl_button "club" "Save" %}
+                            </div>
+                        </div>
+                    </div>                                
+                </div>
+                
+            </div>
+            
+            <hr class="ctrl_separator">
+            <div id="slogan_block" class="outer_padding2">
+                
+                <div id="slogan_group">
+                    <div class="display_cellM format_full">
+                        {% ctrl_listing "slogan" "Slogan" profile.slogan %}
+                    </div>
+                    <div class="display_cellM font_small">
+                        {% ctrl_link "editSlogan" "Edit" %}
+                    </div>
+                </div>
+                
+                <div id="editSlogan_block" class="frame_editProf">
+                    <div class="inner_margin2">
+                        <span>Maximum length is 100 characters.</span>
+                    </div>
+                    <div>
+                        <div class="display_cellM" style="width: 100%;">                    
+                            <div class="inner_margin2" style="white-space: nowrap;">
+                                <span>New Slogan: </span>
+                            </div>
+                        </div>
+                        <div class="display_cellM" >                    
+                            {% ctrl_button "editSlogan" "Save" %} 
+                        </div>
+                    </div>
+                    <div class="display_table" style="width: 100%;">
+                        <div class="display_cellM">
+                            <div class="display_block inner_margin2">
+                                <textarea id="newSlogan_text" maxlength="100" rows="2"
+                                          style="width: 100%; box-sizing: border-box; resize: none; "></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="ctrl_separator">
+            <div id="icon_block" class="outer_padding2">
+                
+                <div id="icon_group" >
+                    <div class="display_cellM">
+                        <span class="inner_margin2" style="white-space: pre;"><b>Icon: </b></span>
+                    </div>
+                    <div class="display_cellM">
+                        <div class="inner_margin2">
+                            {% ctrl_imageIcon "icon" %}
+                        </div>
+                    </div>
+                    <div class="display_cellM format_full" style="visibility: hidden;">
+                        ...
+                    </div>
+                    <div class="display_cellM font_small">
+                        {% ctrl_link "editIcon" "Edit" %}
+                    </div>
+                </div>
+                
+                <div id="iconEdit_group" class="frame_editProf">                    
+                    <form id="editIcon_form" class="outer_padding2" method="post" enctype="multipart/form-data"> 
+                        {% csrf_token %}
+                        <div class="display_table" style="width: 100%;">
+                            <div class="display_cellM" style="width: 35%; text-align: center;">
+                                <label class="inner_margin2 format_fileOpenButton">
+                                    Browse
+                                    <input id="icon_input" type="file" style="display: none;" name="icon_name" />
+                                </label>   
+                            </div>
+                            <div class="display_cellM" style="width: 35%; text-align: center;">
+                                <div class="inner_margin2">
+                                    {% ctrl_imageIcon "newIcon" %}
+                                </div>
+                            </div>
+                            <div class="display_cellM" style="width: 30%; text-align: center; ">
+                                <div class="inner_margin2">
+                                    <input type="submit" name="submit" value="Save" class="format_button format_margin" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="display_cellM format_full">
+                        {% ctrl_status "editIcon" %}
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            <div class="display_block">
+                {% ctrl_listing "uid" "Internal ID" profile.hashID %}
+            </div>
+            <div class="display_block">
+                {% ctrl_listing "timezone" "Time Zone" profile.timezone %}
+            </div>
+            <div class="display_block">
+                {% ctrl_listing "country" "Country" profile.country %}
+            </div>
+            <div class="display_block">
+                {% ctrl_listing "lifeDiamonds" "Lifetime Diamonds" profile.lifetimeDiamonds %}
+            </div>
+            <div class="display_block">
+                {% ctrl_listing "timeOnWebsite" "Time on Website" profile.timeOnWebsite %}
+            </div>
+            <div class="display_block">
+                {% ctrl_listing "dateJoined" "Date Joined" profile.dateJoined %}
+            </div>
+        </div>
+    </div>
+    
+    
+</div> 
+
+
+<div id="preferences_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Account Info</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "pref" %}</div>
+    </div>
+    
+    <div class="col-sm-8 col-md-6 col-lg-4">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_text "bl1" "Preferences" "font_strong" %}
+            {% ctrl_checkbox "frdRealName" "Allow friends to see my real name." %}
+            {% ctrl_checkbox "frdEmail" "Allow friends to see my e-mail address." %}
+        </div>
+    </div>
+    
+    <div class="col-sm-8 col-md-6 col-lg-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_text "bl3" "Documents" "font_strong" %}
+            <a class="display_block inner_margin2 font_link" target="blank_"
+               href="/static/documents/ligema_eula.pdf">User Agreement</a>
+            <a class="inner_margin2 font_link" target="blank_"
+               href="/static/documents/ligema_privacy.pdf">Privacy Policy</a>
+        </div>
+    </div>
+    
+    <div class="col-sm-4">
+        <div class="format_center">
+            <br>
+            {% ctrl_button "deleteAcc" "Delete Account" %}
+        </div>
+    </div>
+    
+</div>
+
+
+<!-- dynamic dialog -->
+
+<div id="deleteAcc_dialog" title="Delete Account" style="" >
+    <div class="container col-md-12" comment="container column needs a col for correct bootstrap">
+        <div class="row format_center">
+            <br>
+            {% ctrl_normal "removeQ" "Confirm to delete account?" %}
+            <br><br>
+        </div>
+        <div class="row format_center">
+            <div class="col-xs-6">
+                {% ctrl_button "delAccConf" "Confirm" %}
+            </div>
+            <div class="col-xs-6">
+                {% ctrl_button "delAccCancel" "Cancel" %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+$(document).ready(function()
+{      
+    
+    {% if not profile %}
+    $('#info_status').html("Error: " + "{{ profError }}");
+    {% endif %}
+    
+    // base user data
+    
+    $('#id_oldpassword').attr('type', 'confirm_oldpassword');     // stop auto-fill
+    $('#id_password1').attr('type', 'new_password1');     
+    $('#id_password2').attr('type', 'new_password2');    
+    
+    CreateEditToggle("editUser_link", "userEdit_group");
+    CreateEditToggle("editEmail_link", "editEmail_block");
+    CreateEditToggle("editPassword_link", "passEdit_group");
+    
+    CreateEditToggle("editReal_link", "realEdit_group");
+    $("#realName_button").click( function() {
+        EditRealName();
+    });
+    
+    
+    //
+    // extra profile data
+    
+    CreateEditToggle("editClub_link", "clubEdit_group");
+    
+    var options_ls = $.parseJSON('{{ club_names | escapejs }}');           //cl(options_ls);
+    $.each(options_ls, function(key, value) {
+        $("#favClub_select").append($('<option>', {value : key }).text(value));
+    });
+    
+    
+    {% if not profile.favClubSet %}
+        $("#club_button").click( function() {
+            EditClub();
+        }); 
+    {% else %}
+        $("#favClub_select").prop("disabled", true);
+        $("#club_button").prop("disabled", true);
+        $("#club_button").css('color', 'SlateGrey');
+    {% endif %}
+    
+    CreateEditToggle("editSlogan_link", "editSlogan_block");
+    $("#editSlogan_button").click( function() {
+        EditSlogan();
+    });
+    
+    CreateEditToggle("editIcon_link", "iconEdit_group");
+    
+    {% if not profile.icon %}
+        var path = "/static/icons_source/anonymous.png";
+    {% else %}
+        var path = "/static/user_icons/" + "{{ profile.icon }}" ;
+    {% endif %}
+    $("#icon_image").attr("src", path);
+    
+    $("#newIcon_image").attr("src", "/static/icons_source/anonymous.png");
+    
+    // equivalent to file browse button click
+    $("#icon_input").change(function() {
+        input = this;
+        if (input.files && input.files[0])
+        {
+            var reader = new FileReader();
+            reader.onload = function (e) {                
+                $('#newIcon_image').attr('src', e.target.result);
+            }
+            cl(input);
+            reader.readAsDataURL(input.files[0]);
+        }
+    });
+    
+    // preferences
+    
+    {% if profile.pref_frdRealName %}
+    $("#frdRealName_checkbox").prop('checked', true);
+    {% endif %}
+    
+    {% if profile.pref_frdEmail %}
+    $("#frdEmail_checkbox").prop('checked', true);
+    {% endif %}
+    
+    $("#frdRealName_checkbox").click( function() {
+        SavePreferences();
+    });
+    
+    $("#frdEmail_checkbox").click(  function() {
+        SavePreferences();
+    });
+    
+    $("#deleteAcc_dialog").dialog({
+        autoOpen: false,
+        draggable: false,
+        resizable: false,
+        modal: true,
+        dialogClass: 'noCloseButton',
+    });
+    
+    $("#deleteAcc_button").click( function() {
+        $("#deleteAcc_dialog").dialog('open');
+    });
+    
+    $("#delAccConf_button").click(function() {
+        $("#deleteAcc_dialog").dialog("close");
+        DeleteAccount();
+    });
+    
+    $("#delAccCancel_button").click(function() {
+        $("#deleteAcc_dialog").dialog("close");
+    });
+    
+});
+
+function CreateEditToggle(p_link, p_block)
+{
+    $("#" + p_link).click( function() {
+        $("#" + p_block).stop().slideToggle('slow');
+        var label = $("#" + p_link).text();
+        if (label == "Edit")
+            $("#" + p_link).text("Close");
+        else
+            $("#" + p_link).text("Edit");
+    }); 
+}
+
+
+
+// base user functions
+
+$("#changeUser_form").submit(function(p_event) 
+{
+    // this stops the normal html-form-submit call stack
+    p_event.preventDefault();
+    
+    formData = $('#changeUser_form :input').serializeArray(); 
+    $('#changeUser_form :input').prop('disabled', true);
+    $('#changeUser_status').text("");
+    
+    $.ajax({
+        type: 'post',
+        url: '/members/db_edit/changeUser/',
+        data: formData,
+        success: function(p_data) {  
+            $('#changeUser_status').text("User name changed.");
+            $('#id_username').val(null);
+            $('#userName_listing').text(p_data);
+        },
+        error: function(p_err) {    //cl(p_err.responseText)
+            try
+            {
+                var obj = JSON.parse(p_err.responseText);
+                JsonError(obj);
+            }
+            catch(ex)
+            {
+                ErrorToStatus(p_err.responseText, "changeUser_form.submit()", '#info_status')
+            }
+        },
+        complete: function() {
+            $('#changeUser_form :input').prop('disabled', false);
+        }
+    });
+    
+    function JsonError(p_obj)
+    {        
+        var msg = "Uninitialized Error";
+        
+        if (p_obj.hasOwnProperty('username'))
+            msg = "New Name: " + p_obj.username[0];
+        
+        $('#changeUser_status').text(msg);
+    }
+});
+
+$("#editEmail_form").submit(function(p_event) 
+{
+    // this stops the normal html-form-submit call stack
+    p_event.preventDefault();
+    $("body").css("cursor", "wait");
+
+    formData = $('#editEmail_form :input').serializeArray();    //cl(formData);
+    action = {'name': 'action_add', 'value': 'action_add'};
+    //action.name = 'action_add';
+    //action.value = 'action_add';
+    
+    formData.push(action);                  //cl(formData);
+    
+    $('#editEmail_form :input').prop('disabled', true);
+    $('#editEmail_status').text("");
+    
+    $.ajax({
+        type: 'post',
+        //url: '/members/db_edit/editEmail/',
+        url: "{% url 'account_email' %}", 
+        data: formData,
+        success: function(p_data) {         //cl(p_data);
+            $('#editEmail_status').text("New e-mail address confirmation sent.");
+            $('#id_email').prop('disabled', true);
+            //$('#editEmail_listing').text(p_data); email must be confirmed
+            $('#editEmail_form :input').prop('disabled', false);
+        },
+        error: function(p_err) {    //cl(p_err.responseText)
+            try
+            {
+                var obj = JSON.parse(p_err.responseText);
+                JsonError(obj);
+                $('#editEmail_form :input').prop('disabled', false);
+            }
+            catch(ex)
+            {
+                ErrorToStatus(p_err.responseText, "editEmail_form.submit()", '#info_status')
+            }
+        },
+        complete: function() {
+            $("body").css("cursor", "default");
+        }
+    });
+    
+    function JsonError(p_obj)
+    {        
+        var errors = p_obj['form_errors']; 
+        var returnedHtml = p_obj['html'];
+        var msg = "Uninitialized Error";
+        
+        if (errors.hasOwnProperty('email'))
+            msg = errors.email[0];
+        
+        $('#editEmail_status').text(msg);
+    }
+    
+});
+
+
+$("#password_form").submit(function(p_event)
+{
+    // this stops the normal html-form-submit call stack
+    p_event.preventDefault();
+    
+    formData = $('#password_form :input').serializeArray(); 
+    $('#password_form :input').prop('disabled', true);
+    $('#editPassword_status').text(null);
+    
+    $.ajax({
+        type: 'post',
+        url: "{% url 'account_change_password' %}", 
+        data: formData,
+        success: function(p_data) {  
+            $('#editPassword_status').text("Password Change Successfull !");
+            $('#id_oldpassword').val(null);
+            $('#id_password1').val(null);
+            $('#id_password2').val(null);            
+        },
+        error: function(p_err) {    cl(p_err.responseText)
+            try
+            {
+                var obj = JSON.parse(p_err.responseText);
+                JsonError(obj);
+            }
+            catch(ex)
+            {
+                ErrorToStatus(p_err.responseText, "password_form.submit()", '#info_status')
+            }
+        },
+        complete: function() {
+            $('#password_form :input').prop('disabled', false);
+        }
+    });
+    
+    function JsonError(p_obj)
+    {
+        var errors = p_obj['form_errors']; 
+        var returnedHtml = p_obj['html'];
+        
+        var msg = "Uninitialized Error";
+        
+        if (errors.hasOwnProperty('oldpassword'))
+            msg = "Current Password: " + errors.oldpassword[0];
+        
+        else if (errors.hasOwnProperty('password1'))
+            msg = "New Password: " + errors.password1[0];
+        
+        else if (errors.hasOwnProperty('password2'))
+            msg = "New Password: " + errors.password2[0];
+        
+        $('#editPassword_status').text(msg);
+    }
+    
+});
+
+
+function EditRealName() 
+{
+    var firstName = $('#firstName_text').val();    
+    var lastName = $('#lastName_text').val();    
+    
+    $.ajax({
+        type: 'POST',
+        url: '/members/db_edit/realName/',
+        data: {'first': firstName, 'last': lastName},
+        success: function(p_data) {     
+            $("#realName_listing").text(p_data);    
+            $('#firstName_text').val(null);    
+            $('#lastName_text').val(null);    
+        },
+        error: function(p_err) {        
+            ErrorToStatus(p_err.responseText, "EditRealName()", '#info_status')
+        } 
+    });
+}
+
+
+// profile functions
+
+function EditClub() 
+{
+    var newClub = $("#favClub_select option:selected").text();
+    
+    $.ajax({
+        type: 'post',
+        url: '/members/db_edit/favClub/',
+        data: {'newClub': newClub},
+        success: function(p_data) {     cl(p_data);
+            $("#club_listing").text(p_data);
+            $("#favClub_select").prop("disabled", true);
+            $("#club_button").prop("disabled", true);
+            $("#club_button").css('color', 'SlateGrey');
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "EditClub()", '#info_status')
+        } 
+    });
+}
+
+function EditSlogan() 
+{
+    var newSlogan = $("#newSlogan_text").val();
+    
+    $.ajax({
+        type: 'post',
+        url: '/members/db_edit/slogan/',
+        data: {'newSlogan': newSlogan},
+        success: function(p_data) { 
+            $("#slogan_listing").text(p_data);
+            $("#newSlogan_text").val(null);            
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "EditSlogan()", '#info_status')
+        } 
+    });
+}
+
+$("#editIcon_form").submit(function(p_event) {
+    // this stops the normal html-form-submit call stack
+    p_event.preventDefault();
+    
+    var fData = new FormData();
+    var iconFile = $("#icon_input")[0].files[0];     
+    fData.append( 'iconFile', iconFile );
+    
+    $('#editIcon_form :input').prop('disabled', true);
+    $('#editIcon_status').html(null);
+    
+    $.ajax({
+        type: 'post',
+        url: "/members/db_edit/icon/", 
+        data: fData,            // though in data, it's still in request.FILES
+        processData: false,     // for FormData
+        contentType: false,     // for FormData
+        success: function(p_data) {     //cl(p_data);
+            
+            location.reload();
+            
+            /*
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#icon_image').attr('src', e.target.result);
+            }
+            var input = $('#icon_input')[0];
+            reader.readAsDataURL(input.files[0]);
+            */
+        },
+        error: function(p_err) {   
+            // client error
+            if (p_err.status >= 400 & p_err.status <= 499) 
+                $('#editIcon_status').text(p_err.responseJSON);
+            // server error
+            else
+                ErrorToStatus(p_err.responseText, "editIcon_form.submit()", '#options_status');
+        },
+        complete: function() {
+            $('#editIcon_form :input').prop('disabled', false);
+        }
+    });
+    
+});
+
+
+
+// preferences
+
+function SavePreferences()
+{
+    var frdRealName = $(frdRealName_checkbox).is(':checked');
+    var frdEmail = $(frdEmail_checkbox).is(':checked');
+    
+    var newPrefs = {
+        'frdRealName': ( frdRealName ? 1 : 0 ),
+        'frdEmail': ( frdEmail ? 1 : 0 ),
+    }
+    jPrefs = JSON.stringify(newPrefs);
+    
+    $.ajax({
+        type: 'post', 
+        url: '/members/db_edit/savePrefs/', 
+        data: { 'newPrefs': jPrefs },
+        success: function(p_data) { 
+            $('#pref_status').text("Preferences Saved.");            
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "SavePreferences()", '#pref_status');
+        } 
+    });
+    
+}
+
+function DeleteAccount()
+{
+    $.ajax({
+        type: 'post', 
+        url: '/members/db_edit/deleteAcc/', 
+        success: function(p_data) {   
+            cl(p_data);
+            
+            // logout 
+            $.ajax({
+                type: 'post',
+                url: '{% url "account_logout" %}', 
+                success: function(p_data) {     //cl(p_data);
+                    window.location.href = '{% url "landing_page" %}' ;
+                },
+                error: function(p_err) {
+                    cl(p_err.responseText);
+                },
+            });
+            
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "DeleteAccount()", '#pref_status');
+        } 
+    });
+}
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+

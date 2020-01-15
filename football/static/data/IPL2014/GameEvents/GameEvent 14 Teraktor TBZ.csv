@@ -1,0 +1,46 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,14,Teraktor TBZ,Game Half1 Start,00:00:00,,,,
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Esteghlal TEH,Amir Hossain,Sadeghi,Defender
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Esteghlal TEH,Haneef,Omranzadeh,Defender
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Esteghlal TEH,Arash,Borhani,Forward
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Esteghlal TEH,Mohamad,Ghazi,Forward
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Esteghlal TEH,Sajjad,Shahbaz Zadeh,Forward
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Esteghlal TEH,Mohsen,Forozan,Goalkeeper
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Esteghlal TEH,Andranik,Taymorian,Midfield
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Esteghlal TEH,Jassim,Karrar,Midfield
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Esteghlal TEH,Khosrow,Haydari,Midfield
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Esteghlal TEH,Milad,Noori,Midfield
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Esteghlal TEH,Omid,Ebrahimi,Midfield
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Habib,Gordani,Defender
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Khaled,Shafiei,Defender
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mir Hani,Hashemi,Defender
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad,Iran Pourian,Defender
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Farshad,Ahmadzadeh,Forward
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Luciano,Edinho,Forward
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Mohsen,Daleer,Forward
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Shahin,Saghebi,Forward
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Hamed,Lak,Goalkeeper
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Ahmad,Kamdar,Midfield
+IPL2014,14,Teraktor TBZ,Player in Line-up,00:00:00,Teraktor TBZ,Shahryar,Shirvand,Midfield
+IPL2014,14,Teraktor TBZ,Card: Yellow,00:01:00,Esteghlal TEH,Jassim,Karrar,Midfield
+IPL2014,14,Teraktor TBZ,Card: Yellow,00:01:00,Teraktor TBZ,Khaled,Shafiei,Defender
+IPL2014,14,Teraktor TBZ,Game Half1 Stop,00:46:00,,,,
+IPL2014,14,Teraktor TBZ,Game Half2 Start,00:47:00,,,,
+IPL2014,14,Teraktor TBZ,Goal,01:02:00,Esteghlal TEH,Arash,Borhani,Forward
+IPL2014,14,Teraktor TBZ,Player Sub-in,01:05:00,Teraktor TBZ,Saman,Nariman Jahan,Midfield
+IPL2014,14,Teraktor TBZ,Player Sub-out,01:05:00,Teraktor TBZ,Shahryar,Shirvand,Midfield
+IPL2014,14,Teraktor TBZ,Player Sub-in,01:07:00,Esteghlal TEH,Ali,Karimi,Midfield
+IPL2014,14,Teraktor TBZ,Player Sub-out,01:07:00,Esteghlal TEH,Arash,Borhani,Forward
+IPL2014,14,Teraktor TBZ,Goal,01:15:00,Teraktor TBZ,Shahin,Saghebi,Forward
+IPL2014,14,Teraktor TBZ,Player Sub-in,01:20:00,Esteghlal TEH,Hrayr,Mkoyan,Defender
+IPL2014,14,Teraktor TBZ,Player Sub-out,01:20:00,Esteghlal TEH,Jassim,Karrar,Midfield
+IPL2014,14,Teraktor TBZ,Player Sub-in,01:25:00,Teraktor TBZ,Abolfazl,Ebrahimi,Midfield
+IPL2014,14,Teraktor TBZ,Player Sub-out,01:25:00,Teraktor TBZ,Mohsen,Daleer,Forward
+IPL2014,14,Teraktor TBZ,Goal,01:26:00,Teraktor TBZ,Luciano,Edinho,Forward
+IPL2014,14,Teraktor TBZ,Player Sub-in,01:28:00,Teraktor TBZ,Ditmar,Bicaj,Defender
+IPL2014,14,Teraktor TBZ,Player Sub-out,01:28:00,Teraktor TBZ,Farshad,Ahmadzadeh,Forward
+IPL2014,14,Teraktor TBZ,Player Sub-in,01:29:00,Esteghlal TEH,Mohamad Reza,Khorsandnia,Midfield
+IPL2014,14,Teraktor TBZ,Player Sub-out,01:29:00,Esteghlal TEH,Mohamad,Ghazi,Forward
+IPL2014,14,Teraktor TBZ,Goal,01:34:00,Esteghlal TEH,Amir Hossain,Sadeghi,Defender
+IPL2014,14,Teraktor TBZ,Game Half2 Stop,01:39:00,,,,
+IPL2014,14,Teraktor TBZ,Game End,01:40:00,,,,

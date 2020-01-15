@@ -1,0 +1,296 @@
+
+{% extends "common_base.html" %}
+{% load staticfiles %}
+{% load utility_ttags %}
+
+{% block content %}
+
+
+<div class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_header">
+            <span class="font_title">Player Reference</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Search for Player</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "search" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-8 col-md-12 col-lg-8 col-xl-7">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-6">
+                    {% ctrl_strong "tt" "Search By Club" %} <br>
+                    <div class="display_table">
+                        <div class="display_row">
+                            {% ctrl_select "club" "Club" %} 
+                        </div>
+                        <div class="display_row">
+                            {% ctrl_select "posClub" "Position" %} 
+                        </div>
+                        <div class="display_row">
+                            {% ctrl_select "player" "Player" %} 
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-6">
+                    {% ctrl_strong "src" "Search By Name" %}
+                    {% ctrl_inputText "plName" "Name" True %}
+                    {% ctrl_button "srcName" "Search" %}
+                </div>            
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4 col-xl-3">
+        <div id="player_block" class="display_block inner_margin1 outer_padding2 frame_entry"
+            style="display: none;">
+            {% ctrl_strong "playerName" "PlayerName" %}
+            {% ctrl_image "profile" "image_smallSize format_frame" %}
+            <div style="text-align: left;">
+                {% ctrl_table "playerProp" "center" %}
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<div class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Record</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "record" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-10 col-md-7 col-lg-5 col-xl-4">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_strong "sq" "Squads & Loans" %}
+            {% ctrl_table "squads" %}
+        </div>
+    </div>
+    
+</div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+$(document).ready(function()
+{      
+    SelectInit_Club();
+    SelectInit_Position();
+    TextInit_AllPlayers();
+    
+    $("#club_select").change(function() {
+        SelectInit_Player();
+    });
+    
+    $("#posClub_select").change(function() {
+        SelectInit_Player();
+    });
+    
+    $("#player_select").change(function() {
+        var player = $("#player_select option:selected").text();
+        ResetPlayer();
+        DisplayPlayer(player);
+    });
+    
+    $("#srcName_button").click(function() {
+        ResetPlayer();
+        var player = $("#plName_text").val();
+        DisplayPlayer(player);
+    });
+
+});
+
+// left side search
+
+function SelectInit_Club() 
+{
+    $('#player_select').find('option').remove();
+    ResetPlayer();
+    
+    $.ajax({
+        url: "{% url 'football:research_jx' 'clubs' %}",
+        success: function(p_data) { 
+            $.each(p_data, function(key, value) {
+                $('#club_select').append($('<option>', { value : key }).text(value));
+            });
+            
+            var $options = $("#club_select").find('option'),
+            random = ~~(Math.random() * $options.length);
+            $options.eq(random).prop('selected', true);
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "SelectInit_Club()", '#search_status');
+        } 
+    });
+}
+
+function SelectInit_Position() 
+{    
+    $.ajax({
+        url: "{% url 'football:research_jx' 'positions' %}",
+        success: function(p_data) { 
+            $.each(p_data, function(key, value) {
+                $('#posClub_select').append($('<option>', { value : key }).text(value));
+            });
+            
+            setTimeout(function () {
+                SelectInit_Player(); },
+                200);
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "SelectInit_Position()", '#search_status');
+        } 
+    });
+}
+
+function SelectInit_Player() 
+{
+    var club = $('#club_select option:selected').text();
+    var position = $('#posClub_select option:selected').text();
+    $('#player_select').find('option').remove();
+    ResetPlayer();
+    
+    $.ajax({
+        url: "{% url 'football:research_jx' 'players' %}",
+        data: {'club': club, 'position': position}, 
+        success: function(p_data) {
+            $.each(p_data, function(key, value) {
+                $('#player_select').append($('<option>', { value : key }).text(value));
+            });
+            
+            var $options = $('#player_select').find('option'),
+            random = ~~(Math.random() * $options.length);
+            $options.eq(random).prop('selected', true);
+            
+            var player = $("#player_select option:selected").text();
+            DisplayPlayer(player);
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "SelectInit_Player()", '#search_status');
+        } 
+    });
+}
+
+// right side search 
+
+function TextInit_AllPlayers() 
+{
+    $('#player_select').find('option').remove();
+    ResetPlayer();
+    
+    $.ajax({
+        url: "{% url 'football:research_jx' 'players' %}",
+        success: function(p_data) {           
+            $("#plName_text").autocomplete({
+                source: p_data,
+                minLength: 4,
+            });
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "TextInit_AllPlayers()", '#search_status');
+        } 
+    });
+}
+
+// display player
+
+function DisplayPlayer(p_player)
+{    
+    if (!p_player)
+    {
+        ErrorToStatus("Error: player is null.", "DisplayPlayer()", '#search_status');
+        return;
+    }
+    
+    $.ajax({
+        url: "{% url 'football:research_jx' 'player_properties' %}",
+        data: {'player': p_player}, 
+        success: function(p_data) {                 cl(p_data);
+            if (typeof(p_data) == 'string')
+            {
+                $('#_table').text(p_data);
+            }
+            else
+            {
+                $('#player_block').show();
+                $('#playerName_strong').text(p_data['props']['player']);
+                
+                var path = "/static/player_images/" + FormatFileName(p_data['props']['profile']); 
+                //var path = "/static/player_images/" + FormatFileName(p_data['props']['player']) + ".jpg"; 
+                $('#profile_image').attr('src', path); 
+                
+                var tableP = jQuery.extend({}, p_data['props']);
+                delete tableP['player'];
+                delete tableP['profile'];
+                var fullT = JObjToFullTable(tableP)
+                var trans = TransposeFullTable(fullT);
+                SetVerticalTable('#playerProp_table', trans);
+                
+                var fullT = JSONtoFullTable(p_data['record']);
+                SetDataTable('#squads_table', fullT);
+            }
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "DisplayPlayer()", '#record_status');
+        } 
+    });
+    
+    
+}
+
+
+function ResetPlayer()
+{
+    $('#player_block').hide();
+    
+    $("#search_status").html(null);   
+    $('#basics_table').html(null);
+    $('#squads_table').html(null);
+    $("#props_status").html(null);   
+}
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+{% load utility_ttags %}
+
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap: The above 3 meta tags *must* come first in the head -->
+    
+    <script src=" {% static 'third_party/jQuery/jquery-3.2.1.min.js' %}"></script>
+    <link   href="{% static 'third_party/bootstrap-3.3.7-dist/css/bootstrap.min.css' %}" rel="stylesheet">
+    <script src=" {% static 'third_party/bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
+    <link   href="{% static 'third_party/bootstrap-extra/navbar-fixed-side.css' %}" rel="stylesheet">
+    <link   href="{% static 'third_party/bootstrap-extra/bootstrap-xl-xxl.css' %}" rel="stylesheet">
+    
+    <script src="{% static 'third_party/jquery-ui-1.12.1/jquery-ui.min.js' %}"></script>
+    <link   href="{% static 'third_party/jquery-ui-1.12.1/jquery-ui.min.css' %}" rel="stylesheet" />
+    <link   href="{% static 'third_party/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" />
+    
+    <script src="{% static 'third_party/DataTables-1.10.10/media/js/jquery.dataTables.min.js' %}"></script>
+    <link   href="{% static 'third_party/DataTables-1.10.10/media/css/jquery.dataTables.min.css' %}" rel="stylesheet" />
+    <script src="{% static 'third_party/JavascriptToolbox/date.js' %}"></script>
+    <script src="https://www.google.com/recaptcha/api.js?" async defer></script>
+    
+    <script src="{% static 'third_party/lightning.js' %}"></script>
+    <script src="{% static 'third_party/audio.js/audiojs/audio.min.js' %}"></script>
+    
+    <!-- Bootstrap: put custom css after bootstrap.css so custom styles override -->
+    <link   href="{% static 'style.css' %}?{% now 'U' %}" rel="stylesheet" /> 
+    <script src="{% static 'utility.js' %}?{% now 'U' %}"></script>
+    
+    <link rel="icon" href="/static/graphics/logo_small.png" type="image/x-icon"/>
+    
+    <title>Lige Ma</title>
+    
+    {% block extra_head %}
+    {% endblock %}
+</head>
+
+
+<style>
+
+
+.rights_font {
+    color: azure;
+    font-size: 95%;
+}
+
+</style>
+
+
+<body class="font_default" style="background-color: #241f47; /* darkslateblue */" >
+    
+    <div id="visible_area" class="container-fluid" style="">
+        <div class="row">
+            
+            <div id="navigation_area" class="col-sm-3 col-md-2">
+                <div id="navigation_fixed" class="navbar navbar-default navbar-fixed-side nav_fixed"
+                    style="background-image: url(/static/graphics/menu_fixed.png); ">
+                    
+                    <div id="nav_collapse" class="navbar-header">
+                        <button class="navbar-toggle left_toggle" data-target="#nav_manage" data-toggle="collapse">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <button class="navbar-toggle right_toggle" data-target="#nav_menu" data-toggle="collapse">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    
+                    <div id="nav_manage" class="collapse navbar-collapse">
+                        <div class="nav navbar-nav" style="padding: 4px 2px 2px 2px;">
+                             
+                            <img class="menu_bottom" src="/static/graphics/menu_manage.png"/>
+                            
+                            <div class="menu_manage menu_top">
+                                <div class="display_table">
+                                    <div class="display_cellM">
+                                        {% ctrl_imageIcon "menuIcon" %}
+                                    </div>
+                                    <div class="display_cellM" style="width: 100%; text-align: right;">
+                                        <span id="userName" style="white-space: nowrap;">
+                                            {% if user.is_authenticated %}
+                                            {{ user|truncatechars:18 }}
+                                            {% else %}
+                                            Guest User
+                                            {% endif %}
+                                        </span><br>
+                                        {% if user.is_authenticated %}
+                                        <span id="logout_link" class="font_manage">Log Out</span>
+                                        {% else %}
+                                        <span id="login_link" class="font_manage">Log In</span>
+                                        <span id="signup_link" class="font_manage">Sign Up</span>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            {% if user.is_authenticated %}
+                            <div class="display_table" style="width: 100%; text-align: center;">
+                                <div class="display_row">
+                                    <div class="display_cellM" style="width: 33%; position: relative;">
+                                        <a id="broadcasts_link" class="menu_account" href="{% url 'messages' %}">
+                                            <i class="fa fa-envelope fa-2x font_account"></i>
+                                            {% if unreadCnt %}
+                                            <div id="inbox_notify" class="anim_bounce inbox_parent">
+                                                <i class="fa fa-asterisk inbox_notify"></i>
+                                                <div class="inbox_glow"></div>
+                                            </div>
+                                            {% endif %}
+                                        </a>
+                                    </div>
+                                    <div class="display_cellM" style="width: 34%;">
+                                        <a id="contacts_link" class="menu_account" href="{% url 'contacts' %}">
+                                            <i class="fa fa-address-book fa-2x font_account"></i>
+                                        </a>
+                                    </div>
+                                    <div class="display_cellM" style="width: 33%;">
+                                        <a id="profile_link" class="menu_account" href="{% url 'profile' %}">
+                                            <i class="fa fa-user fa-2x font_account"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                            
+                            {% if user.is_authenticated %}
+                            <div id="menu_currency" class="menu_currencies">
+                                
+                                <div class="display_table" style="border-collapse: separate; border-spacing: 25px 20px;" >
+                                    <div class="display_row">
+                                        <div id="diamond_group" class="display_cellM">
+                                            
+                                            <div class="display_table format_currency format_center" style="" >
+                                                <div class="display_row">
+                                                    <div class="display_cellM" style="width: 40%; padding: 4px 6px 4px 8px;">
+                                                         <img id="diamond_image" class="format_currIcon"
+                                                              src="/static/graphics/currency_dmd_normal.png" />
+                                                    </div>
+                                                    <div class="display_cellM" style="min-width: 50px; padding: 4px 8px 4px 0px;">
+                                                        <span id="menu_diamondsText" class="format_currency font_diamond" style="font-size: 120%;">
+                                                            {{ profile.diamonds }}
+                                                        </span>                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div id="token_group" class="display_cellM">
+                                            
+                                            <div class="display_table format_currency format_center" style="" >
+                                                <div class="display_row">
+                                                    <div class="display_cellM" style="width: 40%; padding: 4px 6px 4px 8px;">
+                                                         <img id="token_image" class="format_currIcon"
+                                                              src="/static/graphics/currency_pu_normal.png" />
+                                                    </div>
+                                                    <div class="display_cellM" style="min-width: 50px; padding: 4px 8px 4px 0px;">
+                                                        <span id="tokens_listing" class="font_tokens" style="font-size: 140%;"> * </span>                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            {% endif %}
+                            
+                        </div>
+                    </div>
+                    
+                    <div id="nav_menu" class="collapse navbar-collapse" style="">
+                        
+                        <div class="nav navbar-nav" style="padding: 2px;">
+                            
+                            <div id="ligema_menu" class="dropdown">
+                                <div class="dropdown_main ">
+                                    <span id="ligema_main" class="menu_item menu_font">Lige-Ma</span>
+                                </div>
+                                <div class="dropdown-menu" style="background-color:rgba(0, 0, 0, 0.0);">
+                                    <div class="menu_dropdown">
+                                        <a class="menu_subItem menu_font" href="{% url 'landing_page' %}">Home</a>
+                                        <a class="menu_subItemL menu_font" href="{% url 'prediction:univ_rules' %}">Game Rules</a>
+                                        <!--
+                                        <a class="menu_subItemL menu_font" href="{% url 'central:company' %}">Company</a>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <a class="menu_item menu_font" href="{% url 'prediction:univ_preds' %}">My Predictions</a>
+                            <a class="menu_item menu_font" href="{% url 'prediction:univ_headq' %}">Upgrades</a>
+                            <a class="menu_item menu_font" href="{% url 'prediction:univ_ranks' %}">Standings</a>
+                            
+                            <div id="research_menu" class="dropdown" style="">
+                                <div class="dropdown-toggle" data-toggle="dropdown">
+                                    <span id="football_main" class="menu_item menu_font">Research</span>
+                                </div>
+                                <div class="dropdown-menu" style="background-color:rgba(0, 0, 0, 0.0); ">
+                                    <div class="menu_dropdown" style="">
+                                        <a class="menu_subItem menu_font" href="{% url 'football:fb_season' %}">Season</a>
+                                        <a class="menu_subItem menu_font" href="{% url 'football:fb_game' %}">Game</a>
+                                        <a class="menu_subItem menu_font" href="{% url 'football:fb_club' %}">Club</a>
+                                        <a class="menu_subItemL menu_font" href="{% url 'football:fb_player' %}">Player</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <a class="menu_item menu_font" href="{% url 'central:store' %}">Store</a>
+                            
+                            {% if user.is_superuser %}
+                            <div id="adminData_menu" class="dropdown">
+                                <div class="dropdown_main">
+                                    <span id="adminData_main" class="menu_item menu_item_admin menu_font">Admin: Data</span>
+                                </div>
+                                <div class="dropdown-menu" style="background-color:rgba(0, 0, 0, 0.0);">
+                                    <div class="menu_dropdown menu_dropdown_admin" >
+                                        <a class="menu_subItem menu_subItem_admin menu_font"
+                                           href="{% url 'central:master' %}">Data Master</a>
+                                        <a class="menu_subItem menu_subItem_admin menu_font"
+                                           href="{% url 'football:etl_livescores' %}">LiveScores</a>
+                                        <a class="menu_subItemL menu_subItem_admin menu_font"
+                                           href="{% url 'football:etl_iplstats' %}">IPLStats</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="adminUsers_menu" class="dropdown">
+                                <div class="dropdown_main">
+                                    <span id="adminUsers_main" class="menu_item menu_item_admin menu_font">Admin: Users</span>
+                                </div>
+                                <div class="dropdown-menu" style="background-color:rgba(0, 0, 0, 0.0);">
+                                    <div class="menu_dropdown menu_dropdown_admin" >
+                                        <a class="menu_subItem menu_subItem_admin menu_font" href="{% url 'central:pu_rewards' %}">Univ Rewards</a>
+                                        <a class="menu_subItem menu_subItem_admin menu_font" href="{% url 'members_admin' %}">Members</a>
+                                        <a class="menu_subItem menu_subItem_admin menu_font" href="{% url 'central:admin_messages' %}">Messages</a>
+                                        <a class="menu_subItemL menu_subItem_admin menu_font" href="{% url 'central:botUsers' %}">Bot Users</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div id="content_area" class="col-sm-9 col-md-10" style="">
+                
+                <div id="content_block" class="content_fixed" style="
+                        background-image: url('{{ bkgdPath }}');">
+                </div>
+                
+                <div class="display_block outer_padding1" style="">
+                    
+                    {% block content %}
+                    <div class="row">
+                        <div class="inner_margin1">
+                            No content included.
+                        </div>
+                    </div>
+                    {% endblock content %}
+                    <div id="bottom_spacer" class="row" style="min-height: 60px;">
+                        <div class="format_center" style="margin-top: 20px;">
+                            <div class="inn er_margin2">
+                                <span id="rights_text" class="rights_font">Lige Ma LLC - 2017 - All Rights Reserved.</span>
+                            </div>
+                        </div>
+                        {% ctrl_status "error" %}            
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div id="logo_area" class="display_block"
+                 style="position: fixed; right: 0; z-index: 10; padding: 8px;">
+                <img id="logoFixed_image" class="logo_fixed" src="/static/graphics/logo_transp.png"/>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div id="dialog_holder" comment="used by auth dialogs"></div>
+    
+    <div id="error_dialog" title="Error">
+        <div class="format_full format_center" style="padding: 10px 4px;">
+            {% ctrl_normal "errorMsg" %} 
+        </div>
+        <div class="display_table format_full">
+            <div class="display_row">
+                <div class="display_cellM format_center" style="width: 50%;">
+                <div class="inner_margin2">
+                    <i id="error_icon" class="fa fa-times-circle-o fa-2x" style="color: crimson;"></i>
+                </div>
+                </div>
+                <div class="display_cellM format_center">
+                    {% ctrl_button "errorOk" "Close" %}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <canvas id="tokens_canvas" class="display_canvas"></canvas>
+    <canvas id="diamonds_canvas" class="display_canvas"></canvas>
+    
+    <div id="music_player" style="position: fixed; bottom: 0; z-index: 20; display: none;">
+        <div style="position: relative; bottom: 10px; left: 50px; border: 2px solid blue;">
+            <audio preload="auto">
+                <source src="{% play_music %}" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+    
+    <style>
+    </style>
+    
+</body>
+
+
+<script>
+
+
+$(function() {
+
+    // initialize the account area
+    
+    {% if not profile or not profile.icon %}
+        var path = "/static/icons_source/anonymous.png";
+    {% else %}
+        var path = "/static/user_icons/" + "{{ profile.icon }}" ;
+    {% endif %}
+    $("#menuIcon_image").attr("src", path);
+    
+    $('#login_link').click(function() { LinkClickHandler("login"); });
+    $('#logout_link').click(function() { LinkClickHandler("logout"); });
+    $('#signup_link').click(function() { LinkClickHandler("signup"); });
+    
+    CreateManageTooltip('#broadcasts_link', "Broadcasts");
+    CreateManageTooltip('#contacts_link', "Contacts");
+    CreateManageTooltip('#profile_link', "Profile");
+    
+    // initialize currencies
+    
+    {% if puRoster.tokenTotal >= 0 %}
+    $('#tokens_listing').html("{{ puRoster.tokenTotal }}");
+    {% endif %}
+        
+    // initialize navigation menu
+    // add an onclick event to parent menus so that onhover works on touch devices 
+    
+    $('#ligema_main').click(function() {});
+    $('#football_main').click(function() {});
+    $('#adminData_main').click(function() {});
+    $('#adminUsers_main').click(function() {});
+    
+    // other base page initializations
+    
+    MakeDialog('#error_dialog', "auto", false);
+    $('#errorOk_button').click(function() {  
+        $("#error_dialog").dialog("close");
+    });    
+    
+    //PlayMusic();
+    
+});
+
+
+// function is also used by landing page
+function LinkClickHandler(p_type)
+{
+    // if there is a control already available, don't call it up again
+    
+    if ($('#' + p_type + '_dialog').length == 0)
+    {
+        $.ajax({
+            url: "/members/auth_dialog/",
+            success: function(p_data) {             //cl(p_data);
+                $("#dialog_holder").html(p_data);
+                InitDialogs();
+                $('#' + p_type + '_dialog').dialog("open");
+            },
+            error: function(p_err) {   
+                var msg = "LinkClickHandler()" + "<br>" + DjangoSubError(p_err.responseText);
+                if (msg.length < p_err.responseText.length)
+                    $("#error_status").html(msg);       
+                else
+                    $("#error_status").text(msg);
+            },
+        });   
+    }
+    else
+    {
+        $('#' + p_type + '_dialog').dialog("open");
+    }
+}
+
+$(window).on('load', function() {
+    
+    // initialize the canvases based on current window size
+    
+    var visWidth = $('#visible_area').width();
+    var visHeight = $('#visible_area').height();
+    $('#tokens_canvas').attr('width', visWidth);      // can't use css, must be attribute
+    $('#tokens_canvas').attr('height', visHeight);
+    $('#diamonds_canvas').attr('width', visWidth);     
+    $('#diamonds_canvas').attr('height', visHeight);
+    
+    // making the currency menu flexible requires the dom to be loaded
+    
+    if (visWidth < 768) {        
+        $('#menu_currency').css('left', '0px');
+        $('#menu_currency').css('top', '155px');
+    }
+    
+    // set off lightning
+    
+    var framedElem = $('[class*="frame_"]')[0];
+    var classes = $(framedElem).attr('class');
+    var class_rx = /(frame_[a-zA-Z0-9]*)/g;
+    var match = class_rx.exec(classes);
+    var cssClass = ( match ? '.' + match[0] : '' );
+    
+    //RunLightning(cssClass);
+    //RecursiveLightning(cssClass);
+    
+});
+
+
+function CreateManageTooltip(p_elemId, p_message)
+{
+    
+    $(p_elemId).tooltip({
+        items: p_elemId,
+        tooltipClass: 'manage_tooltip',
+        content: p_message,
+        position: {my: 'center top', at: 'center bottom+5%'},
+    });
+    
+}
+
+
+function PlayMusic()
+{
+    
+    setTimeout(function() {
+        StartPlay();
+    }, 200);
+    
+    function StartPlay()
+    {
+        var randy = GetRandomInt(1, 100);
+        if (randy <=  91)
+            return;
+        
+        $('#music_player').show();
+        
+        audiojs.events.ready(function() {
+            var audios = audiojs.createAll();
+            var audio = audios[0];
+            
+            audio.setVolume(0.6);
+            audio.play();
+        });
+        
+        var title = '';
+        CreateTooltip('#music_player', title, null);
+    }
+    
+}
+</script>
+
+
+</html>
+

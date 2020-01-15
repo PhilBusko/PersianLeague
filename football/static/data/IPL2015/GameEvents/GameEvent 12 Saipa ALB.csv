@@ -1,0 +1,50 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2015,12,Saipa ALB,Game Half1 Start,00:00:00,,,,
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Malavan ANZ,Ahmad,Ahi,Defender
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Malavan ANZ,Aziz,Maeboudi,Defender
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Malavan ANZ,Hossain,Kanaani,Defender
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Malavan ANZ,Hossain,Mahini,Defender
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Malavan ANZ,Arash,Afshin,Forward
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Malavan ANZ,Reza,Darvishi,Forward
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Malavan ANZ,Serghei,Pascenco,Goalkeeper
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Malavan ANZ,Mohamad,Abshak,Midfield
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Malavan ANZ,Mohamad,Razipour,Midfield
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Malavan ANZ,Pejman,Noori,Midfield
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Malavan ANZ,Saeed,Yousefzadeh,Midfield
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Malavan ANZ,Sohail,Rahmani,Midfield
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ali,Zaynali,Defender
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ebrahim,Shakoori,Defender
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Hamed,Shiri,Defender
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Majid,Ayoubi,Defender
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Vahid,Esmaeel Baygi,Defender
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Gholamreza,Rezaei,Forward
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Reza,Norouzi,Forward
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Hamed,Fallahzadeh,Goalkeeper
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ebrahim,Sadeghi,Midfield
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Masoud,Ebrahimzadeh,Midfield
+IPL2015,12,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Roozbeh,Shah Alidoost,Midfield
+IPL2015,12,Saipa ALB,Card: Yellow,00:01:00,Malavan ANZ,Mohamad,Abshak,Midfield
+IPL2015,12,Saipa ALB,Card: Yellow,00:01:00,Malavan ANZ,Sohail,Rahmani,Midfield
+IPL2015,12,Saipa ALB,Card: Yellow,00:01:00,Saipa ALB,Vahid,Esmaeel Baygi,Defender
+IPL2015,12,Saipa ALB,Card: Yellow,00:01:00,Saipa ALB,Gholamreza,Rezaei,Forward
+IPL2015,12,Saipa ALB,Card: Yellow,00:01:00,Saipa ALB,Hamed,Fallahzadeh,Goalkeeper
+IPL2015,12,Saipa ALB,Card: Yellow,00:01:00,Saipa ALB,Ebrahim,Sadeghi,Midfield
+IPL2015,12,Saipa ALB,Player Sub-in,00:09:00,Malavan ANZ,Reza,Darvishi,Forward
+IPL2015,12,Saipa ALB,Player Sub-out,00:09:00,Malavan ANZ,Arash,Afshin,Forward
+IPL2015,12,Saipa ALB,Game Half1 Stop,00:46:00,,,,
+IPL2015,12,Saipa ALB,Game Half2 Start,00:47:00,,,,
+IPL2015,12,Saipa ALB,Player Sub-in,00:54:00,Saipa ALB,Mahan,Rahmani,Midfield
+IPL2015,12,Saipa ALB,Player Sub-out,00:54:00,Saipa ALB,Masoud,Ebrahimzadeh,Midfield
+IPL2015,12,Saipa ALB,Player Sub-in,01:05:00,Saipa ALB,Mojtaba,Ramezani,Midfield
+IPL2015,12,Saipa ALB,Player Sub-out,01:05:00,Saipa ALB,Vahid,Esmaeel Baygi,Defender
+IPL2015,12,Saipa ALB,Goal,01:07:00,Saipa ALB,Ebrahim,Sadeghi,Midfield
+IPL2015,12,Saipa ALB,Player Sub-in,01:16:00,Malavan ANZ,Siavash,Hagh Nazari,Midfield
+IPL2015,12,Saipa ALB,Player Sub-out,01:16:00,Malavan ANZ,Saeed,Yousefzadeh,Midfield
+IPL2015,12,Saipa ALB,Goal,01:17:00,Saipa ALB,Ali,Zaynali,Defender
+IPL2015,12,Saipa ALB,Goal,01:19:00,Malavan ANZ,Siavash,Hagh Nazari,Midfield
+IPL2015,12,Saipa ALB,Player Sub-in,01:23:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2015,12,Saipa ALB,Player Sub-out,01:23:00,Saipa ALB,Gholamreza,Rezaei,Forward
+IPL2015,12,Saipa ALB,Player Sub-in,01:24:00,Malavan ANZ,Pooya,Nozhati,Midfield
+IPL2015,12,Saipa ALB,Player Sub-out,01:24:00,Malavan ANZ,Reza,Darvishi,Forward
+IPL2015,12,Saipa ALB,Game Half2 Stop,01:39:00,,,,
+IPL2015,12,Saipa ALB,Game End,01:40:00,,,,

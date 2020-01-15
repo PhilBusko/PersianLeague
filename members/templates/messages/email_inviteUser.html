@@ -1,0 +1,35 @@
+
+{% load staticfiles %}
+{% load utility_ttags %}
+
+{% load account %}
+
+<body>
+    
+    {% autoescape off %}
+    
+    <p style="font-family: Impact; font-size: 12pt; color: black;">
+        Salaam and Hello from your friends at Lige Ma,
+    </p> 
+    
+    <p style="font-family: Impact; font-size: 12pt; color: black;">
+        <b>{{ inviter }}</b> is inviting you to join the league.
+    </p> 
+        
+    <p style="font-family: Impact; font-size: 12pt; color: black;">
+        Baazi Mikoni? 
+    </p> 
+    
+    <p style="font-family: Impact; font-size: 12pt; color: black;">
+        Sign up at: 
+        <a href="www.lige-ma.com">www.lige-ma.com</a>
+    </p> <br>
+    
+    {% endautoescape %}
+    
+</body>
+
+
+
+
+

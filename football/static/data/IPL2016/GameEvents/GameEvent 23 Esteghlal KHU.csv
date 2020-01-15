@@ -1,0 +1,41 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2016,23,Esteghlal KHU,Game Half1 Start,00:00:00,,,,
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Aghil,Kabi,Defender
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mohamad,Tayyebi,Defender
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Aloys,Nong,Forward
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Hossain,Bahrami,Goalkeeper
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Vahid,Sheikh Vaysi,Goalkeeper
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Abolfazl,Aalaei,Midfield
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Alireza,Daghagheleh,Midfield
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Hassan,Bait Saeed,Midfield
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mahdi,Zobaydi,Midfield
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mostafa,Mahi,Midfield
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Salman,Bahrani,Midfield
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Mashin Sazi TBZ,Amin,Haj Mohamadi,Defender
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Mashin Sazi TBZ,Fardin,Abedini,Defender
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Mashin Sazi TBZ,Henrique,Edson Da Silva,Defender
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Mashin Sazi TBZ,Abdolkarim,Eslami,Forward
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Mashin Sazi TBZ,Amin,Ghaseminejad,Forward
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Mashin Sazi TBZ,Abolfazl,Ebrahimi,Midfield
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Mashin Sazi TBZ,Hamed,Pakdel,Midfield
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Mashin Sazi TBZ,Hamid Reza,Ali Asgari,Midfield
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Mashin Sazi TBZ,Khakhi,Kakashvili,Midfield
+IPL2016,23,Esteghlal KHU,Player in Line-up,00:00:00,Mashin Sazi TBZ,Saeed,Ghaedifar,Midfield
+IPL2016,23,Esteghlal KHU,Card: Yellow,00:01:00,Mashin Sazi TBZ,Fardin,Abedini,Defender
+IPL2016,23,Esteghlal KHU,Card: Yellow,00:01:00,Mashin Sazi TBZ,Khakhi,Kakashvili,Midfield
+IPL2016,23,Esteghlal KHU,Card: Yellow,00:01:00,Mashin Sazi TBZ,Saeed,Ghaedifar,Midfield
+IPL2016,23,Esteghlal KHU,Goal,00:34:00,Esteghlal KHU,Hassan,Bait Saeed,Midfield
+IPL2016,23,Esteghlal KHU,Game Half1 Stop,00:46:00,,,,
+IPL2016,23,Esteghlal KHU,Player Sub-in,00:46:00,Mashin Sazi TBZ,Ahmad,Kamdar,Midfield
+IPL2016,23,Esteghlal KHU,Player Sub-out,00:46:00,Mashin Sazi TBZ,Fardin,Abedini,Defender
+IPL2016,23,Esteghlal KHU,Game Half2 Start,00:47:00,,,,
+IPL2016,23,Esteghlal KHU,Player Sub-in,00:54:00,Esteghlal KHU,Paymon,Heshmati,Midfield
+IPL2016,23,Esteghlal KHU,Player Sub-out,00:54:00,Esteghlal KHU,Mohamad,Tayyebi,Defender
+IPL2016,23,Esteghlal KHU,Player Sub-in,01:12:00,Esteghlal KHU,Arash,Afshin,Forward
+IPL2016,23,Esteghlal KHU,Player Sub-out,01:12:00,Esteghlal KHU,Aloys,Nong,Forward
+IPL2016,23,Esteghlal KHU,Player Sub-in,01:19:00,Esteghlal KHU,Younes,Delfee,Midfield
+IPL2016,23,Esteghlal KHU,Player Sub-out,01:19:00,Esteghlal KHU,Mahdi,Zobaydi,Midfield
+IPL2016,23,Esteghlal KHU,Player Sub-in,01:26:00,Mashin Sazi TBZ,Shahab,Zahedi,Forward
+IPL2016,23,Esteghlal KHU,Player Sub-out,01:26:00,Mashin Sazi TBZ,Amin,Ghaseminejad,Forward
+IPL2016,23,Esteghlal KHU,Game Half2 Stop,01:39:00,,,,
+IPL2016,23,Esteghlal KHU,Game End,01:40:00,,,,

@@ -1,0 +1,45 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2015,13,Malavan ANZ,Game Half1 Start,00:00:00,,,,
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Ahmad,Ahi,Defender
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Aziz,Maeboudi,Defender
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Ezzaotollah,Pourghaz,Defender
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Hossain,Mahini,Defender
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Babak,Hatami,Forward
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Serghei,Pascenco,Goalkeeper
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Mohamad,Razipour,Midfield
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Mohamad,Abshak,Midfield
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Pejman,Noori,Midfield
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Sadegh,Moharrami,Midfield
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Malavan ANZ,Saeed,Yousefzadeh,Midfield
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Teraktor TBZ,Carlos Alexandre,Cardoso,Defender
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad,Iran Pourian,Defender
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Teraktor TBZ,Shoja,Khalil Zadeh,Defender
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Teraktor TBZ,Hamza,Younes,Forward
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Teraktor TBZ,Shahin,Saghebi,Forward
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad Reza,Akhbari,Goalkeeper
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Teraktor TBZ,Ahmad,Abdollahzadeh,Midfield
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Teraktor TBZ,Augusto Cesar,Dos Santos,Midfield
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Teraktor TBZ,Bakhtiar,Rahmani,Midfield
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Teraktor TBZ,Saeed,Aghaei,Midfield
+IPL2015,13,Malavan ANZ,Player in Line-up,00:00:00,Teraktor TBZ,Soroush,Rafiei,Midfield
+IPL2015,13,Malavan ANZ,Card: Yellow,00:01:00,Malavan ANZ,Aziz,Maeboudi,Defender
+IPL2015,13,Malavan ANZ,Card: Yellow,00:01:00,Malavan ANZ,Farzad,Hatami,Forward
+IPL2015,13,Malavan ANZ,Card: Yellow,00:01:00,Malavan ANZ,Mohamad,Abshak,Midfield
+IPL2015,13,Malavan ANZ,Card: Yellow,00:01:00,Teraktor TBZ,Shoja,Khalil Zadeh,Defender
+IPL2015,13,Malavan ANZ,Game Half1 Stop,00:46:00,,,,
+IPL2015,13,Malavan ANZ,Player Sub-in,00:46:00,Malavan ANZ,Pooya,Nozhati,Midfield
+IPL2015,13,Malavan ANZ,Player Sub-out,00:46:00,Malavan ANZ,Babak,Hatami,Forward
+IPL2015,13,Malavan ANZ,Game Half2 Start,00:47:00,,,,
+IPL2015,13,Malavan ANZ,Player Sub-in,01:04:00,Teraktor TBZ,Saman,Nariman Jahan,Midfield
+IPL2015,13,Malavan ANZ,Player Sub-out,01:04:00,Teraktor TBZ,Shahin,Saghebi,Forward
+IPL2015,13,Malavan ANZ,Player Sub-in,01:10:00,Malavan ANZ,Mahyar,Zahmatkesh,Defender
+IPL2015,13,Malavan ANZ,Player Sub-out,01:10:00,Malavan ANZ,Saeed,Yousefzadeh,Midfield
+IPL2015,13,Malavan ANZ,Player Sub-in,01:19:00,Malavan ANZ,Siavash,Hagh Nazari,Midfield
+IPL2015,13,Malavan ANZ,Player Sub-out,01:19:00,Malavan ANZ,Sadegh,Moharrami,Midfield
+IPL2015,13,Malavan ANZ,Goal,01:24:00,Teraktor TBZ,Hamza,Younes,Forward
+IPL2015,13,Malavan ANZ,Player Sub-in,01:29:00,Teraktor TBZ,Ali,Hamoodi,Defender
+IPL2015,13,Malavan ANZ,Player Sub-in,01:29:00,Teraktor TBZ,Khaled,Shafiei,Defender
+IPL2015,13,Malavan ANZ,Player Sub-out,01:29:00,Teraktor TBZ,Bakhtiar,Rahmani,Midfield
+IPL2015,13,Malavan ANZ,Player Sub-out,01:29:00,Teraktor TBZ,Soroush,Rafiei,Midfield
+IPL2015,13,Malavan ANZ,Game Half2 Stop,01:39:00,,,,
+IPL2015,13,Malavan ANZ,Game End,01:40:00,,,,

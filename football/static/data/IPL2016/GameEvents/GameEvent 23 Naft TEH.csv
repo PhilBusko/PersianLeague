@@ -1,0 +1,46 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2016,23,Naft TEH,Game Half1 Start,00:00:00,,,,
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Ahmad,Alenema,Defender
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Farid,Mohamadi Zadeh,Defender
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Igor,Prahic,Defender
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Reza,Aliyari,Defender
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Mohamad,Ghazi,Forward
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Nader,Safar Zaei,Goalkeeper
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Akbar,Sadeghi,Midfield
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Alireza,Ezzat Keramat,Midfield
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Amir Arsalan,Mottahari,Midfield
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Andranik,Taymorian,Midfield
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Iman,Mobali,Midfield
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Sadegh,Moharrami,Defender
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Seyed Jalal,Hossaini,Defender
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Ali,Alipour,Forward
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Farshad,Ahmadzadeh,Forward
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Mahdi,Taremi,Forward
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Saman,Nariman Jahan,Forward
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Alireza,Bayranvand,Goalkeeper
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Mohsen,Mosalman,Midfield
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Mohsen,Rabikhah,Midfield
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Shahab,Karami,Midfield
+IPL2016,23,Naft TEH,Player in Line-up,00:00:00,Perspolis TEH,Soroush,Rafiei,Midfield
+IPL2016,23,Naft TEH,Card: Red,00:01:00,Naft TEH,Nader,Safar Zaei,Goalkeeper
+IPL2016,23,Naft TEH,Card: Yellow,00:01:00,Naft TEH,Mohamad,Ghazi,Forward
+IPL2016,23,Naft TEH,Card: Yellow,00:01:00,Naft TEH,Akbar,Sadeghi,Midfield
+IPL2016,23,Naft TEH,Card: Yellow,00:01:00,Perspolis TEH,Farshad,Ahmadzadeh,Forward
+IPL2016,23,Naft TEH,Player Sub-in,00:06:00,Naft TEH,Shahab,Adeli,Goalkeeper
+IPL2016,23,Naft TEH,Player Sub-out,00:06:00,Naft TEH,Iman,Mobali,Midfield
+IPL2016,23,Naft TEH,Game Half1 Stop,00:46:00,,,,
+IPL2016,23,Naft TEH,Game Half2 Start,00:47:00,,,,
+IPL2016,23,Naft TEH,Goal,00:57:00,Perspolis TEH,Soroush,Rafiei,Midfield
+IPL2016,23,Naft TEH,Player Sub-in,01:07:00,Naft TEH,Milad,Fakhredini,Defender
+IPL2016,23,Naft TEH,Player Sub-out,01:07:00,Naft TEH,Farid,Mohamadi Zadeh,Defender
+IPL2016,23,Naft TEH,Player Sub-in,01:11:00,Perspolis TEH,Ehsan,Alvanzadeh,Midfield
+IPL2016,23,Naft TEH,Player Sub-out,01:11:00,Perspolis TEH,Saman,Nariman Jahan,Forward
+IPL2016,23,Naft TEH,Player Sub-in,01:12:00,Naft TEH,Sajjad,Shahbaz Zadeh,Forward
+IPL2016,23,Naft TEH,Player Sub-out,01:12:00,Naft TEH,Amir Arsalan,Mottahari,Midfield
+IPL2016,23,Naft TEH,Goal,01:27:00,Perspolis TEH,Mahdi,Taremi,Forward
+IPL2016,23,Naft TEH,Player Sub-in,01:28:00,Perspolis TEH,Reza,Karmlachab,Forward
+IPL2016,23,Naft TEH,Player Sub-out,01:28:00,Perspolis TEH,Mahdi,Taremi,Forward
+IPL2016,23,Naft TEH,Player Sub-in,01:29:00,Perspolis TEH,Hamid Reza,Taherkhani,Forward
+IPL2016,23,Naft TEH,Player Sub-out,01:29:00,Perspolis TEH,Mohsen,Mosalman,Midfield
+IPL2016,23,Naft TEH,Game Half2 Stop,01:39:00,,,,
+IPL2016,23,Naft TEH,Game End,01:40:00,,,,

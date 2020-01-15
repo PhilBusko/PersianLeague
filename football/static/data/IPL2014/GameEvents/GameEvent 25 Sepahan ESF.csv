@@ -1,0 +1,47 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,25,Sepahan ESF,Game Half1 Start,00:00:00,,,,
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Abdollah,Karami,Defender
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Ehsan,Hajsafi,Defender
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Voorya,Ghafoori,Defender
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Luciano Pereira,Mendez,Forward
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Mahdi,Sharifi,Forward
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Xhevahir,Sukaj,Forward
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Shahabeddin,Gordan,Goalkeeper
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Ali,Karimi,Midfield
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Bahram,Ahmadi,Midfield
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Fozil,Musayev,Midfield
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Moharam,Navidkia,Midfield
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Celio,Ferreira dos Santos,Defender
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Habib,Gordani,Defender
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Khaled,Shafiei,Defender
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad,Iran Pourian,Defender
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Farid,Karimi,Forward
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Farshad,Ahmadzadeh,Forward
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Luciano,Edinho,Forward
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Hamed,Lak,Goalkeeper
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Andranik,Taymorian,Midfield
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Mahdi,Kiani,Midfield
+IPL2014,25,Sepahan ESF,Player in Line-up,00:00:00,Teraktor TBZ,Saeed,Aghaeei,Midfield
+IPL2014,25,Sepahan ESF,Card: Yellow,00:01:00,Sepahan ESF,Abdollah,Karami,Defender
+IPL2014,25,Sepahan ESF,Card: Yellow,00:01:00,Teraktor TBZ,Celio,Ferreira dos Santos,Defender
+IPL2014,25,Sepahan ESF,Card: Yellow,00:01:00,Teraktor TBZ,Khaled,Shafiei,Defender
+IPL2014,25,Sepahan ESF,Card: Yellow,00:01:00,Teraktor TBZ,Farshad,Ahmadzadeh,Forward
+IPL2014,25,Sepahan ESF,Goal,00:45:00,Teraktor TBZ,Luciano,Edinho,Forward
+IPL2014,25,Sepahan ESF,Game Half1 Stop,00:46:00,,,,
+IPL2014,25,Sepahan ESF,Game Half2 Start,00:47:00,,,,
+IPL2014,25,Sepahan ESF,Player Sub-in,01:00:00,Sepahan ESF,Hossain,Papi,Midfield
+IPL2014,25,Sepahan ESF,Player Sub-in,01:00:00,Sepahan ESF,Moharam,Navidkia,Midfield
+IPL2014,25,Sepahan ESF,Player Sub-out,01:00:00,Sepahan ESF,Xhevahir,Sukaj,Forward
+IPL2014,25,Sepahan ESF,Player Sub-out,01:00:00,Sepahan ESF,Moharam,Navidkia,Midfield
+IPL2014,25,Sepahan ESF,Penalty Scored,01:16:00,Sepahan ESF,Luciano Pereira,Mendez,Forward
+IPL2014,25,Sepahan ESF,Player Sub-in,01:24:00,Teraktor TBZ,Mehrdad,Bayrami,Forward
+IPL2014,25,Sepahan ESF,Player Sub-out,01:24:00,Teraktor TBZ,Andranik,Taymorian,Midfield
+IPL2014,25,Sepahan ESF,Player Sub-in,01:26:00,Teraktor TBZ,Mohamad,Pour Rahmatollah,Midfield
+IPL2014,25,Sepahan ESF,Player Sub-out,01:26:00,Teraktor TBZ,Saeed,Aghaeei,Midfield
+IPL2014,25,Sepahan ESF,Player Sub-in,01:29:00,Sepahan ESF,Mohamad Hossain,Moradmand,Defender
+IPL2014,25,Sepahan ESF,Player Sub-in,01:29:00,Teraktor TBZ,Mohsen,Daleer,Forward
+IPL2014,25,Sepahan ESF,Player Sub-out,01:29:00,Sepahan ESF,Mahdi,Sharifi,Forward
+IPL2014,25,Sepahan ESF,Player Sub-out,01:29:00,Teraktor TBZ,Luciano,Edinho,Forward
+IPL2014,25,Sepahan ESF,Goal,01:30:00,Sepahan ESF,Rasool,Navidkia,Midfield
+IPL2014,25,Sepahan ESF,Game Half2 Stop,01:39:00,,,,
+IPL2014,25,Sepahan ESF,Game End,01:40:00,,,,

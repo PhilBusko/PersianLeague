@@ -1,0 +1,43 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,03,Saipa ALB,Game Half1 Start,00:00:00,,,,
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Gostaresh TBZ,Adel,Sarshar,Defender
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Gostaresh TBZ,Hamid Reza,Joekar,Defender
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Gostaresh TBZ,Mehdi,Qoreyshi,Defender
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Gostaresh TBZ,Morteza,Asadi,Defender
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Gostaresh TBZ,Mehrdad,Bayrami,Forward
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Gostaresh TBZ,Mehdi,Eslami,Goalkeeper
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Gostaresh TBZ,Alireza,Naghizadeh,Midfield
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Gostaresh TBZ,Jaber,Ansari,Midfield
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Gostaresh TBZ,Magno,Batista Da Silva,Midfield
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Gostaresh TBZ,Omid,Nezamipour,Midfield
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ali,Zaynali,Defender
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Mahdi,Torabi,Defender
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Majid,Ayoubi,Defender
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Sajjad,Moshkelpour,Defender
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Babak,Hatami,Forward
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Hakeem,Nassari,Forward
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Seyed Mehdi,Seyed Salehi,Forward
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Hamed,Fallahzadeh,Goalkeeper
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Alireza,Alizadeh,Midfield
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Ebrahim,Sadeghi,Midfield
+IPL2014,03,Saipa ALB,Player in Line-up,00:00:00,Saipa ALB,Masoud,Ebrahimzadeh,Midfield
+IPL2014,03,Saipa ALB,Card: Red,00:01:00,Saipa ALB,Majid,Ayoubi,Defender
+IPL2014,03,Saipa ALB,Card: Yellow,00:01:00,Gostaresh TBZ,Mohamad Mahdi,Nazari,Midfield
+IPL2014,03,Saipa ALB,Card: Yellow,00:01:00,Saipa ALB,Majid,Ayoubi,Defender
+IPL2014,03,Saipa ALB,Card: Yellow,00:01:00,Saipa ALB,Babak,Hatami,Forward
+IPL2014,03,Saipa ALB,Game Half1 Stop,00:46:00,,,,
+IPL2014,03,Saipa ALB,Player Sub-in,00:46:00,Gostaresh TBZ,Rasool,Pirzadeh,Midfield
+IPL2014,03,Saipa ALB,Player Sub-out,00:46:00,Gostaresh TBZ,Adel,Sarshar,Defender
+IPL2014,03,Saipa ALB,Game Half2 Start,00:47:00,,,,
+IPL2014,03,Saipa ALB,Player Sub-in,00:51:00,Saipa ALB,Gholamreza,Rezaei,Forward
+IPL2014,03,Saipa ALB,Player Sub-out,00:51:00,Saipa ALB,Hakeem,Nassari,Forward
+IPL2014,03,Saipa ALB,Player Sub-in,00:55:00,Gostaresh TBZ,Mohamad Mahdi,Nazari,Midfield
+IPL2014,03,Saipa ALB,Player Sub-out,00:55:00,Gostaresh TBZ,Mehrdad,Bayrami,Forward
+IPL2014,03,Saipa ALB,Player Sub-in,00:58:00,Saipa ALB,Mojtaba,Ramezani,Midfield
+IPL2014,03,Saipa ALB,Player Sub-out,00:58:00,Saipa ALB,Mahdi,Torabi,Defender
+IPL2014,03,Saipa ALB,Player Sub-in,01:12:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2014,03,Saipa ALB,Player Sub-out,01:12:00,Saipa ALB,Seyed Mehdi,Seyed Salehi,Forward
+IPL2014,03,Saipa ALB,Player Sub-in,01:20:00,Gostaresh TBZ,Paymon,Ranjbari,Forward
+IPL2014,03,Saipa ALB,Player Sub-out,01:20:00,Gostaresh TBZ,Alireza,Naghizadeh,Midfield
+IPL2014,03,Saipa ALB,Game Half2 Stop,01:39:00,,,,
+IPL2014,03,Saipa ALB,Game End,01:40:00,,,,

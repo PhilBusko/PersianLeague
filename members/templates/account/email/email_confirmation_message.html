@@ -1,0 +1,45 @@
+
+{% load staticfiles %}
+{% load utility_ttags %}
+
+{% load account %}
+
+{% comment %}
+The current_site context variable can be altered in the database, in django_site table.
+Can't use css classes in email, head is stripped off by email client.
+The inlinestyler package can be used to place css in html inline,
+but it won't work with the default allauth code.
+Also, allauth can't send images in email since the EmailMessage's headers must be set.
+{% endcomment %}
+
+<body>
+    
+    {% autoescape off %}
+    
+    <p style="font-family: Impact; font-size: 16px;">
+        Hello from Lige Ma!
+    </p> <br>
+    
+    <p style="font-family: Impact; font-size: 16px;">
+        Please confirm that this email address should be associated with the user <b>{{ user }}</b>.
+    </p>
+    <p style="font-family: Impact; font-size: 16px;">
+        To confirm go to {% format_url activate_url "Confirm E-mail Address" %}.
+    </p>
+    <p style="font-family: Impact; font-size: 16px;">
+        Otherwise the confirmation key of this email will expire in 3 days. 
+    </p> <br>
+    
+    {% endautoescape %}
+    
+    <p style="font-family: Impact; font-size: 16px;">
+        Thank you ! <br><br>
+        <a href="www.lige-ma.com">www.lige-ma.com</a>
+    </p>
+    
+</body>
+
+
+
+
+

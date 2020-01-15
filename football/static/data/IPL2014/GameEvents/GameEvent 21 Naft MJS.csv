@@ -1,0 +1,45 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,21,Naft MJS,Game Half1 Start,00:00:00,,,,
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Hamzeh,Haddadi,Defender
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Kiomars,Cheraghi,Defender
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Saeed,Salarzadeh,Defender
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Farzad,Mohamadi,Forward
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Kayvon,Amraei,Forward
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Luis Carlos,Dos Santos Martins,Forward
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Milad,Znayadpour,Forward
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Georgi,Georgiev,Goalkeeper
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Hamid,Bouhamdan,Midfield
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Reza,Darvishi,Midfield
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Ruslan,Melziddinov,Midfield
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Teraktor TBZ,Habib,Gordani,Defender
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Teraktor TBZ,Khaled,Shafiei,Defender
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Teraktor TBZ,Mir Hani,Hashemi,Defender
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Teraktor TBZ,Luciano,Edinho,Forward
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Teraktor TBZ,Shahin,Saghebi,Forward
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Teraktor TBZ,Hamed,Lak,Goalkeeper
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Teraktor TBZ,Ahmad,Kamdar,Midfield
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Teraktor TBZ,Andranik,Taymorian,Midfield
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Teraktor TBZ,Fardin,Abedini,Midfield
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Teraktor TBZ,Mahdi,Kiani,Midfield
+IPL2014,21,Naft MJS,Player in Line-up,00:00:00,Teraktor TBZ,Saman,Nariman Jahan,Midfield
+IPL2014,21,Naft MJS,Card: Yellow,00:01:00,Naft MJS,Ruslan,Melziddinov,Midfield
+IPL2014,21,Naft MJS,Card: Yellow,00:01:00,Teraktor TBZ,Habib,Gordani,Defender
+IPL2014,21,Naft MJS,Card: Yellow,00:01:00,Teraktor TBZ,Fardin,Abedini,Midfield
+IPL2014,21,Naft MJS,Card: Yellow,00:01:00,Teraktor TBZ,Mahdi,Kiani,Midfield
+IPL2014,21,Naft MJS,Penalty Scored,00:11:00,Naft MJS,Hamid,Bouhamdan,Midfield
+IPL2014,21,Naft MJS,Goal,00:32:00,Teraktor TBZ,Saman,Nariman Jahan,Midfield
+IPL2014,21,Naft MJS,Game Half1 Stop,00:46:00,,,,
+IPL2014,21,Naft MJS,Game Half2 Start,00:47:00,,,,
+IPL2014,21,Naft MJS,Player Sub-in,01:00:00,Teraktor TBZ,Farid,Karimi,Forward
+IPL2014,21,Naft MJS,Player Sub-out,01:00:00,Teraktor TBZ,Saman,Nariman Jahan,Midfield
+IPL2014,21,Naft MJS,Player Sub-in,01:12:00,Naft MJS,Amir Meghdad,Maleki,Goalkeeper
+IPL2014,21,Naft MJS,Player Sub-out,01:12:00,Naft MJS,Kayvon,Amraei,Forward
+IPL2014,21,Naft MJS,Player Sub-in,01:14:00,Teraktor TBZ,Farshad,Ahmadzadeh,Forward
+IPL2014,21,Naft MJS,Player Sub-out,01:14:00,Teraktor TBZ,Shahin,Saghebi,Forward
+IPL2014,21,Naft MJS,Player Sub-in,01:22:00,Naft MJS,Amir Meghdad,Maleki,Goalkeeper
+IPL2014,21,Naft MJS,Player Sub-out,01:22:00,Naft MJS,Hamzeh,Haddadi,Defender
+IPL2014,21,Naft MJS,Goal,01:23:00,Teraktor TBZ,Luciano,Edinho,Forward
+IPL2014,21,Naft MJS,Player Sub-in,01:25:00,Naft MJS,Alexandru,Pascenco,Midfield
+IPL2014,21,Naft MJS,Player Sub-out,01:25:00,Naft MJS,Milad,Znayadpour,Forward
+IPL2014,21,Naft MJS,Game Half2 Stop,01:39:00,,,,
+IPL2014,21,Naft MJS,Game End,01:40:00,,,,

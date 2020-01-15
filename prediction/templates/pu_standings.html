@@ -1,0 +1,944 @@
+
+{% extends "common_base.html" %}
+{% load utility_ttags %}
+{% load staticfiles %}
+
+{% block extra_head %}
+    <script src="{% static 'third_party/flot-083/jquery.flot.js' %}"></script>
+    <script src="{% static 'third_party/flot-extras/jquery.flot.axislabels.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Black+Ops+One" />
+
+{% endblock %}
+
+{% block content %}
+
+
+<style>
+
+.font_grade {
+    font-family: Black Ops One;
+    font-size: 340%;
+    color: crimson;
+    line-height: 1;
+    padding-left: 10px;
+}
+
+</style>
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_header">
+            <span class="font_title" >Standings</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="record_section" class="row">
+
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">My Record</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "ranks" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 col-xxl-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry" style="min-height: 160px;">
+            {% ctrl_strong "rcd" "Current Record" %}
+            <div class="display_block">
+                {% ctrl_normal "rndPeriod" %}
+            </div>
+            
+            <div id="grades_table" class="display_table inner_margin2" style="display: none;">
+                <div class="display_row">
+                    <div class="display_cellM">
+                        <span id="alltime_grade" class="font_grade"></span>
+                    </div>
+                    <div class="display_cellM">
+                        <span id="alltime_perc" class="font_grade" style="font-size: 140%;"></span>
+                    </div>
+                    <div class="display_cellM">
+                        <span class="" style="padding-left: 10px;">Overall Rank</span>
+                    </div>
+                </div>
+                <div class="display_row">
+                    <div class="display_cellM">
+                        <span id="round_grade" class="font_grade"></span>
+                    </div>
+                    <div class="display_cellM">
+                        <span id="round_perc" class="font_grade" style="font-size: 140%;"></span>
+                    </div>
+                    <div class="display_cellM" style="">
+                        <span class="" style="padding-left: 10px;">This round Rank</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="display_block">
+                {% ctrl_normal "rndReward" %}
+            </div>            
+            
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 col-xxl-2">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_strong "options" "Options" %}
+            <div class="display_table">
+                <div class="display_row">
+                    {% ctrl_select "mode" "Mode" %} 
+                </div>
+                <div class="display_row">
+                    {% ctrl_select "season" "Season" %} 
+                </div>
+                <div class="display_row">
+                    {% ctrl_select "round" "Round" %} 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 col-xl-3 col-xxl-2">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_strong "options" "My Medals" %}
+            
+            {% ctrl_normal "note" "* Coming Soon *" %}
+        </div>
+    </div>
+    
+</div>
+
+
+<div id="leaderboard_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Leaderboard</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-10 col-xl-5 col-xxl-5">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_strong "urat" "Overall" %}
+            {% ctrl_table "userRanksAT" %}
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-11 col-xl-5 col-xxl-5">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_strong "urrd" "By Round" %}
+            {% ctrl_table "userRanksRD" %}
+        </div>
+    </div>
+    
+</div>
+
+
+<div id="progress_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">My Progress</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-9 col-xl-5 col-xxl-5">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_strong "rpp" "Overall" %}
+            {% ctrl_plot "recordAT" %}
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-9 col-xl-5 col-xxl-5">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_strong "hrdt" "By Round" %}
+            {% ctrl_plot "recordRD" %}
+        </div>
+    </div>
+</div>
+
+
+<div id="distribution_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Points Distribution</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-9 col-xl-5 col-xxl-5">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_strong "hram" "Overall" %}
+            <div class="display_block">
+                {% ctrl_listing "userCntRD" "Number of Users" %} 
+            </div>
+            <div class="display_block">
+                {% ctrl_listing "binCntRD" "Points Profile" %} 
+            </div>
+            {% ctrl_plot "histRD" %}
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-9 col-xl-5 col-xxl-5">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_strong "hram" "By Round" %}
+            <div class="display_block">
+                {% ctrl_listing "userCntAT" "Number of Users" %} 
+            </div>
+            <div class="display_block">
+                {% ctrl_listing "binCntAT" "Points Profile" %} 
+            </div>
+            {% ctrl_plot "histAT" %}
+        </div>
+    </div>
+    
+</div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+var USER = "{{ user }}";
+
+$(document).ready(function()
+{
+    $("body").css("cursor", "wait");
+    
+    var rndStatus = $.parseJSON('{{ status | escapejs }}');        cl(rndStatus);
+    DisplayStatus(rndStatus);
+    
+    // initialize options controls
+    
+    {% for mode in modes %}
+        $('#mode_select').append($('<option>', {value : "{{ mode }}" }).text("{{ mode }}"));
+    {% endfor %}
+    
+    {% for ssn in seasons %}
+        $('#season_select').append($('<option>', {value : '{{ ssn }}' }).text('{{ ssn }}'));
+    {% endfor %}
+    
+    {% for rnd in roundList %}
+        $('#round_select').append($('<option>', {value : '{{ rnd }}' }).text('{{ rnd }}'));
+    {% endfor %}
+    
+    $('#mode_select').change(function() {
+        RefreshRanks_JX();
+    });
+    
+    $('#season_select').change(function() {
+        RefreshRound_JX();
+    });
+    
+    $('#round_select').change(function() {
+        RefreshRanks_JX();
+    });
+    
+    //
+    // display rankings
+    
+    var alltime_dx = {
+        record: $.parseJSON('{{ recordAT | escapejs }}'),
+        thresholds: $.parseJSON('{{ thresholds | escapejs }}'),
+        userCnt: '{{ userCntAT | escapejs }}', 
+        binCnt: '{{ binCntAT | escapejs }}', 
+        pointHist: $.parseJSON('{{ histAT | escapejs }}'), 
+        gradeLine: $.parseJSON('{{ gradeAT | escapejs }}'),
+        highlight: $.parseJSON('{{ highlightAT | escapejs }}'),
+        usersRanks: $.parseJSON('{{ ranksAT | escapejs }}'), 
+    } 
+    RunDisplayRanks(alltime_dx, "AT"); 
+    
+    var rounds_dx = {
+        record: $.parseJSON('{{ recordRD | escapejs }}'), 
+        thresholds: $.parseJSON('{{ thresholds | escapejs }}'),
+        userCnt: '{{ userCntRD | escapejs }}', 
+        binCnt: '{{ binCntRD | escapejs }}', 
+        pointHist: $.parseJSON('{{ histRD | escapejs }}'), 
+        gradeLine: $.parseJSON('{{ gradeRD | escapejs }}'), 
+        highlight: $.parseJSON('{{ highlightRD | escapejs }}'),
+        usersRanks: $.parseJSON('{{ ranksRD | escapejs }}'), 
+    } 
+    RunDisplayRanks(rounds_dx, "RD"); 
+    
+    //
+    $('body').css('cursor', 'default');        
+});
+
+
+function DisplayStatus(p_status)
+{
+    if (p_status.rndPeriod == null)
+    {
+        $('#rndPeriod_normal').text("Currently in off-season.");
+        $('#grades_table').hide();
+        $('#rndReward_normal').hide();
+    }
+    
+    else if (p_status.rndPeriod == -1)
+    {
+        $('#rndPeriod_normal').text("Log in to see your record.");
+        $('#grades_table').hide();
+        $('#rndReward_normal').hide();
+    }
+    
+    else if (p_status.rndPeriod == 0)
+    {
+        $('#rndPeriod_normal').text("Round hasn't started.");
+        $('#grades_table').hide();
+        $('#rndReward_normal').hide();
+    }
+    
+    else if (p_status.rndPeriod < 8)
+    {
+        $('#rndPeriod_normal').text("Round is ongoing, with {0} games played.".format(p_status.rndPeriod));
+        
+        if (p_status.rankAT)
+        {
+            $('#alltime_grade').text(p_status.rankAT);
+            $('#round_grade').text(p_status.rankRD);
+            $('#alltime_perc').text("({0}%)".format(p_status.percAT));
+            $('#round_perc').text("({0}%)".format(p_status.percRD));
+            
+            if (parseInt(p_status.percAT) < 16.0)
+                var color = '#2db92d';      /* lime green */
+            else if (parseInt(p_status.percAT) < 49.0)
+                var color = '#DAA520';      /* goldenrod */
+            else 
+                var color = '#DC143C';      /* crimson */
+            
+            $('#alltime_grade').css('color', color);
+            $('#alltime_perc').css('color', color);
+            
+            if (parseInt(p_status.percRD) < 16.0)
+                var color = '#2db92d';      
+            else if (parseInt(p_status.percRD) < 49.0)
+                var color = '#DAA520';     
+            else 
+                var color = '#DC143C';      
+            
+            $('#round_grade').css('color', color);
+            $('#round_perc').css('color', color);            
+            
+            $('#grades_table').show();
+            $('#rndReward_normal').hide();
+        }
+        else
+        {
+            $('#grades_table').hide();
+            $('#rndReward_normal').html("You haven't made any predictions this round.");
+            $('#rndReward_normal').show();
+        }
+    }
+    
+    else 
+    {
+        $('#rndPeriod_normal').text("Round has finished, with all games done.");
+        
+        if (p_status.rankAT)
+        {
+            $('#alltime_grade').text(p_status.rankAT);
+            $('#round_grade').text(p_status.rankRD);
+            $('#alltime_perc').text("({0}%)".format(p_status.percAT));
+            $('#round_perc').text("({0}%)".format(p_status.percRD));
+            $('#grades_table').show();
+            
+            if (parseInt(p_status.percAT) >= 84)
+                var color = '#2db92d';      /* lime green */
+            else if (parseInt(p_status.percAT) >= 51)
+                var color = '#DAA520';      /* goldenrod */
+            else 
+                var color = '#DC143C';      /* crimson */
+            
+            $('#alltime_grade').css('color', color);
+            $('#alltime_perc').css('color', color);
+            
+            if (parseInt(p_status.percRD) >= 84)
+                var color = '#2db92d'; 
+            else if (parseInt(p_status.percRD) >= 51)
+                var color = '#DAA520';  
+            else 
+                var color = '#DC143C';  
+            
+            $('#round_grade').css('color', color);
+            $('#round_perc').css('color', color);
+            
+            if (p_status.rndReward == 0)
+                $('#rndReward_normal').html("Rewards have not been sent out yet.");
+            else if (p_status.rndReward == 1)
+                $('#rndReward_normal').html("<a class=\"font_link\" href=\"{% url 'messages' %}\">Claim Rewards</a>");
+            else 
+                $('#rndReward_normal').html("You have claimed the rewards for this round.");
+            
+            $('#rndReward_normal').show();
+        }
+        else
+        {
+            $('#grades_table').hide();
+            $('#rndReward_normal').html("You haven't made any predictions this round.");
+            $('#rndReward_normal').show();
+        }
+    }
+}
+
+
+function ResetRanks(p_type)
+{
+    $('#rndPeriod{0}_listing'.format(p_type)).html(null);
+    $('#record{0}_plot'.format(p_type)).empty();
+    $('#userCnt{0}_listing'.format(p_type)).html(null); 
+    $('#binCnt{0}_listing'.format(p_type)).html(null);
+    $('#hist{0}_plot'.format(p_type)).empty();
+    $('#userRanks{0}_table'.format(p_type)).empty();
+}
+
+
+function RunDisplayRanks(p_dataDx, p_type)
+{    
+    PlotUserRankings(p_dataDx.record, p_type, p_dataDx.thresholds);
+    
+    $('#userCnt{0}_listing'.format(p_type)).text(p_dataDx.userCnt);
+    $('#binCnt{0}_listing'.format(p_type)).text(p_dataDx.binCnt);
+    PlotPointsDist(p_dataDx.pointHist, p_dataDx.gradeLine, p_dataDx.highlight, p_type);
+    
+    if (typeof(p_dataDx.usersRanks) == 'string')
+    {
+        if ( $.fn.DataTable.isDataTable('#userRanks{0}_table'.format(p_type)) )
+            $('#userRanks{0}_table'.format(p_type)).DataTable().destroy();
+        $('#userRanks{0}_table'.format(p_type)).text(p_dataDx.usersRanks);
+    }
+    else
+    {
+        SetDeluxeRankings('#userRanks{0}_table'.format(p_type), p_dataDx.usersRanks);
+    } 
+}
+
+
+function PlotUserRankings(p_record, p_type, p_thresholds)
+{
+    var dataset = [
+        { data: p_record, points: {show: true}, lines: {show: true}, },
+    ];
+    
+    $.each(p_thresholds, function(idx, thr) {
+        var newData = { data: thr, color: "crimson", lines: {lineWidth: 1}};
+        dataset.push(newData);
+    });
+    
+    var options = {
+        xaxis: {
+            axisLabel: "Round",
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 14,
+            axisLabelFontFamily: 'Impact',
+            axisLabelPadding: 10,
+            min: 0,
+            max: 31,
+            },
+        yaxis: {
+            axisLabel: "Top Percentile",
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 14,
+            axisLabelFontFamily: 'Impact',
+            axisLabelPadding: 0,
+            min: -2,
+            max: 100,
+            //transform: function(v) { return -v; },
+            //inverseTransform: function(v) { return -v; }
+            },
+        colors: ["green", ], 
+        grid: {
+            hoverable: true,        // this enables the tooltip, move to dataset ?
+            },
+    };
+    
+    $.plot('#record{0}_plot'.format(p_type), dataset, options);
+    
+    AttachUserLabels('#record{0}_plot'.format(p_type));
+    
+    var previousPoint = null, previousLabel = null;
+    function AttachUserLabels(p_elemId)
+    {
+        // display grade thresholds 
+        
+        var plot = $.data($(p_elemId)[0], 'plot');        // why is this [0] necessary ?
+        var dataset = plot.getData();
+        var sColor = dataset[1].color;
+        
+        $.each(dataset, function(idx, dataElem) {
+                
+                // skip the actual data
+                if (idx==0) 
+                    return;
+                
+                var dataField = dataElem.data;
+                var firstData = dataField[0];
+                
+                var o = plot.pointOffset({x: firstData[0], y: firstData[1]});
+                var msg = firstData[2];
+                
+                $('<div class="data-point-label">' + msg + '</div>'
+                    ).css( {
+                        'position': 'absolute',
+                        'text-align': 'center',
+                        'top': o.top - 12,
+                        'left': o.left - 15,
+                        'font-weight': 'bold',
+                        'color': sColor,
+                        } 
+                    ).appendTo(plot.getPlaceholder());
+        });
+        
+        // display bins data point on hover
+        
+        $(p_elemId).bind("plothover", function (event, pos, item) {
+            if (item)
+            {
+                if ((previousLabel != item.series.label) || (previousPoint != item.dataIndex))
+                {
+                    previousPoint = item.dataIndex;
+                    previousLabel = item.series.label;
+                    $("#tooltip").remove();
+                    
+                    if (item.seriesIndex == 0)
+                    {
+                        var dataseries = item.series.data;
+                        var color = item.series.color;
+                        var fullData = [];
+                        
+                        $.each(dataseries, function(idx, val) {
+                            if (val[0] == item.datapoint[0]) {
+                                fullData = val;
+                                return false;       // can't break from a function delegate
+                            }
+                        });
+                        
+                        var html = '<div class="format_center">     \
+                                    Perc% {0} <br> Pnts {1}         \
+                                    </div>'.format(fullData[1], fullData[2]);
+                        ShowTooltip(item.pageX, item.pageY, color, html);
+                    }
+                }
+            }
+            else
+            {
+                $("#tooltip").remove();
+                previousPoint = null;
+            }
+        });
+        
+        function ShowTooltip(x, y, color, contents) {
+            $('<div id="tooltip">' + contents + '</div>').css({
+                display: 'none',
+                position: 'absolute',
+                top: y -54,
+                left: x -45,
+                padding: '3px',
+                border: '2px solid ' + color,
+                'border-radius': '5px',             // properties with dash need to be escaped
+                'background-color': 'white',    
+                opacity: 0.9,
+                'font-size': '12px',
+                'font-family': 'Impact',
+            }).appendTo("body").fadeIn(200);
+        }
+    }   
+    
+}
+
+
+function PlotPointsDist(p_pointHist, p_gradeLine, p_userHighlight, p_type)
+{
+    var dataset = [
+            { data: p_pointHist, bars: { show: true, align: "right" } },
+            { data: p_gradeLine, },
+            { data: p_userHighlight, bars: { show: true, align: "right" } }, 
+        ];
+    
+    var options = {
+        xaxis: {
+            axisLabel: "Points",
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 14,
+            axisLabelFontFamily: 'Impact',
+            axisLabelPadding: 10,
+            transform: function(v) { return -v; },
+            inverseTransform: function(v) { return -v; }
+            },
+        yaxis: {
+            axisLabel: "Count",
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 14,
+            axisLabelFontFamily: 'Impact',
+            axisLabelPadding: 0,
+            },
+        colors: ["#3333ff", "red", "#006600"],  // blue, green
+        grid: {
+            hoverable: true,        // this enables the tooltip, move to dataset ?
+            },
+    };
+    
+    $.plot('#hist{0}_plot'.format(p_type), dataset, options);
+    
+    AttachPointsLabels('#hist{0}_plot'.format(p_type));
+    
+    var previousPoint = null, previousLabel = null;     // why don't these have to be global ?
+    function AttachPointsLabels(p_elemId)
+    {
+        // display grades letter label
+        
+        var plot = $.data($(p_elemId)[0], 'plot');        // why is this [0] necessary ?
+        var dataset1 = plot.getData()[1];
+        var sColor = dataset1.color;
+        
+        $.each(dataset1.data, function(i, el) {
+            if (i % 5 == 2)
+            {   
+                var o = plot.pointOffset({x: el[0], y: el[1]});
+                var msg = el[2];
+                
+                $('<div class="data-point-label">' + msg + '</div>'
+                    ).css( {
+                        position: 'absolute',
+                        'text-align': 'center',
+                        top: o.top - 20,
+                        left: o.left -4,
+                        'font-weight': 'bold',
+                        color: sColor,
+                        } 
+                    ).appendTo(plot.getPlaceholder());
+            } 
+        });
+        
+        
+        // display bins data point on hover
+        
+        $(p_elemId).bind("plothover", function (event, pos, item) {
+            if (item)
+            {
+                if ((previousLabel != item.series.label) || (previousPoint != item.dataIndex))
+                {
+                    previousPoint = item.dataIndex;
+                    previousLabel = item.series.label;
+                    $("#tooltip").remove();
+                    
+                    var x = item.datapoint[0];
+                    var y = item.datapoint[1];
+                    var color = item.series.color;
+                    
+                    if (item.seriesIndex == 0)
+                    {
+                        var html = '<div class="format_center">     \
+                                    Pnts {0}<br>Cnt {1}             \
+                                    </div>'.format(x, y);
+                        ShowTooltip(item.pageX, item.pageY, color, html);
+                    }
+                    else if (item.seriesIndex == 2)
+                    {
+                        var html = '<div class="format_center">     \
+                                   Yours <br>                       \
+                                    Pnts {0}<br>Cnt {1}             \
+                                    </div>'.format(x, y);
+                        ShowTooltip(item.pageX, item.pageY -16, color, html);
+                    }
+                }
+            }
+            else
+            {
+                $("#tooltip").remove();
+                previousPoint = null;
+            }
+        });
+        
+        function ShowTooltip(x, y, color, contents) {
+            $('<div id="tooltip">' + contents + '</div>').css({
+                display: 'none',
+                position: 'absolute',
+                top: y -54,
+                left: x -17,
+                padding: '3px',
+                border: '2px solid ' + color,
+                'border-radius': '5px',             // properties with dash need to be escaped
+                'background-color': 'white',    
+                opacity: 0.9,
+                'font-size': '12px',
+                'font-family': 'Impact',
+            }).appendTo("body").fadeIn(200);
+        }
+    }
+}
+
+//
+
+
+function RefreshRound_JX()
+{
+    $('body').css('cursor', 'wait');
+    ResetRanks("AT");
+    ResetRanks("RD");
+    $('#round_select').html(null);
+    $('#ranks_status').html(null);
+    
+    var season = $('#season_select option:selected').text();
+    
+    $.ajax({    
+        url: '{% url "prediction:universal_jx" "get_ranksRnd" %}',
+        data: {'season': season, 'filter': 'lastData'},
+        success: function(p_data) {                     cl(p_data);
+            if (typeof(p_data.roundList) =='string')
+            {
+                $('#histAT_table').text('No rounds available.');
+            }
+            else
+            {
+                $.each(p_data.roundList, function(key, value) {
+                    $('#round_select').append($('<option>', {value : key }).text(value));
+                });
+                
+                DisplayStatus(p_data.status);
+                
+                var alltime_dx = { 
+                    'record': p_data.recordAT,  
+                    'thresholds': p_data.thresholds, 
+                    'userCnt': p_data.userCntAT, 
+                    'binCnt': p_data.binCntAT, 
+                    'pointHist': p_data.histAT,
+                    'gradeLine': p_data.gradeAT,
+                    'highlight': p_data.highlightAT,
+                    'usersRanks': p_data.ranksAT,
+                };
+                RunDisplayRanks(alltime_dx, "AT");
+                
+                var rounds_dx = { 
+                    'record': p_data.recordRD,  
+                    'thresholds': p_data.thresholds, 
+                    'userCnt': p_data.userCntRD, 
+                    'binCnt': p_data.binCntRD, 
+                    'pointHist': p_data.histRD,
+                    'gradeLine': p_data.gradeRD,
+                    'highlight': p_data.highlightRD,
+                    'usersRanks': p_data.ranksRD,
+                };
+                RunDisplayRanks(rounds_dx, "RD");
+                
+            }
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "RefreshRound_JX()", '#ranks_status');
+        },
+        complete: function() {
+            $('body').css('cursor', 'default');
+        }
+    });
+}
+
+
+function RefreshRanks_JX()
+{
+    $('body').css('cursor', 'wait');
+    ResetRanks("AT");
+    ResetRanks("RD");
+    $('#ranks_status').html(null);
+    
+    var mode = $('#mode_select option:selected').text();
+    var season = $('#season_select option:selected').text();
+    var roundv = $('#round_select option:selected').text();
+    
+    $.ajax({
+        url: '{% url "prediction:universal_jx" "get_ranks" %}',
+        data: {'mode': mode, 'season': season, 'roundv': roundv},
+        success: function(p_data) {             //cl(p_data);
+            
+            DisplayStatus(p_data.status);
+            
+            var alltime_dx = { 
+                'record': p_data.recordAT,  
+                'thresholds': p_data.thresholds, 
+                'userCnt': p_data.userCntAT, 
+                'binCnt': p_data.binCntAT, 
+                'pointHist': p_data.histAT,
+                'gradeLine': p_data.gradeAT,
+                'highlight': p_data.highlightAT,
+                'usersRanks': p_data.ranksAT,
+            };
+            RunDisplayRanks(alltime_dx, "AT");
+            
+            var rounds_dx = { 
+                'record': p_data.recordRD,  
+                'thresholds': p_data.thresholds, 
+                'userCnt': p_data.userCntRD, 
+                'binCnt': p_data.binCntRD, 
+                'pointHist': p_data.histRD,
+                'gradeLine': p_data.gradeRD,
+                'highlight': p_data.highlightRD,
+                'usersRanks': p_data.ranksRD,
+            };
+            RunDisplayRanks(rounds_dx, "RD");
+        }, 
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "RefreshRanks_JX()", '#ranks_status');
+        },
+        complete: function() {
+            $('body').css('cursor', 'default');
+        }
+    });
+}
+
+
+function SetDeluxeRankings(p_tableID, p_ranks)
+{       
+    var tableName = p_tableID.substring(1).split("_")[0];       //cl(tableID);
+    
+    var table = $(p_tableID).DataTable( {
+        data: p_ranks,
+        aoColumns: [
+            {
+                title: "Points",
+                mData: "points",
+                sWidth: "",
+                sClass: "format_center ",
+            },
+            {
+                title: "Icon",
+                sWidth: "",
+                mRender: function (data, type, full) {                    
+                    html = '<div class="format_outline" style="height: 50px; width: 50px; margin: auto; background-color: white;    \
+                                        position: relative;" >      \
+                                <img id="{0}_{1}_icon" src="" style="max-height: 100%; max-width: 100%;         \
+                                        position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">        \
+                            </div>'.format(tableName, full.user);
+                    return html;
+                },
+            },
+            {
+                title: "User",
+                sWidth: "100%",
+                mRender: function (data, type, full) {
+                    html = '                            \
+                        <div>                           \
+                            <a href="/central/view_profile/{0}" target="_blank" id="{1}_link" class="font_link"     \
+                                style="display: inline-block; margin-bottom: 6px;">{2}</a> <br>                     \
+                            <span>{3}</span>            \
+                        </div>                          \
+                    '.format(full.user, full.user, full.user, (full.slogan && full.slogan != 'None' ? full.slogan : "") );
+                    return html;
+                },
+            },
+            {
+                title: "Club",
+                sWidth: "",
+                mRender: function (data, type, full) {                    
+                    html = '                                        \
+                        <div class="format_outline" style=" height: 50px; width: 50px; margin: auto; background-color: white;   \
+                                    position: relative;" >          \
+                            <img id="{0}_{1}_favClub" src=" " style="max-height: 100%; max-width: 100%;                         \
+                                    position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">                   \
+                        </div>                                      \
+                    '.format(tableName, full.user);
+                    return html;
+                }, 
+            }, 
+        ], 
+        bSort: false,
+        scrollCollapse: true,
+        paging: true,
+        bFilter: false,
+        bInfo: false,
+        bDestroy: true,
+        pageLength: 10,
+        bLengthChange: false,
+        fnRowCallback: function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {                        
+            if ( aData.user == USER )
+            {
+                //$(nRow).addClass('format_highlight');
+                $(nRow).children().each(function (index, td) {
+                    $(this).addClass('format_highlight');
+                });
+            }
+        },
+        initComplete: function() {
+            PostDraw();
+        }
+    } );
+    
+    // when the page changes, the table is redrawn - the images and tooltips must be redrawn also
+    
+    $(p_tableID).on( 'draw.dt', function () {
+        PostDraw();
+    } );
+    
+    function PostDraw()
+    {        
+        $.each(p_ranks, function(idx, rnk) {
+            
+            var path = (rnk.icon && rnk.icon != 'None' ?
+                        "/static/user_icons/" + rnk.icon :
+                        "/static/icons_source/anonymous.png");
+            $('#{0}_{1}_icon'.format(tableName, rnk.user)).attr("src", path);
+            
+            var path = (rnk.favClub && rnk.favClub != 'None' ?
+                        "/static/club_images/" + FormatFileName(rnk.favClub) + " logo.png" :
+                        "/static/club_images/_club logo.png");
+            $('#{0}_{1}_favClub'.format(tableName, rnk.user)).attr("src", path);
+            
+            CreateTooltip('#' + rnk.user + '_link', "View Profile");
+            
+            if (rnk.favClub && rnk.favClub != 'None')
+                CreateTooltip('#' + rnk.user + '_favClub', rnk.favClub);
+        });
+    }
+    
+}
+
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+

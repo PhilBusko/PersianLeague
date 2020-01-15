@@ -1,0 +1,48 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2016,15,Mashin Sazi TBZ,Game Half1 Start,00:00:00,,,,
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Bahman,Kamel,Defender
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Habib,Gordani,Defender
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Henrique,Edson Da Silva,Defender
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Saeed,Mehdipour,Defender
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Saeed,Mohri,Defender
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Amin,Ghaseminejad,Forward
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Manuel Fernandez,Muniz,Goalkeeper
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Ahmad,Kamdar,Midfield
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Ali,Dindaar,Midfield
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Khakhi,Kakashvili,Midfield
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Payam,Sadeghian,Midfield
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Mashin Sazi TBZ,Sajjad,Rahbar,Midfield
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Saipa ALB,Lourival Junior,Lopes,Defender
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Saipa ALB,Omid,Khaledi,Defender
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Saipa ALB,Saeed,Lotfi,Defender
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Saipa ALB,Sajjad,Moshkelpour,Defender
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Saipa ALB,Ali,Zaynali,Forward
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Saipa ALB,Gholamreza,Rezaei,Forward
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Saipa ALB,Hamed,Fallahzadeh,Goalkeeper
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Saipa ALB,Alireza,Alizadeh,Midfield
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Saipa ALB,Ayoub,Kalantari,Midfield
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Saipa ALB,Reza,Jafari,Midfield
+IPL2016,15,Mashin Sazi TBZ,Player in Line-up,00:00:00,Saipa ALB,Roozbeh,Shah Alidoost,Midfield
+IPL2016,15,Mashin Sazi TBZ,Card: Red,00:01:00,Mashin Sazi TBZ,Saeed,Mohri,Defender
+IPL2016,15,Mashin Sazi TBZ,Card: Yellow,00:01:00,Mashin Sazi TBZ,Saeed,Mohri,Defender
+IPL2016,15,Mashin Sazi TBZ,Card: Yellow,00:01:00,Mashin Sazi TBZ,Khakhi,Kakashvili,Midfield
+IPL2016,15,Mashin Sazi TBZ,Goal,00:12:00,Mashin Sazi TBZ,Amin,Ghaseminejad,Forward
+IPL2016,15,Mashin Sazi TBZ,Goal,00:29:00,Mashin Sazi TBZ,Amin,Ghaseminejad,Forward
+IPL2016,15,Mashin Sazi TBZ,Game Half1 Stop,00:46:00,,,,
+IPL2016,15,Mashin Sazi TBZ,Game Half2 Start,00:47:00,,,,
+IPL2016,15,Mashin Sazi TBZ,Player Sub-in,00:50:00,Mashin Sazi TBZ,Ali,Dindaar,Midfield
+IPL2016,15,Mashin Sazi TBZ,Player Sub-out,00:50:00,Mashin Sazi TBZ,Ahmad,Kamdar,Midfield
+IPL2016,15,Mashin Sazi TBZ,Goal,00:51:00,Saipa ALB,Reza,Jafari,Midfield
+IPL2016,15,Mashin Sazi TBZ,Goal,00:53:00,Saipa ALB,Gholamreza,Rezaei,Forward
+IPL2016,15,Mashin Sazi TBZ,Goal,01:02:00,Mashin Sazi TBZ,Payam,Sadeghian,Midfield
+IPL2016,15,Mashin Sazi TBZ,Player Sub-in,01:03:00,Saipa ALB,Ali,Gholizadeh,Forward
+IPL2016,15,Mashin Sazi TBZ,Player Sub-out,01:03:00,Saipa ALB,Ali,Zaynali,Forward
+IPL2016,15,Mashin Sazi TBZ,Player Sub-in,01:05:00,Saipa ALB,Mohamad Reza,Solyamani,Midfield
+IPL2016,15,Mashin Sazi TBZ,Player Sub-out,01:05:00,Saipa ALB,Roozbeh,Shah Alidoost,Midfield
+IPL2016,15,Mashin Sazi TBZ,Player Sub-in,01:10:00,Mashin Sazi TBZ,Shahab,Zahedi,Forward
+IPL2016,15,Mashin Sazi TBZ,Player Sub-out,01:10:00,Mashin Sazi TBZ,Ali,Dindaar,Midfield
+IPL2016,15,Mashin Sazi TBZ,Penalty Scored,01:11:00,Saipa ALB,Ayoub,Kalantari,Midfield
+IPL2016,15,Mashin Sazi TBZ,Player Sub-in,01:18:00,Saipa ALB,Hamed,Shiri,Midfield
+IPL2016,15,Mashin Sazi TBZ,Player Sub-out,01:18:00,Saipa ALB,Ayoub,Kalantari,Midfield
+IPL2016,15,Mashin Sazi TBZ,Game Half2 Stop,01:39:00,,,,
+IPL2016,15,Mashin Sazi TBZ,Game End,01:40:00,,,,

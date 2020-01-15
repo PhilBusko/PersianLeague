@@ -1,0 +1,45 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2016,12,Gostaresh TBZ,Game Half1 Start,00:00:00,,,,
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Babak,Hatami,Defender
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Morteza,Asadi,Defender
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Seyed Mohsen,Hossaini,Defender
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Dariush,Shojaeian,Forward
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Luciano Pereira,Mendes,Forward
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Masoud,Ebrahimzadeh,Forward
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Mohamad Reza,Khalatbari,Forward
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Kouroush,Maleki,Goalkeeper
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Alireza,Naghizadeh,Midfield
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Magno,Batista Da Silva,Midfield
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Gostaresh TBZ,Reza,Khaleghifar,Midfield
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Sepahan ESF,Aref,Gholami,Defender
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Sepahan ESF,Armin,Sohrabian,Defender
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Sepahan ESF,Mohamd Ali,Ahmadi,Defender
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Sepahan ESF,Farid,Behzadi Karimi,Forward
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Sepahan ESF,Jallaledin,Alimohamadi,Forward
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Sepahan ESF,Lee,Oliviera,Goalkeeper
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Sepahan ESF,Ehsan,Haajsafi,Midfield
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Sepahan ESF,Mahmoud,Ghaed Rahmati,Midfield
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Sepahan ESF,Mehrdad,Mohamadi,Midfield
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Sepahan ESF,Milad,Sarlak,Midfield
+IPL2016,12,Gostaresh TBZ,Player in Line-up,00:00:00,Sepahan ESF,Moharam,Navidkia,Midfield
+IPL2016,12,Gostaresh TBZ,Card: Yellow,00:01:00,Gostaresh TBZ,Magno,Batista Da Silva,Midfield
+IPL2016,12,Gostaresh TBZ,Card: Yellow,00:01:00,Gostaresh TBZ,Reza,Khaleghifar,Midfield
+IPL2016,12,Gostaresh TBZ,Card: Yellow,00:01:00,Sepahan ESF,Mohamd Ali,Ahmadi,Defender
+IPL2016,12,Gostaresh TBZ,Card: Yellow,00:01:00,Sepahan ESF,Rasool,Navidkia,Midfield
+IPL2016,12,Gostaresh TBZ,Goal,00:12:00,Sepahan ESF,Ehsan,Haajsafi,Midfield
+IPL2016,12,Gostaresh TBZ,Player Sub-in,00:19:00,Gostaresh TBZ,Yousef,Seyedi,Forward
+IPL2016,12,Gostaresh TBZ,Player Sub-out,00:19:00,Gostaresh TBZ,Alireza,Naghizadeh,Midfield
+IPL2016,12,Gostaresh TBZ,Goal,00:28:00,Gostaresh TBZ,Masoud,Ebrahimzadeh,Forward
+IPL2016,12,Gostaresh TBZ,Penalty Scored,00:45:00,Gostaresh TBZ,Luciano Pereira,Mendes,Forward
+IPL2016,12,Gostaresh TBZ,Game Half1 Stop,00:46:00,,,,
+IPL2016,12,Gostaresh TBZ,Game Half2 Start,00:47:00,,,,
+IPL2016,12,Gostaresh TBZ,Player Sub-in,01:01:00,Sepahan ESF,Hossain,Fazeli,Forward
+IPL2016,12,Gostaresh TBZ,Player Sub-out,01:01:00,Sepahan ESF,Farid,Behzadi Karimi,Forward
+IPL2016,12,Gostaresh TBZ,Player Sub-in,01:04:00,Sepahan ESF,Taleb,Raykani,Midfield
+IPL2016,12,Gostaresh TBZ,Player Sub-out,01:04:00,Sepahan ESF,Mohamd Ali,Ahmadi,Defender
+IPL2016,12,Gostaresh TBZ,Player Sub-in,01:12:00,Gostaresh TBZ,Nima,Mokhtari,Forward
+IPL2016,12,Gostaresh TBZ,Player Sub-out,01:12:00,Gostaresh TBZ,Mohamad Reza,Khalatbari,Forward
+IPL2016,12,Gostaresh TBZ,Player Sub-in,01:13:00,Sepahan ESF,Hossain,Papi,Midfield
+IPL2016,12,Gostaresh TBZ,Player Sub-out,01:13:00,Sepahan ESF,Moharam,Navidkia,Midfield
+IPL2016,12,Gostaresh TBZ,Game Half2 Stop,01:39:00,,,,
+IPL2016,12,Gostaresh TBZ,Game End,01:40:00,,,,

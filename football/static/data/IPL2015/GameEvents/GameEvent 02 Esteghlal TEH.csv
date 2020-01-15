@@ -1,0 +1,49 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2015,02,Esteghlal TEH,Game Half1 Start,00:00:00,,,,
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Amin,Haj Mohamadi,Defender
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Hrayr,Mkoyan,Defender
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Maysam,Majidi,Defender
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Roosbeh,Cheshmi,Defender
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Arash,Borhani,Forward
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Seyed Mahdi,Rahmati,Goalkeeper
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Ali,Karimi,Midfield
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Jaber,Ansari,Midfield
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Khosrow,Haydari,Midfield
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Mohamad Reza,Khorsandnia,Midfield
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Omid,Ebrahimi,Midfield
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Aziz,Maeboudi,Defender
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Ezzaotollah,Pourghaz,Defender
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Hossain,Kanaani,Defender
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Hossain,Mahini,Defender
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Arash,Afshin,Forward
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Babak,Hatami,Forward
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Seyed Hossain,Hossaini,Goalkeeper
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Maziar,Zare,Midfield
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Mohamad,Abshak,Midfield
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Pejman,Noori,Midfield
+IPL2015,02,Esteghlal TEH,Player in Line-up,00:00:00,Malavan ANZ,Saeed,Yousefzadeh,Midfield
+IPL2015,02,Esteghlal TEH,Card: Yellow,00:01:00,Esteghlal TEH,Amin,Haj Mohamadi,Defender
+IPL2015,02,Esteghlal TEH,Card: Yellow,00:01:00,Esteghlal TEH,Maysam,Majidi,Defender
+IPL2015,02,Esteghlal TEH,Card: Yellow,00:01:00,Esteghlal TEH,Roosbeh,Cheshmi,Defender
+IPL2015,02,Esteghlal TEH,Card: Yellow,00:01:00,Esteghlal TEH,Omid,Ebrahimi,Midfield
+IPL2015,02,Esteghlal TEH,Card: Yellow,00:01:00,Malavan ANZ,Ezzaotollah,Pourghaz,Defender
+IPL2015,02,Esteghlal TEH,Card: Yellow,00:01:00,Malavan ANZ,Hossain,Mahini,Defender
+IPL2015,02,Esteghlal TEH,Card: Yellow,00:01:00,Malavan ANZ,Shahab,Karami,Midfield
+IPL2015,02,Esteghlal TEH,Goal,00:29:00,Esteghlal TEH,Omid,Ebrahimi,Midfield
+IPL2015,02,Esteghlal TEH,Goal,00:38:00,Esteghlal TEH,Omid,Ebrahimi,Midfield
+IPL2015,02,Esteghlal TEH,Game Half1 Stop,00:46:00,,,,
+IPL2015,02,Esteghlal TEH,Game Half2 Start,00:47:00,,,,
+IPL2015,02,Esteghlal TEH,Player Sub-in,00:48:00,Malavan ANZ,Pooya,Nozhati,Midfield
+IPL2015,02,Esteghlal TEH,Player Sub-out,00:48:00,Malavan ANZ,Saeed,Yousefzadeh,Midfield
+IPL2015,02,Esteghlal TEH,Player Sub-in,00:57:00,Malavan ANZ,Seyed Jalal,Rafkhaei,Forward
+IPL2015,02,Esteghlal TEH,Player Sub-out,00:57:00,Malavan ANZ,Mohamad,Abshak,Midfield
+IPL2015,02,Esteghlal TEH,Player Sub-in,00:58:00,Esteghlal TEH,Jassim,Karrar,Midfield
+IPL2015,02,Esteghlal TEH,Player Sub-out,00:58:00,Esteghlal TEH,Ali,Karimi,Midfield
+IPL2015,02,Esteghlal TEH,Player Sub-in,01:04:00,Malavan ANZ,Shahab,Karami,Midfield
+IPL2015,02,Esteghlal TEH,Player Sub-out,01:04:00,Malavan ANZ,Aziz,Maeboudi,Defender
+IPL2015,02,Esteghlal TEH,Player Sub-in,01:06:00,Esteghlal TEH,Ali,Karimi,Midfield
+IPL2015,02,Esteghlal TEH,Player Sub-out,01:06:00,Esteghlal TEH,Khosrow,Haydari,Midfield
+IPL2015,02,Esteghlal TEH,Player Sub-in,01:24:00,Esteghlal TEH,Rivaldo,Barbosa,Midfield
+IPL2015,02,Esteghlal TEH,Player Sub-out,01:24:00,Esteghlal TEH,Arash,Borhani,Forward
+IPL2015,02,Esteghlal TEH,Game Half2 Stop,01:39:00,,,,
+IPL2015,02,Esteghlal TEH,Game End,01:40:00,,,,

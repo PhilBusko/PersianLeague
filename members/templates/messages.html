@@ -1,0 +1,512 @@
+
+{% extends "common_base.html" %}
+{% load utility_ttags %}
+{% load staticfiles %}
+
+{% block extra_head %}
+    <script src="{% static 'members.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+
+<style>
+
+.chat_parent {
+    display: block;
+    margin: 4px;
+    border: 2px inset #e6e6e6;
+    border-radius: 3px; 
+}
+
+</style>
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_header">
+            <span class="font_title">Broadcasts</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="messages_section" class="row" style="min-height: 400px;">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_admin" style="margin-right: 0px;">
+                        <span class="font_section">Messages</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_admin format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "messages" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-md-6 col-xxl-5">
+        <div class="display_block inner_margin1 frame_admin">
+            <div class="outer_padding2">
+                {% ctrl_strong "m1" "LigeMa's Inbox" %} <br>
+                {% ctrl_tableDeluxe "inbox" %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-md-6 col-xxl-5">
+        <div class="display_block inner_margin1 frame_admin outer_padding2">
+            
+            <div id="title_block" class="">
+                <div class="display_table" style="">
+                    <div class="display_cellM" style="width: 100%;">
+                        {% ctrl_strong "m2" "Compose" %}
+                    </div>
+                    <div class="display_cellM">
+                        <div id="msgCtrl_group" class="display_row" style="display: none;" >
+                            <div id="close_clicker" class="display_cellM">
+                                {% ctrl_iconAwesome "closeMsg" "fa-times" "red" %}
+                            </div>
+                            <div id="reply_clicker" class="display_cellM">
+                                {% ctrl_iconAwesome "replyMsg" "fa-reply" "green" %}
+                            </div>
+                            <div id="delete_clicker" class="display_cellM">
+                                {% ctrl_iconAwesome "deleteMsg" "fa-trash" "#647382" %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="messages_list" class="">
+            </div>
+            
+            <div id="compose_block" class="">
+                <div class="display_block inner_margin2 outer_padding2" style="background: rgb(170, 170, 170); border-radius: 4px;">
+                    
+                    <div id="msgType_group" class="inner_margin2" style="">
+                        <div class="format_cpointer" style="display: inline;">
+                            <input type="radio" name="msgType" value="toUser" id="msgType_toUser" class="format_cpointer">
+                            </input>
+                            <label for="msgType_toUser" class="format_fixline format_cpointer">To User</label>
+                        </div>
+                        <div class="format_cpointer" style="display: inline;">
+                            <input type="radio" name="msgType" value="toAdmin" id="msgType_toAdmin" class="format_cpointer">
+                            </input>
+                            <label for="msgType_toAdmin" class="format_fixline format_cpointer">To Admin</label>
+                        </div>
+                    </div>
+                    
+                    <div id="msgTo_group" class="display_table">
+                        <div id="toUser_block" class="display_row">
+                            {% ctrl_inputText "toUser" "User" "TLR" %}
+                        </div>
+                        <div id="toAdmin_block" class="display_row">
+                            {% ctrl_select "toAdmin" "Admin" %}
+                        </div>
+                        <div id="subject_block" class="display_row">
+                            {% ctrl_inputText "subject" "Subject" "TLR" %}
+                        </div>
+                        <div id="msgID_data" style="display: none;"></div>
+                    </div>
+                    
+                    <div id="body_group" style="width: 100%;">
+                        <div class="display_block inner_margin2" comment="margin must surround a textarea">
+                            <textarea id="body_text" maxlength="500" rows="8"
+                                      style="width: 100%; color: black; 
+                                            box-sizing: border-box; resize: none; border-radius: 3px;"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div id="button_group" class="display_table" style="width: 100%;">
+                        <div class="display_cellM" style="width: 80%;">
+                            {% ctrl_normal "send" "" %}
+                        </div>
+                        <div class="display_cellM" style="text-align: center;">
+                            {% ctrl_button "send" "Send" %}
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<div id="chat_section" class="row" style="">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Global Chat</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "chat" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-lg-10 col-xl-9 col-xxl-7">
+        <div class="display_block inner_margin1 frame_entry">
+            <div class="outer_padding2">
+                
+                <div style="min-height: 300px;">
+                    <div class="display_ta ble" style="wid th: 100%;">
+                        <div class="display_row">
+                            <div class="display_cellT" style="width: 100%;">
+                                
+                                <div class="chat_parent">
+                                   <table id="readChat_table" class="row-border" 
+                                       style=" ">
+                                   </table>
+                                </div>
+                                
+                            </div>
+                            <div class="display_cellT" style="min-width: 140px;">
+                                
+                                {% ctrl_table "users" False True %}
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr class="format_separator frame_entry" style="border-bottom: hidden; border-width: 1px;">
+                
+                <div class="display_table">
+                    <div class="display_row">
+                        
+                        <div class="display_cellM" style="width: 100%;">
+                            <div class="display_block inner_margin2" comment="margin must surround a textarea">
+                                <textarea id="writeChat_text" maxlength="100" rows="2"
+                                          style="width: 100%; box-sizing: border-box; resize: none; border-radius: 3px;"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="display_cellM format_center" style="min-width: 110px;">
+                            {% ctrl_button "sendChat" "    Send    " %}
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<!-- dynamically rendered templates -->
+
+<div id="message_template" style="display: none" >
+    <div id="message_block">
+        
+        <div class="display_block inner_margin2 format_inside">
+            <div id="topRow_block" class="format_cpointer">
+                <div class="display_table" style="background: white; width: 100%; border-collapse: separate;">
+                    <div class="display_cellM format_inside" style="width: 50%;">   
+                        {% ctrl_listing "from" "From" %}
+                    </div> 
+                    <div class="display_cellM format_inside" style="">    
+                        {% ctrl_listing "sent" "Sent" %}
+                    </div> 
+                </div>
+            </div> 
+            <div id="collapse_block">
+                <div class="display_table" style="background: white; width: 100%; border-collapse: separate;">
+                    <div class="display_cellM format_inside" style="width: 50%;">   
+                        {% ctrl_listing "to" "To" %}
+                    </div>  
+                    <div class="display_cellM format_inside" style="width: 50%;">    
+                        {% ctrl_listing "read" "Read" %}
+                    </div> 
+                </div>
+                <div class="display_table" style="background: white; width: 100%;"> 
+                    <div class="display_cellM format_inside">
+                        <div class="display_block outer_padding2">
+                            <span id="body_normal"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+            <div id="spacer_block">
+                <div class="" style="width: 100%; margin-bottom: 8px;"></div>
+            </div> 
+        
+    </div>
+</div>
+
+
+<!-- SCRIPTS -->
+
+
+<script>
+
+
+$(document).ready(function()
+{       
+    $('body').css('cursor', 'wait');
+        
+    InitializeMessages();
+    
+    InitializeChat();
+    
+    $('body').css('cursor', 'default');
+});
+
+//
+// MESSAGES
+//
+
+function InitializeMessages()
+{
+    
+    Messages.USER = '{{ user }}';
+    Messages.URL_OPENMSG = '/members/db_report/viewMsg/'; 
+    Messages.URL_OPENCONVO = '/members/db_report/viewConv/'; 
+    Messages.URL_DELETECONVO = '/members/db_edit/deleteConv/';
+    Messages.URL_WRITEMSG = '/members/db_edit/sendMsg/';
+    Messages.URL_REPLYMSG = '/members/db_edit/replyMsg/';
+    Messages.URL_GETINBOX = '/members/db_report/inbox/';
+    
+    Messages.InitControls();
+    
+    {% if inbox %}
+        var flat = '{{ inbox | escapejs }}';
+        var escaped = flat.replace("'", "\u0027");
+        var dataArray = $.parseJSON(escaped);          // cl(dataArray);
+        Messages.SetDeluxeInbox(dataArray);
+    {% else %}
+        $('#inbox_table').text("Inbox is empty.");
+    {% endif %}
+    
+    // compose area
+    
+    {% for oType in adminTypes %}
+        $("#toAdmin_select").append(
+            $('<option>', { value : "{{ oType }}" }).text("{{ oType }}"));
+    {% endfor %}
+    
+    $("#msgType_toUser").click(function() {
+        $("#toAdmin_block").hide();  
+        $("#toUser_block").show();
+    });
+    
+    $("#msgType_toAdmin").click(function() {
+        $("#toUser_text").val(null);          
+        $("#toUser_block").hide();  
+        $("#toAdmin_block").show();
+    });
+    
+    $("#msgType_toUser").click();
+    
+}
+
+
+Messages.GetRecipient = function()
+{
+    if ($('#toUser_block').css('display') != 'none')
+        var recipients = $('#toUser_text').val();
+    else
+        var recipients = "admin " + $('#toAdmin_select').val();
+     
+    return recipients;
+}
+
+
+Messages.UpdateNotifier = function(p_unreadCnt)
+{
+    if (p_unreadCnt == 0)
+        $('#inbox_notify').hide();
+
+}
+
+
+//
+// CHAT
+//
+function InitializeChat()
+{
+    // initialize blank jquery tables, add data later through channels  
+    
+    SetDeluxeReadChat([]);
+    SetDeluxeUsers([]);
+    
+    // django-channels uses websocket protocol, not http
+    // creating the object triggers an onopen call
+    
+    var ws_scheme = window.location.protocol == "https:" ? "wss" : "ws";
+    var socket = new WebSocket(ws_scheme + "://" + window.location.host + "/members/global_chat/");
+    socket.isOpen = false;
+    
+    socket.onopen = function() {
+        //cl('onopen');
+        
+        if (!socket.isOpen)
+        {
+            socket.isOpen = true;
+        }
+        else
+        {
+            var newChat = $('#writeChat_text').val();
+            $('#writeChat_text').val(null);
+            socket.send(newChat);
+        }
+    }
+    
+    socket.onmessage = function(p_event) {
+        //cl('onmessage');        
+        HandleChatMessage(p_event.data);
+    }
+    
+    $('#sendChat_button').click(function() {
+        if (socket.readyState == WebSocket.OPEN)
+        {
+            socket.onopen();
+        }
+        else
+        {
+            cl("Error WebSocket State: " + socket.readyState);
+            // add dialog window asking to reload page ?
+        }
+    });
+    
+}
+
+function SetDeluxeReadChat(p_text)
+{
+    $('#readChat_table').DataTable( {
+        'data': p_text,
+        'aoColumns': [
+            {
+                'class': 'chat_col1',
+                'mRender': function (data, type, full) {
+                      
+                    var age = null;
+                    if (full.createDate) {
+                        var js_dt = Date.parseString(full.createDate.substring(0,16), "yyyy-MM-dd HH:mm");
+                        js_dt.setHours(js_dt.getHours() - 4);   // bug in date.js ?
+                        var now_dt = new Date();
+                        var seconds = parseInt((now_dt-js_dt)/1000);
+                        
+                        if (seconds < 60)
+                            age = "<1m";
+                        else if (seconds < (60*60))
+                            age = parseInt(seconds / 60) + "m";
+                        else
+                            age = parseInt(seconds / (60*60)) + "h";
+                    }
+                    
+                    html = '        \
+                        <div class="" style="" >      \
+                            {0} ({1})   \
+                        </div>      \
+                    '.format( full.userName, age );
+                    return html;
+                },
+            },
+            {
+                'data': "chatText",
+            },
+        ],
+        'bSort': false,
+        'paging': false,
+        'scrollY': "400px",     // table can't have borders, or scrollX appears
+        'bFilter': false,
+        'bInfo': false,
+        'bLengthChange': false,
+        'bDestroy': true,
+        'fnDrawCallback': function() {
+            $('#readChat_table_wrapper thead').remove();    // created for scrolling ?
+            $('#readChat_table thead').remove();
+            $('.dataTables_scrollBody').css('border', '0px');
+        },
+    } );
+    
+    $('.dataTables_scrollBody').scrollTop($('.dataTables_scrollBody')[0].scrollHeight);
+}
+
+
+function SetDeluxeUsers(p_users)
+{
+    $('#users_table').DataTable( {
+        'data': p_users,
+        'aoColumns': [
+            {
+                data: "userName",
+            },
+        ],
+        'bSort': false,
+        'scrollCollapse': true,
+        'paging': true,
+        'bFilter': false,
+        'bInfo': false,
+        'bLengthChange': false,
+        'pagingType': "simple",
+        'bDestroy': true,        
+        'fnDrawCallback': function() {
+            $('#users_table thead').remove();
+            $('#users_table_previous').text("Prev");
+        },
+    } );
+}
+
+
+function HandleChatMessage(p_data)
+{
+    var chanInfo = $.parseJSON(p_data);           //cl(chanInfo);
+    
+    if (chanInfo.type == "ADD_USER")
+    {
+        var table = $('#users_table').DataTable();
+        table.row.add( chanInfo ).draw( false );
+    }
+    else if (chanInfo.type == "NEW_CHAT")
+    {
+        var table = $('#readChat_table').DataTable();
+        table.row.add( chanInfo ).draw( false );
+    }
+    else if (chanInfo.type == "DROP_USER")
+    {
+        var table = $('#users_table').DataTable();
+        table.column(0).data().each( function ( value, index ) {
+            if (value == chanInfo.userName)
+                table.row( ':eq({0})'.format(index) ).remove().draw( false );
+        } );        
+    }
+    else if (chanInfo.type == "JOINED_USER")
+    {
+        SetDeluxeReadChat(chanInfo.chatText);
+        SetDeluxeUsers(chanInfo.chatGroup);     
+    }
+    else
+    {
+        ErrorToStatus(p_data, "HandleChatMessage()", '#chat_status');
+    }
+}
+
+//
+</script>
+
+
+{% endblock content %}
+
+
+
+
+

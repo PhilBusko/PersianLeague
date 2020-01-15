@@ -1,0 +1,44 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,28,Zobahan ESF,Game Half1 Start,00:00:00,,,,
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Naft MJS,Hamzeh,Haddadi,Defender
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Naft MJS,Saeed,Salarzadeh,Defender
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Naft MJS,Kayvon,Amraei,Forward
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Naft MJS,Milad,Znayadpour,Forward
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Naft MJS,Georgi,Georgiev,Goalkeeper
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Naft MJS,Alexandru,Pascenco,Midfield
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Naft MJS,Bahador,Abdi,Midfield
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Naft MJS,Hamid,Bouhamdan,Midfield
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Naft MJS,Mahmoud,Tighnavard,Midfield
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Naft MJS,Milad,Jafari,Midfield
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Naft MJS,Ruslan,Melziddinov,Midfield
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Ali,Hammam,Defender
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Carlos,Santos de Jesus,Defender
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Hadi,Mohamadi,Defender
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Danial,Esmaeelfar,Forward
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Ehsan,Pahlevan,Forward
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Masoud,Hassan Zadeh,Forward
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Mohamad Rasheed,Mazaheri,Goalkeeper
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Ghasem,Haddadifar,Midfield
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Ghasem,Dehnavi,Midfield
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Mehdi,Rajabzadeh,Midfield
+IPL2014,28,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Mehrdad,Ghanbari,Midfield
+IPL2014,28,Zobahan ESF,Card: Yellow,00:01:00,Naft MJS,Ali,Kianifar,Midfield
+IPL2014,28,Zobahan ESF,Card: Yellow,00:01:00,Zobahan ESF,Masoud,Hassan Zadeh,Forward
+IPL2014,28,Zobahan ESF,Game Half1 Stop,00:46:00,,,,
+IPL2014,28,Zobahan ESF,Game Half2 Start,00:47:00,,,,
+IPL2014,28,Zobahan ESF,Goal,01:01:00,Zobahan ESF,Carlos,Santos de Jesus,Defender
+IPL2014,28,Zobahan ESF,Player Sub-in,01:01:00,Naft MJS,Reza,Karmelachab,Midfield
+IPL2014,28,Zobahan ESF,Player Sub-out,01:01:00,Naft MJS,Alexandru,Pascenco,Midfield
+IPL2014,28,Zobahan ESF,Goal,01:11:00,Zobahan ESF,Danial,Esmaeelfar,Forward
+IPL2014,28,Zobahan ESF,Player Sub-in,01:14:00,Naft MJS,Farzad,Mohamadi,Forward
+IPL2014,28,Zobahan ESF,Player Sub-in,01:14:00,Zobahan ESF,Mahdi,Mahdipour,Midfield
+IPL2014,28,Zobahan ESF,Player Sub-out,01:14:00,Naft MJS,Kayvon,Amraei,Forward
+IPL2014,28,Zobahan ESF,Player Sub-out,01:14:00,Zobahan ESF,Mehdi,Rajabzadeh,Midfield
+IPL2014,28,Zobahan ESF,Player Sub-in,01:21:00,Naft MJS,Ali,Kianifar,Midfield
+IPL2014,28,Zobahan ESF,Player Sub-out,01:21:00,Naft MJS,Milad,Jafari,Midfield
+IPL2014,28,Zobahan ESF,Player Sub-in,01:26:00,Zobahan ESF,Morteza,Tabrizi,Forward
+IPL2014,28,Zobahan ESF,Player Sub-in,01:26:00,Zobahan ESF,Paymon,Salmani,Midfield
+IPL2014,28,Zobahan ESF,Player Sub-out,01:26:00,Zobahan ESF,Masoud,Hassan Zadeh,Forward
+IPL2014,28,Zobahan ESF,Player Sub-out,01:26:00,Zobahan ESF,Mohamad Rasheed,Mazaheri,Goalkeeper
+IPL2014,28,Zobahan ESF,Game Half2 Stop,01:39:00,,,,
+IPL2014,28,Zobahan ESF,Game End,01:40:00,,,,

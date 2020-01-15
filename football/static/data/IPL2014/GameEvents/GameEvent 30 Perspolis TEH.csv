@@ -1,0 +1,47 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,30,Perspolis TEH,Game Half1 Start,00:00:00,,,,
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Esteghlal TEH,Amir Hossain,Sadeghi,Defender
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Esteghlal TEH,Haneef,Omranzadeh,Defender
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Esteghlal TEH,Hrayr,Mkoyan,Defender
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Esteghlal TEH,Gholamreza,Enayati,Forward
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Esteghlal TEH,Sajjad,Shahbaz Zadeh,Forward
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Esteghlal TEH,Vahid,Talebloo,Goalkeeper
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Esteghlal TEH,Jassim,Karrar,Midfield
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Esteghlal TEH,Khosrow,Haydari,Midfield
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Esteghlal TEH,Milad,Fakhreddini,Midfield
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Esteghlal TEH,Mohamad Reza,Khorsandnia,Midfield
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Esteghlal TEH,Omid,Ebrahimi,Midfield
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Perspolis TEH,Alireza,Noormohamadi,Defender
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Perspolis TEH,Michael,Umana Corrales,Defender
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Perspolis TEH,Ali,Alipour,Forward
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Perspolis TEH,Babak,Hatami,Forward
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Perspolis TEH,Hadi,Nourozi,Forward
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Perspolis TEH,Mahdi,Taremi,Forward
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Perspolis TEH,Sosha,Makani,Goalkeeper
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Perspolis TEH,Ahmad,Nooroullahi,Midfield
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Perspolis TEH,Hamid Reza,Ali Asgari,Midfield
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Perspolis TEH,Mohamad,Noori,Midfield
+IPL2014,30,Perspolis TEH,Player in Line-up,00:00:00,Perspolis TEH,Omid,Allishah,Midfield
+IPL2014,30,Perspolis TEH,Card: Yellow,00:01:00,Esteghlal TEH,Amir Hossain,Sadeghi,Defender
+IPL2014,30,Perspolis TEH,Card: Yellow,00:01:00,Esteghlal TEH,Haneef,Omranzadeh,Defender
+IPL2014,30,Perspolis TEH,Card: Yellow,00:01:00,Esteghlal TEH,Behnam,Barzaei,Forward
+IPL2014,30,Perspolis TEH,Card: Yellow,00:01:00,Perspolis TEH,Babak,Hatami,Forward
+IPL2014,30,Perspolis TEH,Card: Yellow,00:01:00,Perspolis TEH,Mahdi,Taremi,Forward
+IPL2014,30,Perspolis TEH,Card: Yellow,00:01:00,Perspolis TEH,Ahmad,Nooroullahi,Midfield
+IPL2014,30,Perspolis TEH,Game Half1 Stop,00:46:00,,,,
+IPL2014,30,Perspolis TEH,Player Sub-in,00:46:00,Esteghlal TEH,Behnam,Barzaei,Forward
+IPL2014,30,Perspolis TEH,Player Sub-out,00:46:00,Esteghlal TEH,Gholamreza,Enayati,Forward
+IPL2014,30,Perspolis TEH,Game Half2 Start,00:47:00,,,,
+IPL2014,30,Perspolis TEH,Goal,01:05:00,Perspolis TEH,Ali,Alipour,Forward
+IPL2014,30,Perspolis TEH,Player Sub-in,01:14:00,Esteghlal TEH,Ali,Karimi,Midfield
+IPL2014,30,Perspolis TEH,Player Sub-out,01:14:00,Esteghlal TEH,Khosrow,Haydari,Midfield
+IPL2014,30,Perspolis TEH,Player Sub-in,01:18:00,Perspolis TEH,Mohsen,Bengar,Defender
+IPL2014,30,Perspolis TEH,Player Sub-out,01:18:00,Perspolis TEH,Ali,Alipour,Forward
+IPL2014,30,Perspolis TEH,Player Sub-in,01:26:00,Esteghlal TEH,Milad,Solayman Fallah,Forward
+IPL2014,30,Perspolis TEH,Player Sub-out,01:26:00,Esteghlal TEH,Mohamad Reza,Khorsandnia,Midfield
+IPL2014,30,Perspolis TEH,Player Sub-in,01:27:00,Perspolis TEH,Reza,Khaleghifar,Forward
+IPL2014,30,Perspolis TEH,Player Sub-out,01:27:00,Perspolis TEH,Mahdi,Taremi,Forward
+IPL2014,30,Perspolis TEH,Player Sub-in,01:29:00,Perspolis TEH,Milad,Kamadani,Midfield
+IPL2014,30,Perspolis TEH,Player Sub-out,01:29:00,Perspolis TEH,Hadi,Nourozi,Forward
+IPL2014,30,Perspolis TEH,Game Half2 Stop,01:39:00,,,,
+IPL2014,30,Perspolis TEH,Game End,01:40:00,,,,

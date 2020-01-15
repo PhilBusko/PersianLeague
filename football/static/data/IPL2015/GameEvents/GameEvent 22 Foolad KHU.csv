@@ -1,0 +1,48 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2015,22,Foolad KHU,Game Half1 Start,00:00:00,,,,
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Abdollah,Nasseri,Defender
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Bahman,Kamel,Defender
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Mathias,Chago,Defender
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Mohamad,Ahle Shakheh,Defender
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Omid,Khaledi,Defender
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Dorge,Kouemaha,Forward
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Mehrdad,Bayrami,Forward
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Sasan,Ansari,Forward
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Alireza,Salimi,Goalkeeper
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Akbar,Imani,Midfield
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Amir Hossain,Feshangchi,Midfield
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Saipa ALB,Ali,Zaynali,Defender
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Saipa ALB,Hamed,Shiri,Defender
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Saipa ALB,Mahdi,Torabi,Defender
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Saipa ALB,Sajjad,Moshkelpour,Defender
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Saipa ALB,Gholamreza,Rezaei,Forward
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Saipa ALB,Hamed,Fallahzadeh,Goalkeeper
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Saipa ALB,Amin,Javadi Moghadam,Midfield
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Saipa ALB,Andranik,Taymourian,Midfield
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Saipa ALB,Ebrahim,Sadeghi,Midfield
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2015,22,Foolad KHU,Player in Line-up,00:00:00,Saipa ALB,Roozbeh,Shah Alidoost,Midfield
+IPL2015,22,Foolad KHU,Card: Yellow,00:01:00,Foolad KHU,Mathias,Chago,Defender
+IPL2015,22,Foolad KHU,Card: Yellow,00:01:00,Foolad KHU,Amir Hossain,Feshangchi,Midfield
+IPL2015,22,Foolad KHU,Card: Yellow,00:01:00,Saipa ALB,Ali,Zaynali,Defender
+IPL2015,22,Foolad KHU,Card: Yellow,00:01:00,Saipa ALB,Sajjad,Moshkelpour,Defender
+IPL2015,22,Foolad KHU,Card: Yellow,00:01:00,Saipa ALB,Mehdi,Daghagheleh,Forward
+IPL2015,22,Foolad KHU,Card: Yellow,00:01:00,Saipa ALB,Andranik,Taymourian,Midfield
+IPL2015,22,Foolad KHU,Card: Yellow,00:01:00,Saipa ALB,Roozbeh,Shah Alidoost,Midfield
+IPL2015,22,Foolad KHU,Game Half1 Stop,00:46:00,,,,
+IPL2015,22,Foolad KHU,Game Half2 Start,00:47:00,,,,
+IPL2015,22,Foolad KHU,Player Sub-in,01:00:00,Foolad KHU,Mahmoud,Motlagh Zadeh,Midfield
+IPL2015,22,Foolad KHU,Player Sub-out,01:00:00,Foolad KHU,Amir Hossain,Feshangchi,Midfield
+IPL2015,22,Foolad KHU,Player Sub-in,01:04:00,Saipa ALB,Mehdi,Daghagheleh,Forward
+IPL2015,22,Foolad KHU,Player Sub-out,01:04:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2015,22,Foolad KHU,Player Sub-in,01:20:00,Foolad KHU,Ahmad,Abdollahzadeh,Midfield
+IPL2015,22,Foolad KHU,Player Sub-in,01:20:00,Saipa ALB,Mohamad,Soltani,Midfield
+IPL2015,22,Foolad KHU,Player Sub-out,01:20:00,Foolad KHU,Sasan,Ansari,Forward
+IPL2015,22,Foolad KHU,Player Sub-out,01:20:00,Saipa ALB,Ali,Zaynali,Defender
+IPL2015,22,Foolad KHU,Penalty Scored,01:25:00,Foolad KHU,Akbar,Imani,Midfield
+IPL2015,22,Foolad KHU,Player Sub-in,01:28:00,Saipa ALB,Mojtaba,Ramezani,Midfield
+IPL2015,22,Foolad KHU,Player Sub-out,01:28:00,Saipa ALB,Gholamreza,Rezaei,Forward
+IPL2015,22,Foolad KHU,Player Sub-in,01:29:00,Foolad KHU,Bahman,Jahantigh,Forward
+IPL2015,22,Foolad KHU,Player Sub-out,01:29:00,Foolad KHU,Mehrdad,Bayrami,Forward
+IPL2015,22,Foolad KHU,Game Half2 Stop,01:39:00,,,,
+IPL2015,22,Foolad KHU,Game End,01:40:00,,,,

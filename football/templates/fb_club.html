@@ -1,0 +1,276 @@
+
+{% extends "common_base.html" %}
+{% load staticfiles %}
+{% load utility_ttags %}
+
+{% block content %}
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_header">
+            <span class="font_title">Club Reference</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="properties_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Club Properties</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "clubP" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_select "club" "Club" %}
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-7 col-xl-6">
+        <div class=" display_block inner_margin1 outer_padding2 frame_entry">
+            
+            <div class="row">
+                <div class="col-xs-12 col-sm-7">
+                    <br>
+                    {% ctrl_image "clubLogo" "image_smallSize format_frame" %}
+                    <br>
+                    <div style="text-align: left;">
+                        {% ctrl_table "clubProps" "center" %}
+                    </div>
+                    <br>
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <div class="display_block format_center">
+                        {% ctrl_strong "HU" "Home Uniform" %}
+                    </div>
+                    {% ctrl_image "homeUni" "image_smallSize format_frame" %}
+                    <br>
+                    <div class="display_block format_center">
+                        {% ctrl_strong "AU" "Away Uniform" %}
+                    </div>
+                    {% ctrl_image "awayUni" "image_smallSize format_frame" %} 
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+
+<div id="players_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Players In Games</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "players" %}</div>
+    </div>
+    
+    <div class="col-xs-10 col-sm-6 col-md-4 col-lg-3">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_select "season" "Season" %}
+        </div>
+    </div>
+    
+    <div class="col-xs-12"></div> 
+    
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_strong "FW" "Forward" %}
+            {% ctrl_table "FW" %}   
+        </div>
+        <div style="height: 1px;" comment="prevent margin collapse"></div> 
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_strong "DF" "Defender" %}
+            {% ctrl_table "DF" %}   
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_strong "MF" "Midfielder" %}
+            {% ctrl_table "MF" %}   
+        </div>
+        <div style="height: 1px;" comment="prevent margin collapse"></div> 
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_strong "GK" "Goalkeeper" %}
+            {% ctrl_table "GK" %}   
+        </div>
+    </div>
+    
+    
+</div>
+
+
+<!-- SCRIPTS -->
+
+<script>
+
+// TODO: refactor to use template context
+
+$(document).ready(function()
+{       
+    // club properties
+    
+    SelectInit_Club();
+    
+    $("#club_select").change(function() {
+        DisplayClubProp();
+    });
+    
+    // players in game
+    
+    SelectInit_Season();
+    
+    $("#season_select").change(function() {
+        DiplayPlayersInGame();
+    });
+});
+
+function SelectInit_Club(p_thdmsg) 
+{
+    $.ajax({
+        url: "{% url 'football:research_jx' 'clubs' %}",
+        success: function(p_data) { 
+            $.each(p_data, function(key, value) {
+                $('#club_select').append($('<option>', {value : key }).text(value));
+            });
+            
+            var $options = $('#club_select').find('option'),
+            random = ~~(Math.random() * $options.length);
+            $options.eq(random).prop('selected', true);
+            
+            DisplayClubProp();
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, 'SelectInit_Club()', '#clubP_status');
+        } 
+    });
+}
+
+function DisplayClubProp()
+{
+    var clubName = $("#club_select option:selected").text();
+    $("#clubLogo_image").html(null);
+    $("#clubProps_table").html(null);
+    $("#clubP_status").html(null);
+    
+    var clubFrm = FormatFileName(clubName);
+    var path = "/static/club_images/" + clubFrm + " logo.png";
+    $("#clubLogo_image").attr("src", path);
+    var path = "/static/club_images/" + clubFrm + " uni_home.png";
+    $("#homeUni_image").attr("src", path);
+    var path = "/static/club_images/" + clubFrm + " uni_away.png";
+    $("#awayUni_image").attr("src", path);
+    
+    $.ajax({
+        url: "{% url 'football:research_jx' 'club_props' %}",
+        data: {'club': clubName},
+        success: function(p_data) {             //cl(p_data);
+            if (typeof(p_data) == 'string')
+            {
+                $('#clubProps_table').text(p_data);
+            }
+            else
+            {
+                var fullT = JObjToFullTable(p_data)
+                var trans = TransposeFullTable(fullT);
+                SetVerticalTable('#clubProps_table', trans);
+            }
+            
+            DiplayPlayersInGame();
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, 'DisplayClubProp()', '#clubP_status');
+        } 
+    });
+}
+
+function SelectInit_Season(p_thdmsg) 
+{
+    $.ajax({
+        url: "{% url 'football:research_jx' 'seasons' %}",
+        success: function(p_data) { 
+            $.each(p_data, function(key, value) {
+                $('#season_select').append($('<option>', { value : key }).text(value));
+            });
+            DiplayPlayersInGame();
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, 'SelectInit_Season()', '#players_status');
+        } 
+    });
+}
+
+function DiplayPlayersInGame()
+{
+    $("#GK_table").html(null);
+    $("#DF_table").html(null);
+    $("#MF_table").html(null);
+    $("#FW_table").html(null);
+    
+    DisplayPlayersByPos('Goalkeeper', '#GK_table');
+    DisplayPlayersByPos('Defender', '#DF_table');
+    DisplayPlayersByPos('Midfield', '#MF_table');
+    DisplayPlayersByPos('Forward', '#FW_table');
+}
+
+function DisplayPlayersByPos(p_pos, p_tableID)
+{
+    var club = $("#club_select option:selected").text();
+    var season = $("#season_select option:selected").text();
+    
+    $.ajax({
+        url: "{% url 'football:research_jx' 'players_ingame' %}",
+        data: {'club': club, 'season': season, 'position': p_pos},
+        success: function(p_data) {             //cl(p_data);
+            if (typeof(p_data) == 'string')
+            {
+                $(p_tableID).text(p_data);
+            }
+            else
+            {
+                var fullT = JSONtoFullTable(p_data.data);
+                SetDataTable(p_tableID, fullT, p_data.colFormat);
+            }
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, 'DisplayPlayersByPos()', '#players_status');
+        } 
+    });
+}
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+

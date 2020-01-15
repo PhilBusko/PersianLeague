@@ -1,0 +1,187 @@
+
+{% load staticfiles %}
+{% load utility_ttags %}
+
+
+<div class="format_center">
+    
+    <div class="inner_margin2 format_inside" style="min-width: 200px;">
+        <div class="format_inside format_center font_bold"  style="padding: 5px;">
+            Total Rewards
+        </div>
+        <div class="display_table format_full" style="margin: 0px auto; border-collapse: separate;">
+            <div class="display_row">
+                <div class="display_cellM format_inside" style="width: 50%">
+                    <div class="format_center" style="padding: 10px;">
+                        Diamonds <br>
+                        <img class="format_currIcon" src="/static/graphics/currency_dmd_normal.png"/>
+                        x{{ values.rewTotal.diamonds }} 
+                    </div>
+                </div>
+                <div class="display_cellM format_inside" style="width: 50%">
+                    <div class="format_center" style="padding: 10px;">
+                        Tokens <br>
+                        <img class="format_currIcon" src="/static/graphics/currency_pu_bkgd.png"/>
+                        x{{ values.rewTotal.tokens }} 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    
+    <div class="inner_margin2 format_inside" style="">
+        <div class="format_inside font_bold"  style="padding: 5px;">
+            Overall
+        </div>
+        <div class="display_table" style="margin: 0px auto; border-collapse: separate;">
+            <div class="display_row">
+                <div class="display_cellM format_inside" style="">
+                    <div class="format_center" style="padding: 10px;">
+                        Grade <br>
+                        {{ userGrade.statsAT.0.current }} 
+                    </div>
+                </div>
+                <div class="display_cellM format_inside"  style="">
+                    <div class="format_center" style="padding: 10px;">
+                        Perc% <br>
+                        {{ userGrade.statsAT.2.current }} 
+                    </div>
+                </div>
+                <div class="display_cellM format_inside"  style="">
+                    <div class="format_center" style="padding: 10px;">
+                        Points <br>
+                        {{ userGrade.statsAT.1.current }} 
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="display_table" style="width: 100%; margin: 0px auto; border-collapse: separate;">
+            <div class="display_row">
+                <div class="display_cellM format_inside" style="width: 50%;">
+                    <div class="format_center" style="padding: 10px;">
+                        Diamonds <br>
+                        <img class="format_currIcon" src="/static/graphics/currency_dmd_normal.png"/>
+                        x{{ values.rewAT.diamonds }} 
+                    </div>
+                </div>
+                <div class="display_cellM format_inside"  style="width: 50%;">
+                    <div class="format_center" style="padding: 10px;">
+                        Tokens <br>
+                        <img class="format_currIcon" src="/static/graphics/currency_pu_bkgd.png"/>
+                        x{{ values.rewAT.tokens }} 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="inner_margin2 format_inside" style="">
+        <div class="format_inside format_center font_bold"  style="padding: 5px;">
+            For Round
+        </div>
+        <div class="display_table" style="margin: 0px auto; border-collapse: separate;">
+            <div class="display_row">
+                <div class="display_cellM format_inside" style="">
+                    <div class="format_center" style="padding: 10px;">
+                        Grade <br>
+                        {{ userGrade.statsRD.0.current }} 
+                    </div>
+                </div>
+                <div class="display_cellM format_inside"  style="">
+                    <div class="format_center" style="padding: 10px;">
+                        Perc% <br>
+                        {{ userGrade.statsRD.2.current }} 
+                    </div>
+                </div>
+                <div class="display_cellM format_inside"  style="">
+                    <div class="format_center" style="padding: 10px;">
+                        Points <br>
+                        {{ userGrade.statsRD.1.current }} 
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="display_table" style="width: 100%; margin: 0px auto; border-collapse: separate;">
+            <div class="display_row">
+                <div class="display_cellM format_inside" style="width: 50%">
+                    <div class="format_center" style="padding: 10px;">
+                        Diamonds <br>
+                        <img class="format_currIcon" src="/static/graphics/currency_dmd_normal.png"/>
+                        x{{ values.rewRD.diamonds }} 
+                    </div>
+                </div>
+                <div class="display_cellM format_inside">
+                    <div class="format_center" style="padding: 10px;">
+                        Tokens <br>
+                        <img class="format_currIcon" src="/static/graphics/currency_pu_bkgd.png"/>
+                        x{{ values.rewRD.tokens }} 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    
+    <div id="claim_group" class="inner_margin2" style="">
+        {% ctrl_button "claim" "Claim Rewards" %}
+    </div>
+    
+</div>
+
+
+<script>
+
+var MESSAGE_ID = "{{ messageID }}";
+
+$(function() {
+
+    {% if not claimed %}
+    
+    $("#claim_button").on('click', function() {
+        ClaimRewards();
+    });
+    
+    {% else %}
+    
+    $("#claim_button").addClass("format_disable");
+    
+    {% endif %}
+    
+});
+
+
+function ClaimRewards()
+{    
+    $('body').css('cursor', 'wait');
+    
+    $.ajax({
+        type: 'POST',
+        url: '/central/central_jx/update_claimRewards/',
+        data: { 'messageID': MESSAGE_ID },
+        success: function(p_data) {         //cl(p_data);
+            var dmdsPath = "{% static 'graphics/currency_dmd_normal.png' %}";
+            var tokenPath = "{% static 'graphics/currency_pu_normal.png' %}";
+            RunAnimClaimRewards(p_data, dmdsPath, tokenPath);
+            $('#claim_button').prop('disabled', true); //.addClass('format_disable');
+            
+            var audio = new Audio('{% static "soundfx/sfx_rewards.wav" %}');
+            $(audio).prop("volume", 0.8);   
+            audio.play();
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, 'ClaimRewards()', '#messages_status');
+        },
+        complete: function() {
+            $('body').css('cursor', 'default');
+        }
+    });
+}
+
+
+</script>
+
+
+
+
+

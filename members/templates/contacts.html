@@ -1,0 +1,885 @@
+
+{% extends "common_base.html" %}
+{% load utility_ttags %}
+{% load staticfiles %}
+
+{% block extra_head %}
+    <script src="{% static 'deluxe_datatables.js' %}?{% now 'U' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+
+<div id="title_section" class="row">
+    <div class="col-xs-12 format_center">
+        <div class="inner_margin1 frame_header">
+            <span class="font_title">Contacts</span>
+        </div>
+    </div>
+</div>
+
+
+<div id="friends_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">My Friends</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "friends" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-md-7 col-xxl-5">
+        <div class="display_block inner_margin1 frame_entry">
+            <div class="outer_padding2">
+                {% ctrl_strong "f1" "Friends List" %}
+                {% ctrl_tableDeluxe "friends" %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-md-5 col-xl-4">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+                
+            {% ctrl_strong "f2" "Search for User" %}
+            {% ctrl_inputText "search" "User Name" True %}
+            
+            <div id="searchFriend_group" class="display_table">
+                <div class="display_cellM">
+                    {% ctrl_button "search" "Search" %}
+                </div>
+                <div class="display_cellM" style="width: 100%;">
+                    <div id="resultNeg_block" class="inner_margin2 outer_padding2"
+                         style="background-color: burlywood; display: none;">
+                        {% ctrl_normal "result" %}
+                    </div>
+                    <div id="result_block" class="display_block inner_margin2 outer_padding2"
+                         style="background-color: burlywood; display: none;">
+                        <div class="display_table format_full">
+                            <div class="display_cellM">
+                                {% ctrl_imageIcon "userIcon" %} 
+                            </div>
+                            <div class="display_cellM">
+                                {% ctrl_normal "userName" "" "font-weight: bold;" %} <br>
+                                {% ctrl_normal "userSlogan" %}
+                            </div>
+                            <div class="display_cellM">
+                                {% ctrl_imageIcon "userFavClub" %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+            <div id="invite_group" class="display_block inner_margin2 outer_padding2"
+                 style="background-color: burlywood; display: none;">
+                <div class="display_block inner_margin2" comment="margin must surround a textarea">
+                    <textarea id="invite_text" maxlength="200" rows="2"
+                              style="width: 100%; box-sizing: border-box; resize: none; border-radius: 3px;">
+                    </textarea>
+                </div>
+                <div class="display_table format_full">
+                    <div class="display_cellM" style="width: 100%;">
+                        {% ctrl_normal "invite" "" %}
+                    </div>
+                    <div class="display_cellM">
+                        {% ctrl_button "invite" "Send Invite" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="height: 1px;" comment="prevent margin collapse"></div> 
+        
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            {% ctrl_strong "f3" "Invite Friend by Email" %}
+            {% ctrl_inputText "email" "E-mail" True %}
+            
+            <div class="display_table">
+                <div class="display_row">
+                    <div class="display_cellM" style="width: 100%;">
+                        {% ctrl_normal "emailResult" %}
+                    </div>
+                    <div class="display_cellM">
+                        {% ctrl_button "sendEmail" "Send Invite" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<div id="ignore_section" class="row">
+    
+    <div class="col-xs-12">
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin1 frame_header" style="margin-right: 0px;">
+                        <span class="font_section">Ignore User</span>
+                    </div>
+                </div>
+                <div class="display_cellT" style="width: 100%;">
+                    <div class="display_block frame_header format_separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">{% ctrl_status "ignore" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-md-7 col-xxl-5">
+        <div class="display_block inner_margin1 frame_entry">
+            <div class="outer_padding2">
+                {% ctrl_strong "i1" "Ignore List" %}
+                {% ctrl_tableDeluxe "ignore" %}
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-md-5 col-xl-4">
+        <div class="display_block inner_margin1 frame_entry">
+            <div class="outer_padding2">
+                
+                {% ctrl_strong "i2" "Search for User" %}
+                {% ctrl_inputText "searchIG" "User Name" True %}
+                
+                <div class="display_table">
+                    <div class="display_cellM">
+                        {% ctrl_button "searchIG" "Search" %}
+                    </div>
+                    <div class="display_cellM" style="width: 100%;">
+                        <div id="resultNegIG_block" class="inner_margin2 outer_padding2"
+                             style="background-color: burlywood; display: none;">
+                            {% ctrl_normal "resultIG" %}
+                        </div>
+                        <div id="resultIG_block" class="display_block inner_margin2 outer_padding2"
+                             style="background-color: burlywood; display: none;">
+                            <div class="display_table format_full">
+                                <div class="display_cellM">
+                                    {% ctrl_imageIcon "userIconIG" %} 
+                                </div>
+                                <div class="display_cellM">
+                                    {% ctrl_normal "userNameIG" "" "font-weight: bold;" %} <br>
+                                    {% ctrl_normal "userSloganIG" %}
+                                </div>
+                                <div class="display_cellM">
+                                    {% ctrl_imageIcon "userFavClubIG" %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div id="ignore_group" class="display_block inner_margin2 outer_padding2"
+                     style="background-color: burlywood; display: none;">
+                    <div class="display_table format_full" >
+                        <div class="display_cellM" style="width: 100%;">
+                            {% ctrl_normal "ignore" "" %}
+                        </div>
+                        <div class="display_cellM">
+                            {% ctrl_button "ignore" "Ignore User" %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+
+<!-- dynamically rendered templates -->
+
+<div id="rmFriend_dialog" title="Remove Friend">
+    <div class="format_full outer_padding2 format_center">
+        {% ctrl_normal "removeQ" "Confirm to remove friend?" %} 
+    </div>
+    <div class="display_table format_full">
+        <div class="display_row">
+            <div class="display_cellM format_center" style="width: 50%;">
+                {% ctrl_button "remConf" "Confirm" %}
+            </div>
+            <div class="display_cellM format_center">
+                {% ctrl_button "remCancel" "Cancel" %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="rmIgnore_dialog" title="Remove Ignore">
+    <div class="format_full outer_padding2 format_center">
+        {% ctrl_normal "igRemoveQ" "Confirm to remove ignore?" %} 
+    </div>
+    <div class="display_table format_full">
+        <div class="display_row">
+            <div class="display_cellM format_center" style="width: 50%;">
+                {% ctrl_button "igRemConf" "Confirm" %}
+            </div>
+            <div class="display_cellM format_center">
+                {% ctrl_button "igRemCancel" "Cancel" %}
+            </div>
+        </div>
+    </div>   
+</div>
+
+
+<!-- SCRIPTS -->
+
+<!-- document constructor -->
+
+<script>
+
+var USER = "{{ user }}";
+var USER_REAL = "{{ user.get_full_name }}"; 
+var REMOVE_TARGET = "";
+
+$(document).ready(function()
+{   
+    InitializeFriends();  
+    InitializeIgnore();  
+});
+
+function InitializeFriends()
+{
+    {% if friendList %}
+        var flat = '{{ friendList | escapejs }}';
+        var escaped = flat.replace("'", "\u0027");
+        var dataArray = $.parseJSON(escaped);      
+        SetDeluxeTableFriends('#friends_table', dataArray);
+    {% else %}
+        $('#friends_table').text("No friends in list.");
+    {% endif %}
+    
+    //$("#searchIG_text").val("botuser00005");                  // for dev only
+    
+    $('#search_button').click(function() {
+        SearchUser();
+    });
+    
+    $('#invite_text').hide();
+    $('#invite_button').hide();
+    
+    $('#invite_button').click(function() {
+        SendInvite();
+    });
+    
+    MakeDialog('#rmFriend_dialog', '310px', false);
+    
+    $("#remConf_button").click(function() {
+        $("#rmFriend_dialog").dialog("close");
+        RemoveFriend();
+    });
+    
+    $("#remCancel_button").click(function() {
+        $("#rmFriend_dialog").dialog("close");
+    });
+    
+    // send email invite
+    
+    //$('#email_text').val("lig3ma@gmail.com");    
+    
+    $('#sendEmail_button').click(function() {
+        SendEmailInvite();
+    });
+    
+}
+
+function InitializeIgnore()
+{    
+    {% if ignoreList %}
+        var flat = '{{ ignoreList | escapejs }}';
+        var escaped = flat.replace("'", "\u0027");
+        var dataArray = $.parseJSON(escaped);      
+        SetDeluxeTableIgnore('#ignore_table', dataArray);
+    {% else %}
+        $('#ignore_table').text("No users in list.");
+    {% endif %}
+    
+    //$("#searchIG_text").val("botuser00023");                  // for dev only
+    
+    $("#searchIG_button").click(function() {
+        IgSearchUser();
+    });
+    
+    $("#igResult_text").hide();
+    
+    $("#ignore_button").click(function() {
+        IgnoreUser();
+    });
+
+    MakeDialog('#rmIgnore_dialog', '310px', false);
+    
+    $("#igRemConf_button").click(function() {
+        $("#rmIgnore_dialog").dialog("close");
+        RemoveIgnore();
+    });
+    
+    $("#igRemCancel_button").click(function() {
+        $("#rmIgnore_dialog").dialog("close");
+    });
+}
+
+
+// TODO: use CreateTooltip
+function InitTooltip(elemID, message)
+{   
+    $(elemID).tooltip({
+        items: elemID,
+        tooltipClass: 'jqueryUI_tooltip',
+        content: function () {
+            return message;
+        },
+        position: {
+            my: 'center bottom',    // relative to tooltip
+            at: 'center top-5%',    // relative to parent
+        }
+    });
+}
+
+</script>
+
+
+
+<!-- friends & ignore list -->
+
+<script>
+
+function SetDeluxeTableFriends(p_tableID, p_friends)
+{       
+    var table = $(p_tableID).DataTable( {
+        data: p_friends,
+        aoColumns: [
+            {
+                mRender: function (data, type, full) {                    
+                    html = '        \
+                        <div class="format_outline" style="height: 50px; width: 50px; margin: auto; background-color: white; \
+                                    position: relative;" >      \
+                            <img id="{0}_icon" src="" style="max-height: 100%; max-width: 100%;                         \
+                                    position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;"> </img>    \
+                        </div>      \
+                    '.format(full.name);
+                    return html;
+                },
+            },
+            {
+                mRender: function (data, type, full) {
+                    html = '                    \
+                        <div>                   \
+                            <a href="/central/view_profile/{0}" target="_blank" id="{1}_link"       \
+                                style="display: inline-block; margin-bottom: 6px;">{2}</a> <br>     \
+                            <span>{3}</span>    \
+                        </div>                  \
+                    '.format(full.name, full.name, full.name, (full.slogan && full.slogan != 'None' ? full.slogan : "") );
+                    return html;
+                },
+            },
+            {
+                mRender: function (data, type, full) {                    
+                    html = '                                    \
+                        <div class="format_outline" style=" height: 50px; width: 50px; margin: auto; background-color: white; \
+                                    position: relative;" >      \
+                            <img id="{0}_favClub" src="" style="max-height: 100%; max-width: 100%;                      \
+                                    position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;"> </img>    \
+                        </div>                                  \
+                    '.format(full.name);
+                    return html;
+                },
+            },
+            {
+                sClass: "format_center",
+                mRender: function (data, type, full) {
+                    html = '                                                                \
+                        <div id="{0}_remove" class="format_padding format_cpointer">        \
+                            <i class="fa fa-trash fa-lg" style="color: #647382;"></i>       \
+                        </div>                                                              \
+                    '.format(full.name);
+                    return html;
+                },
+            }
+        ],
+        bSort: false,
+        scrollCollapse: true,
+        paging: true,
+        bFilter: true,
+        bInfo: true,
+        bDestroy: true,                 // necessary to refresh the data
+        fnRowCallback: function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {                        
+            $('td', nRow).on('click', function() {
+                var iCol = $(this).index(); 
+                if (iCol == 3)
+                {
+                    REMOVE_TARGET = aData.name;
+                    $("#rmFriend_dialog").dialog("open");
+                }
+            });
+        },
+        fnDrawCallback: function() {
+            // remove headers
+            $(p_tableID + ' thead').remove();
+        },
+        initComplete: function() {
+            PostDraw();
+        }
+    } );
+    
+    // when the page changes, the table is redrawn - the images and tooltips must be redrawn also
+    
+    $(p_tableID).on( 'draw.dt', function () {
+        PostDraw();
+    } );
+    
+    function PostDraw()
+    {
+        $.each(p_friends, function(idx, frd) {
+            
+            var path = (frd.icon && frd.icon != 'None' ?
+                        "/static/user_icons/" + frd.icon :
+                        "/static/icons_source/anonymous.png");
+            $('#' + frd.name + '_icon').attr("src", path);
+            
+            var path = (frd.favClub && frd.favClub != 'None' ?
+                        "/static/club_images/" + FormatFileName(frd.favClub) + " logo.png" :
+                        "/static/club_images/_club logo.png");
+            $('#' + frd.name + '_favClub').attr("src", path);
+            
+            var ttID = '#' + frd.name + '_link';
+            $(ttID).tooltip({
+                items: ttID,
+                tooltipClass: 'jqueryUI_tooltip',
+                content: function () {
+                    return "View Profile";
+                },
+                position: {
+                    my: 'left center',          // relative to tooltip
+                    at: 'right+5% center',      // relative to parent
+                }
+            });
+            
+            if (frd.favClub && frd.favClub != 'None')
+            {
+                var ttID = '#' + frd.name + '_favClub';
+                $(ttID).tooltip({
+                    items: ttID ,
+                    tooltipClass: 'jqueryUI_tooltip',
+                    content: function () {
+                        return frd.favClub;
+                    },
+                    position: {
+                        my: 'right-5% center',   
+                        at: 'left center',    
+                    }
+                });
+            }
+            
+            var ttID = '#' + frd.name + '_remove';
+            $(ttID).tooltip({
+                items: ttID,
+                tooltipClass: 'jqueryUI_tooltip',
+                content: function () {
+                    return "Remove";
+                },
+                position: {
+                    my: 'left center',    
+                    at: 'right+5% center',    
+                }
+            });
+            
+        });
+    }
+    
+    
+}
+
+
+function SearchUser()
+{
+    $('#resultNeg_block').css('display', 'none')
+    $('#result_normal').html(null);
+    $('#result_block').hide();
+    $('#userIcon_image').attr("src", "");
+    $('#userName_normal').html(null);
+    $('#userSlogan_normal').html(null);
+    $('#userFavClub_image').attr("src", "");
+    $('#invite_group').hide();
+    $("#invite_button").show();
+    $('#invite_normal').html(null);
+    $('#invite_status').html(null);
+    
+    var searchUser = $("#search_text").val();
+    
+    $.ajax({
+        url: "/members/db_report/searchFriend/",
+        data: { 'searchUser': searchUser },
+        success: function(p_data) {         //cl(p_data);
+            if (typeof(p_data) != 'string')
+            {
+                DisplayUser(p_data);
+                
+                $("#invite_text").show();
+                $("#invite_button").show();
+                
+                var inviteBody = "Hi! I'm " + (USER_REAL ? USER_REAL : USER) + ". ";
+                inviteBody += "Please accept my invitation to be friends."
+                $("#invite_text").val(inviteBody);
+            }
+            else
+            {
+                $("#result_block").hide();
+                $("#invite_group").hide();
+                $("#resultNeg_block").css('display', 'inline-block');   // .show()           
+                $("#result_normal").text(p_data);
+            }
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "SearchUser()", '#friends_status');
+        } 
+    });
+    
+    function DisplayUser(p_data)
+    {
+        $('#result_normal').css('display', 'none');
+        $('#result_block').show();
+        $('#invite_group').show();
+        
+        if (p_data.icon)
+            var path = '/static/user_icons/' + p_data.icon;
+        else
+            var path = '/static/icons_source/' + 'anonymous.png';
+        $('#userIcon_image').attr('src', path);
+        
+        $('#userName_normal').text(p_data.userName);
+        $('#userSlogan_normal').text( (p_data.slogan ? p_data.slogan : "") );
+        
+        if (p_data.favClub)
+            path = p_data.favClubPath;
+        else
+            path = '/static/club_images/_club logo.png';
+        $('#userFavClub_image').attr('src', path);
+    }
+    
+}
+
+
+function SendInvite()
+{
+    $("body").css("cursor", "wait");
+    
+    $("#invite_normal").html(null);
+    $("#friends_status").html(null);
+    var inviteUser = $("#userName_normal").text();
+    var inviteBody = $("#invite_text").val();
+    
+    $.ajax({
+        type: "post",
+        url: "/members/db_edit/msg_friendInvite/",
+        data: { 'inviteUser': inviteUser, 'inviteBody': inviteBody },
+        success: function(p_data) {         //cl(p_data);
+            $("#invite_normal").show(); 
+            $("#invite_normal").text(p_data);
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "SendInvite()", '#friends_status');
+        },
+        complete: function() {
+            $("body").css("cursor", "default");
+        }
+    });
+}
+
+
+function RemoveFriend()
+{
+    var removeFriend = REMOVE_TARGET;       // set in the table's event handler
+    $("#friends_status").html(null);
+    $("body").css("cursor", "wait");
+    
+    $.ajax({
+        type: "post",
+        url: "/members/db_edit/msg_friendRemove/",
+        data: { 'removeFriend': removeFriend },
+        success: function(p_data) {    
+            LoadFriends();
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "RemoveFriend()", '#friends_status');
+        },
+        complete: function() {
+            $("body").css("cursor", "default");
+        }
+    }); 
+}
+
+function LoadFriends()
+{
+    $("body").css("cursor", "wait");
+    
+    $.ajax({
+        url: "/members/db_report/friendsList/",
+        success: function(p_data) {   cl(p_data);
+            SetDeluxeTableFriends('#friends_table', p_data);
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "LoadFriends()", '#friends_status');
+        },
+        complete: function() {
+            $("body").css("cursor", "default");
+        }
+    }); 
+}
+
+
+function SendEmailInvite()
+{
+    $('body').css('cursor', 'wait');
+    
+    $('#emailResult_normal').html(null);
+    var email = $('#email_text').val();     cl(email);
+    $('#email_text').val("");  
+    
+    $.ajax({
+        type: 'POST',
+        url: '/members/db_edit/emailInvite/',
+        data: { 'email': email },
+        success: function(p_data) {         cl(p_data);
+            if (p_data == 1) {
+                var msg = "E-mail sent to {0}.<br>".format(email);
+                msg += "Please have them check their spam folder.";
+            }
+            else if (p_data == 0) {
+                var msg = "Error: e-mail not sent.";
+            }
+            else {
+                var msg = "E-mail not sent.<br>Daily limit of 10 reached.";
+            }
+            
+            $('#emailResult_normal').html(msg);
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, 'SendEmailInvite()', '#friends_status');
+        },
+        complete: function() {
+            $('body').css('cursor', 'default');
+        }
+    });
+}
+
+
+// ignore functions
+
+function SetDeluxeTableIgnore(p_tableID, p_ignore)
+{   
+    var table = $(p_tableID).DataTable( {
+        data: p_ignore,
+        aoColumns: [
+            {
+                sWidth: "90%",
+                sClass: "",
+                mRender: function (data, type, full) {
+                    return full.name;
+                },
+            },
+            {
+                sWidth: "10%",
+                sClass: "format_center",
+                mRender: function (data, type, full) {
+                    html = '<div id="' + full.name + '_remove" class="format_cpointer">' ; 
+                    html += '    <i class="fa fa-trash fa-lg" style="color: #647382;" aria-hidden="true"></i>';
+                    html += '</div>' ;   
+                    return html;
+                },
+            }
+        ],
+        bSort: false,
+        scrollCollapse: true,
+        paging: true,
+        bFilter: true,
+        bInfo: true,
+        bDestroy: true,                 // necessary to refresh the data
+        fnRowCallback: function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {                        
+            $('td', nRow).on('click', function() {
+                var iCol = $(this).index(); //cl(iCol);
+                if (iCol == 1)
+                {
+                    REMOVE_TARGET = aData.name;
+                    $("#rmIgnore_dialog").dialog("open");
+                }
+            });
+        },
+        fnDrawCallback: function() {        // remove headers
+            $(p_tableID + ' thead').remove();
+        },
+        initComplete: function() {
+            PostDraw();
+        },
+    } );
+    
+    // refresh images/tooltip on page flip
+    
+    $(p_tableID).on( 'draw.dt', function () {
+        PostDraw();
+    } );
+    
+    function PostDraw()
+    {
+        $.each(p_ignore, function(idx, ign) {
+            
+            var ttID = '#' + FormatFileName(ign.name) + '_remove';
+            $(ttID).tooltip({
+                items: ttID,
+                tooltipClass: 'jqueryUI_tooltip',
+                content: function () {
+                    return "Remove";
+                },
+                position: {
+                    my: 'center bottom',    
+                    at: 'center top-8px',    
+                }
+            });
+            
+        });
+    }
+    
+    
+}
+
+
+
+function IgSearchUser()
+{
+    $('#resultNegIG_block').hide();
+    $('#resultIG_normal').html(null);
+    $('#resultIG_block').hide();
+    $('#userIconIG_image').attr("src", "");
+    $('#userNameIG_normal').html(null);
+    $('#userSloganIG_normal').html(null);
+    $('#userFavClubIG_image').attr("src", "");
+    $('#ignore_group').hide();
+    $("#ignore_button").show();
+    $('#ignore_normal').html(null);
+    $('#ignore_status').html(null);
+    
+    var searchUser = $('#searchIG_text').val();
+    
+    $.ajax({
+        url: '/members/db_report/searchIgnore/',
+        data: { 'searchUser': searchUser },
+        success: function(p_data) {         //cl(p_data);
+            if (typeof(p_data) != 'string')
+            {
+                DisplayUser(p_data);
+                $('#ignore_group').show();
+            }
+            else
+            {
+                $('#resultNegIG_block').css('display', 'inline-block');   // .show()
+                $('#resultIG_normal').text(p_data);
+            }
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "IgSearchUser()", '#ignore_status');
+        } 
+    });
+    
+    function DisplayUser(p_data)
+    {
+        $('#resultNegIG_block').css('display', 'none');  // .hide()
+        $('#resultIG_block').show();
+        $('#ignore_group').show();
+        
+        if (p_data.icon)
+            var path = '/static/user_icons/' + p_data.icon;
+        else
+            var path = '/static/icons_source/' + 'anonymous.png';
+        $('#userIconIG_image').attr('src', path);
+        
+        $('#userNameIG_normal').text(p_data.userName);
+        $('#userSloganIG_normal').text( (p_data.slogan ? p_data.slogan : "") );
+        
+        if (p_data.favClub)
+            var path = '/static/club_images/' + FormatFileName(p_data.favClub) + ' logo.jpg';
+        else
+            var path = '/static/club_images/_club logo.png';
+        $('#userFavClubIG_image').attr('src', path);
+    }
+    
+}
+
+
+function IgnoreUser()
+{
+    $("#igResult_normal").html(null);
+    $("#ignore_status").html(null);
+    var ignoreUser = $("#userNameIG_normal").text();
+    
+    $.ajax({
+        type: "post",
+        url: "/members/db_edit/ignoreUser/",
+        data: { 'ignoreUser': ignoreUser },
+        success: function(p_data) {         cl(p_data);
+            $("#searchIG_text").val(null);
+            $("#igResult_table").hide();
+            $("#ignore_normal").show();
+            $("#ignore_normal").text(p_data);
+            $("#ignore_button").hide();
+            LoadIgnore();
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "IgnoreUser()", '#ignore_status');
+        } 
+    });
+}
+
+function RemoveIgnore()
+{
+    var removeIgnore = REMOVE_TARGET;       // set in the table's event handler
+    $('#ignore_status').html(null);
+    
+    $.ajax({
+        type: 'post',
+        url: '/members/db_edit/ignoreRemove/',
+        data: { 'removeIgnore': removeIgnore },
+        success: function(p_data) {    
+            LoadIgnore();
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "RemoveFriend()", '#ignore_status');
+        } 
+    }); 
+}
+
+function LoadIgnore()
+{
+    $.ajax({
+        url: '/members/db_report/ignoreList/',
+        success: function(p_data) {   
+            SetDeluxeTableIgnore('#ignore_table', p_data);
+        },
+        error: function(p_err) {
+            ErrorToStatus(p_err.responseText, "LoadIgnore()", '#ignore_status');
+        } 
+    }); 
+}
+
+
+</script>
+
+
+{% endblock content %}
+
+
+
+
+

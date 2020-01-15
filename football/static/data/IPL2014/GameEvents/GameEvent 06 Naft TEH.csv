@@ -1,0 +1,45 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,06,Naft TEH,Game Half1 Start,00:00:00,,,,
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Leandro,Padovani,Defender
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Mohamad Amin,Haj Mohamadi,Defender
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Vahid,Hamdinejad,Defender
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Ali,Ghorbani,Forward
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Naft TEH,David,Wirikom,Forward
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Alireza,Bayranvand,Goalkeeper
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Iman,Mobali,Midfield
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Kamal,Kamyabinia,Midfield
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Mehdi,Shiri,Midfield
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Morteza,Pour Ali Ganji,Midfield
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Naft TEH,Vahid,Amiri,Midfield
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Arman,Ghasemi,Defender
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Hamid Reza,Deevsalar,Defender
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Seyed Ali,Hossaini,Defender
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Vahid,Haydarieh,Defender
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Mate,Eterovic,Forward
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Saeed,Daghighi,Forward
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Seyed Mahdi,Rahmati,Goalkeeper
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Amir Hossain,Feshangchi,Midfield
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Jlloyd,Samuel,Midfield
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Mohammad Sadegh,Barani,Midfield
+IPL2014,06,Naft TEH,Player in Line-up,00:00:00,Paykan TEH,Muamer,Svraka,Midfield
+IPL2014,06,Naft TEH,Card: Yellow,00:01:00,Naft TEH,Ali,Ghorbani,Forward
+IPL2014,06,Naft TEH,Card: Yellow,00:01:00,Naft TEH,Vahid,Amiri,Midfield
+IPL2014,06,Naft TEH,Card: Yellow,00:01:00,Paykan TEH,Keyvan,Vahdani,Forward
+IPL2014,06,Naft TEH,Card: Yellow,00:01:00,Paykan TEH,Saeed,Daghighi,Forward
+IPL2014,06,Naft TEH,Card: Yellow,00:01:00,Paykan TEH,Mohammad Sadegh,Barani,Midfield
+IPL2014,06,Naft TEH,Game Half1 Stop,00:46:00,,,,
+IPL2014,06,Naft TEH,Game Half2 Start,00:47:00,,,,
+IPL2014,06,Naft TEH,Player Sub-in,01:03:00,Paykan TEH,Siamak,Nemati,Midfield
+IPL2014,06,Naft TEH,Player Sub-out,01:03:00,Paykan TEH,Amir Hossain,Feshangchi,Midfield
+IPL2014,06,Naft TEH,Player Sub-in,01:09:00,Naft TEH,Gholamreza,Rezaei,Forward
+IPL2014,06,Naft TEH,Player Sub-out,01:09:00,Naft TEH,Ali,Ghorbani,Forward
+IPL2014,06,Naft TEH,Player Sub-in,01:12:00,Paykan TEH,Morteza,Aghakhan,Forward
+IPL2014,06,Naft TEH,Player Sub-out,01:12:00,Paykan TEH,Muamer,Svraka,Midfield
+IPL2014,06,Naft TEH,Player Sub-in,01:18:00,Paykan TEH,Keyvan,Vahdani,Forward
+IPL2014,06,Naft TEH,Player Sub-out,01:18:00,Paykan TEH,Mate,Eterovic,Forward
+IPL2014,06,Naft TEH,Player Sub-in,01:20:00,Naft TEH,Hossain,Ebrahimi,Forward
+IPL2014,06,Naft TEH,Player Sub-out,01:20:00,Naft TEH,Vahid,Amiri,Midfield
+IPL2014,06,Naft TEH,Player Sub-in,01:28:00,Naft TEH,Amir Arsalan,Mottahari,Midfield
+IPL2014,06,Naft TEH,Player Sub-out,01:28:00,Naft TEH,David,Wirikom,Forward
+IPL2014,06,Naft TEH,Game Half2 Stop,01:39:00,,,,
+IPL2014,06,Naft TEH,Game End,01:40:00,,,,

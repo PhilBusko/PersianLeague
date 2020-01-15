@@ -1,0 +1,45 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2015,19,Esteghlal TEH,Game Half1 Start,00:00:00,,,,
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal AHV,Maki,Sharifi,Defender
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal AHV,Milad,Rabbani,Defender
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal AHV,Ali,Helichi,Forward
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal AHV,Reza,Bahmaei,Forward
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal AHV,Taleb,Reekani,Forward
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal AHV,Luiz,Fernando,Goalkeeper
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal AHV,Mehdi,Eslami,Goalkeeper
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal AHV,Adel,Kolahkaj,Midfield
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal AHV,Hamzeh,Khaziravi,Midfield
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal AHV,Hossain,Bahrami,Midfield
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal AHV,Milad,Paak Parvar,Midfield
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Haneef,Omranzadeh,Defender
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Hrayr,Mkoyan,Defender
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Milad,Fakhredini,Defender
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Roosbeh,Cheshmi,Defender
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Sajjad,Shahbaz Zadeh,Forward
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Vahid,Talebloo,Goalkeeper
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Ali,Karimi,Midfield
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Alireza,Ramezani,Midfield
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Jaber,Ansari,Midfield
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Mehdi,Momeni,Midfield
+IPL2015,19,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Omid,Ebrahimi,Midfield
+IPL2015,19,Esteghlal TEH,Card: Yellow,00:01:00,Esteghlal AHV,Maki,Sharifi,Defender
+IPL2015,19,Esteghlal TEH,Card: Yellow,00:01:00,Esteghlal AHV,Luiz,Fernando,Goalkeeper
+IPL2015,19,Esteghlal TEH,Card: Yellow,00:01:00,Esteghlal TEH,Mehdi,Momeni,Midfield
+IPL2015,19,Esteghlal TEH,Goal,00:28:00,Esteghlal TEH,Omid,Ebrahimi,Midfield
+IPL2015,19,Esteghlal TEH,Player Sub-in,00:40:00,Esteghlal TEH,Maysam,Majidi,Defender
+IPL2015,19,Esteghlal TEH,Player Sub-out,00:40:00,Esteghlal TEH,Alireza,Ramezani,Midfield
+IPL2015,19,Esteghlal TEH,Game Half1 Stop,00:46:00,,,,
+IPL2015,19,Esteghlal TEH,Player Sub-in,00:46:00,Esteghlal AHV,Hossain,Saaki,Midfield
+IPL2015,19,Esteghlal TEH,Player Sub-out,00:46:00,Esteghlal AHV,Reza,Bahmaei,Forward
+IPL2015,19,Esteghlal TEH,Game Half2 Start,00:47:00,,,,
+IPL2015,19,Esteghlal TEH,Goal,00:58:00,Esteghlal AHV,Hamzeh,Khaziravi,Midfield
+IPL2015,19,Esteghlal TEH,Player Sub-in,01:02:00,Esteghlal TEH,Pero,Pejic,Forward
+IPL2015,19,Esteghlal TEH,Player Sub-out,01:02:00,Esteghlal TEH,Mehdi,Momeni,Midfield
+IPL2015,19,Esteghlal TEH,Player Sub-in,01:09:00,Esteghlal TEH,Behnam,Barzaei,Forward
+IPL2015,19,Esteghlal TEH,Player Sub-out,01:09:00,Esteghlal TEH,Ali,Karimi,Midfield
+IPL2015,19,Esteghlal TEH,Player Sub-in,01:21:00,Esteghlal AHV,Ali,Bigdeli,Forward
+IPL2015,19,Esteghlal TEH,Player Sub-out,01:21:00,Esteghlal AHV,Milad,Paak Parvar,Midfield
+IPL2015,19,Esteghlal TEH,Player Sub-in,01:29:00,Esteghlal AHV,Mohamad Javad,Kerdoni,Defender
+IPL2015,19,Esteghlal TEH,Player Sub-out,01:29:00,Esteghlal AHV,Taleb,Reekani,Forward
+IPL2015,19,Esteghlal TEH,Game Half2 Stop,01:39:00,,,,
+IPL2015,19,Esteghlal TEH,Game End,01:40:00,,,,

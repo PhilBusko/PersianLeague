@@ -1,0 +1,46 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2016,09,Sepahan ESF,Game Half1 Start,00:00:00,,,,
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,FC Mashhad MSH,Maysam,Hossaini,Defender
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,FC Mashhad MSH,Mohamad Reza,Khanzadeh,Defender
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,FC Mashhad MSH,Mostafa,Ahmadi,Defender
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,FC Mashhad MSH,Payam,Malekian,Defender
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,FC Mashhad MSH,Rouhollah,Sayfollahi,Forward
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,FC Mashhad MSH,Mohamad,Nasseri,Goalkeeper
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,FC Mashhad MSH,Abdolreza,Zarei,Midfield
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,FC Mashhad MSH,Ayoub,Kalantari,Midfield
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,FC Mashhad MSH,Hossain,Badamaki,Midfield
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,FC Mashhad MSH,Moosa,Traore,Midfield
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,FC Mashhad MSH,Reza,Sharbati,Midfield
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Armin,Sohrabian,Defender
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Mousa Salif,Coulibaly,Defender
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Shoja,Khalil Zadeh,Defender
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Farid,Behzadi Karimi,Forward
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Jallaledin,Alimohamadi,Forward
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Mir Hadi,Mirjavan,Forward
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Lee,Oliviera,Goalkeeper
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Ehsan,Haajsafi,Midfield
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Hamed,Bahiraei,Midfield
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Milad,Sarlak,Midfield
+IPL2016,09,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Moharam,Navidkia,Midfield
+IPL2016,09,Sepahan ESF,Card: Yellow,00:01:00,FC Mashhad MSH,Farshad,Hashemi,Midfield
+IPL2016,09,Sepahan ESF,Card: Yellow,00:01:00,FC Mashhad MSH,Reza,Sharbati,Midfield
+IPL2016,09,Sepahan ESF,Card: Yellow,00:01:00,Sepahan ESF,Mousa Salif,Coulibaly,Defender
+IPL2016,09,Sepahan ESF,Goal,00:10:00,Sepahan ESF,Ehsan,Haajsafi,Midfield
+IPL2016,09,Sepahan ESF,Game Half1 Stop,00:46:00,,,,
+IPL2016,09,Sepahan ESF,Game Half2 Start,00:47:00,,,,
+IPL2016,09,Sepahan ESF,Goal,00:49:00,Sepahan ESF,Jallaledin,Alimohamadi,Forward
+IPL2016,09,Sepahan ESF,Player Sub-in,00:58:00,FC Mashhad MSH,Saeed,Daghighi,Forward
+IPL2016,09,Sepahan ESF,Player Sub-out,00:58:00,FC Mashhad MSH,Hossain,Badamaki,Midfield
+IPL2016,09,Sepahan ESF,Player Sub-in,00:59:00,Sepahan ESF,Mehrdad,Mohamadi,Midfield
+IPL2016,09,Sepahan ESF,Player Sub-out,00:59:00,Sepahan ESF,Mir Hadi,Mirjavan,Forward
+IPL2016,09,Sepahan ESF,Player Sub-in,01:08:00,Sepahan ESF,Hossain,Fazeli,Forward
+IPL2016,09,Sepahan ESF,Player Sub-out,01:08:00,Sepahan ESF,Jallaledin,Alimohamadi,Forward
+IPL2016,09,Sepahan ESF,Player Sub-in,01:10:00,FC Mashhad MSH,Abbas,Asgari,Forward
+IPL2016,09,Sepahan ESF,Player Sub-out,01:10:00,FC Mashhad MSH,Rouhollah,Sayfollahi,Forward
+IPL2016,09,Sepahan ESF,Goal,01:11:00,FC Mashhad MSH,Abbas,Asgari,Forward
+IPL2016,09,Sepahan ESF,Player Sub-in,01:12:00,Sepahan ESF,Taleb,Raykani,Midfield
+IPL2016,09,Sepahan ESF,Player Sub-out,01:12:00,Sepahan ESF,Farid,Behzadi Karimi,Forward
+IPL2016,09,Sepahan ESF,Player Sub-in,01:23:00,FC Mashhad MSH,Farshad,Hashemi,Midfield
+IPL2016,09,Sepahan ESF,Player Sub-out,01:23:00,FC Mashhad MSH,Ayoub,Kalantari,Midfield
+IPL2016,09,Sepahan ESF,Game Half2 Stop,01:39:00,,,,
+IPL2016,09,Sepahan ESF,Game End,01:40:00,,,,

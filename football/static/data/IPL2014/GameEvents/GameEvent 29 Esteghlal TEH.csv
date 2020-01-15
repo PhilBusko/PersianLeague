@@ -1,0 +1,52 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,29,Esteghlal TEH,Game Half1 Start,00:00:00,,,,
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Amir Hossain,Sadeghi,Defender
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Hrayr,Mkoyan,Defender
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Behnam,Barzaei,Forward
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Gholamreza,Enayati,Forward
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Sajjad,Shahbaz Zadeh,Forward
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Mohsen,Forozan,Goalkeeper
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Ali,Karimi,Midfield
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Hashem,Bayk Zadeh,Midfield
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Jassim,Karrar,Midfield
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Milad,Fakhreddini,Midfield
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Esteghlal TEH,Omid,Ebrahimi,Midfield
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Teraktor TBZ,Celio,Ferreira dos Santos,Defender
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Teraktor TBZ,Khaled,Shafiei,Defender
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Teraktor TBZ,Mir Hani,Hashemi,Defender
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Teraktor TBZ,Mohamad,Iran Pourian,Defender
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Teraktor TBZ,Farid,Karimi,Forward
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Teraktor TBZ,Farshad,Ahmadzadeh,Forward
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Teraktor TBZ,Luciano,Edinho,Forward
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Teraktor TBZ,Hamed,Lak,Goalkeeper
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Teraktor TBZ,Ahmad,Kamdar,Midfield
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Teraktor TBZ,Andranik,Taymorian,Midfield
+IPL2014,29,Esteghlal TEH,Player in Line-up,00:00:00,Teraktor TBZ,Saman,Nariman Jahan,Midfield
+IPL2014,29,Esteghlal TEH,Card: Yellow,00:01:00,Esteghlal TEH,Behnam,Barzaei,Forward
+IPL2014,29,Esteghlal TEH,Card: Yellow,00:01:00,Esteghlal TEH,Sajjad,Shahbaz Zadeh,Forward
+IPL2014,29,Esteghlal TEH,Card: Yellow,00:01:00,Esteghlal TEH,Yaghoub,Karimi,Midfield
+IPL2014,29,Esteghlal TEH,Card: Yellow,00:01:00,Teraktor TBZ,Khaled,Shafiei,Defender
+IPL2014,29,Esteghlal TEH,Card: Yellow,00:01:00,Teraktor TBZ,Mohamad,Iran Pourian,Defender
+IPL2014,29,Esteghlal TEH,Card: Yellow,00:01:00,Teraktor TBZ,Mehrdad,Bayrami,Forward
+IPL2014,29,Esteghlal TEH,Card: Yellow,00:01:00,Teraktor TBZ,Saman,Nariman Jahan,Midfield
+IPL2014,29,Esteghlal TEH,Goal,00:06:00,Teraktor TBZ,Saman,Nariman Jahan,Midfield
+IPL2014,29,Esteghlal TEH,Goal,00:30:00,Esteghlal TEH,Omid,Ebrahimi,Midfield
+IPL2014,29,Esteghlal TEH,Player Sub-in,00:30:00,Esteghlal TEH,Khosrow,Haydari,Midfield
+IPL2014,29,Esteghlal TEH,Player Sub-out,00:30:00,Esteghlal TEH,Behnam,Barzaei,Forward
+IPL2014,29,Esteghlal TEH,Goal,00:45:00,Teraktor TBZ,Luciano,Edinho,Forward
+IPL2014,29,Esteghlal TEH,Game Half1 Stop,00:46:00,,,,
+IPL2014,29,Esteghlal TEH,Player Sub-in,00:46:00,Esteghlal TEH,Arash,Borhani,Forward
+IPL2014,29,Esteghlal TEH,Player Sub-out,00:46:00,Esteghlal TEH,Ali,Karimi,Midfield
+IPL2014,29,Esteghlal TEH,Game Half2 Start,00:47:00,,,,
+IPL2014,29,Esteghlal TEH,Goal,00:56:00,Teraktor TBZ,Saman,Nariman Jahan,Midfield
+IPL2014,29,Esteghlal TEH,Player Sub-in,01:02:00,Esteghlal TEH,Ali,Karimi,Midfield
+IPL2014,29,Esteghlal TEH,Player Sub-out,01:02:00,Esteghlal TEH,Hashem,Bayk Zadeh,Midfield
+IPL2014,29,Esteghlal TEH,Player Sub-in,01:04:00,Teraktor TBZ,Mehrdad,Bayrami,Forward
+IPL2014,29,Esteghlal TEH,Player Sub-out,01:04:00,Teraktor TBZ,Luciano,Edinho,Forward
+IPL2014,29,Esteghlal TEH,Player Sub-in,01:05:00,Teraktor TBZ,Saeed,Aghaeei,Midfield
+IPL2014,29,Esteghlal TEH,Player Sub-out,01:05:00,Teraktor TBZ,Mir Hani,Hashemi,Defender
+IPL2014,29,Esteghlal TEH,Player Sub-in,01:16:00,Teraktor TBZ,Mahdi,Kiani,Midfield
+IPL2014,29,Esteghlal TEH,Player Sub-out,01:16:00,Teraktor TBZ,Ahmad,Kamdar,Midfield
+IPL2014,29,Esteghlal TEH,Goal,01:28:00,Teraktor TBZ,Saman,Nariman Jahan,Midfield
+IPL2014,29,Esteghlal TEH,Game Half2 Stop,01:39:00,,,,
+IPL2014,29,Esteghlal TEH,Game End,01:40:00,,,,

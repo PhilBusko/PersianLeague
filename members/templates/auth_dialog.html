@@ -1,0 +1,589 @@
+
+{% load utility_ttags %}
+
+
+<!-- LOGIN -->
+
+<div id="login_dialog" title="User Log In">
+
+    <div id="loginForm_block">
+        <form id="login_form" method="post" action="*">
+            {% csrf_token %}
+            <div class="display_table">
+                <div class="display_row">
+                    <div class="display_cellM">
+                        <div class="inner_margin2 format_fixline">
+                            {{ login_form.login.label }}:
+                        </div>
+                    </div>
+                    <div class="display_cellM" style="width: 100%;">
+                        <div class="inner_margin2">
+                            {{ login_form.login }}  
+                        </div>
+                    </div>
+                </div>
+                <div class="display_row">
+                    <div class="display_cellM">
+                        <div class="inner_margin2 format_fixline">
+                            {{ login_form.password.label }}: 
+                        </div>
+                    </div>
+                    <div class="display_cellM">
+                        <div class="inner_margin2">
+                            {{ login_form.password }}  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="display_table">
+                <div class="display_row">
+                    <div class="display_cellM" style="width: 100%;">
+                        {% ctrl_status "login" %}
+                    </div>
+                    <div class="display_cellM">
+                        <div class="inner_margin2">
+                            <input type="submit" value="Log In" class="format_button"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+        
+    <div id="loginAlt_block" style="display: none">
+        <hr class="ctrl_separator" style="margin: 8px 4px;">
+        <div class="">
+            <div class="display_block format_center">
+                {% ctrl_link "forgotPass" "Forgot Password" %}
+            </div>
+            <div class="display_block format_center">
+                {% ctrl_link "signUp" "Sign Up" %}
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<!-- LOGOUT -->
+
+<div id="logout_dialog" title="Log Out Confirmation">
+    <div class="outer_padding1 format_center">
+        <form id="logout_form" method="post" action="">
+            <div class="inner_margin2 format_center">
+                <span class="">Confirm to log out ? </span>
+            </div>
+            <br>
+            <div class="inner_margin2 format_center">
+                <input type="submit" value="Log Out" class="format_button"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- SIGNUP -->
+
+<div id="signup_dialog" title="User Sign Up" style="min-height: 400px;">
+    <form id="signup_form" method="post" action="" style="dis play: none;">
+        {% csrf_token %}
+        
+        <div id="user_group" class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <label class="inner_margin2">
+                        {{ signup_form.username.label }}:
+                    </label>
+                </div>
+                <div class="display_cellM format_full">
+                    <div class="inner_margin2">
+                        {{ signup_form.username }}  
+                    </div>
+                </div>
+            </div>
+            <div class="display_row">
+                <div class="display_cellM">
+                    <label class="inner_margin2">
+                        {{ signup_form.email.label }}:
+                    </label>
+                </div>
+                <div class="display_cellM">
+                    <div class="inner_margin2">
+                        {{ signup_form.email }}
+                    </div>
+                </div>
+            </div>
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin2">
+                        {{ signup_form.password1.label }}: 
+                    </div>
+                </div>
+                <div class="display_cellM">
+                    <div class="inner_margin2">
+                        <!-- obfuscate password, and remove auto-fill
+                        <input id="id_password1" name="password1"  type="password" placeholder="Password"
+                               readonly onfocus="this.removeAttribute('readonly');">
+                        -->
+                        {{ signup_form.password1 }}  
+                    </div>
+                </div>
+            </div>
+            <div class="display_row">
+                <div class="display_cellM">
+                    <div class="inner_margin2">
+                        {{ signup_form.password1.label }}: 
+                    </div>
+                </div>
+                <div class="display_cellM">
+                    <div class="inner_margin2">
+                        {{ signup_form.password2 }}  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        
+        <div id="terms_group" class="display_table format_full">
+            <div class="display_row">
+                <div class="display_cellM" style="width: 50%;">
+                    <div class="display_block format_center">
+                        <a class="font_link" target="blank_"
+                           href="/static/documents/ligema_eula.pdf">User Agreement</a>
+                    </div>
+                </div>
+                <div class="display_cellM">
+                    <div class="display_block format_center">
+                        <a class="font_link" target="blank_"
+                           href="/static/documents/ligema_privacy.pdf">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="display_block format_center">
+            {% ctrl_checkbox "terms" "I agree to User Agreement." %}
+        </div>
+        <br>
+        
+        <div id="captcha_group" class="display_block">
+            <div style="display: table;  margin: 4px auto;">
+                <div id="signup_captcha"></div>
+            </div>
+        </div>
+        <br>
+        
+        <div id="results_group" class="display_table">
+            <div class="display_row">
+                <div class="display_cellM format_full">
+                    {% ctrl_status "signup" %}
+                </div>
+                <div class="display_cellM">
+                    <div class="inner_margin2">
+                        <input id="signup_button" type="submit" value="Sign Up" class="format_button"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="suLogin_group" class="display_block format_center" style="display: none;">
+            {% ctrl_link "suLogin" "Log In" %}
+        </div>
+        
+    </form>
+</div>
+
+
+<!-- RESET PASSWORD -->
+
+<div id="resetPw_dialog" title="Reset Password">        
+    <form id="resetPw_form" method="post" action="*">
+        {% csrf_token %}
+        
+        <div class="inner_margin2">
+            <span>
+                Enter the e-mail associated with your account
+                and we'll send you a link to reset your password.
+            </span>
+        </div>
+        
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM">
+                    <label class="inner_margin2">E-mail:</label>
+                </div>
+                <div class="display_cellM format_full">
+                    <div class="inner_margin2">
+                        {{ resetPw_form.email }}  
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="display_table">
+            <div class="display_row">
+                <div class="display_cellM format_full">
+                    {% ctrl_status "resetPW" %}
+                </div>
+                <div class="display_cellM">
+                    <div class="inner_margin2">
+                        <input type="submit" value="Send Reset Link" class="format_button"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </form>
+</div>
+
+
+<!-- SCRIPTS -->
+
+
+<script>
+
+
+// CONSTRUCTOR & DESTRUCTOR
+
+function InitDialogs()
+{
+    // dialog initializers
+    // send in size parameter to keep dialog from expanding on long text strings
+    
+    // call captcha init first so it has more time to load
+    
+    var recaptcha = grecaptcha.render('signup_captcha', {
+        'sitekey' : '6LeP9RsUAAAAAHVALleBiZIFQLJ_xEIApE96cHSR',
+        'theme' : 'light'   //'dark'
+    });
+    
+    // can't stop auto-fill at server, stop it at client
+    // but then password is not hidden
+    
+    $('#id_username').attr('type', 'new_username');
+    $('#id_email').attr('type', 'new_email');
+    $('#id_password1').attr('type', 'new_password1');
+    $('#id_password2').attr('type', 'new_password2');
+    
+    MakeDialog('#login_dialog', '400px');
+    MakeDialog('#logout_dialog', '300px');
+    MakeDialog('#signup_dialog', '410px');
+    MakeDialog('#resetPw_dialog', '450px');
+    
+    $('#suLogin_link').click(function() {
+        $('#signup_dialog').dialog("close");
+        $('#login_dialog').dialog("open");
+    });
+    
+    
+    // dialog destructors
+    
+    $('#login_dialog').on('dialogclose', function(event) {
+        $('#id_login').val(null);
+        $('#id_password').val(null);
+        $('#login_status').text('');
+        $('#loginAlt_block').hide();     
+    });
+    
+    $('#signup_dialog').on('dialogclose', function(event) {
+        $('#id_username').val(null);
+        $('#id_email').val(null);
+        $('#id_password1').val(null);
+        $('#id_password2').val(null);
+        $('#terms_checkbox').prop("checked", false);
+    });
+    
+    $('#resetPw_dialog').on('dialogclose', function(event) {
+        $('#resetPw_dialog').find('#id_email').val(null);
+    });
+    
+}
+
+// BUTTON HANDLERS
+
+$(function() {
+    
+    // login functions
+    
+    $('#login_form').submit(function(p_event) {
+        // this stops the normal html-form-submit call stack
+        p_event.preventDefault();
+        $("body").css("cursor", "wait");
+        
+        var formData = $('#login_form :input').serializeArray();    //cl(formData);
+        $('#login_form :input').prop('disabled', true);
+        $('#login_status').text("");
+        
+        $.ajax({
+            type: 'post',
+            url: "{% url 'account_login' %}",
+            data: formData,
+            success: function(p_data) {     //cl(p_data);
+                if (p_data.location == "/") {
+                    $('#login_status').text("Login Successfull");
+                    $('#loginAlt_block').hide();        // some bug makes it show sometimes
+                    //setTimeout(window.location.reload.bind(window.location), 800);
+                    setTimeout(function() {window.location=window.location}, 800);
+                }
+                else if (p_data.location == "/members/accounts/inactive/") {
+                    $('#login_status').text("Account Inactive");
+                }
+                else if (p_data.location == "/members/accounts/confirm-email/") {
+                    $('#login_status').text("E-mail requires confirmation.\nLoading ... ");
+                    var user = formData[1].value;   // name: login, value: <username>  
+                    ConfirmNotice(user);  
+                }
+                else {
+                    $('#login_status').text("Unknown log in status.");
+                    cl(p_data);
+                }
+            },
+            error: function(p_err) {
+                $("body").css("cursor", "default");
+                try
+                {
+                    var obj = JSON.parse(p_err.responseText);
+                    LoginError(obj);
+                }
+                catch(ex)
+                {
+                    cl("login_form.submit() Final Error");
+                    cl(DjangoSubError(p_err.responseText));
+                    ErrorToStatus(p_err.responseText, "login_form.submit()", '#error_status');
+                }
+            },
+            complete: function() {
+                setTimeout( function() {
+                    $("body").css("cursor", "default");
+                    $('#login_form :input').prop('disabled', false); }
+                    , 800); 
+            }
+        });
+        
+        function LoginError(p_obj)
+        {
+            var errors = p_obj['form_errors']; 
+            var returnedHtml = p_obj['html'];
+            
+            var msg = "Uninitialized Error";
+            
+            if (errors.hasOwnProperty('__all__'))
+                msg = errors.__all__[0];
+            
+            else if (errors.hasOwnProperty('login'))
+                msg = "Login: " + errors.login[0];
+            
+            else if (errors.hasOwnProperty('password'))
+                msg = "Password: " + errors.password[0];
+            
+            $('#login_status').text(msg);
+            $('#login_form :input').prop('disabled', false);
+            
+            $('#loginAlt_block').show('slow');     // slow 600, fast 200
+        }
+        
+        function ConfirmNotice(p_user) {
+            $.ajax({
+                url: "/members/db_report/userData/",
+                data: {'user': p_user},
+                success: function(p_data) {
+                    $('#loginAlt_block').hide();    
+                    var msg = "E-mail requires confirmation. <br>";
+                    msg += "A link has been sent to: " + p_data.email + "<br>";
+                    msg += "Please check your spam folder.";
+                    $('#login_status').html(msg);
+                    $('#login_form :input').prop('disabled', false);
+                },
+                error: function(p_err) {
+                    $('#login_dialog').dialog('close');
+                    ErrorToStatus(p_err.responseText, "ConfirmNotice()", "#error_status");
+                },
+            });
+        }
+    });
+    
+    $('#resetPw_form').submit(function(p_event) {
+        // this stops the normal form-submit call stack
+        p_event.preventDefault();
+        
+        var formData = $('#resetPw_form :input').serializeArray();    
+        $('#resetPw_form :input').prop('disabled', true);
+        $('#resetPW_status').text("");
+        
+        $.ajax({
+            type: 'post',
+            url: '{% url "account_reset_password" %}',
+            data: formData,
+            success: function(p_data) {    
+                // strip response text from dispatch's casing
+                var msg = p_data.html.substring(1, p_data.html.length -1);
+                $('#resetPW_status').text(msg);
+            },
+            error: function(p_err) {    
+                try
+                {
+                    var obj = JSON.parse(p_err.responseText);
+                    ResetPwError(obj);
+                }
+                catch(ex)
+                {
+                    ErrorToStatus(p_err.responseText, "resetPw_form.submit()", '#error_status')
+                    cl(p_err.responseText);
+                }
+            },
+            complete: function() {
+                $('#resetPw_form :input').prop('disabled', false);
+            }
+        });
+        
+        function ResetPwError(p_obj)
+        {
+            var errors = p_obj['form_errors']; 
+            var returnedHtml = p_obj['html'];
+            
+            var msg = "Uninitialized Error";
+            
+            if (errors.hasOwnProperty('__all__'))
+                msg = errors.__all__[0];
+            
+            else if (errors.hasOwnProperty('email'))
+                msg = errors.email[0];
+            
+            $('#resetPW_status').text(msg);
+            $('#resetPw_form :input').prop('disabled', false);
+        }
+    
+    });
+    
+    // login alternatives
+    
+    $('#forgotPass_link').click(function() {
+        $('#login_dialog').dialog('close');
+        $('#resetPw_dialog').dialog('open');
+    });
+    
+    $('#signUp_link').click(function() {
+        $('#login_dialog').dialog('close');
+        $('#signup_dialog').dialog('open');
+    });
+    
+    // logout functions
+    
+    $('#logout_form').submit(function(p_event) {
+        // this stops the normal form-submit call stack
+        p_event.preventDefault();
+        
+        $('#logout_form :input').prop('disabled', true);
+        
+        $.ajax({
+            type: 'post',
+            url: '{% url "account_logout" %}', 
+            success: function(p_data) {     //cl(p_data);
+                window.location.href = '{% url "landing_page" %}' ;
+            },
+            error: function(p_err) {
+                cl(p_err.responseText);
+            },
+            complete: function() {
+                $('#logout_form :input').prop('disabled', false);
+            }
+        });
+    });
+    
+    // sign up functions
+    
+    //$('#id_email').val('fnm@mtg.wiz');
+    
+    $('#signup_form').submit(function(p_event) {
+        p_event.preventDefault();
+        $('body').css('cursor', 'wait');
+        
+        // check stuff
+        
+        if ($('#terms_checkbox').prop("checked") == false)
+        {
+            $('#signup_status').html("Please agree to the EULA before proceeding.");
+            $('body').css('cursor', 'default');
+            return;
+        }
+        
+        var response = grecaptcha.getResponse();
+        if (!response) {
+            $('#signup_status').text("Captcha: This field is required.");
+            $('body').css('cursor', 'default');
+            return;
+        }
+        
+        // proceed with registration
+        
+        var formData = $('#signup_form :input').serializeArray(); 
+        $('#signup_form :input').prop('disabled', true);
+        $('#signup_status').html(null);
+        
+        $.ajax({
+            type: 'POST',
+            url: "{% url 'account_signup' %}",
+            data: formData,
+            success: function(p_data) {     //cl(p_data);
+                var msg = "A verification email has been sent. <br>";
+                msg += "After verification, you may log in."
+                $('#signup_status').html(msg);
+                $('#suLogin_group').show();
+            },
+            error: function(p_err) {
+                $('#signup_form :input').prop('disabled', false);
+                try
+                {
+                    var obj = JSON.parse(p_err.responseText);
+                    SignupError(obj);
+                }   
+                catch(ex)
+                {
+                    cl("::: Non-Form Error :::"); 
+                    cl(DjangoSubError(p_err.responseText)); 
+                }
+            },
+            complete: function() {
+                $("body").css("cursor", "default");
+            }
+        });
+        
+        function SignupError(p_obj)
+        {
+            var errors = p_obj['form_errors'];      //cl(errors);
+            var returnedHtml = p_obj['html'];       //cl(returnedHtml);
+            
+            var msg = "Unknown Form Error";
+            
+            if (errors.hasOwnProperty('__all__'))
+                msg = errors.__all__[0];
+            
+            else if (errors.hasOwnProperty('username'))
+                msg = "User Name: " + errors.username[0];
+            
+            else if (errors.hasOwnProperty('email'))
+            {
+                msg = "Email: " + errors.email[0];
+                msg = msg.replace("%(model_name)s", "User");
+                msg = msg.replace("%(field_label)s", "e-mail");
+            }
+            
+            else if (errors.hasOwnProperty('password1'))
+                msg = "Password 1: " + errors.password1[0];
+            
+            else if (errors.hasOwnProperty('password2'))
+                msg = "Password 2: " + errors.password2[0];
+            
+            $('#signup_status').text(msg);
+            $('#signup_form :input').prop('disabled', false);
+        }
+        
+    });
+    
+});
+
+
+</script>
+
+
+
+
+

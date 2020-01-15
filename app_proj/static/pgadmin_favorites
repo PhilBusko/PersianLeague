@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<favourites>
+ <favourite title="game">select SS.&quot;Season&quot;, &quot;Round&quot;, CH.&quot;Club&quot;, CA.&quot;Club&quot;, GM.&quot;PlayDate&quot; from football_game as GM
+join football_season as SS on GM.&quot;SeasonFK_id&quot; = SS.id
+join football_club as CH on GM.&quot;ClubHomeFK_id&quot; = CH.id
+join football_club as CA on GM.&quot;ClubAwayFK_id&quot; = CA.id
+order by GM.&quot;PlayDate&quot;
+</favourite>
+ <favourite title="game event">select 	GM.id as &quot;Game_id&quot;, SS.&quot;Season&quot;, GM.&quot;Round&quot;, CB.&quot;Club&quot; as &quot;HomeClub&quot;, CW.&quot;Club&quot; as &quot;AwayClub&quot;, --GM.&quot;PlayDate&quot;, 
+	EV.&quot;Event&quot;, GV.&quot;EventTime&quot;, CV.&quot;Club&quot; as &quot;EventClub&quot; from football_gameevent as GV
+join football_game as GM on GV.&quot;GameFK_id&quot; = GM.id
+join football_season as SS on GM.&quot;SeasonFK_id&quot; = SS.id
+join football_club as CB on GM.&quot;ClubHomeFK_id&quot; = CB.id
+join football_club as CW on GM.&quot;ClubAwayFK_id&quot; = CW.id
+join football_event as EV on GV.&quot;EventFK_id&quot; = EV.id
+join football_club as CV on GV.&quot;EventClubFK_id&quot; = CV.id
+--where &quot;Event&quot; like '%ena%'
+order by GM.&quot;PlayDate&quot;, GV.&quot;EventTime&quot;, EV.&quot;Event&quot;, CV.&quot;Club&quot;
+</favourite>
+ <favourite title="squad">select SS.&quot;Season&quot;, CB.&quot;Club&quot;, PL.&quot;FirstName&quot;, PL.&quot;LastName&quot; 
+from football_playerinclub as PC
+join football_season as SS on PC.&quot;SeasonFK_id&quot; = SS.id
+join football_player as PL on PC.&quot;PlayerFK_id&quot; = PL.id
+join football_club as CB on PC.&quot;ClubFK_id&quot; = CB.id
+--where CB.&quot;Club&quot; = &quot;Esteghlal TEH&quot;
+where PL.&quot;FirstName&quot; = 'Mohsen'
+order by SS.&quot;Season&quot;, PL.&quot;LastName&quot; 
+</favourite>
+ <favourite title="player">select *
+from football_player as PL
+where PL.&quot;FirstName&quot; like '%Dio%'
+</favourite>
+ <favourite title="reset rewards">UPDATE prediction_univ_scoring
+SET &quot;RewardStatus&quot; = 0
+</favourite>
+ <favourite title="delete chat">TRUNCATE TABLE members_chattext
+TRUNCATE TABLE members_chatgroup
+</favourite>
+</favourites>

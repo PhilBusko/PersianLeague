@@ -1,0 +1,48 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2015,19,Zobahan ESF,Game Half1 Start,00:00:00,,,,
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Perspolis TEH,Luca,Maric,Defender
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Perspolis TEH,Mohsen,Bengar,Defender
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Perspolis TEH,Ramin,Rezaeian,Defender
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Perspolis TEH,Ali,Alipour,Forward
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Perspolis TEH,Farshad,Ahmadzadeh,Forward
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Perspolis TEH,Mahdi,Taremi,Forward
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Perspolis TEH,Aleksandr,Lobanov,Goalkeeper
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Perspolis TEH,Kamal,Kamyabinia,Midfield
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Perspolis TEH,Mohamad,Ansari,Midfield
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Perspolis TEH,Mohsen,Mosalman,Midfield
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Perspolis TEH,Omid,Allishah,Midfield
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Ali,Hammam,Defender
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Hadi,Mohamadi,Defender
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Mohamad,Nejad Mehdi,Defender
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Danial,Esmaeelfar,Forward
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Ehsan,Pahlevan,Forward
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Kaveh,Rezaei,Forward
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Mohamad Rasheed,Mazaheri,Goalkeeper
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Ghasem,Haddadifar,Midfield
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Hashem,Bayk Zadeh,Midfield
+IPL2015,19,Zobahan ESF,Player in Line-up,00:00:00,Zobahan ESF,Mahdi,Mahdipour,Midfield
+IPL2015,19,Zobahan ESF,Card: Yellow,00:01:00,Perspolis TEH,Ramin,Rezaeian,Defender
+IPL2015,19,Zobahan ESF,Card: Yellow,00:01:00,Perspolis TEH,Farshad,Ahmadzadeh,Forward
+IPL2015,19,Zobahan ESF,Card: Yellow,00:01:00,Perspolis TEH,Mahdi,Taremi,Forward
+IPL2015,19,Zobahan ESF,Card: Yellow,00:01:00,Perspolis TEH,Kamal,Kamyabinia,Midfield
+IPL2015,19,Zobahan ESF,Card: Yellow,00:01:00,Zobahan ESF,Mohamad Rasheed,Mazaheri,Goalkeeper
+IPL2015,19,Zobahan ESF,Card: Yellow,00:01:00,Zobahan ESF,Hashem,Bayk Zadeh,Midfield
+IPL2015,19,Zobahan ESF,Goal,00:35:00,Perspolis TEH,Omid,Allishah,Midfield
+IPL2015,19,Zobahan ESF,Game Half1 Stop,00:46:00,,,,
+IPL2015,19,Zobahan ESF,Game Half2 Start,00:47:00,,,,
+IPL2015,19,Zobahan ESF,Player Sub-in,00:58:00,Zobahan ESF,Morteza,Tabrizi,Forward
+IPL2015,19,Zobahan ESF,Player Sub-out,00:58:00,Zobahan ESF,Ali,Hammam,Defender
+IPL2015,19,Zobahan ESF,Player Sub-in,01:03:00,Perspolis TEH,Ahmad,Nooroullahi,Midfield
+IPL2015,19,Zobahan ESF,Player Sub-in,01:03:00,Zobahan ESF,Masoud,Hassan Zadeh,Forward
+IPL2015,19,Zobahan ESF,Player Sub-out,01:03:00,Perspolis TEH,Farshad,Ahmadzadeh,Forward
+IPL2015,19,Zobahan ESF,Penalty Scored,01:13:00,Zobahan ESF,Masoud,Hassan Zadeh,Forward
+IPL2015,19,Zobahan ESF,Goal,01:20:00,Perspolis TEH,Ali,Alipour,Forward
+IPL2015,19,Zobahan ESF,Player Sub-in,01:22:00,Zobahan ESF,Ahmad,Kamdar,Midfield
+IPL2015,19,Zobahan ESF,Player Sub-out,01:22:00,Zobahan ESF,Ghasem,Haddadifar,Midfield
+IPL2015,19,Zobahan ESF,Player Sub-in,01:26:00,Perspolis TEH,Alireza,Noormohamadi,Defender
+IPL2015,19,Zobahan ESF,Player Sub-out,01:26:00,Perspolis TEH,Luca,Maric,Defender
+IPL2015,19,Zobahan ESF,Player Sub-in,01:29:00,Perspolis TEH,Michael,Umana Corrales,Defender
+IPL2015,19,Zobahan ESF,Player Sub-out,01:29:00,Perspolis TEH,Mohsen,Mosalman,Midfield
+IPL2015,19,Zobahan ESF,Penalty Scored,01:32:00,Zobahan ESF,Morteza,Tabrizi,Forward
+IPL2015,19,Zobahan ESF,Game Half2 Stop,01:39:00,,,,
+IPL2015,19,Zobahan ESF,Game End,01:40:00,,,,

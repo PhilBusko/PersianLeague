@@ -1,0 +1,124 @@
+
+{% extends "common_baseNonav.html" %}
+{% load staticfiles %}
+{% load utility_ttags %}
+
+{% block content %}
+
+
+<div class="row">
+
+    <div class="col-xs-12">
+        <div class="inner_margin1 frame_header">
+            <span class="font_section">Verify E-mail Address</span>
+        </div>
+        <div style="display: none;">{% ctrl_status "confirm" %}</div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="display_block inner_margin1 outer_padding2 frame_entry">
+            
+            {% if not confirmation.key %}
+            
+            <div class="inner_margin2" style="min-height: 90px;">
+                This verification link has expired.
+            </div>
+            
+            {% elif not confirmation.email_address.verified %}
+            
+            <div class="inner_margin2">
+                Please verify that <u>{{ confirmation.email_address.email }}</u> is the e-mail address
+                that should be linked to user <b>{{ confirmation.email_address.user }}</b>.
+            </div>
+            
+            <form id="emailConf_form">
+                {% csrf_token %}
+                <div class="display_table">
+                    <div class="display_row">
+                        <div class="display_cellM format_full">
+                            {% ctrl_normal "result" %}
+                        </div>
+                        <div class="display_cellM">
+                            <div class="inner_margin2 format_center">
+                                <input id="conf_button" type="submit" value="Verify" class="format_button"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+            {% else %}
+            
+            <div class="inner_margin2" style="min-height: 90px;">
+                <span>This e-mail has been verified.</span>
+            </div>
+            
+            {% endif %}
+            
+        </div>
+        
+        <div>
+            <br>
+            {% ctrl_image "logo" "image_smallSize format_frame" "/static/graphics/logo_small.png" %}
+            <br>
+        </div>
+    </div>
+    
+</div>
+
+
+<!-- SCRIPTS -->
+
+
+<script>
+
+$(document).ready(function()
+{
+    
+    $('#content_block').css('background-image', 'url({% static "images/backgrounds/cm_default.png" %})');
+    
+});
+
+
+$("#emailConf_form").submit(function(p_event) {
+    // this stops the normal html-form-submit call stack
+    p_event.preventDefault();
+    
+    {% if confirmation.key %}
+    var authURL = '{% url "account_confirm_email" confirmation.key %}';         //cl(authURL);
+    {% else %}
+    var authURL = '';
+    {% endif %}
+    
+    $.ajax({
+        type: 'post',
+        url: authURL,
+        success: function(p_data) {     //cl(p_data);
+            $('#result_normal').text("Email verified.");
+            $('#conf_button').prop('disabled', true); 
+        },
+        error: function(p_err) {
+            try
+            {
+                var obj = JSON.parse(p_err.responseText);
+                cl(obj);
+            }
+            catch(ex)
+            {
+                ErrorToStatus(p_err.responseText, "emailConf_form.submit()", '#confirm_status');
+            }
+        },
+    });
+    
+});
+
+
+</script>
+
+{% endblock content %}
+
+
+
+
+
+<!-- END OF FILE -->

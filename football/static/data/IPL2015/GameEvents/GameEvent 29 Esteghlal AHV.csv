@@ -1,0 +1,42 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2015,29,Esteghlal AHV,Game Half1 Start,00:00:00,,,,
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Maki,Sharifi,Defender
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Ali,Helichi,Forward
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Ali,Bigdeli,Forward
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Taleb,Reekani,Forward
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Adel,Kolahkaj,Midfield
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Adel,Masoudifar,Midfield
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Ehsan,Moradian,Midfield
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Hamzeh,Khaziravi,Midfield
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Hossain,Saaki,Midfield
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Mojtaba,Rashidi,Midfield
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Pedram,Ardalani,Midfield
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Saipa ALB,Ali,Zaynali,Defender
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Saipa ALB,Ebrahim,Shakoori,Defender
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Saipa ALB,Hamed,Shiri,Defender
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Saipa ALB,Mahdi,Torabi,Defender
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Saipa ALB,Majid,Ayoubi,Defender
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Saipa ALB,Sajjad,Moshkelpour,Defender
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Saipa ALB,Gholamreza,Rezaei,Forward
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Saipa ALB,Hamed,Fallahzadeh,Goalkeeper
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Saipa ALB,Ebrahim,Sadeghi,Midfield
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2015,29,Esteghlal AHV,Player in Line-up,00:00:00,Saipa ALB,Roozbeh,Shah Alidoost,Midfield
+IPL2015,29,Esteghlal AHV,Card: Red,00:01:00,Saipa ALB,Sajjad,Moshkelpour,Defender
+IPL2015,29,Esteghlal AHV,Card: Yellow,00:01:00,Esteghlal AHV,Ehsan,Moradian,Midfield
+IPL2015,29,Esteghlal AHV,Card: Yellow,00:01:00,Saipa ALB,Roozbeh,Shah Alidoost,Midfield
+IPL2015,29,Esteghlal AHV,Game Half1 Stop,00:46:00,,,,
+IPL2015,29,Esteghlal AHV,Game Half2 Start,00:47:00,,,,
+IPL2015,29,Esteghlal AHV,Player Sub-in,01:00:00,Esteghlal AHV,Milad,Paak Parvar,Midfield
+IPL2015,29,Esteghlal AHV,Player Sub-out,01:00:00,Esteghlal AHV,Ali,Bigdeli,Forward
+IPL2015,29,Esteghlal AHV,Player Sub-in,01:10:00,Saipa ALB,Ali,Gholizadeh,Midfield
+IPL2015,29,Esteghlal AHV,Player Sub-out,01:10:00,Saipa ALB,Ali,Zaynali,Defender
+IPL2015,29,Esteghlal AHV,Player Sub-in,01:12:00,Saipa ALB,Mojtaba,Ramezani,Midfield
+IPL2015,29,Esteghlal AHV,Player Sub-out,01:12:00,Saipa ALB,Milad,Maydavoodi,Midfield
+IPL2015,29,Esteghlal AHV,Goal,01:17:00,Esteghlal AHV,Adel,Kolahkaj,Midfield
+IPL2015,29,Esteghlal AHV,Player Sub-in,01:20:00,Esteghlal AHV,Hossain,Saaki,Midfield
+IPL2015,29,Esteghlal AHV,Player Sub-out,01:20:00,Esteghlal AHV,Hossain,Saaki,Midfield
+IPL2015,29,Esteghlal AHV,Goal,01:21:00,Saipa ALB,Hamed,Shiri,Defender
+IPL2015,29,Esteghlal AHV,Goal,01:23:00,Saipa ALB,Gholamreza,Rezaei,Forward
+IPL2015,29,Esteghlal AHV,Game Half2 Stop,01:39:00,,,,
+IPL2015,29,Esteghlal AHV,Game End,01:40:00,,,,

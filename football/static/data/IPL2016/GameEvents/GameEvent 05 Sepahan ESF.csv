@@ -1,0 +1,45 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2016,05,Sepahan ESF,Game Half1 Start,00:00:00,,,,
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Paykan TEH,Amir Hossain,Sadeghi,Defender
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Paykan TEH,Arman,Ghasemi,Defender
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Paykan TEH,Siavash,Yazdani,Defender
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Paykan TEH,Godwin,Mensha,Forward
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Paykan TEH,Morteza,Aghakhan,Forward
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Paykan TEH,Rahman,Ahmadi,Goalkeeper
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Paykan TEH,Abolfazl,Ebrahimi,Midfield
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Paykan TEH,Mahan,Rahmani,Midfield
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Paykan TEH,Mehdi,Shiri,Midfield
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Paykan TEH,Mohamad Sadegh,Barani,Midfield
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Paykan TEH,Siamak,Nemati,Midfield
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Ali,Helichi,Defender
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Mousa Salif,Coulibaly,Defender
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Shoja,Khalil Zadeh,Defender
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Hossain,Fazeli,Forward
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Jallaledin,Alimohamadi,Forward
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Lee,Oliviera,Goalkeeper
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Ehsan,Haajsafi,Midfield
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Mehrdad,Mohamadi,Midfield
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Milad,Sarlak,Midfield
+IPL2016,05,Sepahan ESF,Player in Line-up,00:00:00,Sepahan ESF,Moharam,Navidkia,Midfield
+IPL2016,05,Sepahan ESF,Card: Yellow,00:01:00,Paykan TEH,Mahan,Rahmani,Midfield
+IPL2016,05,Sepahan ESF,Card: Yellow,00:01:00,Paykan TEH,Siamak,Nemati,Midfield
+IPL2016,05,Sepahan ESF,Card: Yellow,00:01:00,Sepahan ESF,Milad,Sarlak,Midfield
+IPL2016,05,Sepahan ESF,Card: Yellow,00:01:00,Sepahan ESF,Rasool,Navidkia,Midfield
+IPL2016,05,Sepahan ESF,Goal,00:18:00,Paykan TEH,Siamak,Nemati,Midfield
+IPL2016,05,Sepahan ESF,Game Half1 Stop,00:46:00,,,,
+IPL2016,05,Sepahan ESF,Game Half2 Start,00:47:00,,,,
+IPL2016,05,Sepahan ESF,Player Sub-in,00:56:00,Sepahan ESF,Armin,Sohrabian,Defender
+IPL2016,05,Sepahan ESF,Player Sub-out,00:56:00,Sepahan ESF,Lee,Oliviera,Goalkeeper
+IPL2016,05,Sepahan ESF,Player Sub-in,01:05:00,Sepahan ESF,Hossain,Papi,Midfield
+IPL2016,05,Sepahan ESF,Player Sub-out,01:05:00,Sepahan ESF,Hossain,Fazeli,Forward
+IPL2016,05,Sepahan ESF,Goal,01:08:00,Sepahan ESF,Hossain,Papi,Midfield
+IPL2016,05,Sepahan ESF,Player Sub-in,01:09:00,Paykan TEH,Sajjad,Ashouri,Midfield
+IPL2016,05,Sepahan ESF,Player Sub-out,01:09:00,Paykan TEH,Morteza,Aghakhan,Forward
+IPL2016,05,Sepahan ESF,Player Sub-in,01:15:00,Paykan TEH,Ali,Hamoodi,Defender
+IPL2016,05,Sepahan ESF,Player Sub-in,01:15:00,Sepahan ESF,Moharam,Navidkia,Midfield
+IPL2016,05,Sepahan ESF,Player Sub-out,01:15:00,Paykan TEH,Siamak,Nemati,Midfield
+IPL2016,05,Sepahan ESF,Player Sub-out,01:15:00,Sepahan ESF,Ali,Helichi,Defender
+IPL2016,05,Sepahan ESF,Player Sub-in,01:28:00,Paykan TEH,Bahdor,Abdi,Midfield
+IPL2016,05,Sepahan ESF,Player Sub-out,01:28:00,Paykan TEH,Abolfazl,Ebrahimi,Midfield
+IPL2016,05,Sepahan ESF,Game Half2 Stop,01:39:00,,,,
+IPL2016,05,Sepahan ESF,Game End,01:40:00,,,,

@@ -1,0 +1,43 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2016,27,Paykan TEH,Game Half1 Start,00:00:00,,,,
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Amir Hossain,Sadeghi,Defender
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Arman,Ghasemi,Defender
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Levon,Hayrapetyan,Defender
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Siavash,Yazdani,Defender
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Godwin,Mensha,Forward
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Payam,Niazmand,Goalkeeper
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Abolfazl,Ebrahimi,Midfield
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Amir Hossain,Karimi,Midfield
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Mehdi,Shiri,Midfield
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Sajjad,Ashouri,Midfield
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Paykan TEH,Siamak,Nemati,Midfield
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Zobahan ESF,Ali,Hammam,Defender
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Zobahan ESF,Danial,Esmaeelfar,Defender
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Zobahan ESF,Hojjat,Haghverdi,Defender
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Zobahan ESF,Mohamad,Nejad Mehdi,Defender
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Zobahan ESF,Jerry Ricardo,Bengston,Forward
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Zobahan ESF,Mohamad Rasheed,Mazaheri,Goalkeeper
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Zobahan ESF,Ehsan,Pahlevan,Midfield
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Zobahan ESF,Mahdi,Mahdipour,Midfield
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Zobahan ESF,Mehran,Derkakhshan Mehr,Midfield
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Zobahan ESF,Mohamad Reza,Hossaini,Midfield
+IPL2016,27,Paykan TEH,Player in Line-up,00:00:00,Zobahan ESF,Morteza,Tabrizi,Midfield
+IPL2016,27,Paykan TEH,Card: Yellow,00:01:00,Paykan TEH,Amir Hossain,Sadeghi,Defender
+IPL2016,27,Paykan TEH,Card: Yellow,00:01:00,Zobahan ESF,Morteza,Tabrizi,Midfield
+IPL2016,27,Paykan TEH,Game Half1 Stop,00:46:00,,,,
+IPL2016,27,Paykan TEH,Game Half2 Start,00:47:00,,,,
+IPL2016,27,Paykan TEH,Goal,00:56:00,Zobahan ESF,Jerry Ricardo,Bengston,Forward
+IPL2016,27,Paykan TEH,Goal,01:04:00,Zobahan ESF,Morteza,Tabrizi,Midfield
+IPL2016,27,Paykan TEH,Player Sub-in,01:07:00,Paykan TEH,Mahan,Rahmani,Midfield
+IPL2016,27,Paykan TEH,Player Sub-out,01:07:00,Paykan TEH,Levon,Hayrapetyan,Defender
+IPL2016,27,Paykan TEH,Goal,01:14:00,Paykan TEH,Siamak,Nemati,Midfield
+IPL2016,27,Paykan TEH,Player Sub-in,01:14:00,Zobahan ESF,Mehdi,Rajabzadeh,Forward
+IPL2016,27,Paykan TEH,Player Sub-out,01:14:00,Zobahan ESF,Jerry Ricardo,Bengston,Forward
+IPL2016,27,Paykan TEH,Player Sub-in,01:21:00,Zobahan ESF,Mohamad,Sattari,Defender
+IPL2016,27,Paykan TEH,Player Sub-out,01:21:00,Zobahan ESF,Mehran,Derkakhshan Mehr,Midfield
+IPL2016,27,Paykan TEH,Player Sub-in,01:24:00,Paykan TEH,Shahriyar,Moghanlou,Defender
+IPL2016,27,Paykan TEH,Player Sub-out,01:24:00,Paykan TEH,Sajjad,Ashouri,Midfield
+IPL2016,27,Paykan TEH,Player Sub-in,01:29:00,Zobahan ESF,Nima,Taheri,Midfield
+IPL2016,27,Paykan TEH,Player Sub-out,01:29:00,Zobahan ESF,Mohamad Reza,Hossaini,Midfield
+IPL2016,27,Paykan TEH,Game Half2 Stop,01:39:00,,,,
+IPL2016,27,Paykan TEH,Game End,01:40:00,,,,

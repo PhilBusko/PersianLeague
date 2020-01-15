@@ -1,0 +1,436 @@
+Season,SquadClub,FirstName,LastName,Nationality,DateOfBirth,PositionDef,ShirtNo
+IPL2017,Esteghlal KHU,Abbas,Bouazar,Iran,0001-01-01,Midfield,
+IPL2017,Esteghlal KHU,Abolfazl,Aalaei,Brazil,0001-01-01,Defender,30
+IPL2017,Esteghlal KHU,Abolfazl,Mohamad Hassani,Iran,0001-01-01,Forward,29
+IPL2017,Esteghlal KHU,Aghil,Kaabi,Iran,0001-01-01,Defender,4
+IPL2017,Esteghlal KHU,Alireza,Daghagheleh,Iran,0001-01-01,Midfield,25
+IPL2017,Esteghlal KHU,Bagher,Hashemi,Iran,0001-01-01,Defender,28
+IPL2017,Esteghlal KHU,Goudarz,Davoodi,Iran,0001-01-01,Goalkeeper,70
+IPL2017,Esteghlal KHU,Hadi,Khanifar,Iran,0001-01-01,Midfield,7
+IPL2017,Esteghlal KHU,Hakeem,Nassari,Iran,0001-01-01,Forward,8
+IPL2017,Esteghlal KHU,Hassan,Pour Hamidi,Iran,0001-01-01,Midfield,33
+IPL2017,Esteghlal KHU,Hossain,Bazyari,Iran,0001-01-01,Defender,14
+IPL2017,Esteghlal KHU,Hossain,Sadeghi,Iran,0001-01-01,Midfield,
+IPL2017,Esteghlal KHU,Hossain,Bahrami,Iran,0001-01-01,Defender,23
+IPL2017,Esteghlal KHU,Hossain,Pour Hamidi,Iran,0001-01-01,Goalkeeper,40
+IPL2017,Esteghlal KHU,Maysam,Doraghi,Iran,0001-01-01,Midfield,6
+IPL2017,Esteghlal KHU,Mohamad Ali,Faramarzi,Iran,0001-01-01,Defender,2
+IPL2017,Esteghlal KHU,Mostafa,Ghanbari Zadeh,Iran,0001-01-01,Midfield,32
+IPL2017,Esteghlal KHU,Mostafa,Mahi,Iran,0001-01-01,Midfield,96
+IPL2017,Esteghlal KHU,Mousa Salif,Coulibaly,Mali,0001-01-01,Defender,5
+IPL2017,Esteghlal KHU,Parviz,Karimi,Iran,0001-01-01,Goalkeeper,
+IPL2017,Esteghlal KHU,Paymon,Heshmati,Iran,0001-01-01,Defender,15
+IPL2017,Esteghlal KHU,Pedram,Mohamadi,Iran,0001-01-01,Midfield,39
+IPL2017,Esteghlal KHU,Reza,Karmlachab,Iran,0001-01-01,Forward,11
+IPL2017,Esteghlal KHU,Saeed,Zare,Iran,0001-01-01,Midfield,
+IPL2017,Esteghlal KHU,Salman,Bahrani,Brazil,0001-01-01,Forward,17
+IPL2017,Esteghlal KHU,Seyed Alireza,Zandavi,Iran,0001-01-01,Midfield,
+IPL2017,Esteghlal KHU,Taleb,Reekani,Iran,0001-01-01,Midfield,10
+IPL2017,Esteghlal KHU,Vahid,Namdari,Iran,0001-01-01,Defender,21
+IPL2017,Esteghlal KHU,Vahid,Sheikh Vaysi,Iran,0001-01-01,Goalkeeper,1
+IPL2017,Esteghlal KHU,Vahid,Asgarpour,Iran,0001-01-01,Midfield,
+IPL2017,Esteghlal KHU,Younes,Delfee,Iran,0001-01-01,Forward,70
+IPL2017,Esteghlal TEH,Abdolazim,Gook,Iran,0001-01-01,Defender,30
+IPL2017,Esteghlal TEH,Ali,Ghorbani,Iran,0001-01-01,Forward,9
+IPL2017,Esteghlal TEH,Amir Hossain,Sheikhol Eslami,Iran,0001-01-01,Midfield,
+IPL2017,Esteghlal TEH,Armin,Sohrabian,Iran,0001-01-01,Defender,13
+IPL2017,Esteghlal TEH,Arshia,Babazedh,Iran,0001-01-01,Goalkeeper,19
+IPL2017,Esteghlal TEH,Dariush,Shojaeian,Iran,0001-01-01,Midfield,23
+IPL2017,Esteghlal TEH,Fardin,Najafi,Iran,0001-01-01,Forward,
+IPL2017,Esteghlal TEH,Farshid,Bagheri,Iran,0001-01-01,Midfield,14
+IPL2017,Esteghlal TEH,Farshid,Esmaeeli,Iran,0001-01-01,Midfield,88
+IPL2017,Esteghlal TEH,Hassan,Bait Saeed,Iran,0001-01-01,Midfield,7
+IPL2017,Esteghlal TEH,Hossain,Hossaini,Iran,0001-01-01,Goalkeeper,22
+IPL2017,Esteghlal TEH,Hossain,Heydari,Iran,0001-01-01,Midfield,27
+IPL2017,Esteghlal TEH,Jaber,Ansari,Iran,0001-01-01,Midfield,11
+IPL2017,Esteghlal TEH,Khosrow,Haydari,Iran,0001-01-01,Midfield,2
+IPL2017,Esteghlal TEH,Leandro,Padovani,Brazil,0001-01-01,Defender,90
+IPL2017,Esteghlal TEH,Mahdi,Ghaedi,Iran,0001-01-01,Midfield,16
+IPL2017,Esteghlal TEH,Milad,Zakipour,Iran,0001-01-01,Defender,18
+IPL2017,Esteghlal TEH,Mohamad Javad,Mohamadi,Iran,0001-01-01,Forward,70
+IPL2017,Esteghlal TEH,Mohsen,Karimi,Iran,0001-01-01,Forward,28
+IPL2017,Esteghlal TEH,Mojtaba,Jabbari,Iran,0001-01-01,Midfield,8
+IPL2017,Esteghlal TEH,Omid,Noorafkan,Iran,0001-01-01,Midfield,24
+IPL2017,Esteghlal TEH,Omid,Ebrahimi,Iran,0001-01-01,Midfield,6
+IPL2017,Esteghlal TEH,Pejman,Montazeri,Iran,0001-01-01,Defender,33
+IPL2017,Esteghlal TEH,Reza,Hashemi,Iran,0001-01-01,Defender,12
+IPL2017,Esteghlal TEH,Roosbeh,Cheshmi,Iran,0001-01-01,Midfield,4
+IPL2017,Esteghlal TEH,Sajjad,Aghaei,Iran,0001-01-01,Midfield,
+IPL2017,Esteghlal TEH,Sajjad,Shahbaz Zadeh,Iran,0001-01-01,Forward,10
+IPL2017,Esteghlal TEH,Server Resatovich,Djeparov,Uzbekistan,0001-01-01,Midfield,20
+IPL2017,Esteghlal TEH,Seyed Mahdi,Rahmati,Iran,0001-01-01,Goalkeeper,1
+IPL2017,Esteghlal TEH,Seyed Majid,Hossaini,Iran,0001-01-01,Defender,5
+IPL2017,Esteghlal TEH,Voorya,Ghafoori,Iran,0001-01-01,Defender,21
+IPL2017,Esteghlal TEH,Yaghoub,Karimi,Iran,0001-01-01,Midfield,17
+IPL2017,Foolad KHU,Abdollah,Nasseri,Iran,0001-01-01,Forward,77
+IPL2017,Foolad KHU,Abdollah,Karami,Iran,0001-01-01,Defender,11
+IPL2017,Foolad KHU,Ahmad,Abdollahzadeh,Iran,0001-01-01,Midfield,7
+IPL2017,Foolad KHU,Ali,Gholamzadeh Gomari,Iran,0001-01-01,Goalkeeper,31
+IPL2017,Foolad KHU,Amir,Zolaykani,Iran,0001-01-01,Midfield,9
+IPL2017,Foolad KHU,Arman,Ramezani,Iran,0001-01-01,Forward,16
+IPL2017,Foolad KHU,Ayoub,Vaali,Iran,0001-01-01,Defender,4
+IPL2017,Foolad KHU,Ehsan,Moradian,Iran,0001-01-01,Goalkeeper,22
+IPL2017,Foolad KHU,Farshad,Jaanfaza,Iran,0001-01-01,Forward,17
+IPL2017,Foolad KHU,Farzad,Jafari,Iran,0001-01-01,Defender,2
+IPL2017,Foolad KHU,Hadi,Habibi Nejad,Iran,0001-01-01,Midfield,8
+IPL2017,Foolad KHU,Hamed,Lak,Iran,0001-01-01,Goalkeeper,1
+IPL2017,Foolad KHU,Hamid,Golzari Amjad,Iran,0001-01-01,Midfield,99
+IPL2017,Foolad KHU,Haytham,Hashemi,Iran,0001-01-01,Midfield,
+IPL2017,Foolad KHU,Hossain,Gharibi,Iran,0001-01-01,Defender,18
+IPL2017,Foolad KHU,Iman,Mobali,Iran,0001-01-01,Midfield,23
+IPL2017,Foolad KHU,Milad,Badragheh,Iran,0001-01-01,Midfield,70
+IPL2017,Foolad KHU,Mojtaba,Najjarian,Iran,0001-01-01,Midfield,20
+IPL2017,Foolad KHU,Navid,Ashouri,Iran,0001-01-01,Midfield,24
+IPL2017,Foolad KHU,Paymon,Shirzadi,Iran,0001-01-01,Defender,3
+IPL2017,Foolad KHU,Raheem,Zahivi,Iran,0001-01-01,Forward,10
+IPL2017,Foolad KHU,Reza,Dehghan,Iran,0001-01-01,Midfield,6
+IPL2017,Foolad KHU,Sina,Maridi,Iran,0001-01-01,Midfield,42
+IPL2017,Foolad KHU,Yousef,Vakia,Iran,0001-01-01,Defender,40
+IPL2017,Gostaresh TBZ,Ahmad Reza,Zendeh Rooh,Iran,0001-01-01,Defender,2
+IPL2017,Gostaresh TBZ,Ali,Cheraghali,Iran,0001-01-01,Midfield,27
+IPL2017,Gostaresh TBZ,Alireza,Naghizadeh,Iran,0001-01-01,Midfield,16
+IPL2017,Gostaresh TBZ,Alireza,Arjomandian,Iran,0001-01-01,Forward,28
+IPL2017,Gostaresh TBZ,Amin,Haj Mohamadi,Iran,0001-01-01,Defender,5
+IPL2017,Gostaresh TBZ,Amin,Taghizadeh,Iran,0001-01-01,Defender,24
+IPL2017,Gostaresh TBZ,Bahram,Ahmadi,Iran,0001-01-01,Midfield,88
+IPL2017,Gostaresh TBZ,Dragan,Zarkovic,Serbia,0001-01-01,Defender,4
+IPL2017,Gostaresh TBZ,Fernando Jesus,Riberio,Brazil,0001-01-01,Goalkeeper,1
+IPL2017,Gostaresh TBZ,Khakhi,Kakashvili,Georgia,0001-01-01,Midfield,8
+IPL2017,Gostaresh TBZ,Kouroush,Maleki,Iran,0001-01-01,Goalkeeper,12
+IPL2017,Gostaresh TBZ,Masih,Zahedi,Iran,0001-01-01,Defender,
+IPL2017,Gostaresh TBZ,Masoud,Ebrahimzadeh,Iran,0001-01-01,Forward,61
+IPL2017,Gostaresh TBZ,Masoud,Hahgjoo,Iran,0001-01-01,Defender,3
+IPL2017,Gostaresh TBZ,Maysam,Jodaki,Iran,0001-01-01,Midfield,
+IPL2017,Gostaresh TBZ,Mehrdad,Ghanbari,Iran,0001-01-01,Defender,6
+IPL2017,Gostaresh TBZ,Milad,Fakhredini,Iran,0001-01-01,Defender,34
+IPL2017,Gostaresh TBZ,Mohamad,Ousani,Iran,0001-01-01,Forward,71
+IPL2017,Gostaresh TBZ,Mohamad,Moghanlou,Iran,0001-01-01,Defender,35
+IPL2017,Gostaresh TBZ,Mohamad Amin,Darvishi,Iran,0001-01-01,Forward,11
+IPL2017,Gostaresh TBZ,Mohamad Amin,Khatibi,Iran,0001-01-01,Midfield,17
+IPL2017,Gostaresh TBZ,Mohamad Reza,Khorsandnia,Iran,0001-01-01,Midfield,
+IPL2017,Gostaresh TBZ,Mohsen,Hossaini,Iran,0001-01-01,Defender,14
+IPL2017,Gostaresh TBZ,Nima,Mokhtari,Iran,0001-01-01,Forward,37
+IPL2017,Gostaresh TBZ,Payman,Babaei,Iran,0001-01-01,Forward,19
+IPL2017,Gostaresh TBZ,Reza,Khaleghifar,Iran,0001-01-01,Forward,10
+IPL2017,Gostaresh TBZ,Seyed Ahmad,Mousavi,Iran,0001-01-01,Midfield,
+IPL2017,Gostaresh TBZ,Shahin,Mahmoudi,Iran,0001-01-01,Goalkeeper,33
+IPL2017,Gostaresh TBZ,Yousef,Seyedi,Iran,0001-01-01,Forward,7
+IPL2017,Naft TEH,Ahmad,Alnemae,Iran,0001-01-01,Defender,
+IPL2017,Naft TEH,Ahmad Amir,Kamdar,Iran,0001-01-01,Midfield,7
+IPL2017,Naft TEH,Ali,Zaynali,Iran,0001-01-01,Midfield,
+IPL2017,Naft TEH,Ali,Mirferat,Iran,0001-01-01,Midfield,99
+IPL2017,Naft TEH,Alireza,Ezzati,Iran,0001-01-01,Midfield,6
+IPL2017,Naft TEH,Amir Arsalan,Mottahari,Iran,0001-01-01,Forward,77
+IPL2017,Naft TEH,Amir Hossain,Feshangchi,Iran,0001-01-01,Midfield,23
+IPL2017,Naft TEH,Arash,Shahamati Nejad,Iran,0001-01-01,Defender,8
+IPL2017,Naft TEH,Eissa,Ale Kaseer,Iran,0001-01-01,Forward,10
+IPL2017,Naft TEH,Farid,Mohamadi Zadeh,Iran,0001-01-01,Midfield,
+IPL2017,Naft TEH,Farshad,Hashemi,Iran,0001-01-01,Midfield,88
+IPL2017,Naft TEH,Hamed,Aghaei,Iran,0001-01-01,Defender,
+IPL2017,Naft TEH,Hashem,Bayk Zadeh,Iran,0001-01-01,Defender,16
+IPL2017,Naft TEH,Hossain,Jafari,Iran,0001-01-01,Defender,
+IPL2017,Naft TEH,Milad,Souri,Iran,0001-01-01,Midfield,18
+IPL2017,Naft TEH,Milad,Farahani,Iran,0001-01-01,Goalkeeper,40
+IPL2017,Naft TEH,Mohamad,Nosrati,Iran,0001-01-01,Defender,20
+IPL2017,Naft TEH,Mohamad Hossain,Mehrazma,Iran,0001-01-01,Midfield,
+IPL2017,Naft TEH,Mohamad Reza,Naeiji,Iran,0001-01-01,Goalkeeper,1
+IPL2017,Naft TEH,Mohsen,Bengar,Iran,0001-01-01,Defender,
+IPL2017,Naft TEH,Mojtaba,Haghdoost,Iran,0001-01-01,Midfield,78
+IPL2017,Naft TEH,Nader,Hooshyar,Iran,0001-01-01,Midfield,
+IPL2017,Naft TEH,Ramin,Faraji,Iran,0001-01-01,Goalkeeper,12
+IPL2017,Naft TEH,Saman,Agha Zamani,Iran,0001-01-01,Midfield,
+IPL2017,Naft TEH,Shahab,Adeli,Iran,0001-01-01,Goalkeeper,50
+IPL2017,Naft TEH,Taher,Jahanbakhsh,Iran,0001-01-01,Defender,5
+IPL2017,Naft TEH,Vahid,Khodabandelou,Iran,0001-01-01,Forward,17
+IPL2017,Naft TEH,Yasin,Rafiei,Iran,0001-01-01,Midfield,45
+IPL2017,Padideh MSH,Akbar,Sadeghi,Iran,0001-01-01,Midfield,8
+IPL2017,Padideh MSH,Akbar,Imani,Iran,0001-01-01,Midfield,6
+IPL2017,Padideh MSH,Ali,Ahmadi,Iran,0001-01-01,Defender,33
+IPL2017,Padideh MSH,Amin,Ghaseminejad,Iran,0001-01-01,Forward,9
+IPL2017,Padideh MSH,Babak,Hatami,Iran,0001-01-01,Defender,40
+IPL2017,Padideh MSH,Hamzeh,Khaziravi,Iran,0001-01-01,Midfield,99
+IPL2017,Padideh MSH,Hossain,Zamehran,Iran,0001-01-01,Forward,27
+IPL2017,Padideh MSH,Hossein,Mehraban,Iran,0001-01-01,Forward,75
+IPL2017,Padideh MSH,Milad,Kamandani,Iran,0001-01-01,Midfield,21
+IPL2017,Padideh MSH,Moein,Abbasian,Iran,0001-01-01,Defender,23
+IPL2017,Padideh MSH,Mohamad,Ghazi,Iran,0001-01-01,Forward,11
+IPL2017,Padideh MSH,Mohamad Hossain,Moradmand,Iran,0001-01-01,Defender,4
+IPL2017,Padideh MSH,Mohamad Reza,Khalatbari,Iran,0001-01-01,Forward,10
+IPL2017,Padideh MSH,Mohamad Reza,Khanzadeh,Iran,0001-01-01,Defender,3
+IPL2017,Padideh MSH,Mohamad Reza,Nasehi,Iran,0001-01-01,Midfield,7
+IPL2017,Padideh MSH,Mohsen,Yousefi,Iran,0001-01-01,Midfield,13
+IPL2017,Padideh MSH,Morteza,Mansouri,Iran,0001-01-01,Defender,37
+IPL2017,Padideh MSH,Saeed,Jalali Raad,Iran,0001-01-01,Goalkeeper,22
+IPL2017,Padideh MSH,Seyed Abdollah,Hossaini,Iran,0001-01-01,Defender,5
+IPL2017,Padideh MSH,Shahabeddin,Gordan,Iran,0001-01-01,Goalkeeper,1
+IPL2017,Padideh MSH,Shahin,Mohamadi,Iran,0001-01-01,Midfield,15
+IPL2017,Padideh MSH,Sina,Zamehran,Iran,0001-01-01,Forward,28
+IPL2017,Pars Jonobi JAM,Abolfazl,Mohamad Hassani,Iran,0001-01-01,Forward,17
+IPL2017,Pars Jonobi JAM,Ahmad,Gohari,Iran,0001-01-01,Goalkeeper,
+IPL2017,Pars Jonobi JAM,Ali,Dashti,Iran,0001-01-01,Defender,8
+IPL2017,Pars Jonobi JAM,Ali,Nazari,Iran,0001-01-01,Defender,16
+IPL2017,Pars Jonobi JAM,Ali,Hajvand,Iran,0001-01-01,Midfield,13
+IPL2017,Pars Jonobi JAM,Ali,Jarrahkar,Iran,0001-01-01,Defender,6
+IPL2017,Pars Jonobi JAM,Ali,Amiri,Iran,0001-01-01,Forward,14
+IPL2017,Pars Jonobi JAM,Aloys,Nong,Cameroon,0001-01-01,Forward,27
+IPL2017,Pars Jonobi JAM,Asghar,Nasiri,Iran,0001-01-01,Defender,2
+IPL2017,Pars Jonobi JAM,Ebrahim,Salehi,Iran,0001-01-01,Forward,9
+IPL2017,Pars Jonobi JAM,Ehsan,Taeedi,Iran,0001-01-01,Midfield,
+IPL2017,Pars Jonobi JAM,Farshad,Salarvand,Iran,0001-01-01,Midfield,
+IPL2017,Pars Jonobi JAM,Farshad,Mohamadi Mehr,Iran,0001-01-01,Defender,44
+IPL2017,Pars Jonobi JAM,Hamed,Noormoahamadi,Iran,0001-01-01,Defender,
+IPL2017,Pars Jonobi JAM,Hossain,Pour Amin,Iran,0001-01-01,Midfield,11
+IPL2017,Pars Jonobi JAM,Iman,Salimi,Iran,0001-01-01,Defender,
+IPL2017,Pars Jonobi JAM,Mahdi,Zobaydi,Iran,0001-01-01,Forward,10
+IPL2017,Pars Jonobi JAM,Mahmoud,Khamisi,Iran,0001-01-01,Defender,5
+IPL2017,Pars Jonobi JAM,Maysam,Naghizadeh,Iran,0001-01-01,Midfield,
+IPL2017,Pars Jonobi JAM,Maysam,Taymoori,Iran,0001-01-01,Defender,12
+IPL2017,Pars Jonobi JAM,Mohsen,Forozan,Iran,0001-01-01,Goalkeeper,1
+IPL2017,Pars Jonobi JAM,Mojtaba,Lotfi,Iran,0001-01-01,Defender,3
+IPL2017,Pars Jonobi JAM,Omid,Sing,Iran,0001-01-01,Forward,7
+IPL2017,Paykan TEH,Abolfazl,Ebrahimi,Iran,0001-01-01,Midfield,8
+IPL2017,Paykan TEH,Abolfazl,Razzagh Pour,Iran,0001-01-01,Midfield,
+IPL2017,Paykan TEH,Ali,Abbasi,Iran,0001-01-01,Forward,13
+IPL2017,Paykan TEH,Ali,Hamoodi,Iran,0001-01-01,Defender,40
+IPL2017,Paykan TEH,Amir,Roostaei,Iran,0001-01-01,Forward,90
+IPL2017,Paykan TEH,Amir Hossain,Karimi,Iran,0001-01-01,Midfield,99
+IPL2017,Paykan TEH,Amir Hossain,Sadeghi,Iran,0001-01-01,Defender,4
+IPL2017,Paykan TEH,Amir Hossain,Amiri,Iran,0001-01-01,Midfield,6
+IPL2017,Paykan TEH,Arman,Ghasemi,Iran,0001-01-01,Defender,16
+IPL2017,Paykan TEH,Bakhtiar,Rahmani,Iran,0001-01-01,Midfield,11
+IPL2017,Paykan TEH,Esmaeel,Babaei,Iran,0001-01-01,Midfield,35
+IPL2017,Paykan TEH,Faraz,Emamali,Iran,0001-01-01,Forward,88
+IPL2017,Paykan TEH,Hojat,Sedghi,Iran,0001-01-01,Goalkeeper,31
+IPL2017,Paykan TEH,Hojjat,Haghverdi,Iran,0001-01-01,Defender,20
+IPL2017,Paykan TEH,Kenneth,Ikechukwu Ngwoke,Nigeria,0001-01-01,Forward,
+IPL2017,Paykan TEH,Mahan,Rahmani,Iran,0001-01-01,Midfield,14
+IPL2017,Paykan TEH,Mehdi,Shiri,Iran,0001-01-01,Midfield,2
+IPL2017,Paykan TEH,Mehdi,Momeni,Iran,0001-01-01,Midfield,10
+IPL2017,Paykan TEH,Mehdi,Fayzabadi,Iran,0001-01-01,Midfield,37
+IPL2017,Paykan TEH,Mehran,Mousavi,Iran,0001-01-01,Defender,15
+IPL2017,Paykan TEH,Mohamad Sadegh,Barani,Iran,0001-01-01,Midfield,7
+IPL2017,Paykan TEH,Morteza,Aghakhan,Iran,0001-01-01,Forward,9
+IPL2017,Paykan TEH,Payam,Niazmand,Iran,0001-01-01,Goalkeeper,12
+IPL2017,Paykan TEH,Payman,Ranjbari,Iran,0001-01-01,Forward,19
+IPL2017,Paykan TEH,Rahman,Mahani,Iran,0001-01-01,Midfield,13
+IPL2017,Paykan TEH,Rahman,Ahmadi,Iran,0001-01-01,Goalkeeper,1
+IPL2017,Paykan TEH,Sadegh,Neekfar,Iran,0001-01-01,Midfield,24
+IPL2017,Paykan TEH,Saeed,Sadeghi,Iran,0001-01-01,Midfield,
+IPL2017,Paykan TEH,Sajjad,Ashouri,Iran,0001-01-01,Midfield,77
+IPL2017,Paykan TEH,Shahriyar,Moghanlou,Iran,0001-01-01,Defender,17
+IPL2017,Perspolis TEH,Abolfazl,Darvishvand,Iran,0001-01-01,Goalkeeper,12
+IPL2017,Perspolis TEH,Adam,Hemati,Iran,0001-01-01,Midfield,21
+IPL2017,Perspolis TEH,Ahmad,Nooroullahi,Iran,0001-01-01,Midfield,8
+IPL2017,Perspolis TEH,Ali,Alipour,Iran,0001-01-01,Forward,70
+IPL2017,Perspolis TEH,Alireza,Bayranvand,Iran,0001-01-01,Goalkeeper,1
+IPL2017,Perspolis TEH,Bashar,Rasan,Iraq,0001-01-01,Midfield,
+IPL2017,Perspolis TEH,Bozidar,Radosevic,Croatia,0001-01-01,Goalkeeper,44
+IPL2017,Perspolis TEH,Ehsan,Alvanzadeh,Iran,0001-01-01,Midfield,25
+IPL2017,Perspolis TEH,Ehsan,Hossaini,Iran,0001-01-01,Defender,26
+IPL2017,Perspolis TEH,Farshad,Ahmadzadeh,Iran,0001-01-01,Forward,10
+IPL2017,Perspolis TEH,Godwin,Mensha,Nigeria,0001-01-01,Forward,90
+IPL2017,Perspolis TEH,Hamid Reza,Taherkhani,Iran,0001-01-01,Midfield,37
+IPL2017,Perspolis TEH,Hossain,Mahini,Iran,0001-01-01,Defender,13
+IPL2017,Perspolis TEH,Kamal,Kamyabinia,Iran,0001-01-01,Midfield,11
+IPL2017,Perspolis TEH,Mahdi,Taremi,Iran,0001-01-01,Forward,9
+IPL2017,Perspolis TEH,Mohamad,Ansari,Iran,0001-01-01,Defender,15
+IPL2017,Perspolis TEH,Mohamad Amin,Asadi,Iran,0001-01-01,Forward,20
+IPL2017,Perspolis TEH,Mohsen,Mosalman,Iran,0001-01-01,Midfield,77
+IPL2017,Perspolis TEH,Mohsen,Rabikhah,Iran,0001-01-01,Midfield,18
+IPL2017,Perspolis TEH,Sadegh,Moharrami,Iran,0001-01-01,Midfield,2
+IPL2017,Perspolis TEH,Saeed,Hossain Pour,Iran,0001-01-01,Midfield,23
+IPL2017,Perspolis TEH,Seyed Jalal,Hossaini,Iran,0001-01-01,Defender,4
+IPL2017,Perspolis TEH,Shahin,Abbasian,Iran,0001-01-01,Defender,16
+IPL2017,Perspolis TEH,Shayan,Mosleh,Iran,0001-01-01,Defender,69
+IPL2017,Perspolis TEH,Shoja,Khalil Zadeh,Iran,0001-01-01,Defender,3
+IPL2017,Perspolis TEH,Siamak,Nemati,Iran,0001-01-01,Midfield,88
+IPL2017,Perspolis TEH,Vahid,Amiri,Iran,0001-01-01,Midfield,19
+IPL2017,Saipa ALB,Ali,Gholizadeh,Iran,0001-01-01,Forward,11
+IPL2017,Saipa ALB,Ali,Shojaei,Iran,0001-01-01,Defender,15
+IPL2017,Saipa ALB,Alireza,Alizadeh,Iran,0001-01-01,Defender,20
+IPL2017,Saipa ALB,Amin,Javadi Moghadam,Iran,0001-01-01,Midfield,23
+IPL2017,Saipa ALB,Arash,Rezavand,Iran,0001-01-01,Midfield,7
+IPL2017,Saipa ALB,Ayoub,Kalantari,Iran,0001-01-01,Midfield,10
+IPL2017,Saipa ALB,Danial,Mahini,Iran,0001-01-01,Defender,2
+IPL2017,Saipa ALB,Farshad,Faraji,Iran,0001-01-01,Defender,40
+IPL2017,Saipa ALB,Hamed,Shiri,Iran,0001-01-01,Midfield,18
+IPL2017,Saipa ALB,Hamed,Fallahzadeh,Iran,0001-01-01,Goalkeeper,22
+IPL2017,Saipa ALB,Hossain,Kamyab,Iran,0001-01-01,Forward,27
+IPL2017,Saipa ALB,Hossain,Kanani,Iran,0001-01-01,Defender,5
+IPL2017,Saipa ALB,Khalil,Helali,Iran,0001-01-01,Defender,26
+IPL2017,Saipa ALB,Mahdi,Torabi,Iran,0001-01-01,Midfield,9
+IPL2017,Saipa ALB,Mohamad,Sharifi,Iran,0001-01-01,Midfield,24
+IPL2017,Saipa ALB,Mohamad,Abbas Zadeh,Iran,0001-01-01,Forward,33
+IPL2017,Saipa ALB,Mohamad,Soltani Mehr,Iran,0001-01-01,Forward,28
+IPL2017,Saipa ALB,Mohamad Hossain,Monadi,Iran,0001-01-01,Goalkeeper,13
+IPL2017,Saipa ALB,Mohamad Reza,Solyamani,Iran,0001-01-01,Forward,32
+IPL2017,Saipa ALB,Mohamad Reza,Akhbari,Iran,0001-01-01,Goalkeeper,1
+IPL2017,Saipa ALB,Mohamd,Daneshgar,Iran,0001-01-01,Defender,6
+IPL2017,Saipa ALB,Mostafa,Naeej Pour,Iran,0001-01-01,Midfield,25
+IPL2017,Saipa ALB,Omid,Khaledi,Iran,0001-01-01,Defender,21
+IPL2017,Saipa ALB,Reza,Asadi,Iran,0001-01-01,Midfield,14
+IPL2017,Saipa ALB,Reza,Aliyari,Iran,0001-01-01,Defender,3
+IPL2017,Saipa ALB,Reza,Jafari,Iran,0001-01-01,Midfield,17
+IPL2017,Saipa ALB,Roozbeh,Shah Alidoost,Iran,0001-01-01,Midfield,4
+IPL2017,Saipa ALB,Saeed,Lotfi,Iran,0001-01-01,Defender,
+IPL2017,Saipa ALB,Sajjad,Moshkelpour,Iran,0001-01-01,Defender,19
+IPL2017,Saipa ALB,Seyed Ahmad,Mehdizadeh,Iran,0001-01-01,Midfield,
+IPL2017,Saipa ALB,Taahaa,Shariati,Iran,0001-01-01,Defender,36
+IPL2017,Sanat Naft ABD,Ali,Helichi,Iran,0001-01-01,Defender,32
+IPL2017,Sanat Naft ABD,Ali,Abodollah Zadeh,Iran,0001-01-01,Defender,5
+IPL2017,Sanat Naft ABD,Alireza,Noormohamadi,Iran,0001-01-01,Defender,24
+IPL2017,Sanat Naft ABD,Augusto,Cesar,Brazil,0001-01-01,Midfield,11
+IPL2017,Sanat Naft ABD,Aziz,Maeboudi,Iran,0001-01-01,Defender,16
+IPL2017,Sanat Naft ABD,Bahdor,Abdi,Iran,0001-01-01,Midfield,40
+IPL2017,Sanat Naft ABD,Davood,Nooshi Sofyani,Iran,0001-01-01,Goalkeeper,1
+IPL2017,Sanat Naft ABD,Farid,Behzadi Karimi,Iran,0001-01-01,Forward,10
+IPL2017,Sanat Naft ABD,Farshad,Faraji,Iran,0001-01-01,Defender,3
+IPL2017,Sanat Naft ABD,Hossain,Baghlani,Iran,0001-01-01,Defender,15
+IPL2017,Sanat Naft ABD,Hossain,Saaki,Iran,0001-01-01,Defender,19
+IPL2017,Sanat Naft ABD,Jassim Mohamad,Karrar,Iraq,0001-01-01,Midfield,13
+IPL2017,Sanat Naft ABD,Luciano Pereira,Mendes,Brazil,0001-01-01,Forward,29
+IPL2017,Sanat Naft ABD,Magno,Batista Da Silva,Brazil,0001-01-01,Midfield,6
+IPL2017,Sanat Naft ABD,Mahmoud,Dari Zadeh,Iran,0001-01-01,Midfield,12
+IPL2017,Sanat Naft ABD,Milad,Shaebanlou,Iran,0001-01-01,Midfield,30
+IPL2017,Sanat Naft ABD,Mohamad,Shaadkaam,Iran,0001-01-01,Forward,17
+IPL2017,Sanat Naft ABD,Mohamad,Darees,Iran,0001-01-01,Goalkeeper,33
+IPL2017,Sanat Naft ABD,Mohamad Reza,Pour Mohamad,Iran,0001-01-01,Midfield,7
+IPL2017,Sanat Naft ABD,Mohsen,Hamidi,Iran,0001-01-01,Defender,
+IPL2017,Sanat Naft ABD,Morteza,Asadi,Iran,0001-01-01,Defender,8
+IPL2017,Sanat Naft ABD,Moslem,Mojdemi,Iran,0001-01-01,Midfield,23
+IPL2017,Sanat Naft ABD,Nasser,Salari,Iran,0001-01-01,Goalkeeper,
+IPL2017,Sanat Naft ABD,Omid,Jahanbakhsh,Iran,0001-01-01,Midfield,14
+IPL2017,Sanat Naft ABD,Reza,Jubayreh,Iran,0001-01-01,Midfield,
+IPL2017,Sanat Naft ABD,Seyed Milad,Mousavi,Iran,0001-01-01,Midfield,21
+IPL2017,Sanat Naft ABD,Vahid,Esmaeel Baygi,Iran,0001-01-01,Defender,2
+IPL2017,Sanat Naft ABD,Yaser,Papi,Iran,0001-01-01,Goalkeeper,35
+IPL2017,Sanat Naft ABD,Zobair,Neeknafs,Iran,0001-01-01,Midfield,20
+IPL2017,Sepahan ESF,Abolhassan,Jafari,Iran,0001-01-01,Defender,2
+IPL2017,Sepahan ESF,Ali,Kaykhosravi,Iran,0001-01-01,Goalkeeper,36
+IPL2017,Sepahan ESF,Amin,Jahan Alian,Iran,0001-01-01,Midfield,18
+IPL2017,Sepahan ESF,Aref,Gholami,Iran,0001-01-01,Defender,55
+IPL2017,Sepahan ESF,Ezzatolah,Pourghaz,Iran,0001-01-01,Defender,5
+IPL2017,Sepahan ESF,Hamed,Bahiraei,Iran,0001-01-01,Midfield,70
+IPL2017,Sepahan ESF,Hossain,Papi,Iran,0001-01-01,Midfield,47
+IPL2017,Sepahan ESF,Hossain,Fazeli,Iran,0001-01-01,Midfield,37
+IPL2017,Sepahan ESF,Iman,Zakizadeh,Iran,0001-01-01,Forward,15
+IPL2017,Sepahan ESF,Jairo,Rodriguez,Brazil,0001-01-01,Defender,33
+IPL2017,Sepahan ESF,Jallaledin,Alimohamadi,Iran,0001-01-01,Midfield,17
+IPL2017,Sepahan ESF,Lee,Oliviera,Brazil,0001-01-01,Goalkeeper,1
+IPL2017,Sepahan ESF,Mahdi,Rahimi,Iran,0001-01-01,Defender,78
+IPL2017,Sepahan ESF,Mahdi,Sedghian,Iran,0001-01-01,Goalkeeper,35
+IPL2017,Sepahan ESF,Mahdi,Amini,Iran,0001-01-01,Goalkeeper,27
+IPL2017,Sepahan ESF,Mahmoud,Ghaed Rahmati,Iran,0001-01-01,Midfield,21
+IPL2017,Sepahan ESF,Marwan,Hussein,Iraq,0001-01-01,Forward,20
+IPL2017,Sepahan ESF,Masoud,Hassan Zadeh,Iran,0001-01-01,Forward,14
+IPL2017,Sepahan ESF,Mehrdad,Mohamadi,Iran,0001-01-01,Forward,10
+IPL2017,Sepahan ESF,Milad,Sarlak,Iran,0001-01-01,Midfield,6
+IPL2017,Sepahan ESF,Nasser,Ghalavand,Iran,0001-01-01,Midfield,23
+IPL2017,Sepahan ESF,Rafael,Crivellaro,Brazil,0001-01-01,Midfield,50
+IPL2017,Sepahan ESF,Rasool,Navidkia,Iran,0001-01-01,Midfield,8
+IPL2017,Sepahan ESF,Reza,Mirzaei,Iran,0001-01-01,Forward,77
+IPL2017,Sepahan ESF,Reza,Dehghani,Iran,0001-01-01,Midfield,12
+IPL2017,Sepahan ESF,Saber,Deedevar,Iran,0001-01-01,Defender,19
+IPL2017,Sepahan ESF,Saeed,Ghaedifar,Iran,0001-01-01,Midfield,
+IPL2017,Sepahan ESF,Saeed,Aghaei,Iran,0001-01-01,Defender,7
+IPL2017,Sepahan ESF,Sasan,Ansari,Iran,0001-01-01,Forward,11
+IPL2017,Sepahan ESF,Shahin,Saghebi,Iran,0001-01-01,Midfield,9
+IPL2017,Sepahan ESF,Siavash,Yazdani,Iran,0001-01-01,Defender,13
+IPL2017,SepidRood RST,Ahmad,Ahi,Iran,0001-01-01,Defender,
+IPL2017,SepidRood RST,Ali,Dehghan,Iran,0001-01-01,Midfield,
+IPL2017,SepidRood RST,Gholamreza,Rezaei,Iran,0001-01-01,Forward,
+IPL2017,SepidRood RST,Hossain,Ebrahimi,Iran,0001-01-01,Midfield,
+IPL2017,SepidRood RST,Hossain,Kabi,Iran,0001-01-01,Defender,13
+IPL2017,SepidRood RST,Iman,Sadeghi,Iran,0001-01-01,Defender,
+IPL2017,SepidRood RST,Maziar,Nouri,Iran,0001-01-01,Goalkeeper,22
+IPL2017,SepidRood RST,Meaad,Yazdani,Iran,0001-01-01,Midfield,
+IPL2017,SepidRood RST,Mehrdad,Jamaati,Iran,0001-01-01,Defender,
+IPL2017,SepidRood RST,Milad,Ghorban Zadeh,Iran,0001-01-01,Midfield,69
+IPL2017,SepidRood RST,Emad,Mir Javan,Iran,0001-01-01,Midfield,
+IPL2017,SepidRood RST,Mohamad,Lotfi,Iran,0001-01-01,Forward,21
+IPL2017,SepidRood RST,Mohamad,Miri,Iran,0001-01-01,Midfield,19
+IPL2017,SepidRood RST,Mohamad Reza,Almas Khaneh,Iran,0001-01-01,Defender,70
+IPL2017,SepidRood RST,Pooya,Nozhati,Iran,0001-01-01,Forward,
+IPL2017,SepidRood RST,Seyed Mohamad,Hossaini,Iran,0001-01-01,Goalkeeper,1
+IPL2017,SepidRood RST,Seyed Mohsen,Hossaini,Iran,0001-01-01,Defender,
+IPL2017,SepidRood RST,Sohail,Haghshenas,Iran,0001-01-01,Forward,11
+IPL2017,SepidRood RST,Toeheed,Gholami,Iran,0001-01-01,Midfield,
+IPL2017,SiahJamegan MSH,Abbas,Merdasi,Iran,0001-01-01,Defender,33
+IPL2017,SiahJamegan MSH,Abdolreza,Zarei,Iran,0001-01-01,Defender,28
+IPL2017,SiahJamegan MSH,Alireza,Jalili,Iran,0001-01-01,Midfield,
+IPL2017,SiahJamegan MSH,Amir,Mohamad Panahi,Iran,0001-01-01,Forward,
+IPL2017,SiahJamegan MSH,Amir Hossain,Hatammlou,Iran,0001-01-01,Midfield,16
+IPL2017,SiahJamegan MSH,Asghar,Jafari,Iran,0001-01-01,Defender,19
+IPL2017,SiahJamegan MSH,Hossain,Maddadi,Iran,0001-01-01,Forward,
+IPL2017,SiahJamegan MSH,Hossain,Badamaki,Iran,0001-01-01,Midfield,47
+IPL2017,SiahJamegan MSH,Jure,Colak,Croatia,0001-01-01,Defender,
+IPL2017,SiahJamegan MSH,Karim,Ahmadi,Iran,0001-01-01,Midfield,
+IPL2017,SiahJamegan MSH,Kayvon,Amraeei,Iran,0001-01-01,Forward,
+IPL2017,SiahJamegan MSH,Masoud,Homami,Iran,0001-01-01,Goalkeeper,44
+IPL2017,SiahJamegan MSH,Maysam,Hossaini,Iran,0001-01-01,Defender,6
+IPL2017,SiahJamegan MSH,Milad,Shokrzadeh,Iran,0001-01-01,Midfield,22
+IPL2017,SiahJamegan MSH,Mohamad,Nasseri,Iran,0001-01-01,Goalkeeper,21
+IPL2017,SiahJamegan MSH,Mohamad Mahdi,Asgari,Iran,0001-01-01,Midfield,
+IPL2017,SiahJamegan MSH,Mohsen,Aghaei,Iran,0001-01-01,Defender,5
+IPL2017,SiahJamegan MSH,Mohsen,Azarpaad,Iran,0001-01-01,Midfield,70
+IPL2017,SiahJamegan MSH,Morteza,Ghadimipour,Iran,0001-01-01,Goalkeeper,12
+IPL2017,SiahJamegan MSH,Morteza,Ranjbar,Iran,0001-01-01,Forward,11
+IPL2017,SiahJamegan MSH,Mostafa,Ahmadi,Iran,0001-01-01,Midfield,9
+IPL2017,SiahJamegan MSH,Payam,Malekian,Iran,0001-01-01,Midfield,2
+IPL2017,SiahJamegan MSH,Reza,Sharbati,Iran,0001-01-01,Midfield,3
+IPL2017,SiahJamegan MSH,Rouhollah,Sayfollahi,Iran,0001-01-01,Forward,27
+IPL2017,SiahJamegan MSH,Saeed,Daghighi,Iran,0001-01-01,Forward,50
+IPL2017,SiahJamegan MSH,Salar,Afrasiabi,Iran,0001-01-01,Midfield,14
+IPL2017,SiahJamegan MSH,Sobhan,Khaghani,Iran,0001-01-01,Forward,
+IPL2017,SiahJamegan MSH,Vahid,Asgari,Iran,0001-01-01,Defender,31
+IPL2017,SiahJamegan MSH,Younes,Shakeri,Iran,0001-01-01,Forward,10
+IPL2017,Teraktor TBZ,Ali,Taheran,Iran,0001-01-01,Midfield,88
+IPL2017,Teraktor TBZ,Ali,Esmaeli,Iran,0001-01-01,Defender,40
+IPL2017,Teraktor TBZ,Amir,Asad Zadeh,Iran,0001-01-01,Forward,30
+IPL2017,Teraktor TBZ,Amir,Nasr Azadani,Iran,0001-01-01,Forward,70
+IPL2017,Teraktor TBZ,Aref,Aghasi,Iran,0001-01-01,Midfield,23
+IPL2017,Teraktor TBZ,Farzad,Hatami,Iran,0001-01-01,Forward,24
+IPL2017,Teraktor TBZ,Farzin,Garousian,Iran,0001-01-01,Goalkeeper,1
+IPL2017,Teraktor TBZ,Hadi,Mohamadi,Iran,0001-01-01,Defender,4
+IPL2017,Teraktor TBZ,Hamed,Hossain Ali Zadeh,Iran,0001-01-01,Midfield,32
+IPL2017,Teraktor TBZ,Mahdi,Sharifi,Iran,0001-01-01,Forward,47
+IPL2017,Teraktor TBZ,Mahdi,Kiani,Iran,0001-01-01,Midfield,6
+IPL2017,Teraktor TBZ,Mahdi,Mohamadian,Iran,0001-01-01,Goalkeeper,
+IPL2017,Teraktor TBZ,Mohamad,Moslemipour,Iran,0001-01-01,Midfield,77
+IPL2017,Teraktor TBZ,Mohamad,Iran Pourian,Iran,0001-01-01,Defender,2
+IPL2017,Teraktor TBZ,Mohamad,Ebrahimi,Iran,0001-01-01,Forward,10
+IPL2017,Teraktor TBZ,Mohamad,Noori,Iran,0001-01-01,Midfield,14
+IPL2017,Teraktor TBZ,Mohamad,Naderi,Iran,0001-01-01,Defender,28
+IPL2017,Teraktor TBZ,Mohamad Amin,Bahrami,Iran,0001-01-01,Goalkeeper,22
+IPL2017,Teraktor TBZ,Mohamad Reza,Mehdizadeh,Iran,0001-01-01,Midfield,16
+IPL2017,Teraktor TBZ,Mohamad Reza,Azadi,Iran,0001-01-01,Midfield,19
+IPL2017,Teraktor TBZ,Omid,Allishah,Iran,0001-01-01,Midfield,2
+IPL2017,Teraktor TBZ,Reza,Abdi,Iran,0001-01-01,Forward,29
+IPL2017,Teraktor TBZ,Reza,Safeahmadi,Iran,0001-01-01,Midfield,55
+IPL2017,Teraktor TBZ,Seyed Fakher,Tahami,Iran,0001-01-01,Midfield,27
+IPL2017,Teraktor TBZ,Shahram,Goodarzi,Iran,0001-01-01,Forward,11
+IPL2017,Teraktor TBZ,Sina,Ashori,Iran,0001-01-01,Midfield,66
+IPL2017,Zobahan ESF,Ali,Khodadadi,Iran,0001-01-01,Forward,28
+IPL2017,Zobahan ESF,Ali,Hammam,Lebanon,0001-01-01,Defender,19
+IPL2017,Zobahan ESF,Danial,Esmaeelfar,Iran,0001-01-01,Defender,23
+IPL2017,Zobahan ESF,Ehsan,Pahlevan,Iran,0001-01-01,Midfield,10
+IPL2017,Zobahan ESF,Esmaeel,Sharifat,Iran,0001-01-01,Forward,20
+IPL2017,Zobahan ESF,Ghasem,Haddadifar,Iran,0001-01-01,Midfield,8
+IPL2017,Zobahan ESF,Giorgi,Gvelesiani,Georgia,0001-01-01,Defender,5
+IPL2017,Zobahan ESF,Hamid,Bouhamdan,Iran,0001-01-01,Midfield,88
+IPL2017,Zobahan ESF,Kamran,Momeni,Iran,0001-01-01,Midfield,35
+IPL2017,Zobahan ESF,Kianoosh,Eghbali,Iran,0001-01-01,Defender,36
+IPL2017,Zobahan ESF,Mahdi,Mahdipour,Iran,0001-01-01,Midfield,6
+IPL2017,Zobahan ESF,Mehdi,Rajabzadeh,Iran,0001-01-01,Forward,30
+IPL2017,Zobahan ESF,Mehran,Derkakhshan Mehr,Iran,0001-01-01,Midfield,21
+IPL2017,Zobahan ESF,Mohamad,Nejad Mehdi,Iran,0001-01-01,Defender,2
+IPL2017,Zobahan ESF,Mohamad,Amini,Iran,0001-01-01,Defender,31
+IPL2017,Zobahan ESF,Mohamad,Sattari,Iran,0001-01-01,Defender,33
+IPL2017,Zobahan ESF,Mohamad Bagher,Sadeghi,Iran,0001-01-01,Goalkeeper,1
+IPL2017,Zobahan ESF,Mohamad Rasheed,Mazaheri,Iran,0001-01-01,Goalkeeper,12
+IPL2017,Zobahan ESF,Mohamad Reza,Abbasi,Iran,0001-01-01,Midfield,17
+IPL2017,Zobahan ESF,Mohamad Reza,Hossaini,Iran,0001-01-01,Midfield,7
+IPL2017,Zobahan ESF,Morteza,Tabrizi,Iran,0001-01-01,Forward,11
+IPL2017,Zobahan ESF,Nima,Taheri,Iran,0001-01-01,Defender,26
+IPL2017,Zobahan ESF,Rabih,Ataya,Lebanon,0001-01-01,Midfield,9
+IPL2017,Zobahan ESF,Vahid,Mohamad Zadeh,Iran,0001-01-01,Defender,3

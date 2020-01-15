@@ -1,0 +1,45 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,09,Naft MJS,Game Half1 Start,00:00:00,,,,
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Hamed,Mahmoudi,Defender
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Kiomars,Cheraghi,Defender
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Mohamad,Madmalisi,Defender
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Saeed,Salarzadeh,Defender
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Milad,Znayadpour,Forward
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Milad,Solayman Fallah,Forward
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Amir Meghdad,Maleki,Goalkeeper
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Reza,Haydari,Goalkeeper
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Hamid,Bouhamdan,Midfield
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Mahmoud,Tighnavard,Midfield
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft MJS,Milad,Jafari,Midfield
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft TEH,Leandro,Padovani,Defender
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft TEH,Siamak,Kouroshi,Defender
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft TEH,Vahid,Hamdinejad,Defender
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft TEH,David,Wirikom,Forward
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft TEH,Hossain,Ebrahimi,Forward
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft TEH,Alireza,Bayranvand,Goalkeeper
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft TEH,Amir Arsalan,Mottahari,Midfield
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft TEH,Iman,Mobali,Midfield
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft TEH,Kamal,Kamyabinia,Midfield
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft TEH,Mehdi,Shiri,Midfield
+IPL2014,09,Naft MJS,Player in Line-up,00:00:00,Naft TEH,Vahid,Amiri,Midfield
+IPL2014,09,Naft MJS,Card: Yellow,00:01:00,Naft MJS,Hamed,Mahmoudi,Defender
+IPL2014,09,Naft MJS,Card: Yellow,00:01:00,Naft TEH,Reza,Aliyari,Defender
+IPL2014,09,Naft MJS,Card: Yellow,00:01:00,Naft TEH,Vahid,Hamdinejad,Defender
+IPL2014,09,Naft MJS,Game Half1 Stop,00:46:00,,,,
+IPL2014,09,Naft MJS,Player Sub-in,00:46:00,Naft TEH,Reza,Aliyari,Defender
+IPL2014,09,Naft MJS,Player Sub-out,00:46:00,Naft TEH,Kamal,Kamyabinia,Midfield
+IPL2014,09,Naft MJS,Game Half2 Start,00:47:00,,,,
+IPL2014,09,Naft MJS,Player Sub-in,01:05:00,Naft MJS,Ali,Kianifar,Midfield
+IPL2014,09,Naft MJS,Player Sub-out,01:05:00,Naft MJS,Milad,Jafari,Midfield
+IPL2014,09,Naft MJS,Player Sub-in,01:07:00,Naft TEH,Gholamreza,Rezaei,Forward
+IPL2014,09,Naft MJS,Player Sub-out,01:07:00,Naft TEH,Vahid,Amiri,Midfield
+IPL2014,09,Naft MJS,Player Sub-in,01:08:00,Naft MJS,Sattar,Deraji,Midfield
+IPL2014,09,Naft MJS,Player Sub-out,01:08:00,Naft MJS,Milad,Znayadpour,Forward
+IPL2014,09,Naft MJS,Player Sub-in,01:12:00,Naft MJS,Luis Carlos,Dos Santos Martins,Forward
+IPL2014,09,Naft MJS,Player Sub-out,01:12:00,Naft MJS,Amir Meghdad,Maleki,Goalkeeper
+IPL2014,09,Naft MJS,Penalty Scored,01:17:00,Naft TEH,Leandro,Padovani,Defender
+IPL2014,09,Naft MJS,Player Sub-in,01:24:00,Naft TEH,Alireza,Ezzati,Midfield
+IPL2014,09,Naft MJS,Player Sub-out,01:24:00,Naft TEH,Hossain,Ebrahimi,Forward
+IPL2014,09,Naft MJS,Goal,01:29:00,Naft TEH,Reza,Aliyari,Defender
+IPL2014,09,Naft MJS,Game Half2 Stop,01:39:00,,,,
+IPL2014,09,Naft MJS,Game End,01:40:00,,,,

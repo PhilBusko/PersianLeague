@@ -1,0 +1,44 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2015,27,Esteghlal AHV,Game Half1 Start,00:00:00,,,,
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Maki,Sharifi,Defender
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Milad,Rabbani,Defender
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Ali,Helichi,Forward
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Taleb,Reekani,Forward
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Mehdi,Eslami,Goalkeeper
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Adel,Kolahkaj,Midfield
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Ehsan,Moradian,Midfield
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Hossain,Saaki,Midfield
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Hossain,Bahrami,Midfield
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Milad,Paak Parvar,Midfield
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Esteghlal AHV,Pedram,Ardalani,Midfield
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Perspolis TEH,Luca,Maric,Defender
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Perspolis TEH,Mohsen,Bengar,Defender
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Perspolis TEH,Ramin,Rezaeian,Defender
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Perspolis TEH,Ali,Alipour,Forward
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Perspolis TEH,Farshad,Ahmadzadeh,Forward
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Perspolis TEH,Jerry,Bengston,Forward
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Perspolis TEH,Sosha,Makani,Goalkeeper
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Perspolis TEH,Kamal,Kamyabinia,Midfield
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Perspolis TEH,Mohamad,Ansari,Midfield
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Perspolis TEH,Mohsen,Mosalman,Midfield
+IPL2015,27,Esteghlal AHV,Player in Line-up,00:00:00,Perspolis TEH,Omid,Allishah,Midfield
+IPL2015,27,Esteghlal AHV,Card: Yellow,00:01:00,Esteghlal AHV,Taleb,Reekani,Forward
+IPL2015,27,Esteghlal AHV,Card: Yellow,00:01:00,Perspolis TEH,Ramin,Rezaeian,Defender
+IPL2015,27,Esteghlal AHV,Player Sub-in,00:39:00,Perspolis TEH,Michael,Umana Corrales,Defender
+IPL2015,27,Esteghlal AHV,Player Sub-out,00:39:00,Perspolis TEH,Mohsen,Bengar,Defender
+IPL2015,27,Esteghlal AHV,Game Half1 Stop,00:46:00,,,,
+IPL2015,27,Esteghlal AHV,Game Half2 Start,00:47:00,,,,
+IPL2015,27,Esteghlal AHV,Goal,00:55:00,Perspolis TEH,Jerry,Bengston,Forward
+IPL2015,27,Esteghlal AHV,Player Sub-in,01:03:00,Esteghlal AHV,Hamzeh,Khaziravi,Midfield
+IPL2015,27,Esteghlal AHV,Player Sub-out,01:03:00,Esteghlal AHV,Hossain,Bahrami,Midfield
+IPL2015,27,Esteghlal AHV,Player Sub-in,01:22:00,Esteghlal AHV,Ali,Bigdeli,Forward
+IPL2015,27,Esteghlal AHV,Player Sub-out,01:22:00,Esteghlal AHV,Milad,Paak Parvar,Midfield
+IPL2015,27,Esteghlal AHV,Penalty Scored,01:26:00,Perspolis TEH,Jerry,Bengston,Forward
+IPL2015,27,Esteghlal AHV,Player Sub-in,01:28:00,Esteghlal AHV,Adel,Masoudifar,Midfield
+IPL2015,27,Esteghlal AHV,Player Sub-in,01:28:00,Perspolis TEH,Ahmad,Nooroullahi,Midfield
+IPL2015,27,Esteghlal AHV,Player Sub-out,01:28:00,Esteghlal AHV,Hossain,Saaki,Midfield
+IPL2015,27,Esteghlal AHV,Player Sub-out,01:28:00,Perspolis TEH,Farshad,Ahmadzadeh,Forward
+IPL2015,27,Esteghlal AHV,Player Sub-in,01:29:00,Perspolis TEH,Babak,Hatami,Forward
+IPL2015,27,Esteghlal AHV,Player Sub-out,01:29:00,Perspolis TEH,Ali,Alipour,Forward
+IPL2015,27,Esteghlal AHV,Game Half2 Stop,01:39:00,,,,
+IPL2015,27,Esteghlal AHV,Game End,01:40:00,,,,

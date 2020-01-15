@@ -1,0 +1,50 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2014,02,Foolad KHU,Game Half1 Start,00:00:00,,,,
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Ayoub,Vali,Defender
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Leonard,Mesaric,Defender
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Mehrdad,Jamaati,Defender
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Sasan,Ansari,Forward
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Alireza,Salimi,Goalkeeper
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Ahmad,Abdollahzadeh,Midfield
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Esmaeel,Sharifat,Midfield
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Mahdi,Baderlo,Midfield
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Mathias,Chago,Midfield
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Soroush,Rafiei,Midfield
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Foolad KHU,Yousef,Vakia,Midfield
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Perspolis TEH,Alireza,Noormohamadi,Defender
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Perspolis TEH,Mohamad Reza,Khanzadeh,Defender
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Perspolis TEH,Mohsen,Bengar,Defender
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Perspolis TEH,Mohamad,Abbaszadeh,Forward
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Perspolis TEH,Payam,Sadeghian,Forward
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Perspolis TEH,Reza,Norouzi,Forward
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Perspolis TEH,Correa Junior,Nilson,Goalkeeper
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Perspolis TEH,Ahmad,Nooroullahi,Midfield
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Perspolis TEH,Hamid Reza,Ali Asgari,Midfield
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Perspolis TEH,Omid,Allishah,Midfield
+IPL2014,02,Foolad KHU,Player in Line-up,00:00:00,Perspolis TEH,Reza,Haghighi,Midfield
+IPL2014,02,Foolad KHU,Card: Red,00:01:00,Perspolis TEH,Payam,Sadeghian,Forward
+IPL2014,02,Foolad KHU,Card: Yellow,00:01:00,Foolad KHU,Ayoub,Vali,Defender
+IPL2014,02,Foolad KHU,Card: Yellow,00:01:00,Perspolis TEH,Alireza,Noormohamadi,Defender
+IPL2014,02,Foolad KHU,Card: Yellow,00:01:00,Perspolis TEH,Mohamad Reza,Khanzadeh,Defender
+IPL2014,02,Foolad KHU,Card: Yellow,00:01:00,Perspolis TEH,Mohsen,Bengar,Defender
+IPL2014,02,Foolad KHU,Card: Yellow,00:01:00,Perspolis TEH,Ahmad,Nooroullahi,Midfield
+IPL2014,02,Foolad KHU,Card: Yellow,00:01:00,Perspolis TEH,Hamid Reza,Ali Asgari,Midfield
+IPL2014,02,Foolad KHU,Card: Yellow,00:01:00,Perspolis TEH,Reza,Haghighi,Midfield
+IPL2014,02,Foolad KHU,Goal,00:45:00,Foolad KHU,Soroush,Rafiei,Midfield
+IPL2014,02,Foolad KHU,Game Half1 Stop,00:46:00,,,,
+IPL2014,02,Foolad KHU,Player Sub-in,00:46:00,Perspolis TEH,Maysam,Hossaini,Defender
+IPL2014,02,Foolad KHU,Player Sub-out,00:46:00,Perspolis TEH,Mohamad Reza,Khanzadeh,Defender
+IPL2014,02,Foolad KHU,Game Half2 Start,00:47:00,,,,
+IPL2014,02,Foolad KHU,Goal,00:53:00,Foolad KHU,Esmaeel,Sharifat,Midfield
+IPL2014,02,Foolad KHU,Player Sub-in,01:03:00,Perspolis TEH,Mohamad,Noori,Midfield
+IPL2014,02,Foolad KHU,Player Sub-out,01:03:00,Perspolis TEH,Reza,Haghighi,Midfield
+IPL2014,02,Foolad KHU,Player Sub-in,01:22:00,Perspolis TEH,Mahdi,Taremi,Forward
+IPL2014,02,Foolad KHU,Player Sub-out,01:22:00,Perspolis TEH,Mohamad,Abbaszadeh,Forward
+IPL2014,02,Foolad KHU,Player Sub-in,01:25:00,Foolad KHU,Bahman,Jahantigh,Forward
+IPL2014,02,Foolad KHU,Player Sub-out,01:25:00,Foolad KHU,Yousef,Vakia,Midfield
+IPL2014,02,Foolad KHU,Player Sub-in,01:29:00,Foolad KHU,Reza,Ahmadi,Defender
+IPL2014,02,Foolad KHU,Player Sub-in,01:29:00,Foolad KHU,Hadi,Habibinejad,Midfield
+IPL2014,02,Foolad KHU,Player Sub-out,01:29:00,Foolad KHU,Sasan,Ansari,Forward
+IPL2014,02,Foolad KHU,Player Sub-out,01:29:00,Foolad KHU,Soroush,Rafiei,Midfield
+IPL2014,02,Foolad KHU,Game Half2 Stop,01:39:00,,,,
+IPL2014,02,Foolad KHU,Game End,01:40:00,,,,

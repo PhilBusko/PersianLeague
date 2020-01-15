@@ -1,0 +1,46 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2015,24,Esteghlal KHU,Game Half1 Start,00:00:00,,,,
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Aghil,Kabi,Defender
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Danial,Mahini,Defender
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mousa Salif,Coulibaly,Defender
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Paymon,Shirzadi,Defender
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Farshad,Jaanfaza,Forward
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Hakeem,Nassari,Forward
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Raheem,Zahivi,Forward
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Fernando Jesus,Riberio,Goalkeeper
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Ali Asghar,Ashouri,Midfield
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Hassan,Bait Saeed,Midfield
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Maysam,Doraghi,Midfield
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal TEH,Haneef,Omranzadeh,Defender
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal TEH,Hrayr,Mkoyan,Defender
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal TEH,Maysam,Majidi,Defender
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal TEH,Milad,Fakhredini,Defender
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal TEH,Pero,Pejic,Forward
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal TEH,Vahid,Talebloo,Goalkeeper
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal TEH,Adil,Chihi,Midfield
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal TEH,Ali,Karimi,Midfield
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal TEH,Farshid,Esmaeeli,Midfield
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal TEH,Khosrow,Haydari,Midfield
+IPL2015,24,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal TEH,Omid,Ebrahimi,Midfield
+IPL2015,24,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Danial,Mahini,Defender
+IPL2015,24,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Mousa Salif,Coulibaly,Defender
+IPL2015,24,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Hakeem,Nassari,Forward
+IPL2015,24,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal TEH,Khosrow,Haydari,Midfield
+IPL2015,24,Esteghlal KHU,Player Sub-in,00:08:00,Esteghlal TEH,Mehdi,Momeni,Midfield
+IPL2015,24,Esteghlal KHU,Player Sub-out,00:08:00,Esteghlal TEH,Ali,Karimi,Midfield
+IPL2015,24,Esteghlal KHU,Goal,00:31:00,Esteghlal TEH,Maysam,Majidi,Defender
+IPL2015,24,Esteghlal KHU,Game Half1 Stop,00:46:00,,,,
+IPL2015,24,Esteghlal KHU,Game Half2 Start,00:47:00,,,,
+IPL2015,24,Esteghlal KHU,Player Sub-in,00:56:00,Esteghlal KHU,Farshad,Salarvand,Midfield
+IPL2015,24,Esteghlal KHU,Player Sub-out,00:56:00,Esteghlal KHU,Ali Asghar,Ashouri,Midfield
+IPL2015,24,Esteghlal KHU,Player Sub-in,01:02:00,Esteghlal TEH,Behnam,Barzaei,Forward
+IPL2015,24,Esteghlal KHU,Player Sub-out,01:02:00,Esteghlal TEH,Khosrow,Haydari,Midfield
+IPL2015,24,Esteghlal KHU,Player Sub-in,01:06:00,Esteghlal KHU,Omid,Sink,Midfield
+IPL2015,24,Esteghlal KHU,Player Sub-out,01:06:00,Esteghlal KHU,Farshad,Jaanfaza,Forward
+IPL2015,24,Esteghlal KHU,Goal,01:13:00,Esteghlal KHU,Farshad,Salarvand,Midfield
+IPL2015,24,Esteghlal KHU,Player Sub-in,01:17:00,Esteghlal TEH,Mohamad Reza,Khorsandnia,Midfield
+IPL2015,24,Esteghlal KHU,Player Sub-out,01:17:00,Esteghlal TEH,Farshid,Esmaeeli,Midfield
+IPL2015,24,Esteghlal KHU,Player Sub-in,01:22:00,Esteghlal KHU,Fellipe,Bertoldo,Midfield
+IPL2015,24,Esteghlal KHU,Player Sub-out,01:22:00,Esteghlal KHU,Hakeem,Nassari,Forward
+IPL2015,24,Esteghlal KHU,Game Half2 Stop,01:39:00,,,,
+IPL2015,24,Esteghlal KHU,Game End,01:40:00,,,,

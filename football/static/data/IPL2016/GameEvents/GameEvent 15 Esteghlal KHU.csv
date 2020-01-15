@@ -1,0 +1,44 @@
+Season,Round,ClubHome,Event,EventTime,EventClub,FirstName,LastName,Position
+IPL2016,15,Esteghlal KHU,Game Half1 Start,00:00:00,,,,
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mohamad,Tayyebi,Defender
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Paymon,Shirzadi,Defender
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Raheem,Zahivi,Forward
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Vahid,Sheikh Vaysi,Goalkeeper
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Abolfazl,Aalaei,Midfield
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Ali Asghar,Ashouri,Midfield
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Bahdor,Abdi,Midfield
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Hassan,Bait Saeed,Midfield
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mahdi,Zobaydi,Midfield
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Mehdi,Momeni,Midfield
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Esteghlal KHU,Salman,Bahrani,Midfield
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Saba QOM,Davood,Bahadori,Defender
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Saba QOM,Hamid Reza,Deevsalar,Defender
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Saba QOM,Hashem,Bayk Zadeh,Defender
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Saba QOM,Pooya,Safepanahi,Defender
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Saba QOM,Abdolkarim,Eslami,Forward
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Saba QOM,Gholamreza,Enayati,Forward
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Saba QOM,Kayvon,Amraei,Forward
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Saba QOM,Hamed,Lak,Goalkeeper
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Saba QOM,Ahmad,Hassan Zadeh,Midfield
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Saba QOM,Ghasem,Dehnavi,Midfield
+IPL2016,15,Esteghlal KHU,Player in Line-up,00:00:00,Saba QOM,Seyed Mehdi,Hossaini,Midfield
+IPL2016,15,Esteghlal KHU,Card: Yellow,00:01:00,Esteghlal KHU,Farshad,Salarvand,Midfield
+IPL2016,15,Esteghlal KHU,Card: Yellow,00:01:00,Saba QOM,Hashem,Bayk Zadeh,Defender
+IPL2016,15,Esteghlal KHU,Card: Yellow,00:01:00,Saba QOM,Hamed,Lak,Goalkeeper
+IPL2016,15,Esteghlal KHU,Game Half1 Stop,00:46:00,,,,
+IPL2016,15,Esteghlal KHU,Game Half2 Start,00:47:00,,,,
+IPL2016,15,Esteghlal KHU,Player Sub-in,01:01:00,Esteghlal KHU,Farshad,Salarvand,Midfield
+IPL2016,15,Esteghlal KHU,Player Sub-out,01:01:00,Esteghlal KHU,Mahdi,Zobaydi,Midfield
+IPL2016,15,Esteghlal KHU,Player Sub-in,01:17:00,Saba QOM,Omid,Jahanbakhshi,Midfield
+IPL2016,15,Esteghlal KHU,Player Sub-out,01:17:00,Saba QOM,Ahmad,Hassan Zadeh,Midfield
+IPL2016,15,Esteghlal KHU,Player Sub-in,01:19:00,Saba QOM,Majid,Aliyari,Midfield
+IPL2016,15,Esteghlal KHU,Player Sub-out,01:19:00,Saba QOM,Abdolkarim,Eslami,Forward
+IPL2016,15,Esteghlal KHU,Player Sub-in,01:20:00,Esteghlal KHU,Younes,Delfee,Midfield
+IPL2016,15,Esteghlal KHU,Player Sub-out,01:20:00,Esteghlal KHU,Ali Asghar,Ashouri,Midfield
+IPL2016,15,Esteghlal KHU,Player Sub-in,01:25:00,Esteghlal KHU,Hossain,Bahrami,Goalkeeper
+IPL2016,15,Esteghlal KHU,Player Sub-out,01:25:00,Esteghlal KHU,Mehdi,Momeni,Midfield
+IPL2016,15,Esteghlal KHU,Player Sub-in,01:27:00,Saba QOM,Mahdi,Mohamad Zadeh,Midfield
+IPL2016,15,Esteghlal KHU,Player Sub-out,01:27:00,Saba QOM,Davood,Bahadori,Defender
+IPL2016,15,Esteghlal KHU,Goal,01:29:00,Esteghlal KHU,Hassan,Bait Saeed,Midfield
+IPL2016,15,Esteghlal KHU,Game Half2 Stop,01:39:00,,,,
+IPL2016,15,Esteghlal KHU,Game End,01:40:00,,,,
